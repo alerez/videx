@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <div style="float: left; border: 4px double black; padding: 5px; " >
+    <div style="text-align: center;">New Frame</div>
+      <div style="display:flex; flex-direction:column; justify-content:center; ">
+        <label style="display:flex" for="position">Position:</label>
+        <input type="text" id="position">
+      </div>
+      <div>
+        <label for="color">Color:</label>
+        <input type="text" id="color">
+      </div>
+      <div>
+        <label for="material">Material:</label>
+        <input type="text" id="material">
+      </div>
+      <div>
+        <label for="posts">Posts:</label>
+        <input type="text" id="posts">
+      </div>
+      <div>
+        <label for="price">Price:</label>
+        <input type="text" id="price">
+      </div>
+      <div>
+        <label for="article">Article:</label>
+        <input type="text" id="article">
+      </div>
+      <div>
+        <label for="productCode">Product code:</label>
+        <input type="text" id="productCode">
+      </div>
+      <div>
+        <input type="file" id="File" name="file" multiple>
+      </div>
+     <button onclick="addFrame()">Add Frame</button>
+  </div>
+
+  <div style="float: left; border: 4px double black; padding: 5px" >
+    <div style="text-align: center;">New mechanism</div>
+      <div>
+        <label for="mechanismColor">Color:</label>
+        <input type="text" id="mechanismColor">
+      </div>
+      <div>
+        <label for="mechanismType">Type:</label>
+        <input type="text" id="mechanismType">
+      </div>
+      <div>
+        <label for="mechanismMaterial">Material:</label>
+        <input type="text" id="mechanismMaterial">
+      </div>
+      <div>
+        <label for="price">Price:</label>
+        <input type="text" id="mechanismPrice">
+      </div>
+      <div>
+        <label for="mechanismDescriptionEn">Description En:</label>
+        <input type="text" id="mechanismDescriptionEn">
+      </div>
+      <div>
+        <label for="mechanismDescriptionRu">Description Ru:</label>
+        <input type="text" id="mechanismDescriptionRu">
+      </div>
+      <div>
+        <label for="mechanismDescriptionUa">Description Ua:</label>
+        <input type="text" id="mechanismDescriptionUa">
+      </div>
+      <div>
+        <label for="article">Article:</label>
+        <input type="text" id="mechanismArticle">
+      </div>
+      <div>
+        <label for="productCode">Product code:</label>
+        <input type="text" id="mechanismProductCode">
+      </div>
+      <div>
+        <input type="file" id="mechanismFile" name="file" multiple>
+      </div>
+     <button onclick="addMechanism()">Add Mechanism</button>
+  </div>
+
+  <div style="float: left; border: 4px double black; padding: 5px" >
+    <div style="text-align: center;">New frame color</div>
+      <div>
+        <label for="frameColorMaterial">Material:</label>
+        <input type="text" id="frameColorMaterial">
+      </div>
+      <div>
+        <label for="frameColor">Color:</label>
+        <input type="text" id="frameColor">
+      </div>
+      <div>
+        <label for="frameColorDescriptionEn">Description En:</label>
+        <input type="text" id="frameColorDescriptionEn">
+      </div>
+      <div>
+        <label for="frameColorDescriptionRu">Description Ru:</label>
+        <input type="text" id="frameColorDescriptionRu">
+      </div>
+      <div>
+        <label for="frameColorDescriptionUa">Description Ua:</label>
+        <input type="text" id="frameColorDescriptionUa">
+      </div>
+      <div>
+        <input type="file" id="frameColorFile" name="file" multiple>
+      </div>
+     <button onclick="addFrameColor()">Add frame color</button>
+  </div>
+
+  <div style="float: left; border: 4px double black; padding: 5px" >
+    <div style="text-align: center;">New mechanism color</div>
+      <div>
+        <label for="mechanismColorColor">Color:</label>
+        <input type="text" id="mechanismColorColor">
+      </div>
+      <div>
+        <label for="mechanismColorDescriptionEn">Description En:</label>
+        <input type="text" id="mechanismColorDescriptionEn">
+      </div>
+      <div>
+        <label for="mechanismColorDescriptionRu">Description Ru:</label>
+        <input type="text" id="mechanismColorDescriptionRu">
+      </div>
+      <div>
+        <label for="mechanismColorDescriptionUa">Description Ua:</label>
+        <input type="text" id="mechanismColorDescriptionUa">
+      </div>
+      <div>
+        <input type="file" id="mechanismColorFile" name="file" multiple>
+      </div>
+     <button onclick="addMechanismColor()">Add mechanism color</button>
+  </div>
+
+  <div style="float: left; border: 4px double black; padding: 5px" >
+    <div style="text-align: center;">New background</div>
+      <div>
+        <label for="backgroundBadFile">Bad quality</label>
+        <input type="file" id="backgroundBadFile" name="badFile" multiple>
+      </div>
+      <div>
+        <label for="backgroundGoodFile">Good quality</label>
+        <input type="file" id="backgroundGoodFile" name="goodFile" multiple>
+      </div>
+     <button onclick="addBackground()">Add background</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="text/javascript">
+    let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluIiwiaWF0IjoxNjA1ODk0NTM5LCJleHAiOjE2MDU5MDUzMzl9.7Lr9IhZL3G1SS3MAturNuKuLak6LC80xCw-e7CaC7OA';
+    function addFrame() {
+      try {
+        const data = new FormData();
+        data.append('file', document.querySelector("#File").files[0]);
+        data.append('data', JSON.stringify({
+          "position": document.querySelector("#position").value,
+          "color": document.querySelector("#color").value,
+          "material": document.querySelector("#material").value,
+          "posts": Number(document.querySelector("#posts").value),
+          "price": Number(document.querySelector("#price").value),
+          "article": document.querySelector("#article").value,
+          "productCode": Number(document.querySelector("#productCode").value)
+        }));
+        console.log(data);
+        const config = {
+          method: 'post',
+          url: 'http://localhost:3000/admin/addFrame',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'multipart/form-data',
+          },
+          data: data,
+        };
+
+        axios(config)
+                .then(function (response) {
+                  console.log(`response ${response}`);
+                  console.log(JSON.stringify(response.data));
+                })
+                .catch(function (error) {
+                  console.log(error);
+                });
+      } catch (e){
+        console.error(e);
+      }
+  }
+
+  function addMechanism() {
+    const data = new FormData();
+    data.append('file', document.querySelector("#mechanismFile").files[0]);
+    data.append('data', JSON.stringify({
+        "color": document.querySelector("#mechanismColor").value,
+        "type": document.querySelector("#mechanismType").value,
+        "material": document.querySelector("#mechanismMaterial").value,
+        "price": Number(document.querySelector("#mechanismPrice").value),
+        "description": {
+          "en": document.querySelector("#mechanismDescriptionEn").value,
+          "ru": document.querySelector("#mechanismDescriptionRu").value,
+          "ua": document.querySelector("#mechanismDescriptionUa").value
+        },
+        "article": document.querySelector("#mechanismArticle").value,
+        "productCode": Number(document.querySelector("#mechanismProductCode").value)
+    }));
+     console.log(data);
+
+    const config = {
+      method: 'post',
+      url: 'http://localhost:3000/admin/addMechanism',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'multipart/form-data'
+      },
+      data: data,
+    };
+
+    axios(config)
+    .then(function (response) {
+      console.log(`response ${response}`);
+      console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
+
+  function addFrameColor() {
+    const data = new FormData();
+    data.append('file', document.querySelector("#frameColorFile").files[0]);
+    data.append('data', JSON.stringify({
+        "color": document.querySelector("#frameColor").value,
+        "material": document.querySelector("#frameColorMaterial").value,
+        "description": {
+          "en": document.querySelector("#frameColorDescriptionEn").value,
+          "ru": document.querySelector("#frameColorDescriptionRu").value,
+          "ua": document.querySelector("#frameColorDescriptionUa").value
+        },
+    }));
+
+    const config = {
+      method: 'post',
+      url: 'http://localhost:3000/admin/addFrameColor',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'multipart/form-data'
+      },
+      data: data,
+    };
+
+    axios(config)
+    .then(function (response) {
+      console.log(`response ${response}`);
+      console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
+
+  function addMechanismColor() {
+    const data = new FormData();
+    data.append('file', document.querySelector("#mechanismColorFile").files[0]);
+    data.append('data', JSON.stringify({
+        "color": document.querySelector("#mechanismColorColor").value,
+        "description": {
+          "en": document.querySelector("#mechanismColorDescriptionEn").value,
+          "ru": document.querySelector("#mechanismColorDescriptionRu").value,
+          "ua": document.querySelector("#mechanismColorDescriptionUa").value
+        },
+    }));
+
+    const config = {
+      method: 'post',
+      url: 'http://localhost:3000/admin/addMechanismColor',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'multipart/form-data'
+      },
+      data: data,
+    };
+
+    axios(config)
+    .then(function (response) {
+      console.log(`response ${response}`);
+      console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
+
+  function addBackground() {
+    const data = new FormData();
+    data.append('badFile', document.querySelector("#backgroundBadFile").files[0]);
+    data.append('goodFile', document.querySelector("#backgroundGoodFile").files[0]);
+
+    const config = {
+      method: 'post',
+      url: 'http://localhost:3000/admin/addBackground',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'multipart/form-data'
+      },
+      data: data,
+    };
+
+    axios(config)
+    .then(function (response) {
+      console.log(`response ${response}`);
+      console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
+  </script>
+</body>
+</html>
