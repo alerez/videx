@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+ }
+
+.footer{
+	display:flex;
+	margin-bottom:18px;
+}
+.footerDate{
+	font-family:GoodHeadlineCompPro-Light, sans-serif;
+	font-size:20px;
+	display:flex;
+	margin-top: 10px;
+	color:#5B6770;
+}
+.footerVidex{
+	margin: 0 0 0 auto;
+}
+.configurator{
+	position:relative;
+	width:670px;
+	height:670px;
+	display:block;
+}
+.configuratorBlockImg{
+	position:absolute;
+	width:670px;
+	height:670px;
+}
+.configuratorBlockBlockImg{
+	position:absolute;
+	margin-top:180px;
+	margin-left:100px;
+}
+.configuratorBlockBlockBlockImg{
+	position:absolute;
+	width:157px;
+	height:160px;
+	margin-top:227px;
+	margin-left:147px;
+}
+.configuratorBlockBlockBlockImgTwo{
+	position:absolute;
+	width:157px;
+	height:160px;
+	margin-top:227px;
+	margin-left:357px;
+}
+.configuratorBlockLogo{
+	position:absolute;
+	margin-top:580px;
+	margin-left:220px;
+}
+.block{
+	display:flex;
+	width:670px;
+	height:192px;
+	border: #E1E1E1 solid 1px;
+	border-radius: 15px;
+	margin-top:25px;
+}
+.blockOne{
+	display:flex;
+	flex-direction:column;
+	flex-basis:30%;
+	padding-left:45px;
+	padding-top:10px;
+}
+.blockRoz{
+	width:1px;
+	height:152px;
+	background-color:#D0D0D0;
+	margin-top: 24px;
+}
+.blockTwo{
+	flex-basis:25%;
+	padding:10px;
+	margin: 0 auto;
+	text-align:center;
+}
+.blockThree{
+	flex-basis:25%;
+	padding:10px;
+	text-align:center;
+}
+.blockFour{
+	flex-basis:20%;
+	padding:10px;
+	text-align:center;
+}
+.textOrang{
+	font-family:Ubuntu-Regular, sans-serif;
+	font-size:13px;
+	color:#FF7A00;
+	margin:5px;
+	padding-top:5px;
+}
+.textBlack{
+	font-family:Ubuntu-Regular, sans-serif;
+	font-size:13px;
+	color:#5B6770;
+	margin:6px;
+}
+.botom{
+	font-family:Ubuntu-Regular, sans-serif;
+	font-size:18px;
+	color:#5B6770;
+	display:flex;
+}
+.botomPrice{
+	font-family:Ubuntu-Regular, sans-serif;
+	font-size:36px;
+	color:#5B6770;
+}

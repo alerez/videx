@@ -1,0 +1,53 @@
+*{
+  font-size:24px;
+  font-family:Arial,sans-serif;
+}
+label{
+  display:flex;
+  flex-direction:column;
+  color:white;
+}
+.textCenter{
+  color:white;
+  text-align:center;
+  margin-top: 40px;
+  margin-bottom:20px;
+  text-transform:uppercase;
+}
+.buttomGet{
+  margin: 0 auto;
+  display:block;
+}
+.paddingLabel{
+  padding:20px;
+}
+.paddingLabel > label{
+  padding-bottom:10px;
+}
+.paddingLabel > input{
+  width:90%;
+  height:30px;
+  padding:10px;
+}
+.backIMG{
+  width:160px;
+  height:160px;
+}
+.backTEXT{
+  display:flex;
+  margin-right:20px;
+  width:300px;
+}
+.blockBAD{
+  display:flex;
+  align-items:center;
+  padding:15px;
+}
+.blockGOOD{
+  display:flex;
+  align-items:center;
+  padding:15px;
+}
+.blockBACKGROUND{
+  display:flex;
+}

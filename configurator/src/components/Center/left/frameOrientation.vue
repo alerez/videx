@@ -1,0 +1,108 @@
+<template>
+  <div class="frameOrientation">
+    <p class="frameOrientationText">Орієнтація рамки:</p>
+    <div class="frameOrientationBlock">
+      <div class="frameOrientationBlockOne" @click="frameOrientationFun()">
+        <img v-if="this.frameOrientation === 'horizontal'" class="frameOrientationBlockOneOne" :src="horizontalColor">
+        <img v-if="this.frameOrientation === 'vertical'" class="frameOrientationBlockOneOne" :src="horizontal">
+      </div>
+      <div class="frameOrientationBlockRoz"></div>
+      <div class="frameOrientationBlockTwo" @click="frameOrientationFun()">
+        <img v-if="this.frameOrientation === 'horizontal'" class="frameOrientationBlockTwoTwo" :src="vertical" >
+        <img v-if="this.frameOrientation === 'vertical'" class="frameOrientationBlockTwoTwo" :src="verticalColor">
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import {mapGetters, mapActions} from 'vuex';
+
+export default {
+  data() {
+    return {
+      horizontalColor: require('../../../assets/img/horizontalColor.png'),
+      horizontal: require('../../../assets/img/horizontal.png'),
+      vertical: require('../../../assets/img/vertical.png'),
+      verticalColor: require('../../../assets/img/verticalColor.png'),
+    }
+  },
+  methods: {
+    ...mapActions(['EMIT_frameOrientation','EMIT_closedMechanismBlock']),
+    frameOrientationFun: function frameOrientationFun() {
+        if (this.frameOrientation === 'horizontal'){
+          this.EMIT_frameOrientation('vertical')
+          this.EMIT_closedMechanismBlock('mechanismBlockFour');
+          this.EMIT_closedMechanismBlock('mechanismBlockFive');
+        }
+        else if (this.frameOrientation === 'vertical'){
+          this.EMIT_frameOrientation('horizontal')
+        }
+    },
+  },
+  computed: {
+    ...mapGetters(['frameOrientation'])
+  }
+};
+</script>
+
+<style>
+.frameOrientationText{
+  user-select: none;
+  margin-left: 4px;
+  margin-top: 10px;
+  margin-bottom:10px;
+
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15.9247px;
+  line-height: 19px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.38927px;
+
+  color: #303030;
+}
+.frameOrientationBlock{
+  user-select: none;
+  width: 320px;
+  height: 117px;
+
+  display: flex;
+
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+  box-sizing: border-box;
+
+  border-radius: 5px 5px 5px 15px;
+}
+.frameOrientationBlockOne{
+  flex-basis: 49%;
+  padding-top:30px;
+  cursor:pointer;
+}
+.frameOrientationBlockOneOne{
+  display: block;
+  margin:auto;
+}
+.frameOrientationBlockTwo{
+  flex-basis: 49%;
+  padding-top:10px;
+  cursor:pointer;
+}
+.frameOrientationBlockTwoTwo{
+  display: block;
+  margin: auto;
+}
+.frameOrientationBlockRoz{
+  width: 2px;
+  height: 91px;
+
+  background-color: #E9E9E9;
+  border: 1px solid #E9E9E9;
+  box-sizing: border-box;
+
+  margin: auto;
+}
+</style>

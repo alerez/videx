@@ -1,0 +1,676 @@
+@mixin size($width, $height){
+  width: $width;
+  height: $height;
+}
+
+
+@media screen and (max-width: 1560px){
+  .block1{
+    @include size(232px,165px);
+    border-bottom: 6px solid rgb(255, 255, 255);
+    border-left: 9px solid rgb(255, 255, 255);
+    border-top:6px solid rgb(255, 255, 255);
+    border-right:5px solid rgb(255, 255, 255);
+  }
+  .backgroundBlock{
+    @include size(232px,165px);
+  }
+  .block2{
+    @include size(232px,61px);
+    margin-top:7px;
+
+    padding-left: 9px;
+    padding-top: 4px;
+  }
+  .backgroundBlockImages {
+    @include size(44px, 44px);
+    margin-left:1px;
+    margin-bottom:0;
+    border-radius: 8px;
+  }
+  .backgroundText{
+    margin-bottom: 12px;
+    margin-left:4px;
+    margin-top:-35px;
+  }
+  //////////////////upBag///////////////////////////////////
+  .upB{
+    @include size(234px,31px);
+  }
+  .upText{
+    font-size:12px;
+    margin-top:6px;
+  }
+  .upImg{
+    @include size(14px,14px);
+    margin-left:5px;
+    margin-top:1px;
+  }
+  ////////////////////colorBackground/////////////////////////////////
+  .colorBlock{
+    @include size(235px,117px)
+  }
+  .colorBlockBACK{
+    width: 237px
+  }
+  .colorBack{
+    width: 24px;
+    height: 26px;
+  }
+  ////////////////////frameOrientation/////////////////////////////////
+  .frameOrientationBlock{
+    @include size(234px,86px)
+  }
+  .frameOrientationBlockOneOne{
+    @include size(67px,38px);
+  }
+  .frameOrientationBlockTwoTwo{
+    @include size(38px,67px);
+  }
+  .frameOrientationBlockRoz{
+    height:67px;
+  }
+  .frameOrientationBlockOne{
+    padding-top:25px;
+  }
+  .frameOrientationBlockTwo{
+    padding-top:10px;
+  }
+  ////////////////////numberPosts////////////////////////
+  .numberPostsBlock{
+    @include size(234px,52px);
+    font-size: 15.967px;
+    line-height: 13px;
+  }
+  .numberPostsBlockRoz{
+    height:34px;
+  }
+  ////////////////////downloadProject////////////////////////
+  .downloadProjectBlock{
+    @include size(234px,38px);
+  }
+  .downloadProjectText{
+    width:257px;
+    font-size: 12.999px;
+  }
+  .downloadProjectBlockText{
+    font-size: 11.9603px;
+  }
+  .downloadProjectBlockImg{
+    @include size(14px,14px);
+  }
+  ////////////////////configurator////////////////////////
+  .configuratorBlock{
+    @include size(517px,517px)
+  }
+  .configuratorBlockBlock{
+    @include size(517px,517px)
+  }
+  ////////////////////attributes////////////////////////
+  .attributesBlock{
+    @include size(521px,175px)
+  }
+  .attributesBlockOne{
+    font-size: 14px;
+  }
+  .attributesBlockTwo{
+    font-size: 14px;
+  }
+  .attributesBlockThree{
+    font-size: 14px;
+  }
+  ////////////////////selectFrame////////////////////////
+  .selectFrameSelect{
+    @include size(244px,32px)
+  }
+  .selectFrameTextTop{
+    margin-top:0;
+  }
+  .selectFrameBlock{
+    @include size(244px,102px)
+  }
+  .selectFrameColorBlock{
+    margin:1px;
+  }
+  .selectFrameBlockColorBlock{
+    @include size(31px,31px)
+  }
+  .selectFrameBlockColorText{
+    font-size: 11.9488px;
+    line-height: 14px;
+    letter-spacing: -0.38502px;
+  }
+  .selectFrameColorBlock{
+    margin: 8px 0 0;
+  }
+  .selectFrameBlockPos{
+    margin-left:8px;
+  }
+  .selectFrameText{
+    margin-left:5px;
+    margin-bottom:12px;
+    margin-top:20px;
+  }
+
+  .selectChooseFrame{
+    display:flex;
+    flex-basis:50%;
+    margin-bottom:10px;
+  }
+  .selectFrameImg{
+    width:30px;
+    height:30px;
+  }
+  .selectFrameText{
+    margin-top:0;
+  }
+  ////////////////////chooseMechanism////////////////////////
+  .chooseMechanismBlock{
+    @include size(244px,101px)
+  }
+  .chooseMechanismBlockTwo{
+    @include size(244px,348px)
+  }
+  .chooseMechanismBlockTwoRam{
+    width:244px;
+  }
+  .chooseMechanismColorText{
+    font-size: 11.9488px;
+    line-height: 14px;
+    letter-spacing: -0.38502px;
+  }
+  .chooseMechanismBlockColorBlock{
+    @include size(31px,31px)
+  }
+  .chooseMechanismColorBlock{
+    margin: 8px 0 0;
+  }
+  .chooseMechanismBlockPos{
+    margin-left:8px;
+  }
+  .chooseMechanismFlex > p{
+    font-size: 14.0062px;
+  }
+  .chooseMechanismFlexImg{
+    @include size(53px, 53px);
+    margin:15px;
+  }
+  .chooseMechanismImg{
+    width:33px;
+    height:33px;
+    margin-left:-58px;
+    margin-top:25px;
+  }
+  .chooseMechanismFlexP{
+    margin-left: 20px;
+
+    font-family: Ubuntu,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #5B6770;
+  }
+//////////////buy///////////////////////
+  .buyBlockButtom > button{
+    width: 110px;
+    height: 40px;
+
+    background: #FF7A00;
+
+    border: none;
+    border-radius: 15px;
+
+    font-family: Ubuntu, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    /* or 240% */
+
+    display:flex;
+    align-items: center;
+    padding-left:26px;
+
+    color: #FFFFFF;
+
+    margin-left: 20px;
+    cursor:pointer;
+  }
+  .buyBlockCostOne{
+    font-size:13px;
+  }
+  .buyBlockCostTwo{
+    font-size:26px;
+  }
+  .buyBlock{
+    margin-left:5px;
+  }
+  .buyBlockFavorites > img{
+    width:19.47px;
+    height:17.33px;
+    margin-top:13px;
+  }
+  .buyBlockFavorites > p{
+    font-size:14.0062px;
+  }
+}
+
+
+@media screen and (max-width: 1190px){
+  .block1{
+    @include size(219px,158px);
+  }
+  .backgroundBlock{
+    @include size(219px,158px);
+  }
+  .block2{
+    @include size(216px,56px);
+    margin-top:5px;
+  }
+  .backgroundBlockImages{
+    @include size(44px,44px);
+    margin: 0 2px 1px 1px;
+  }
+  .backgroundText{
+    margin-bottom: 12px;
+    margin-left:4px;
+    margin-top:-25px;
+  }
+  //////////////////////upBag///////////////////////////////
+  .upB{
+    @include size(218px,33px);
+  }
+  /////////////////////////colorBackground////////////////////////////
+  .colorBlock{
+    @include size(219px,113px)
+  }
+  ////////////////////frameOrientation/////////////////////////////////
+  .frameOrientationBlock{
+    @include size(218px,63px)
+  }
+  .frameOrientationBlockOne > img{
+    @include size(50px,28px);
+    margin-left: 28px;
+    margin-top: -8px;
+  }
+  .frameOrientationBlockTwo > img{
+    @include size(28px,50px);
+    margin-left: 40px;
+    margin-top: -5px;
+  }
+  .frameOrientationBlockRoz{
+    height:50px;
+    width:0.01px;
+  }
+  ////////////////////numberPosts////////////////////////
+  .numberPostsBlock{
+    @include size(218px,48px);
+    font-size: 14.8701px;
+    line-height: 12px;
+  }
+  .numberPostsBlockRoz{
+    height:32px;
+  }
+  ////////////////////downloadProject////////////////////////
+  .downloadProjectBlock{
+    @include size(218px,36px)
+  }
+  .downloadProjectText{
+    width:239px;
+    font-size: 11.9991px;
+    line-height: 16px;
+  }
+  .downloadProjectBlockText{
+    font-size: 10.9365px;
+    padding-top:1px;
+  }
+  .downloadProjectBlockImg{
+    @include size(14px,14px);
+  }
+  ////////////////////configurator////////////////////////
+  .configuratorBlock{
+    @include size(456px,456px)
+  }
+  .configuratorBlockBlock{
+    @include size(456px,456px)
+  }
+  ////////////////////attributes////////////////////////
+  .attributesBlock{
+    @include size(458px,179px)
+  }
+  ////////////////////selectFrame////////////////////////
+  .selectFrameSelect{
+    @include size(244px,32px)
+  }
+  .selectFrameTextTop{
+    margin-top:0;
+  }
+  .selectFrameBlock{
+    @include size(244px,102px)
+  }
+  .selectFrameColorBlock{
+    margin:1px;
+  }
+  .selectFrameBlockColorBlock{
+    @include size(31px,31px)
+  }
+  .selectFrameBlockColorText{
+    font-size: 11.9488px;
+    line-height: 14px;
+    letter-spacing: -0.38502px;
+  }
+  .selectFrameColorBlock{
+    margin: 8px 0 0;
+  }
+  .selectFrameBlockPos{
+    margin-left:8px;
+  }
+  .selectFrameText{
+    margin-left:5px;
+    margin-bottom:12px;
+    margin-top:20px;
+  }
+
+  .selectChooseFrame{
+    display:flex;
+    flex-basis:50%;
+    margin-bottom:10px;
+  }
+  .selectFrameImg{
+    width:30px;
+    height:30px;
+  }
+  .selectFrameText{
+    margin-top:0;
+  }
+  ////////////////////chooseMechanism////////////////////////
+  .chooseMechanismBlock{
+    @include size(244px,101px)
+  }
+  .chooseMechanismBlockTwo{
+    @include size(244px,348px)
+  }
+  .chooseMechanismBlockTwoRam{
+    width:246px;
+  }
+  .chooseMechanismColorText{
+    font-size: 11.9488px;
+    line-height: 14px;
+    letter-spacing: -0.38502px;
+  }
+  .chooseMechanismBlockColorBlock{
+    @include size(31px,31px)
+  }
+  .chooseMechanismColorBlock{
+    margin: 8px 0 0;
+  }
+  .chooseMechanismBlockPos{
+    margin-left:8px;
+  }
+  .chooseMechanismFlex > p{
+    font-size: 14.0062px;
+  }
+  .chooseMechanismFlexImg{
+    @include size(53px, 53px);
+    margin:15px;
+  }
+  .chooseMechanismImg{
+    width:33px;
+    height:33px;
+    margin-left:-58px;
+    margin-top:25px;
+  }
+  .chooseMechanismFlexP{
+    margin-left: 20px;
+
+    font-family: Ubuntu,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #5B6770;
+  }
+}
+
+
+@media screen and (max-width: 1044px){
+  .block1{
+    @include size(285px,152px);
+  }
+  .backgroundBlock{
+    @include size(285px,152px);
+  }
+  .block2{
+    @include size(282px,57px);
+    margin-top:4px;
+  }
+  .backgroundBlockImages{
+    @include size(44px,44px);
+  }
+  ///////////////////////upBag//////////////////////////////
+  .upB{
+    @include size(231px,33px);
+  }
+  .upBag{
+    display:flex;
+  }
+  ///////////////////////colorBackground//////////////////////////////
+  .colorBlock{
+    @include size(285px,152px)
+  }
+  ////////////////////frameOrientation/////////////////////////////////
+  .frameOrientationBlock{
+    @include size(284px,67px)
+  }
+  ////////////////////numberPosts////////////////////////
+  .numberPostsBlock{
+    @include size(285px,68px);
+    font-size: 15.9275px;
+    line-height: 12px;
+  }
+  .numberPostsBlockRoz{
+    height:49px;
+  }
+  ////////////////////downloadProject////////////////////////
+  .downloadProjectBlock{
+    @include size(218px,36px)
+  }
+  .downloadProjectText{
+    display:none;
+  }
+  .downloadProjectBlockText{
+    font-size: 10.9365px;
+    line-height: 9px;
+    padding-top:3px;
+  }
+  .downloadProjectBlockImg{
+    @include size(14px,14px);
+    margin-top:-3px;
+  }
+  ////////////////////configurator////////////////////////
+  .configuratorBlock{
+    @include size(596px,596px)
+  }
+  .configuratorBlockBlock{
+    @include size(596px,596px)
+  }
+  ////////////////////attributes////////////////////////
+  .attributesBlock{
+    @include size(598px,162px)
+  }
+  ////////////////////selectFrame////////////////////////
+  .selectFrameSelect{
+    display: none;
+  }
+  .selectFrameBlock{
+    display:none;
+  }
+
+  ////////////////////chooseMechanism////////////////////////
+  .chooseMechanismBlock{
+    display:none;
+  }
+  .chooseMechanismBlockTwo{
+    display:none;
+  }
+}
+
+
+@media screen and (max-width: 788px){
+  .block1{
+    display:none;
+  }
+  .block2{
+    display:none;
+  }
+  ///////////////////////upBag//////////////////////////////
+  .upB{
+    @include size(290px,41px);
+    border-radius: 5px 5px 15px 5px;
+    margin: 0 auto;
+  }
+  .upText{
+    margin-top:15px;
+  }
+  ////////////////////////colorBackground/////////////////////////////
+  .colorBlock{
+    display:none;
+  }
+  ////////////////////frameOrientation/////////////////////////////////
+  .frameOrientationBlock{
+    @include size(185px,54px)
+  }
+  .frameOrientationBlockOne > img{
+    @include size(45px,25px);
+    margin-left: 25px;
+    margin-top: 14px;
+  }
+  .frameOrientationBlockTwo > img{
+    @include size(25px,45px);
+    margin-left: 28px;
+    margin-top: 4px;
+  }
+  .frameOrientationBlockRoz{
+    height:47px;
+  }
+  ////////////////////numberPosts////////////////////////
+  .numberPostsBlock{
+    @include size(185px,54px);
+    font-size: 13.1452px;
+    line-height: 10px;
+    border-radius: 5px 5px 15px 5px;
+  }
+  .numberPostsBlockRoz{
+    height:28px;
+  }
+  ////////////////////downloadProject////////////////////////
+  .downloadProjectBlock{
+    @include size(320px,45px);
+  }
+  .downloadProjectText{
+   display:none;
+  }
+  .downloadProjectBlockText{
+    font-size: 15.98px;
+    line-height: 14px;
+    padding-top:16px;
+  }
+  .downloadProjectBlockImg{
+    @include size(19px,19px);
+    margin-top:-2px;
+  }
+  ////////////////////configurator////////////////////////
+  .configuratorBlock{
+    @include size(380px,380px)
+  }
+  .configuratorBlockBlock{
+    @include size(380px,380px)
+  }
+  ////////////////////attributes////////////////////////
+  .attributesBlock{
+    @include size(383px,211px)
+  }
+  ////////////////////selectFrame////////////////////////
+  .selectFrameSelect{
+    display: none;
+  }
+  .selectFrameBlock{
+    display:none;
+  }
+  ////////////////////chooseMechanism////////////////////////
+  .chooseMechanismBlock{
+    display:none;
+  }
+  .chooseMechanismBlockTwo{
+    display:none;
+  }
+}
+
+
+@media screen and (max-width: 434px){
+  .block1{
+    display:none;
+  }
+  .block2{
+    display:none;
+  }
+  ////////////////////////upBag/////////////////////////////
+  .upB{
+    @include size(264px,40px);
+  }
+  ///////////////////////////colorBackground//////////////////////////
+  .colorBlock{
+    display:none;
+  }
+  ////////////////////frameOrientation/////////////////////////////////
+  .frameOrientationBlock{
+    @include size(143px,70px)
+  }
+  .frameOrientationBlockOne > img{
+    @include size(53px,29px);
+    margin-left: 11px;
+    margin-top: 18px;
+  }
+  .frameOrientationBlockTwo > img{
+    @include size(29px,53x);
+    margin-left: 15px;
+    margin-top: 6px;
+  }
+  ////////////////////numberPosts////////////////////////
+  .numberPostsBlock{
+    @include size(264px,41px);
+    font-size: 12.8067px;
+    line-height: 10px;
+  }
+  ////////////////////configurator////////////////////////
+  .configuratorBlock{
+    @include size(287px,287px)
+  }
+  .configuratorBlockBlock{
+    @include size(287px,287px)
+  }
+  ////////////////////attributes////////////////////////
+  .attributesBlock{
+    @include size(292px,292px)
+  }
+  ////////////////////selectFrame////////////////////////
+  .selectFrameSelect{
+    display: none;
+  }
+  .selectFrameBlock{
+    display:none;
+  }
+  ////////////////////chooseMechanism////////////////////////
+  .chooseMechanismBlock{
+    display:none;
+  }
+  .chooseMechanismBlockTwo{
+    display:none;
+  }
+}
