@@ -478,7 +478,7 @@ import {mapActions, mapGetters} from 'vuex';
 export default {
   data() {
     return {
-      close: 'https://1997b0c0d9ea.ngrok.io/images/frameColors/close.jpg',
+      close: 'https://06149a2c0230.ngrok.io/images/frameColors/close.jpg',
       urlImgBag: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
       active1: false,
       active2: false,
@@ -1344,7 +1344,7 @@ export default {
 
 @media screen and (max-width:1560px){
   .logoBinera1{
-    margin-top:300px;
+    margin-top:420px;
   }
   .logoBinera1 > img{
     width:186.2px;
@@ -1355,6 +1355,13 @@ export default {
     margin-top:420px;
   }
   .logoBinera2 > img{
+    width:186.2px;
+    margin:0;
+  }
+  .logoBinera3{
+    margin-top:420px;
+  }
+  .logoBinera3 > img{
     width:186.2px;
     margin:0;
   }
@@ -1387,23 +1394,19 @@ export default {
 
   .frameBlockFrameHorizontal1{
     display:block;
-    width:186.2px;
-    height:186.2px;
-  }
-  .frameBlockFrameVertical1{
-    display:block;
-    width:186.2px;
-    height:186.2px;
+    width:256.2px;
+    height:256.2px;
   }
   .frameBlockFrameHorizontal2{
     display:block;
-    width:327.6px;
-    height:186.2px;
+    width:447.6px;
+    height:240.2px;
   }
   .frameBlockFrameVertical2{
     display:block;
-    width:186.2px;
-    height:327.6px;
+    width:240.2px;
+    height:447.6px;
+    margin-top:-30px;
   }
   .frameBlockFrameHorizontal3{
     display:block;
@@ -1430,21 +1433,21 @@ export default {
 
 
   .configuratorBlockMechanism11 > img{
-    width:112px;
-    height:112px;
+    width:152px;
+    height:152px;
     border-radius:3px;
   }
 
   .configuratorBlockMechanism11{
-    width:112px;
-    height:112px;
-    margin-left:33px;
-    margin-top:-152px;
+    width:152px;
+    height:152px;
+    margin-left:46px;
+    margin-top:-209px;
     border-radius:3px;
   }
   .configuratorBlockMechanism11Hover{
-    width:110px;
-    height:110px;
+    width:150px;
+    height:150px;
     border:#ff7a00 solid 3px;
   }
 
@@ -1564,6 +1567,21 @@ export default {
     width:88px;
     height:89px;
   }
+  .configuratorBlockMechanism13Hover{
+    width:84px;
+    height:85px;
+    margin-top:-96px;
+  }
+  .configuratorBlockMechanism23Hover{
+    width:84px;
+    height:85px;
+    margin-top:-96px;
+  }
+  .configuratorBlockMechanism33Hover{
+    width:84px;
+    height:85px;
+    margin-top:-96px;
+  }
 
 
 
@@ -1572,36 +1590,36 @@ export default {
 
 
   .configuratorBlockMechanism133{
-    width:158px;
-    height:158px;
+    width:88px;
+    height:89px;
     margin-left:46px;
     margin-top:-210px
   }
   .configuratorBlockMechanism133 > img{
-    width:109px;
-    height:109px;
+    width:88px;
+    height:89px;
     border-radius:3px;
   }
   .configuratorBlockMechanism233{
-    width:158px;
-    height:158px;
+    width:88px;
+    height:89px;
     margin-left:46px;
     margin-top:-354px
   }
   .configuratorBlockMechanism233 > img{
-    width:109px;
-    height:109px;
+    width:88px;
+    height:89px;
     border-radius:3px;
   }
   .configuratorBlockMechanism333{
-    width:158px;
-    height:158px;
+    width:88px;
+    height:89px;
     margin-left:46px;
     margin-top:-355px
   }
   .configuratorBlockMechanism333 > img{
-    width:109px;
-    height:109px;
+    width:88px;
+    height:89px;
     border-radius:3px;
   }
 
@@ -1652,6 +1670,26 @@ export default {
   .configuratorBlockMechanism44 > img{
     width:88px;
     height:89px;
+  }
+  .configuratorBlockMechanism14Hover{
+    width:83px;
+    height:84px;
+    margin-top:-95px;
+  }
+  .configuratorBlockMechanism24Hover{
+    width:83px;
+    height:84px;
+    margin-top:-95px;
+  }
+  .configuratorBlockMechanism34Hover{
+    width:83px;
+    height:84px;
+    margin-top:-95px;
+  }
+  .configuratorBlockMechanism44Hover{
+    width:83px;
+    height:84px;
+    margin-top:-95px;
   }
 
 
@@ -1710,6 +1748,35 @@ export default {
   .configuratorBlockMechanism55 > img{
     width:65px;
     height:65px;
+  }
+  .configuratorBlockMechanism44 > img{
+    width:88px;
+    height:89px;
+  }
+  .configuratorBlockMechanism15Hover{
+    width:61px;
+    height:61px;
+    margin-top:-71px;
+  }
+  .configuratorBlockMechanism25Hover{
+    width:61px;
+    height:61px;
+    margin-top:-71px;
+  }
+  .configuratorBlockMechanism35Hover{
+    width:61px;
+    height:61px;
+    margin-top:-71px;
+  }
+  .configuratorBlockMechanism45Hover{
+    width:61px;
+    height:61px;
+    margin-top:-71px;
+  }
+  .configuratorBlockMechanism55Hover{
+    width:61px;
+    height:61px;
+    margin-top:-71px;
   }
 
 
@@ -1867,6 +1934,10 @@ export default {
     height:154px;
     border-radius:3px;
   }
+  .configuratorBlockMechanism13Hover{
+    width:144px;
+    height:143px;
+  }
   .configuratorBlockMechanism23{
     width:150px;
     height:154px;
@@ -1878,6 +1949,9 @@ export default {
     height:154px;
     border-radius:3px;
   }
+  .configuratorBlockMechanism23Hover{
+
+  }
   .configuratorBlockMechanism33{
     width:150px;
     height:154px;
@@ -1888,6 +1962,9 @@ export default {
     width:147px;
     height:154px;
     border-radius:3px;
+  }
+  .configuratorBlockMechanism33Hover{
+
   }
 
 

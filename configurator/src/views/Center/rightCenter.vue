@@ -38,6 +38,7 @@ export default {
 @media screen and (max-width: 1560px){
   .rightCenter{
     margin-left:31px;
+    margin-top:20px;
   }
 }
 @media screen and (max-width: 1190px){

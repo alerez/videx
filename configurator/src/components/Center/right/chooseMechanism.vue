@@ -5,13 +5,13 @@
       <div style="display:flex">
         <div class="selectChooseFrame" @click="getMechanismColor('white')">
           <img v-if="mechanismColor !== 'white'"  class="selectFrameImg" :src="chooseFrame.plastic.white.fileURL">
-          <img v-if="mechanismColor === 'white'" class="selectFrameImg" :src="chooseFrame.plastic.white.fileURL" style="border: 1px solid #ff7a00; border-radius:50%">
+          <img v-if="mechanismColor === 'white'" class="selectFrameImg" :src="chooseFrame.plastic.white.fileURL" style="border: 2px solid #ff7a00; border-radius:50%">
           <p v-if="mechanismColor !== 'white'" class="selectFrameText">{{ chooseFrame.plastic.white.description.ua }}</p>
           <p v-if="mechanismColor === 'white'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame.plastic.white.description.ua }}</p>
         </div>
         <div class="selectChooseFrame" @click="getMechanismColor('silver')">
           <img v-if="mechanismColor !== 'silver'" class="selectFrameImg" :src="chooseFrame.plastic.silver.fileURL">
-          <img v-if="mechanismColor === 'silver'" class="selectFrameImg" :src="chooseFrame.plastic.silver.fileURL" style="border: 1px solid #ff7a00; border-radius:50%">
+          <img v-if="mechanismColor === 'silver'" class="selectFrameImg" :src="chooseFrame.plastic.silver.fileURL" style="border: 2px solid #ff7a00; border-radius:50%">
           <p v-if="mechanismColor !== 'silver'" class="selectFrameText">{{ chooseFrame.plastic.silver.description.ua }}</p>
           <p v-if="mechanismColor === 'silver'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame.plastic.silver.description.ua }}</p>
         </div>
@@ -19,13 +19,13 @@
       <div style="display:flex">
         <div class="selectChooseFrame" @click="getMechanismColor('crema')">
           <img v-if="mechanismColor !== 'crema'" class="selectFrameImg" :src="chooseFrame.plastic.crema.fileURL">
-          <img v-if="mechanismColor === 'crema'" class="selectFrameImg" :src="chooseFrame.plastic.crema.fileURL" style="border: 1px solid #ff7a00; border-radius:50%">
+          <img v-if="mechanismColor === 'crema'" class="selectFrameImg" :src="chooseFrame.plastic.crema.fileURL" style="border: 2px solid #ff7a00; border-radius:50%">
           <p v-if="mechanismColor !== 'crema'" class="selectFrameText">{{ chooseFrame.plastic.crema.description.ua }}</p>
           <p v-if="mechanismColor === 'crema'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame.plastic.crema.description.ua }}</p>
         </div>
         <div class="selectChooseFrame" @click="getMechanismColor('black')">
           <img v-if="mechanismColor !== 'black'"  class="selectFrameImg" :src="chooseFrame.plastic.black.fileURL">
-          <img v-if="mechanismColor === 'black'" class="selectFrameImg" :src="chooseFrame.plastic.black.fileURL" style="border: 1px solid #ff7a00; border-radius:50%">
+          <img v-if="mechanismColor === 'black'" class="selectFrameImg" :src="chooseFrame.plastic.black.fileURL" style="border: 2px solid #ff7a00; border-radius:50%">
           <p v-if="mechanismColor !== 'black'" class="selectFrameText">{{ chooseFrame.plastic.black.description.ua }}</p>
           <p v-if="mechanismColor === 'black'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame.plastic.black.description.ua }}</p>
         </div>

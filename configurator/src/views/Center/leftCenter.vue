@@ -47,13 +47,13 @@ export default {
 .color-backgroundTwo{
   display:none;
 }
-@media screen and (max-width: 1900px){
+@media screen and (max-width: 1560px){
   .leftCenter{
     margin-right:16px;
-    margin-top:28px;
+    margin-top:32px;
   }
   .rightCenter{
-    margin-top:22px;
+    margin-top:20px;
   }
 }
 @media screen and (max-width: 1190px){
