@@ -1352,7 +1352,7 @@ export default {
   }
 
   .logoBinera2{
-    margin-top:420px;
+    margin-top:470px;
   }
   .logoBinera2 > img{
     width:186.2px;
@@ -1363,6 +1363,20 @@ export default {
   }
   .logoBinera3 > img{
     width:186.2px;
+    margin:0;
+  }
+  .logoBinera4{
+    margin-top:490px;
+  }
+  .logoBinera4 > img{
+    width:140.2px;
+    margin:0;
+  }
+  .logoBinera5{
+    margin-top:470px;
+  }
+  .logoBinera5 > img{
+    width:109px;
     margin:0;
   }
 
@@ -1400,11 +1414,11 @@ export default {
   .frameBlockFrameHorizontal2{
     display:block;
     width:447.6px;
-    height:240.2px;
+    height:245.2px;
   }
   .frameBlockFrameVertical2{
     display:block;
-    width:240.2px;
+    width:255.2px;
     height:447.6px;
     margin-top:-30px;
   }
@@ -1424,10 +1438,21 @@ export default {
     width:485.6px;
     height:146.4px;
   }
+  .frameBlockFrameVertical4{
+    display:block;
+    width:146.4px;
+    height:485.6px;
+    margin-top:-20px;
+  }
   .frameBlockFrameHorizontal5{
     display:block;
     width:460px;
     height:109px;
+  }
+  .frameBlockFrameVertical5{
+    display:block;
+    width:109px;
+    height:460px;
   }
 
 
@@ -1458,39 +1483,39 @@ export default {
   */
 
   .configuratorBlockMechanism12{
-    width:112px;
-    height:114px;
-    margin-left:31.5px;
-    margin-top:-153px
+    width:150px;
+    height:150px;
+    margin-left:44.5px;
+    margin-top:-202px
   }
   .configuratorBlockMechanism22{
-    width:112px;
-    height:114px;
-    margin-left:34px;
-    margin-top:-153px
+    width:150px;
+    height:150px;
+    margin-left:48px;
+    margin-top:-202px
   }
 
   .configuratorBlockMechanism12 > img{
-    width:112px;
-    height:114px;
+    width:150px;
+    height:150px;
   }
   .configuratorBlockMechanism22 > img{
-    width:112px;
-    height:114px;
+    width:150px;
+    height:150px;
   }
   .configuratorBlockMechanism12Hover{
-    width:107px;
-    height:110px;
+    width:145px;
+    height:145px;
     border:3px solid #ff7a00;
     margin-left:-1px;
-    margin-top:-119px;
+    margin-top:-156px;
   }
   .configuratorBlockMechanism22Hover{
-    width:107px;
-    height:110px;
+    width:145px;
+    height:145px;
     border:3px solid #ff7a00;
-    margin-left:-1px;
-    margin-top:-119px;
+    margin-left:1px;
+    margin-top:-156px;
   }
 
   /*
@@ -1498,35 +1523,35 @@ export default {
 */
 
   .configuratorBlockMechanism122{
-    width:112px;
-    height:112px;
-    margin-left:34px;
-    margin-top:-256px
+    width:150px;
+    height:150px;
+    margin-left:48px;
+    margin-top:-350px
   }
   .configuratorBlockMechanism222{
-    width:112px;
-    height:112px;
-    margin-left:34px;
-    margin-top:-150px
+    width:150px;
+    height:150px;
+    margin-left:48px;
+    margin-top:-202px
   }
   .configuratorBlockMechanism122 > img{
-    width:112px;
-    height:112px;
+    width:150px;
+    height:150px;
   }
   .configuratorBlockMechanism222 > img{
-    width:112px;
-    height:112px;
+    width:150px;
+    height:150px;
   }
   .configuratorBlockMechanism122Hover{
-    width:110px;
-    height:109px;
+    width:145px;
+    height:145px;
     border:3px solid #ff7a00;
     margin-top:-2px;
     margin-left:-2px;
   }
   .configuratorBlockMechanism222Hover{
-    width:110px;
-    height:109px;
+    width:145px;
+    height:145px;
     border:3px solid #ff7a00;
     margin-top:-1.5px;
     margin-left:-2px;
@@ -1590,36 +1615,36 @@ export default {
 
 
   .configuratorBlockMechanism133{
-    width:88px;
-    height:89px;
-    margin-left:46px;
-    margin-top:-210px
+    width:86px;
+    height:86px;
+    margin-left:27px;
+    margin-top:-198px
   }
   .configuratorBlockMechanism133 > img{
-    width:88px;
-    height:89px;
+    width:86px;
+    height:86px;
     border-radius:3px;
   }
   .configuratorBlockMechanism233{
-    width:88px;
-    height:89px;
-    margin-left:46px;
-    margin-top:-354px
+    width:86px;
+    height:86px;
+    margin-left:27px;
+    margin-top:-198px
   }
   .configuratorBlockMechanism233 > img{
-    width:88px;
-    height:89px;
+    width:86px;
+    height:86px;
     border-radius:3px;
   }
   .configuratorBlockMechanism333{
-    width:88px;
-    height:89px;
-    margin-left:46px;
-    margin-top:-355px
+    width:86px;
+    height:86px;
+    margin-left:27px;
+    margin-top:-119px
   }
   .configuratorBlockMechanism333 > img{
-    width:88px;
-    height:89px;
+    width:86px;
+    height:86px;
     border-radius:3px;
   }
 
@@ -1695,6 +1720,69 @@ export default {
 
 
 
+
+
+
+  .configuratorBlockMechanism144{
+    width:88px;
+    height:87px;
+    margin-top:-199px;
+    margin-left:27px;
+  }
+  .configuratorBlockMechanism144 > img{
+    width:88px;
+    height:87px;
+  }
+  .configuratorBlockMechanism244{
+    width:88px;
+    height:87px;
+    margin-top:-200px;
+    margin-left:27px;
+  }
+  .configuratorBlockMechanism244 > img{
+    width:88px;
+    height:87px;
+  }
+  .configuratorBlockMechanism344{
+    width:88px;
+    height:87px;
+    margin-top:-201.5px;
+    margin-left:27px;
+  }
+  .configuratorBlockMechanism344 > img{
+    width:88px;
+    height:87px;
+  }
+  .configuratorBlockMechanism444{
+    width:88px;
+    height:87px;
+    margin-top:-121px;
+    margin-left:27px;
+  }
+  .configuratorBlockMechanism444 > img{
+    width:88px;
+    height:87px;
+  }
+  .configuratorBlockMechanism144Hover{
+    width:83px;
+    height:84px;
+    margin-top:-95px;
+  }
+  .configuratorBlockMechanism244Hover{
+    width:83px;
+    height:84px;
+    margin-top:-95px;
+  }
+  .configuratorBlockMechanism344Hover{
+    width:83px;
+    height:84px;
+    margin-top:-95px;
+  }
+  .configuratorBlockMechanism444Hover{
+    width:83px;
+    height:84px;
+    margin-top:-95px;
+  }
 
 
 
@@ -1779,6 +1867,87 @@ export default {
     margin-top:-71px;
   }
 
+
+
+
+
+
+
+  .configuratorBlockMechanism155{
+    width:65px;
+    height:66px;
+    margin-top:-152px;
+    margin-left:20.5px;
+  }
+  .configuratorBlockMechanism155 > img{
+    width:65px;
+    height:66px;
+  }
+  .configuratorBlockMechanism255{
+    width:65px;
+    height:66px;
+    margin-top:-154px;
+    margin-left:20.5px;
+  }
+  .configuratorBlockMechanism255 > img{
+    width:65px;
+    height:66px;
+  }
+  .configuratorBlockMechanism355{
+    width:65px;
+    height:66px;
+    margin-top:-154px;
+    margin-left:20.5px;
+  }
+  .configuratorBlockMechanism355 > img{
+    width:65px;
+    height:66px;
+  }
+  .configuratorBlockMechanism455{
+    width:65px;
+    height:66px;
+    margin-top:-153px;
+    margin-left:20.5px;
+  }
+  .configuratorBlockMechanism455 > img{
+    width:65px;
+    height:66px;
+  }
+  .configuratorBlockMechanism555{
+    width:65px;
+    height:66px;
+    margin-top:-90.5px;
+    margin-left:20.5px;
+  }
+  .configuratorBlockMechanism555 > img{
+    width:65px;
+    height:66px;
+  }
+  .configuratorBlockMechanism155Hover{
+    width:61px;
+    height:61px;
+    margin-top:-71px;
+  }
+  .configuratorBlockMechanism255Hover{
+    width:61px;
+    height:61px;
+    margin-top:-71px;
+  }
+  .configuratorBlockMechanism355Hover{
+    width:61px;
+    height:61px;
+    margin-top:-71px;
+  }
+  .configuratorBlockMechanism455Hover{
+    width:61px;
+    height:61px;
+    margin-top:-71px;
+  }
+  .configuratorBlockMechanism555Hover{
+    width:61px;
+    height:61px;
+    margin-top:-71px;
+  }
 
 }
 @media screen and (max-width:1070px){
