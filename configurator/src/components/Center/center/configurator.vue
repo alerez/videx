@@ -1342,7 +1342,7 @@ export default {
 
 
 
-@media screen and (max-width:1560px){
+@media screen and (max-width:1590px){
   .logoBinera1{
     margin-top:420px;
   }
@@ -1766,22 +1766,22 @@ export default {
   .configuratorBlockMechanism144Hover{
     width:83px;
     height:84px;
-    margin-top:-95px;
+    margin-top:-2px;
   }
   .configuratorBlockMechanism244Hover{
     width:83px;
     height:84px;
-    margin-top:-95px;
+    margin-top:-2px;
   }
   .configuratorBlockMechanism344Hover{
     width:83px;
     height:84px;
-    margin-top:-95px;
+    margin-top:-2px;
   }
   .configuratorBlockMechanism444Hover{
     width:83px;
     height:84px;
-    margin-top:-95px;
+    margin-top:-2px;
   }
 
 
@@ -1926,307 +1926,254 @@ export default {
   .configuratorBlockMechanism155Hover{
     width:61px;
     height:61px;
-    margin-top:-71px;
+    margin-top:-2px;
   }
   .configuratorBlockMechanism255Hover{
     width:61px;
     height:61px;
-    margin-top:-71px;
+    margin-top:-2px;
   }
   .configuratorBlockMechanism355Hover{
     width:61px;
     height:61px;
-    margin-top:-71px;
+    margin-top:-2px;
   }
   .configuratorBlockMechanism455Hover{
     width:61px;
     height:61px;
-    margin-top:-71px;
+    margin-top:-2px;
   }
   .configuratorBlockMechanism555Hover{
     width:61px;
     height:61px;
-    margin-top:-71px;
+    margin-top:-2px;
   }
 
 }
-@media screen and (max-width:1070px){
-  .logoBinera{
-    width:168px;
-    margin-top:400px;
-  }
+/*@media screen and (max-width:1070px){*/
+/*  .logoBinera{*/
+/*    width:168px;*/
+/*    margin-top:400px;*/
+/*  }*/
 
 
-  .poster:hover .closed{
-    display:block;
-    position:absolute;
-    align-items: center;
-    width:40px;
-    height:40px;
-    margin-top:-80px;
-    margin-left:35px;
-  }
+/*  .poster:hover .closed{*/
+/*    display:block;*/
+/*    position:absolute;*/
+/*    align-items: center;*/
+/*    width:40px;*/
+/*    height:40px;*/
+/*    margin-top:-80px;*/
+/*    margin-left:35px;*/
+/*  }*/
 
 
-  .frameBlockFrameHorizontal1{
-    display:block;
-    width:186.2px;
-    height:186.2px;
-  }
-  .frameBlockFrameVertical1{
-    display:block;
-    width:186.2px;
-    height:186.2px;
-  }
-  .frameBlockFrameHorizontal2{
-    display:block;
-    width:327.6px;
-    height:186.2px;
-  }
-  .frameBlockFrameVertical2{
-    display:block;
-    width:186.2px;
-    height:327.6px;
-  }
-  .frameBlockFrameHorizontal3{
-    display:block;
-    width:369.6px;
-    height:146px;
-  }
-  .frameBlockFrameVertical3{
-    margin-top:-80px;
-    display:block;
-    width:146px;
-    height:369.6px;
-  }
-  .frameBlockFrameHorizontal4{
-    display:block;
-    width:485.6px;
-    height:146.4px;
-  }
-  .frameBlockFrameHorizontal5{
-    display:block;
-    width:450px;
-    height:109.5px;
-  }
-
-
-
-  .configuratorBlockMechanism11 > img{
-    width:109px;
-    height:109px;
-    border-radius:3px;
-  }
-
-  .configuratorBlockMechanism11{
-    width:112px;
-    height:114px;
-    margin-left:35px;
-    margin-top:-150px;
-    border-radius:3px;
-  }
-
-  .configuratorBlockMechanism111{
-    width:112px;
-    height:114px;
-    margin-left:35px;
-    margin-top:-152px;
-  }
-  .configuratorBlockMechanism111 > img{
-    width:110px;
-    height:110px;
-  }
-
-  /*
-    Frame 2 horizontal
-  */
-
-  .configuratorBlockMechanism12{
-    width:112px;
-    height:114px;
-    margin-left:35px;
-    margin-top:-153px
-  }
-  .configuratorBlockMechanism22{
-    width:112px;
-    height:114px;
-    margin-left:43px;
-    margin-top:-153px
-  }
-
-  .configuratorBlockMechanism12 > img{
-    width:110px;
-    height:110px;
-  }
-  .configuratorBlockMechanism22 > img{
-    width:110px;
-    height:110px;
-  }
-
-  /*
-  Frame 2 vertical
-*/
-
-  .configuratorBlockMechanism122{
-    width:110px;
-    height:112px;
-    margin-left:36px;
-    margin-top:-149px
-  }
-  .configuratorBlockMechanism222{
-    width:110px;
-    height:112px;
-    margin-left:36px;
-    margin-top:-257px
-  }
-  .configuratorBlockMechanism122 > img{
-    width:108px;
-    height:108px;
-  }
-  .configuratorBlockMechanism222 > img{
-    width:108px;
-    height:108px;
-  }
-
-  /*
-    Frame 3
-  */
-
-  .configuratorBlockMechanism13{
-    width:150px;
-    height:154px;
-    margin-left:46px;
-    margin-top:-208px;
-  }
-  .configuratorBlockMechanism13 > img{
-    width:147px;
-    height:154px;
-    border-radius:3px;
-  }
-  .configuratorBlockMechanism13Hover{
-    width:144px;
-    height:143px;
-  }
-  .configuratorBlockMechanism23{
-    width:150px;
-    height:154px;
-    margin-left:49px;
-    margin-top:-208px;
-  }
-  .configuratorBlockMechanism23 > img{
-    width:147px;
-    height:154px;
-    border-radius:3px;
-  }
-  .configuratorBlockMechanism23Hover{
-
-  }
-  .configuratorBlockMechanism33{
-    width:150px;
-    height:154px;
-    margin-left:47px;
-    margin-top:-208px;
-  }
-  .configuratorBlockMechanism33 > img{
-    width:147px;
-    height:154px;
-    border-radius:3px;
-  }
-  .configuratorBlockMechanism33Hover{
-
-  }
+/*  .frameBlockFrameHorizontal1{*/
+/*    display:block;*/
+/*    width:186.2px;*/
+/*    height:186.2px;*/
+/*  }*/
+/*  .frameBlockFrameVertical1{*/
+/*    display:block;*/
+/*    width:186.2px;*/
+/*    height:186.2px;*/
+/*  }*/
+/*  .frameBlockFrameHorizontal2{*/
+/*    display:block;*/
+/*    width:327.6px;*/
+/*    height:186.2px;*/
+/*  }*/
+/*  .frameBlockFrameVertical2{*/
+/*    display:block;*/
+/*    width:186.2px;*/
+/*    height:327.6px;*/
+/*  }*/
+/*  .frameBlockFrameHorizontal3{*/
+/*    display:block;*/
+/*    width:369.6px;*/
+/*    height:146px;*/
+/*  }*/
+/*  .frameBlockFrameVertical3{*/
+/*    margin-top:-80px;*/
+/*    display:block;*/
+/*    width:146px;*/
+/*    height:369.6px;*/
+/*  }*/
+/*  .frameBlockFrameHorizontal4{*/
+/*    display:block;*/
+/*    width:485.6px;*/
+/*    height:146.4px;*/
+/*  }*/
+/*  .frameBlockFrameHorizontal5{*/
+/*    display:block;*/
+/*    width:450px;*/
+/*    height:109.5px;*/
+/*  }*/
 
 
 
+/*  .configuratorBlockMechanism11 > img{*/
+/*    width:109px;*/
+/*    height:109px;*/
+/*    border-radius:3px;*/
+/*  }*/
 
+/*  .configuratorBlockMechanism11{*/
+/*    width:112px;*/
+/*    height:114px;*/
+/*    margin-left:35px;*/
+/*    margin-top:-150px;*/
+/*    border-radius:3px;*/
+/*  }*/
 
+/*  .configuratorBlockMechanism111{*/
+/*    width:112px;*/
+/*    height:114px;*/
+/*    margin-left:35px;*/
+/*    margin-top:-152px;*/
+/*  }*/
+/*  .configuratorBlockMechanism111 > img{*/
+/*    width:110px;*/
+/*    height:110px;*/
+/*  }*/
 
-  .configuratorBlockMechanism133{
-    width:158px;
-    height:158px;
-    margin-left:46px;
-    margin-top:-210px
-  }
-  .configuratorBlockMechanism133 > img{
-    width:156px;
-    height:153px;
-    border-radius:3px;
-  }
-  .configuratorBlockMechanism233{
-    width:158px;
-    height:158px;
-    margin-left:46px;
-    margin-top:-354px
-  }
-  .configuratorBlockMechanism233 > img{
-    width:156px;
-    height:153px;
-    border-radius:3px;
-  }
-  .configuratorBlockMechanism333{
-    width:158px;
-    height:158px;
-    margin-left:46px;
-    margin-top:-355px
-  }
-  .configuratorBlockMechanism333 > img{
-    width:156px;
-    height:153px;
-    border-radius:3px;
-  }
+/*  !**/
+/*    Frame 2 horizontal*/
+/*  *!*/
+
+/*  .configuratorBlockMechanism12{*/
+/*    width:112px;*/
+/*    height:114px;*/
+/*    margin-left:35px;*/
+/*    margin-top:-153px*/
+/*  }*/
+/*  .configuratorBlockMechanism22{*/
+/*    width:112px;*/
+/*    height:114px;*/
+/*    margin-left:43px;*/
+/*    margin-top:-153px*/
+/*  }*/
+
+/*  .configuratorBlockMechanism12 > img{*/
+/*    width:110px;*/
+/*    height:110px;*/
+/*  }*/
+/*  .configuratorBlockMechanism22 > img{*/
+/*    width:110px;*/
+/*    height:110px;*/
+/*  }*/
+
+/*  !**/
+/*  Frame 2 vertical*/
+/**!*/
+
+/*  .configuratorBlockMechanism122{*/
+/*    width:110px;*/
+/*    height:112px;*/
+/*    margin-left:36px;*/
+/*    margin-top:-149px*/
+/*  }*/
+/*  .configuratorBlockMechanism222{*/
+/*    width:110px;*/
+/*    height:112px;*/
+/*    margin-left:36px;*/
+/*    margin-top:-257px*/
+/*  }*/
+/*  .configuratorBlockMechanism122 > img{*/
+/*    width:108px;*/
+/*    height:108px;*/
+/*  }*/
+/*  .configuratorBlockMechanism222 > img{*/
+/*    width:108px;*/
+/*    height:108px;*/
+/*  }*/
+
+/*  !**/
+/*    Frame 3*/
+/*  *!*/
+
+/*  .configuratorBlockMechanism13{*/
+/*    width:150px;*/
+/*    height:154px;*/
+/*    margin-left:46px;*/
+/*    margin-top:-208px;*/
+/*  }*/
+/*  .configuratorBlockMechanism13 > img{*/
+/*    width:147px;*/
+/*    height:154px;*/
+/*    border-radius:3px;*/
+/*  }*/
+/*  .configuratorBlockMechanism13Hover{*/
+/*    width:144px;*/
+/*    height:143px;*/
+/*  }*/
+/*  .configuratorBlockMechanism23{*/
+/*    width:150px;*/
+/*    height:154px;*/
+/*    margin-left:49px;*/
+/*    margin-top:-208px;*/
+/*  }*/
+/*  .configuratorBlockMechanism23 > img{*/
+/*    width:147px;*/
+/*    height:154px;*/
+/*    border-radius:3px;*/
+/*  }*/
+/*  .configuratorBlockMechanism23Hover{*/
+
+/*  }*/
+/*  .configuratorBlockMechanism33{*/
+/*    width:150px;*/
+/*    height:154px;*/
+/*    margin-left:47px;*/
+/*    margin-top:-208px;*/
+/*  }*/
+/*  .configuratorBlockMechanism33 > img{*/
+/*    width:147px;*/
+/*    height:154px;*/
+/*    border-radius:3px;*/
+/*  }*/
+/*  .configuratorBlockMechanism33Hover{*/
+
+/*  }*/
 
 
 
 
 
 
-
-
-
-  .configuratorBlockMechanism14{
-    width:128px;
-    height:130px;
-    margin-left:41px;
-    margin-top:-178px
-  }
-  .configuratorBlockMechanism14 > img{
-    width:126px;
-    height:129px;
-    border-radius:3px;
-  }
-  .configuratorBlockMechanism24{
-    width:128px;
-    height:130px;
-    margin-left:44px;
-    margin-top:-178px
-  }
-  .configuratorBlockMechanism24 > img{
-    width:126px;
-    height:129px;
-    border-radius:3px;
-  }
-  .configuratorBlockMechanism34{
-    width:128px;
-    height:130px;
-    margin-left:41px;
-    margin-top:-178px
-  }
-  .configuratorBlockMechanism34 > img{
-    width:126px;
-    height:129px;
-    border-radius:3px;
-  }
-  .configuratorBlockMechanism44{
-    width:128px;
-    height:130px;
-    margin-left:45px;
-    margin-top:-178px
-  }
-  .configuratorBlockMechanism44 > img{
-    width:126px;
-    height:129px;
-    border-radius:3px;
-  }
+/*  .configuratorBlockMechanism133{*/
+/*    width:158px;*/
+/*    height:158px;*/
+/*    margin-left:46px;*/
+/*    margin-top:-210px*/
+/*  }*/
+/*  .configuratorBlockMechanism133 > img{*/
+/*    width:156px;*/
+/*    height:153px;*/
+/*    border-radius:3px;*/
+/*  }*/
+/*  .configuratorBlockMechanism233{*/
+/*    width:158px;*/
+/*    height:158px;*/
+/*    margin-left:46px;*/
+/*    margin-top:-354px*/
+/*  }*/
+/*  .configuratorBlockMechanism233 > img{*/
+/*    width:156px;*/
+/*    height:153px;*/
+/*    border-radius:3px;*/
+/*  }*/
+/*  .configuratorBlockMechanism333{*/
+/*    width:158px;*/
+/*    height:158px;*/
+/*    margin-left:46px;*/
+/*    margin-top:-355px*/
+/*  }*/
+/*  .configuratorBlockMechanism333 > img{*/
+/*    width:156px;*/
+/*    height:153px;*/
+/*    border-radius:3px;*/
+/*  }*/
 
 
 
@@ -2235,62 +2182,115 @@ export default {
 
 
 
-  .configuratorBlockMechanism15{
-    width:113px;
-    height:113px;
-    margin-left:32px;
-    margin-top:-149.3px
-  }
-  .configuratorBlockMechanism15 > img{
-    width:109px;
-    height:109px;
-    border-radius:3px;
-  }
-  .configuratorBlockMechanism25{
-    width:113px;
-    height:113px;
-    margin-left:30px;
-    margin-top:-149.3px
-  }
-  .configuratorBlockMechanism25 > img{
-    width:109px;
-    height:109px;
-    border-radius:3px;
-  }
-  .configuratorBlockMechanism35{
-    width:113px;
-    height:113px;
-    margin-left:27px;
-    margin-top:-149.3px
-  }
-  .configuratorBlockMechanism35 > img{
-    width:109px;
-    height:109px;
-    border-radius:3px;
-  }
-  .configuratorBlockMechanism45{
-    width:113px;
-    height:113px;
-    margin-left:31px;
-    margin-top:-149.3px
-  }
-  .configuratorBlockMechanism45 > img{
-    width:109px;
-    height:109px;
-    border-radius:3px;
-  }
-  .configuratorBlockMechanism55{
-    width:113px;
-    height:113px;
-    margin-left:30px;
-    margin-top:-149.3px
-  }
-  .configuratorBlockMechanism55 > img{
-    width:109px;
-    height:109px;
-    border-radius:3px;
-  }
-}
+
+/*  .configuratorBlockMechanism14{*/
+/*    width:128px;*/
+/*    height:130px;*/
+/*    margin-left:41px;*/
+/*    margin-top:-178px*/
+/*  }*/
+/*  .configuratorBlockMechanism14 > img{*/
+/*    width:126px;*/
+/*    height:129px;*/
+/*    border-radius:3px;*/
+/*  }*/
+/*  .configuratorBlockMechanism24{*/
+/*    width:128px;*/
+/*    height:130px;*/
+/*    margin-left:44px;*/
+/*    margin-top:-178px*/
+/*  }*/
+/*  .configuratorBlockMechanism24 > img{*/
+/*    width:126px;*/
+/*    height:129px;*/
+/*    border-radius:3px;*/
+/*  }*/
+/*  .configuratorBlockMechanism34{*/
+/*    width:128px;*/
+/*    height:130px;*/
+/*    margin-left:41px;*/
+/*    margin-top:-178px*/
+/*  }*/
+/*  .configuratorBlockMechanism34 > img{*/
+/*    width:126px;*/
+/*    height:129px;*/
+/*    border-radius:3px;*/
+/*  }*/
+/*  .configuratorBlockMechanism44{*/
+/*    width:128px;*/
+/*    height:130px;*/
+/*    margin-left:45px;*/
+/*    margin-top:-178px*/
+/*  }*/
+/*  .configuratorBlockMechanism44 > img{*/
+/*    width:126px;*/
+/*    height:129px;*/
+/*    border-radius:3px;*/
+/*  }*/
+
+
+
+
+
+
+
+
+/*  .configuratorBlockMechanism15{*/
+/*    width:113px;*/
+/*    height:113px;*/
+/*    margin-left:32px;*/
+/*    margin-top:-149.3px*/
+/*  }*/
+/*  .configuratorBlockMechanism15 > img{*/
+/*    width:109px;*/
+/*    height:109px;*/
+/*    border-radius:3px;*/
+/*  }*/
+/*  .configuratorBlockMechanism25{*/
+/*    width:113px;*/
+/*    height:113px;*/
+/*    margin-left:30px;*/
+/*    margin-top:-149.3px*/
+/*  }*/
+/*  .configuratorBlockMechanism25 > img{*/
+/*    width:109px;*/
+/*    height:109px;*/
+/*    border-radius:3px;*/
+/*  }*/
+/*  .configuratorBlockMechanism35{*/
+/*    width:113px;*/
+/*    height:113px;*/
+/*    margin-left:27px;*/
+/*    margin-top:-149.3px*/
+/*  }*/
+/*  .configuratorBlockMechanism35 > img{*/
+/*    width:109px;*/
+/*    height:109px;*/
+/*    border-radius:3px;*/
+/*  }*/
+/*  .configuratorBlockMechanism45{*/
+/*    width:113px;*/
+/*    height:113px;*/
+/*    margin-left:31px;*/
+/*    margin-top:-149.3px*/
+/*  }*/
+/*  .configuratorBlockMechanism45 > img{*/
+/*    width:109px;*/
+/*    height:109px;*/
+/*    border-radius:3px;*/
+/*  }*/
+/*  .configuratorBlockMechanism55{*/
+/*    width:113px;*/
+/*    height:113px;*/
+/*    margin-left:30px;*/
+/*    margin-top:-149.3px*/
+/*  }*/
+/*  .configuratorBlockMechanism55 > img{*/
+/*    width:109px;*/
+/*    height:109px;*/
+/*    border-radius:3px;*/
+/*  }*/
+/*}*/
 @media screen and (max-width:802px){
   .logoBinera{
     width:168px;
