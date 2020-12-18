@@ -71,6 +71,7 @@ export default {
   }
   .color-backgroundTwo{
     display:block;
+    margin-top:-50px;
   }
   .color-background{
     display:none;
@@ -78,6 +79,7 @@ export default {
   .color-backgroundBlock{
     display:flex;
     flex-direction:column;
+    margin:14px;
   }
   .background-Block{
     display:flex;
@@ -89,6 +91,18 @@ export default {
   }
   .download-project{
     display:none;
+  }
+  .number-post{
+    margin:14px;
+  }
+  .frame-orientation{
+    margin:14px;
+  }
+  .background{
+    margin:14px;
+  }
+  .up-bag{
+    margin:14px;
   }
 }
 @media screen and (max-width: 788px){

@@ -4,7 +4,7 @@
     <div class="backgroundBlock">
       <div class="block1">
           <img class="backgroundBlockImages"
-              v-for="index in this.background[0].images" v-on:click="emitImg(index.id)" :key="index.fileURL" :src="index.fileURL">
+              v-for="index in this.background[0].images" v-on:click="emitImga(index.id)" :key="index.fileURL" :src="index.fileURL">
       </div>
     </div>
   </div>
@@ -14,8 +14,34 @@
 import {mapGetters, mapActions} from 'vuex';
 
 export default {
+  data() {
+    return {
+      upImgpos: require('../../../assets/img/upB.png'),
+      upImgdis: require('../../../assets/img/upBwhite.png'),
+      imagesUP: [
+        { url: null },
+        { url: null },
+        { url: null },
+        { url: null },
+      ],
+    };
+  },
   methods: {
-    ...mapActions(['EMIT_background', 'SET_BACKGROUNDS']),
+    onFileChange(e) {
+      const file = e.target.files[0];
+      this.imagesUP[0].url = URL.createObjectURL(file);
+      const file1 = e.target.files[1];
+      this.imagesUP[1].url = URL.createObjectURL(file1);
+      const file2 = e.target.files[2];
+      this.imagesUP[2].url = URL.createObjectURL(file2);
+      const file3 = e.target.files[3];
+      this.imagesUP[3].url = URL.createObjectURL(file3);
+    },
+    emitImga: function emitImg(data) {
+      console.log(data)
+      this.EMIT_upBag(data)
+    },
+    ...mapActions(['EMIT_background','EMIT_upBag', 'SET_BACKGROUNDS']),
 
     emitImg: function emitImg(data) {
       this.EMIT_background(data);

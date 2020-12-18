@@ -6,11 +6,11 @@
              v-bind:src="imagesUP.url"
              v-on:click="emitImg(imagesUP.url)"
              v-bind:key="idx"
-             class="backgroundBlockImages"
+             class="backgroundBlockImages upBagBackgroundBlockImages"
         />
       </div>
     </div>
-    <div class="upMobile">
+    <div class="upMobile upMobileUpBag">
       <label class="upText upB" >
         <div class="upText">Завантажити власний фон
           <img class="upImg pos" :src="upImgpos" alt="downloads">

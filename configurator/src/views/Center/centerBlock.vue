@@ -1,7 +1,7 @@
 <template>
   <div class="centerBlock">
     <left-center></left-center>
-    <center-center></center-center>
+    <center-center class="center"></center-center>
     <right-center></right-center>
   </div>
 </template>
@@ -30,6 +30,9 @@ export default {
   .centerBlock{
     display:flex;
     flex-direction:column;
+  }
+  .center{
+    margin-top:50px;
   }
 }
 </style>
