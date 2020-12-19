@@ -37,6 +37,9 @@ export default {
 .centerBlock{
   display: flex;
 }
+.mobileChooseMechanism{
+  display:none;
+}
 @media screen and (max-width: 1044px){
   .centerBlock{
     display:flex;

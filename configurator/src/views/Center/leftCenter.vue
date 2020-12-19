@@ -16,6 +16,24 @@
       <frame-orientation class="frame-orientation"></frame-orientation>
       <number-posts class="number-post"></number-posts>
     </div>
+    <div class="mobileRight">
+      <div class="mobileFrame">
+        <div>
+          <p>Виберіть рамку</p>
+          <div>
+            <i class="arrow down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="mobileMechanism">
+        <div>
+          <p>Виберіть механізм</p>
+          <div>
+            <i class="arrow down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
     <download-project class="download-project"></download-project>
   </div>
 </template>
@@ -47,6 +65,9 @@ export default {
   margin-right:52px;
 }
 .color-backgroundTwo{
+  display:none;
+}
+.mobileRight{
   display:none;
 }
 @media screen and (max-width: 1560px){
@@ -106,6 +127,58 @@ export default {
   }
   .up-bag{
     margin:-10px 14px 14px;
+  }
+  .mobileRight{
+    display:flex;
+    margin-bottom:-30px;
+  }
+  .mobileFrame{
+    width:282px;
+    border: solid 1px #5B6770;
+    margin:16px;
+    border-radius:5px 5px 5px 15px;
+  }
+  .mobileFrame > div{
+    display:flex;
+  }
+  .mobileFrame > div > p{
+    font-family:Inter, sans-serif;
+    font-weight:500;
+    font-size:13.93px;
+    color:#5B6770;
+    padding-top:5px;
+    padding-left:25px;
+    margin-right:10px;
+  }
+  .mobileMechanism{
+    width:282px;
+    border: solid 1px #5B6770;
+    margin:16px;
+    border-radius:5px 5px 15px 5px;
+  }
+  .mobileMechanism > div{
+    display:flex;
+  }
+  .mobileMechanism > div > p{
+    font-family:Inter, sans-serif;
+    font-weight:500;
+    font-size:13.93px;
+    color:#5B6770;
+    padding-top:5px;
+    padding-left:20px;
+  }
+  i {
+    border: solid #5B6770;
+    border-width: 0 3px 3px 0;
+    border-radius:2px;
+    display: inline-block;
+    padding: 3px;
+    margin-top:20px;
+    margin-left:125px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 }
 @media screen and (max-width: 788px){
