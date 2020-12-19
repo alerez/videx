@@ -4,7 +4,7 @@
     <div class="backgroundBlock">
       <div class="block1">
           <img class="backgroundBlockImages"
-              v-for="index in this.background[0].images" v-on:click="emitImga(index.id)" :key="index.fileURL" :src="index.fileURL">
+              v-for="index in this.background[0].images" v-on:click="emitImg(index.id)" :key="index.fileURL" :src="index.fileURL">
       </div>
     </div>
   </div>
@@ -37,8 +37,7 @@ export default {
       const file3 = e.target.files[3];
       this.imagesUP[3].url = URL.createObjectURL(file3);
     },
-    emitImga: function emitImg(data) {
-      console.log(data)
+    emitImga: function emitImga(data) {
       this.EMIT_upBag(data)
     },
     ...mapActions(['EMIT_background','EMIT_upBag', 'SET_BACKGROUNDS']),

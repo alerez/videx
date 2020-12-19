@@ -1,8 +1,8 @@
 <template>
   <div class="rightCenter">
-    <select-frame></select-frame>
-    <choose-mechanism></choose-mechanism>
-    <div>
+    <select-frame class="select-frame"></select-frame>
+    <choose-mechanism class="choose-mechanism"></choose-mechanism>
+    <div class="footer">
       <download-project class="download-buy download-buy-tablet"></download-project>
       <buy></buy>
     </div>
@@ -51,6 +51,19 @@ export default {
   .download-buy-tablet{
     display:flex;
     flex-direction:row;
+  }
+  .select-frame{
+    display:none;
+  }
+  .choose-mechanism{
+    display:none;
+  }
+  .footer{
+    display:flex;
+    margin-top:-65px;
+  }
+  .footer > div{
+    margin:35px;
   }
 }
 @media screen and (max-width: 788px){

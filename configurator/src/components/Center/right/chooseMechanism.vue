@@ -214,4 +214,5 @@ export default {
 
   color: #5B6770;
 }
+
 </style>

@@ -633,18 +633,26 @@
   .backgroundBlock {
     width: 285px;
     height: 152px;
+    filter: none;
   }
 
   .block2 {
     width: 282px;
     height: 57px;
     margin-top: 4px;
+    filter: none;
   }
 
   .backgroundBlockImages {
     width: 44px;
     height: 44px;
     margin: 3px;
+    padding: 0;
+  }
+
+  .backgroundText {
+    filter: none;
+    font-size: 11.94px;
   }
 
   .upB {
@@ -654,14 +662,29 @@
 
   .upBag {
     display: flex;
-  }
-
-  .upBagBackgroundBlockImages {
     margin-left: 15px;
   }
 
+  .upBagBackgroundBlockImages {
+    margin-left: 10px;
+  }
+
   .upMobileUpBag {
-    display: none;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+
+  .colorText {
+    font-size: 11.94px;
+  }
+
+  .upText {
+    font-size: 10.94px;
+    margin-top: 10px;
+  }
+
+  .upImg {
+    margin-top: -1px;
   }
 
   .colorBlock {
@@ -670,13 +693,12 @@
   }
 
   .colorBack {
-    width: 34px;
+    width: 31px;
     height: 34px;
   }
 
-  .upMobileColorBlock {
-    display: block;
-    margin: 22px;
+  .colorBlockBACK {
+    width: 285px;
   }
 
   .frameOrientationBlock {
@@ -702,6 +724,10 @@
     height: 54px;
   }
 
+  .frameOrientationText {
+    font-size: 11.94px;
+  }
+
   .numberPostsBlock {
     width: 285px;
     height: 68px;
@@ -711,6 +737,14 @@
 
   .numberPostsBlockRoz {
     height: 49px;
+  }
+
+  .numberPostsText {
+    font-size: 11.94px;
+  }
+
+  .numberPostsBlockText {
+    font-size: 15.93px;
   }
 
   .downloadProjectBlock {
@@ -747,22 +781,6 @@
   .attributesBlock {
     width: 598px;
     height: 162px;
-  }
-
-  .selectFrameSelect {
-    display: none;
-  }
-
-  .selectFrameBlock {
-    display: none;
-  }
-
-  .chooseMechanismBlock {
-    display: none;
-  }
-
-  .chooseMechanismBlockTwo {
-    display: none;
   }
 }
 @media screen and (max-width: 788px) {

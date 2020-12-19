@@ -1,7 +1,7 @@
 <template>
   <div class="upBag">
     <div class="backgroundBlockUp">
-      <div class="block2" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+      <div class="block2">
         <img v-for="(imagesUP, idx) in imagesUP"
              v-bind:src="imagesUP.url"
              v-on:click="emitImg(imagesUP.url)"
@@ -10,7 +10,7 @@
         />
       </div>
     </div>
-    <div class="upMobile upMobileUpBag">
+    <div class="upMobileUpBag">
       <label class="upText upB" >
         <div class="upText">Завантажити власний фон
           <img class="upImg pos" :src="upImgpos" alt="downloads">
@@ -130,6 +130,8 @@ export default {
 
   margin-top:15px;
   margin-bottom:12px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .backgroundBlockImages{
   width: 63px;

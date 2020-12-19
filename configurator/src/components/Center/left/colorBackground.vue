@@ -11,26 +11,12 @@
         </div>
       </div>
     </div>
-    <div class="upMobile upMobileColorBlock">
-      <label class="upText upB" >
-        <div class="upText">Завантажити власний фон
-          <img class="upImg pos" :src="upImgpos" alt="downloads">
-          <img class="upImg dis" :src="upImgdis" alt="downloads">
-        </div>
-        <input multiple type="file"
-               accept=".jpg, .jpeg, .png"
-               @change="onFileChange"
-               style="display:none;">
-      </label>
-    </div>
-
   </div>
 </template>
 
 <script>
 
 import {mapGetters, mapActions} from 'vuex';
-
 export default {
   name: 'colorBackground',
   data() {
@@ -43,6 +29,7 @@ export default {
         { url: null },
         { url: null },
       ],
+      activeColor: true
     };
   },
   methods: {
@@ -50,17 +37,6 @@ export default {
 
     emitColor: function emitColor(data) {
       this.EMIT_backgroundColors(data)
-    },
-    ...mapActions(['EMIT_upBag']),
-    onFileChange(e) {
-      const file = e.target.files[0];
-      this.imagesUP[0].url = URL.createObjectURL(file);
-      const file1 = e.target.files[1];
-      this.imagesUP[1].url = URL.createObjectURL(file1);
-      const file2 = e.target.files[2];
-      this.imagesUP[2].url = URL.createObjectURL(file2);
-      const file3 = e.target.files[3];
-      this.imagesUP[3].url = URL.createObjectURL(file3);
     },
     emitImg: function emitImg(data) {
       console.log(data)
@@ -132,5 +108,8 @@ export default {
 .colorBack:hover{
   outline:black solid 1px;
   z-index:100;
+}
+.upMobileColorBlock{
+  display:none;
 }
 </style>

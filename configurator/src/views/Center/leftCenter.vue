@@ -2,11 +2,13 @@
   <div class="leftCenter">
     <div class="background-Block">
       <div style="display:flex; flex-direction:column">
-        <background class="background"></background>
+        <div style="display:flex">
+          <background class="background"></background>
+          <color-background class="color-backgroundTwo"></color-background>
+        </div>
         <up-bag class="up-bag"></up-bag>
       </div>
       <div class="color-backgroundBlock">
-        <color-background class="color-backgroundTwo"></color-background>
         <color-background class="color-background"></color-background>
       </div>
     </div>
@@ -71,7 +73,7 @@ export default {
   }
   .color-backgroundTwo{
     display:block;
-    margin-top:-50px;
+    margin-top:-34px;
   }
   .color-background{
     display:none;
@@ -88,6 +90,7 @@ export default {
   .frame-number{
     display:flex;
     flex-direction:row;
+    margin-top:-30px;
   }
   .download-project{
     display:none;
@@ -96,13 +99,13 @@ export default {
     margin:14px;
   }
   .frame-orientation{
-    margin:14px;
+    margin:9px 14px 14px;
   }
   .background{
     margin:14px;
   }
   .up-bag{
-    margin:14px;
+    margin:-10px 14px 14px;
   }
 }
 @media screen and (max-width: 788px){
