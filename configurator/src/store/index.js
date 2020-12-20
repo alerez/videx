@@ -327,6 +327,10 @@ const store = () => new Vuex.Store({
     frameOrientation: 'horizontal',
     colorsFrame: 'white',
 
+    mobileSelectFrame: false,
+    mobileSelectMechanism: false,
+    mobileBackground: false,
+    mobileColorBackground: false,
 
     chooseFrame: {},
     chooseFrameMaterial: '',
@@ -491,6 +495,20 @@ const store = () => new Vuex.Store({
     EMIT_closedMechanismBlock: ({commit}, data) => {
       commit('closedMechanismBlock', data)
     },
+
+
+    EMIT_onSelectFrame: ({commit}, data) => {
+      commit('onSelectFrame', data)
+    },
+    EMIT_onSelectMechanism: ({commit}, data) => {
+      commit('onSelectMechanism', data)
+    },
+    EMIT_onMobileBackground: ({commit}, data) => {
+      commit('onMobileBackground', data)
+    },
+    EMIT_onMobileColorBackground: ({commit}, data) => {
+      commit('onMobileColorBackground', data)
+    },
   },
   mutations: {
     SET_FRAMES: (state, res) => {
@@ -515,79 +533,16 @@ const store = () => new Vuex.Store({
           stateFrame[position][material][colors][posts] = {}
         }
 
-        //   if (!stateFrame[position] ||
-        //       !stateFrame[position][material] ||
-        //       !stateFrame[position][material][colors] ||
-        //       !stateFrame[position][material][colors][posts]
-        //   ) {
-        //     console.log( position, material, colors, posts, stateFrame);
-        //     stateFrame[position] = {
-        //       [material]: {
-        //         [colors]: {
-        //           [posts]: []
-        //         }
-        //       }
-        //     }
-        //   }
         stateFrame[position][material][colors][posts] = {
-            // [picParam.material]: picParam.material = {
-            //   [picParam.color]: picParam.color = {
-            //     [picParam.posts]: {
                   fileURL: url + picParam.fileURL,
                   posts: picParam.posts,
                   price: picParam.price,
                   productCode: picParam.productCode,
                   article: picParam.article,
-                // }
-              // }
-            // }
           }
           return stateFrame
       }, {})
-        //   res.map((element) => {
-    //     if(element.position === 'horizontal'){
-    //       return state.frame.horizontal = {
-    //         [element.material]: element.material = {
-    //           [element.color]: element.color = {
-    //             [element.posts]: {
-    //               fileURL: url + element.fileURL,
-    //               posts: element.posts,
-    //               price: element.price,
-    //               productCode: element.productCode,
-    //               article: element.article,
-    //             }
-    //           }
-    //         }
-    //       }
-    //     }
-    //     else if(element.position === 'vertical'){
-    //       state.frame.vertical = {
-    //         [element.material]: element.material = {
-    //           [element.color]: element.color = {
-    //             [element.posts]: {
-    //               fileURL: url + element.fileURL,
-    //               posts: element.posts,
-    //               price: element.price,
-    //               productCode: element.productCode,
-    //               article: element.article,
-    //             }
-    //           }
-    //         }
-    //     }
-    //   }
-    //
-    // }
-    // )
     },
-
-
-
-
-
-
-
-
-
     SET_FRAMES_COLOR: (state, res) => {
       state.chooseFrame = res.reduce((stateFrame_color, picParam) => {
         let material = picParam.material;
@@ -604,30 +559,13 @@ const store = () => new Vuex.Store({
         }
 
         stateFrame_color[material][colors] = {
-          // [picParam.material]: picParam.material = {
-          //   [picParam.color]: picParam.color = {
-          //     [picParam.posts]: {
           fileURL: url + picParam.fileURL,
           color: picParam.color,
           description: picParam.description
-          // }
-          // }
-          // }
         }
         return stateFrame_color
       }, {},)
-
-      // res.map((element) => {
-      //   return state.colorsFrame = element
-      // })
     },
-
-
-
-
-
-
-
     SET_MECHANISMS: (state, res) => {
       state.chooseMechanism = res.reduce((stateMechanism, picParam) => {
         let colors = picParam.color;
@@ -651,30 +589,11 @@ const store = () => new Vuex.Store({
         return stateMechanism
       }, {},)
     },
-
-
-
-
-
-
-
-
-
     SET_MECHANISM_COLOR: (state, res) => {
       res.map((element) => {
         return state.chooseMechanism = element
       })
     },
-
-
-
-
-
-
-
-
-
-
     SET_BACKGROUND: (state, res) => {
       res.forEach((element) => {
         if (element.type === 'bad') {
@@ -793,6 +712,19 @@ const store = () => new Vuex.Store({
     frameMaterialColor: (state, data) => {
       return state.colorsFrame = data
     },
+
+    onSelectFrame: (state, data) => {
+      return state.mobileSelectFrame = data
+    },
+    onSelectMechanism: (state, data) => {
+      return state.mobileSelectMechanism = data
+    },
+    onMobileBackground: (state, data) => {
+      return state.mobileBackground = data
+    },
+    onMobileColorBackground: (state, data) => {
+      return state.mobileColorBackground = data
+    }
   },
   modules: {},
   getters: {
@@ -891,6 +823,19 @@ const store = () => new Vuex.Store({
     },
     chooseFrame: state => {
       return state.chooseFrame
+    },
+
+    mobileSelectFrame: state => {
+      return state.mobileSelectFrame
+    },
+    mobileSelectMechanism: state => {
+      return state.mobileSelectMechanism
+    },
+    mobileBackground: state => {
+      return state.mobileBackground
+    },
+    mobileColorBackground: state => {
+      return state.mobileColorBackground
     }
   },
 })

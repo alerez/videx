@@ -121,7 +121,13 @@ export default {
     }
   },
 computed: {
-  ...mapGetters(['materialFrameItems', 'chooseFrame', 'colorsFrame'])
+  ...mapGetters(
+      [
+          'materialFrameItems',
+          'chooseFrame',
+          'colorsFrame'
+      ]
+  )
 },
   created() {
     this.SET_FRAMES_COLOR();

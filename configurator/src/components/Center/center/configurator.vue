@@ -510,7 +510,12 @@ export default {
     ),
   },
   methods: {
-    ...mapActions(['SET_FRAMES', 'EMIT_selectedMechanismBlock', 'EMIT_closedMechanismBlock']),
+    ...mapActions(
+        [
+            'SET_FRAMES',
+            'EMIT_selectedMechanismBlock',
+            'EMIT_closedMechanismBlock'
+        ]),
     mechanismBlock: function mechanismBlock(data){
       if(data === 'mechanismBlockOne'){
         this.active1 = true;
