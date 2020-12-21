@@ -6,22 +6,22 @@
     <div class="mobileCenter">
       <div class="mobileFrame" v-on:click="onSelectFrame(true)">
         <div>
-          <p>Виберіть рамку</p>
           <div>
-            <i class="arrow down"></i>
+            <i class="arrow down centerLeftArrow"></i>
           </div>
+          <p>Виберіть рамку</p>
         </div>
       </div>
       <div class="mobileMechanism" v-on:click="onSelectMechanism(true)">
         <div>
           <p>Виберіть механізм</p>
           <div>
-            <i class="arrow down"></i>
+            <i class="arrow down centerRightArrow"></i>
           </div>
         </div>
       </div>
     </div>
-    <attributes></attributes>
+    <attributes class="attributesCenter"></attributes>
   </div>
 </template>
 
@@ -102,6 +102,97 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+.mobileCenter{
+  display:none;
+}
 
+
+
+.mobileFrame{
+  width: 182.43px;
+  height: 38px;
+  border: solid 1px #5B6770;
+  margin-top:10px;
+  margin-right:10px;
+  border-radius:5px 5px 5px 15px;
+}
+.mobileFrame > div{
+  display:flex;
+}
+.mobileFrame > div > p{
+  font-family:Inter, sans-serif;
+  font-weight:500;
+  font-size:13.93px;
+  color:#5B6770;
+  padding-top:12px;
+  padding-left:45px;
+  margin:0;
+}
+.mobileMechanism{
+  width: 178.49px;
+  height: 38px;
+  border: solid 1px #5B6770;
+  margin-top:10px;
+  margin-left:10px;
+  border-radius:5px 5px 15px 5px;
+}
+.mobileMechanism > div{
+  display:flex;
+}
+.mobileMechanism > div > p{
+  font-family:Inter, sans-serif;
+  font-weight:500;
+  font-size:13.93px;
+  color:#5B6770;
+  padding-top:12px;
+  padding-left:16px;
+  margin:0;
+}
+i {
+  border: solid #5B6770;
+  border-width: 0 2px 2px 0;
+  border-radius:2px;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.centerLeftArrow{
+  margin-left:12px;
+  margin-top:14px;
+}
+.centerRightArrow{
+  margin-top:14px;
+  margin-left:20px;
+}
+@media screen and (max-width: 534px){
+  .mobileFrame{
+    width: 135px;
+    height: 52px;
+    margin-right:7.5px;
+  }
+  .mobileMechanism{
+    width: 135px;
+    height: 52px;
+    margin-left:7.5px;
+  }
+  .mobileFrame > div > p {
+    text-align:right;
+    margin-right:17px;
+  }
+  .mobileMechanism > div > p {
+    margin-left:0;
+  }
+  .centerLeftArrow{
+    margin-top:20px;
+  }
+  .centerRightArrow{
+    margin-top:20px;
+    margin-right:10px;
+    margin-left:10px;
+  }
+}
 </style>

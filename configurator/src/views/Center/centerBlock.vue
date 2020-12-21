@@ -12,13 +12,14 @@
     <div v-if="mobileSelectMechanism === true" class="mobileChooseMechanism">
       <div class="mobileChooseMechanism_closed" v-on:click="onSelectMechanism(false)"><p>X</p></div>
       <div class="mobileChooseMechanism_block">
-        <choose-mechanism></choose-mechanism>
+        <choose-mechanism style="display:flex"></choose-mechanism>
       </div>
     </div>
     <div v-if="mobileBackground === true" class="mobileChooseMechanism">
       <div class="mobileChooseMechanism_closed" v-on:click="onMobileBackground(false)"><p>X</p></div>
       <div class="mobileChooseMechanism_block">
         <background></background>
+        <upBag></upBag>
       </div>
     </div>
     <div v-if="mobileColorBackground === true" class="mobileChooseMechanism">
@@ -39,6 +40,7 @@ import ChooseMechanism from "@/components/Center/right/chooseMechanism.vue";
 import selectFrame from "@/components/Center/right/selectFrame.vue";
 import ColorBackground from "@/components/Center/left/colorBackground.vue";
 import background from "@/components/Center/left/background.vue";
+import upBag from "@/components/Center/left/upBag.vue";
 import {mapActions, mapGetters} from "vuex";
 
 export default {
@@ -51,6 +53,7 @@ export default {
     LeftCenter,
     selectFrame,
     background,
+    upBag,
   },
   computed: {
     ...mapGetters(
@@ -135,9 +138,9 @@ export default {
   }
   .mobileChooseMechanism{
     width:75%;
+    height:650px;
     background:white;
     position:fixed;
-    margin-bottom:-10px;
     z-index:1000;
     display:block;
     border: 3px solid #5B6770;
@@ -168,10 +171,22 @@ export default {
   .mobileChooseMechanism_block{
     margin: 0 auto;
     display:flex;
+    flex-direction:column;
     justify-items:center;
     justify-self:center;
     justify-content:center;
     align-items:center;
+  }
+  .mobileChooseMechanism_block > div{
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    justify-content:center;
+    justify-items:center;
+    justify-self:center;
+    align-content:center;
+    align-items:center;
+    align-self:center;
   }
 }
 </style>

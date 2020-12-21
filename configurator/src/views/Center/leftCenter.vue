@@ -1,21 +1,19 @@
 <template>
   <div class="leftCenter">
     <div class="mobileLeft">
-      <div class="mobileFrame" v-on:click="onSelectFrame(true)">
+      <div class="mobileBackground" v-on:click="onMobileBackground(true)">
         <div>
-          <p>Встановіть<br/>
-            готовий фон</p>
           <div>
-            <i class="arrow down"></i>
+            <i class="arrow down leftArrow"></i>
           </div>
+          <p>Встановіть готовий фон</p>
         </div>
       </div>
-      <div class="mobileMechanism" v-on:click="onSelectMechanism(true)">
+      <div class="mobileColorBackground" v-on:click="onMobileColorBackground(true)">
         <div>
-          <p>Виберіть<br/>
-            колір стін</p>
+          <p>Виберіть колір стін</p>
           <div>
-            <i class="arrow down"></i>
+            <i class="arrow down rightArrow"></i>
           </div>
         </div>
       </div>
@@ -36,8 +34,8 @@
       <frame-orientation class="frame-orientation"></frame-orientation>
       <number-posts class="number-post"></number-posts>
     </div>
-    <div class="mobileRight">
-      <div class="mobileFrame" v-on:click="onSelectFrame(true)">
+    <div class="mobileRight1">
+      <div class="mobileFrame1" v-on:click="onSelectFrame(true)">
         <div>
           <p>Виберіть рамку</p>
           <div>
@@ -45,7 +43,7 @@
           </div>
         </div>
       </div>
-      <div class="mobileMechanism" v-on:click="onSelectMechanism(true)">
+      <div class="mobileMechanism1" v-on:click="onSelectMechanism(true)">
         <div>
           <p>Виберіть механізм</p>
           <div>
@@ -151,13 +149,13 @@ export default {
 .color-backgroundTwo{
   display:none;
 }
-.mobileRight{
+.mobileRight1{
   display:none;
 }
 .mobileLeft{
  display:none;
 }
-@media screen and (max-width: 1560px){
+@media screen and (max-width: 1590px){
   .leftCenter{
     margin-right:16px;
     margin-top:32px;
@@ -166,18 +164,17 @@ export default {
     margin-top:20px;
   }
 }
-@media screen and (max-width: 1190px){
-  .leftCenter{
-    margin-right:1px;
-  }
-  .upMobile{
-    display:none;
-  }
-}
 @media screen and (max-width: 1044px){
   .leftCenter{
     display:flex;
     flex-direction:column;
+    justify-content:center;
+    justify-items:center;
+    justify-self:center;
+    align-content:center;
+    align-items:center;
+    align-self:center;
+    margin: 0 auto;
   }
   .color-backgroundTwo{
     display:block;
@@ -199,6 +196,12 @@ export default {
     display:flex;
     flex-direction:row;
     margin-top:-30px;
+    justify-content:center;
+    justify-items:center;
+    justify-self:center;
+    align-content:center;
+    align-items:center;
+    align-self:center;
   }
   .download-project{
     display:none;
@@ -215,20 +218,26 @@ export default {
   .up-bag{
     margin:-10px 14px 14px;
   }
-  .mobileRight{
+  .mobileRight1{
     display:flex;
-    margin-bottom:-30px;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
   }
-  .mobileFrame{
+  .mobileFrame1{
     width:282px;
     border: solid 1px #5B6770;
-    margin:16px;
+    margin-right:16px;
     border-radius:5px 5px 5px 15px;
   }
-  .mobileFrame > div{
+  .mobileFrame1 > div{
     display:flex;
   }
-  .mobileFrame > div > p{
+  .mobileFrame1 > div > p{
     font-family:Inter, sans-serif;
     font-weight:500;
     font-size:13.93px;
@@ -237,16 +246,16 @@ export default {
     padding-left:25px;
     margin-right:10px;
   }
-  .mobileMechanism{
+  .mobileMechanism1{
     width:282px;
     border: solid 1px #5B6770;
-    margin:16px;
+    margin-left:16px;
     border-radius:5px 5px 15px 5px;
   }
-  .mobileMechanism > div{
+  .mobileMechanism1 > div{
     display:flex;
   }
-  .mobileMechanism > div > p{
+  .mobileMechanism1 > div > p{
     font-family:Inter, sans-serif;
     font-weight:500;
     font-size:13.93px;
@@ -268,7 +277,7 @@ export default {
     -webkit-transform: rotate(45deg);
   }
 }
-@media screen and (max-width: 788px){
+@media screen and (max-width: 688px){
   .background{
     display:none;
   }
@@ -300,8 +309,110 @@ export default {
     margin-left:6px;
     margin-top:5px;
   }
-  .mobileLeft{
-    display:block;
+
+
+  .mobileBackground{
+    width: 185px;
+    height: 34px;
+    border: solid 1px #5B6770;
+    margin-top:10px;
+    margin-right:10px;
+    border-radius:5px 5px 5px 15px;
+  }
+  .mobileBackground > div{
+    display:flex;
+  }
+  .mobileBackground > div > p{
+    font-family:Inter, sans-serif;
+    font-weight:500;
+    font-size:13px;
+    color:#5B6770;
+    margin-left:5px;
+    margin-top:10px;
+  }
+  .mobileColorBackground{
+    width: 185px;
+    height: 34px;
+    border: solid 1px #5B6770;
+    margin-top:10px;
+    margin-right:10px;
+    border-radius:5px 5px 15px 5px;
+  }
+  .mobileColorBackground > div{
+    display:flex;
+  }
+  .mobileColorBackground > div > p{
+    font-family:Inter, sans-serif;
+    font-weight:500;
+    font-size:13px;
+    color:#5B6770;
+    margin-left:5px;
+    margin-top:10px;
+  }
+  i {
+    border: solid #5B6770;
+    border-width: 0 3px 3px 0;
+    border-radius:2px;
+    display: inline-block;
+    padding: 3px;
+    margin-left:0;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .leftArrow{
+    margin-left:10px;
+    margin-top:11px;
+    margin-right:5px;
+  }
+  .rightArrow{
+    margin-left:40px;
+    margin-top:11px;
+    float:right;
+  }
+  @media screen and (max-width: 534px){
+    .mobileBackground{
+      width: 137px;
+      height: 52px;
+      margin-right:7.5px;
+      margin-top:0;
+      margin-left:0;
+    }
+    .mobileColorBackground{
+      width: 137px;
+      height: 52px;
+      margin-left:7.5px;
+      margin-top:0;
+      margin-right:0;
+    }
+    .mobileBackground > div > p {
+      text-align:right;
+      margin-right:17px;
+    }
+    .mobileColorBackground > div > p {
+      margin-left:21px;
+    }
+    .leftArrow{
+      margin-top:20px;
+    }
+    .rightArrow{
+      margin-top:20px;
+      margin-right:10px;
+      margin-left:10px;
+    }
+    .frame-number{
+      display:flex;
+      flex-direction:row;
+      justify-items:center;
+      justify-self:center;
+      justify-content:center;
+      align-self:center;
+      align-content:center;
+      align-items:center;
+      margin:20px;
+    }
   }
 }
 </style>

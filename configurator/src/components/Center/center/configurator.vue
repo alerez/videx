@@ -478,7 +478,7 @@ import {mapActions, mapGetters} from 'vuex';
 export default {
   data() {
     return {
-      close: 'http://localhost:5555/images/frameColors/close.jpg',
+      close: 'https://17be9121f7a6.ngrok.io/images/frameColors/close.jpg',
       urlImgBag: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
       active1: false,
       active2: false,
@@ -1347,7 +1347,7 @@ export default {
 
 
 
-@media screen and (max-width:1560px){
+@media screen and (max-width:1590px){
   .logoBinera1{
     margin-top:420px;
   }
@@ -2563,7 +2563,7 @@ export default {
   }
 
 }
-@media screen and (max-width:802px){
+@media screen and (max-width:688px){
   .logoBinera{
     width:168px;
     margin-top:400px;

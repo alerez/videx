@@ -311,320 +311,7 @@
     font-size: 14.0062px;
   }
 }
-@media screen and (max-width: 1190px) {
-  .block1 {
-    width: 232px;
-    height: 165px;
-    border-bottom: 6px solid white;
-    border-left: 9px solid white;
-    border-top: 6px solid white;
-    border-right: 5px solid white;
-  }
-
-  .backgroundBlock {
-    width: 232px;
-    height: 165px;
-  }
-
-  .block2 {
-    width: 232px;
-    height: 61px;
-    margin-top: 7px;
-    padding-left: 9px;
-    padding-top: 4px;
-  }
-
-  .backgroundBlockImages {
-    width: 44px;
-    height: 44px;
-    margin-left: 1px;
-    margin-bottom: 0;
-    border-radius: 8px;
-  }
-
-  .backgroundText {
-    margin-bottom: 12px;
-    margin-left: 4px;
-    margin-top: -35px;
-  }
-
-  .upB {
-    width: 234px;
-    height: 31px;
-  }
-
-  .upText {
-    font-size: 12px;
-    margin-top: 6px;
-  }
-
-  .upImg {
-    width: 14px;
-    height: 14px;
-    margin-left: 5px;
-    margin-top: 1px;
-  }
-
-  .colorBlock {
-    width: 235px;
-    height: 117px;
-  }
-
-  .colorBlockBACK {
-    width: 237px;
-  }
-
-  .colorBack {
-    width: 24px;
-    height: 26px;
-  }
-
-  .frameOrientationBlock {
-    width: 234px;
-    height: 86px;
-  }
-
-  .frameOrientationBlockOneOne {
-    width: 67px;
-    height: 38px;
-  }
-
-  .frameOrientationBlockTwoTwo {
-    width: 38px;
-    height: 67px;
-  }
-
-  .frameOrientationBlockRoz {
-    height: 67px;
-  }
-
-  .frameOrientationBlockOne {
-    padding-top: 25px;
-  }
-
-  .frameOrientationBlockTwo {
-    padding-top: 10px;
-  }
-
-  .numberPostsBlock {
-    width: 234px;
-    height: 52px;
-    font-size: 15.967px;
-    line-height: 13px;
-  }
-
-  .numberPostsBlockRoz {
-    height: 34px;
-  }
-
-  .downloadProjectBlock {
-    width: 234px;
-    height: 38px;
-  }
-
-  .downloadProjectText {
-    width: 257px;
-    font-size: 12.999px;
-  }
-
-  .downloadProjectBlockText {
-    font-size: 11.9603px;
-  }
-
-  .downloadProjectBlockImg {
-    width: 14px;
-    height: 14px;
-  }
-
-  .configuratorBlock {
-    width: 517px;
-    height: 517px;
-  }
-
-  .configuratorBlockBlock {
-    width: 517px;
-    height: 517px;
-  }
-
-  .attributesBlock {
-    width: 521px;
-    height: 175px;
-  }
-
-  .attributesBlockOne {
-    font-size: 14px;
-  }
-
-  .attributesBlockTwo {
-    font-size: 14px;
-  }
-
-  .attributesBlockThree {
-    font-size: 14px;
-  }
-
-  .selectFrameSelect {
-    width: 244px;
-    height: 32px;
-  }
-
-  .selectFrameTextTop {
-    margin-top: 0;
-  }
-
-  .selectFrameBlock {
-    width: 244px;
-    height: 102px;
-  }
-
-  .selectFrameColorBlock {
-    margin: 1px;
-  }
-
-  .selectFrameBlockColorBlock {
-    width: 31px;
-    height: 31px;
-  }
-
-  .selectFrameBlockColorText {
-    font-size: 11.9488px;
-    line-height: 14px;
-    letter-spacing: -0.38502px;
-  }
-
-  .selectFrameColorBlock {
-    margin: 8px 0 0;
-  }
-
-  .selectFrameBlockPos {
-    margin-left: 8px;
-  }
-
-  .selectFrameText {
-    margin-left: 5px;
-    margin-bottom: 12px;
-    margin-top: 20px;
-  }
-
-  .selectChooseFrame {
-    display: flex;
-    flex-basis: 50%;
-    margin-bottom: 10px;
-  }
-
-  .selectFrameImg {
-    width: 30px;
-    height: 30px;
-  }
-
-  .selectFrameText {
-    margin-top: 0;
-  }
-
-  .chooseMechanismBlock {
-    width: 244px;
-    height: 101px;
-  }
-
-  .chooseMechanismBlockTwo {
-    width: 244px;
-    height: 348px;
-  }
-
-  .chooseMechanismBlockTwoRam {
-    width: 244px;
-  }
-
-  .chooseMechanismColorText {
-    font-size: 11.9488px;
-    line-height: 14px;
-    letter-spacing: -0.38502px;
-  }
-
-  .chooseMechanismBlockColorBlock {
-    width: 31px;
-    height: 31px;
-  }
-
-  .chooseMechanismColorBlock {
-    margin: 8px 0 0;
-  }
-
-  .chooseMechanismBlockPos {
-    margin-left: 8px;
-  }
-
-  .chooseMechanismFlex > p {
-    font-size: 14.0062px;
-  }
-
-  .chooseMechanismFlexImg {
-    width: 53px;
-    height: 53px;
-    margin: 15px;
-  }
-
-  .chooseMechanismImg {
-    width: 33px;
-    height: 33px;
-    margin-left: -58px;
-    margin-top: 25px;
-  }
-
-  .chooseMechanismFlexP {
-    margin-left: 20px;
-    font-family: Ubuntu, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    color: #5B6770;
-  }
-
-  .buyBlockButtom > button {
-    width: 110px;
-    height: 40px;
-    background: #FF7A00;
-    border: none;
-    border-radius: 15px;
-    font-family: Ubuntu, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    /* or 240% */
-    display: flex;
-    align-items: center;
-    padding-left: 26px;
-    color: #FFFFFF;
-    margin-left: 20px;
-    cursor: pointer;
-  }
-
-  .buyBlockCostOne {
-    font-size: 13px;
-  }
-
-  .buyBlockCostTwo {
-    font-size: 26px;
-  }
-
-  .buyBlock {
-    margin-left: 5px;
-  }
-
-  .buyBlockFavorites > img {
-    width: 19.47px;
-    height: 17.33px;
-    margin-top: 13px;
-  }
-
-  .buyBlockFavorites > p {
-    font-size: 14.0062px;
-  }
-}
-@media screen and (max-width: 1044px) {
+@media screen and (max-width: 1024px) {
   .block1 {
     width: 285px;
     height: 152px;
@@ -782,13 +469,29 @@
     width: 598px;
     height: 162px;
   }
+
+  .attributesCenter {
+    margin-bottom: 40px;
+  }
 }
-@media screen and (max-width: 788px) {
-  .block1 {
+@media screen and (max-width: 688px) {
+  .logoBinera1 {
     display: none;
   }
 
-  .block2 {
+  .logoBinera2 {
+    display: none;
+  }
+
+  .logoBinera3 {
+    display: none;
+  }
+
+  .logoBinera4 {
+    display: none;
+  }
+
+  .logoBinera5 {
     display: none;
   }
 
@@ -803,10 +506,6 @@
     margin-top: 15px;
   }
 
-  .colorBlock {
-    display: none;
-  }
-
   .frameOrientationBlock {
     width: 185px;
     height: 54px;
@@ -816,18 +515,22 @@
     width: 45px;
     height: 25px;
     margin-left: 25px;
-    margin-top: 14px;
+    margin-top: -5px;
   }
 
   .frameOrientationBlockTwo > img {
     width: 25px;
     height: 45px;
-    margin-left: 28px;
-    margin-top: 4px;
+    margin-left: 35px;
+    margin-top: -2px;
   }
 
   .frameOrientationBlockRoz {
     height: 47px;
+  }
+
+  .frameOrientationText {
+    margin-bottom: 8px;
   }
 
   .numberPostsBlock {
@@ -840,6 +543,14 @@
 
   .numberPostsBlockRoz {
     height: 28px;
+  }
+
+  .numberPostsText {
+    margin-bottom: 10px;
+  }
+
+  .number-post {
+    margin-top: 15px;
   }
 
   .downloadProjectBlock {
@@ -878,38 +589,65 @@
     height: 211px;
   }
 
-  .selectFrameSelect {
+  .frame-number {
+    margin-top: 0;
+    margin-bottom: -45px;
+  }
+
+  .mobileCenter {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+  }
+
+  .mobileRight1 {
     display: none;
   }
 
-  .selectFrameBlock {
-    display: none;
+  .mobileLeft {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
   }
 
-  .chooseMechanismBlock {
-    display: none;
-  }
-
-  .chooseMechanismBlockTwo {
+  .background-Block {
     display: none;
   }
 }
-@media screen and (max-width: 434px) {
-  .block1 {
+@media screen and (max-width: 534px) {
+  .logoBinera1 {
     display: none;
   }
 
-  .block2 {
+  .logoBinera2 {
+    display: none;
+  }
+
+  .logoBinera3 {
+    display: none;
+  }
+
+  .logoBinera4 {
+    display: none;
+  }
+
+  .logoBinera5 {
     display: none;
   }
 
   .upB {
     width: 264px;
     height: 40px;
-  }
-
-  .colorBlock {
-    display: none;
   }
 
   .frameOrientationBlock {
@@ -921,26 +659,48 @@
     width: 53px;
     height: 29px;
     margin-left: 11px;
-    margin-top: 18px;
+    margin-top: 0;
   }
 
   .frameOrientationBlockTwo > img {
     width: 29px;
     height: 53x;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-top: 6px;
   }
 
+  .frame-orientation {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 3px;
+  }
+
   .numberPostsBlock {
-    width: 264px;
-    height: 41px;
+    width: 143px;
+    height: 70px;
     font-size: 12.8067px;
     line-height: 10px;
+  }
+
+  .number-post {
+    margin-left: 3px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
   }
 
   .configuratorBlock {
     width: 287px;
     height: 287px;
+    display: flex;
+    margin: 0 auto;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
   }
 
   .configuratorBlockBlock {
@@ -951,22 +711,14 @@
   .attributesBlock {
     width: 292px;
     height: 292px;
-  }
-
-  .selectFrameSelect {
-    display: none;
-  }
-
-  .selectFrameBlock {
-    display: none;
-  }
-
-  .chooseMechanismBlock {
-    display: none;
-  }
-
-  .chooseMechanismBlockTwo {
-    display: none;
+    display: flex;
+    margin: 0 auto;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
   }
 }
 
