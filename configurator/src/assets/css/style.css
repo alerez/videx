@@ -720,6 +720,11 @@
     align-items: center;
     align-content: center;
   }
+
+  .chooseMechanismBlockTwo {
+    width: 244px;
+    height: 200px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

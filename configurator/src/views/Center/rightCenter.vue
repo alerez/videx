@@ -41,11 +41,28 @@ export default {
     margin-top:20px;
   }
 }
-@media screen and (max-width: 1044px){
+@media screen and (max-width: 1024px){
   .download-buy-tablet{
     display:flex;
     flex-direction:row;
-    margin-top:40px;
+    justify-content:center;
+    justify-items:center;
+    justify-self:center;
+    align-content:center;
+    align-items:center;
+    align-self:center;
+    margin: 0 auto;
+  }
+  .rightCenter{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    justify-items:center;
+    justify-self:center;
+    align-content:center;
+    align-items:center;
+    align-self:center;
+    margin: 0 auto;
   }
   .buy-tablet{
     margin-left:35px;
@@ -58,7 +75,13 @@ export default {
   }
   .footer{
     display:flex;
-    margin-top:-45px;
+    justify-content:center;
+    justify-items:center;
+    justify-self:center;
+    align-content:center;
+    align-items:center;
+    align-self:center;
+    margin: 0 auto;
   }
   .footer > div{
     margin-right:35px;

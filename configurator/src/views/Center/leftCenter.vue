@@ -164,7 +164,7 @@ export default {
     margin-top:20px;
   }
 }
-@media screen and (max-width: 1044px){
+@media screen and (max-width: 1024px){
   .leftCenter{
     display:flex;
     flex-direction:column;
@@ -195,7 +195,7 @@ export default {
   .frame-number{
     display:flex;
     flex-direction:row;
-    margin-top:-30px;
+    margin:0 auto;
     justify-content:center;
     justify-items:center;
     justify-self:center;
@@ -206,11 +206,13 @@ export default {
   .download-project{
     display:none;
   }
-  .number-post{
-    margin:14px;
-  }
   .frame-orientation{
-    margin:9px 14px 14px;
+    margin-top:10px;
+    margin-right:6px;
+  }
+  .number-post{
+    margin-left:6px;
+    margin-top:5px;
   }
   .background{
     margin:14px;
@@ -312,7 +314,7 @@ export default {
 
 
   .mobileBackground{
-    width: 185px;
+    width: 183px;
     height: 34px;
     border: solid 1px #5B6770;
     margin-top:10px;
@@ -327,15 +329,15 @@ export default {
     font-weight:500;
     font-size:13px;
     color:#5B6770;
-    margin-left:5px;
+    margin-left:6px;
     margin-top:10px;
   }
   .mobileColorBackground{
-    width: 185px;
+    width: 183px;
     height: 34px;
     border: solid 1px #5B6770;
     margin-top:10px;
-    margin-right:10px;
+    margin-right:6px;
     border-radius:5px 5px 15px 5px;
   }
   .mobileColorBackground > div{

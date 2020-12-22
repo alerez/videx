@@ -4,26 +4,26 @@
     <center-center class="center"></center-center>
     <right-center></right-center>
     <div v-if="mobileSelectFrame === true" class="mobileChooseMechanism">
-      <div class="mobileChooseMechanism_closed" v-on:click="onSelectFrame(false)"><p>X</p></div>
+      <div class="mobileChooseMechanism_closed" v-on:click="onSelectFrame(false)"><img :src="close"></div>
       <div class="mobileChooseMechanism_block">
         <selectFrame></selectFrame>
       </div>
     </div>
-    <div v-if="mobileSelectMechanism === true" class="mobileChooseMechanism">
-      <div class="mobileChooseMechanism_closed" v-on:click="onSelectMechanism(false)"><p>X</p></div>
+    <div v-if="mobileSelectMechanism === true" class="mobileChooseMechanism2">
+      <div class="mobileChooseMechanism_closed" v-on:click="onSelectMechanism(false)"><img :src="close"></div>
       <div class="mobileChooseMechanism_block">
-        <choose-mechanism style="display:flex"></choose-mechanism>
+        <choose-mechanism></choose-mechanism>
       </div>
     </div>
-    <div v-if="mobileBackground === true" class="mobileChooseMechanism">
-      <div class="mobileChooseMechanism_closed" v-on:click="onMobileBackground(false)"><p>X</p></div>
+    <div v-if="mobileBackground === true" class="mobileChooseMechanism3">
+      <div class="mobileChooseMechanism_closed" v-on:click="onMobileBackground(false)"><img :src="close"></div>
       <div class="mobileChooseMechanism_block">
         <background></background>
         <upBag></upBag>
       </div>
     </div>
-    <div v-if="mobileColorBackground === true" class="mobileChooseMechanism">
-      <div class="mobileChooseMechanism_closed" v-on:click="onMobileColorBackground(false)"><p>X</p></div>
+    <div v-if="mobileColorBackground === true" class="mobileChooseMechanism4">
+      <div class="mobileChooseMechanism_closed" v-on:click="onMobileColorBackground(false)"><img :src="close"></div>
       <div class="mobileChooseMechanism_block">
         <color-background></color-background>
       </div>
@@ -45,6 +45,11 @@ import {mapActions, mapGetters} from "vuex";
 
 export default {
   name: 'centerBlock',
+  data () {
+    return {
+      close: 'https://a705b0f2b14d.ngrok.io/images/frameColors/close.jpg',
+    }
+  },
   components: {
     ColorBackground,
     ChooseMechanism,
@@ -128,7 +133,16 @@ export default {
 .mobileChooseMechanism{
   display:none;
 }
-@media screen and (max-width: 1044px){
+.mobileChooseMechanism2{
+  display:none;
+}
+.mobileChooseMechanism3{
+  display:none;
+}
+.mobileChooseMechanism4{
+  display:none;
+}
+@media screen and (max-width: 1024px){
   .centerBlock{
     display:flex;
     flex-direction:column;
@@ -137,6 +151,42 @@ export default {
     margin-top:50px;
   }
   .mobileChooseMechanism{
+    width:55%;
+    height:550px;
+    background:white;
+    position:fixed;
+    z-index:1000;
+    display:block;
+    border: 3px solid #5B6770;
+    border-top-right-radius:25px;
+    border-top-left-radius:25px;
+  }
+  .mobileChooseMechanism2{
+    width:55%;
+    height:900px;
+    background:white;
+    position:fixed;
+    z-index:1000;
+    display:block;
+    border: 3px solid #5B6770;
+    border-top-right-radius:25px;
+    border-top-left-radius:25px;
+  }
+  .mobileChooseMechanism2 > div{
+    margin-top:-30px;
+  }
+  .mobileChooseMechanism3{
+    width:75%;
+    height:650px;
+    background:white;
+    position:fixed;
+    z-index:1000;
+    display:block;
+    border: 3px solid #5B6770;
+    border-top-right-radius:25px;
+    border-top-left-radius:25px;
+  }
+  .mobileChooseMechanism4{
     width:75%;
     height:650px;
     background:white;
@@ -148,25 +198,17 @@ export default {
     border-top-left-radius:25px;
   }
   .mobileChooseMechanism_closed{
-    width:50px;
-    height:50px;
-    background:#5B6770;
-    color:white;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    text-align:center;
-    margin-top:-30px;
-    float:right;
-    border:2px solid #5B6770
+    width:60px;
+    height:60px;
+    display:block;
+    margin-top:-20px;
+    margin-left:95%;
   }
-  .mobileChooseMechanism_closed > p{
-    margin: 0 auto;
-    display:flex;
-    justify-items:center;
-    justify-self:center;
-    justify-content:center;
-    align-items:center;
+  .mobileChooseMechanism_closed > img{
+    width:60px;
+    height:60px;
+    display:block;
+    position:relative;
   }
   .mobileChooseMechanism_block{
     margin: 0 auto;
@@ -187,6 +229,78 @@ export default {
     align-content:center;
     align-items:center;
     align-self:center;
+  }
+
+
+
+
+  @media screen and (max-width: 534px){
+    .mobileChooseMechanism{
+      width:75%;
+      height:550px;
+      background:white;
+      position:fixed;
+      z-index:1000;
+      display:block;
+      border:3px solid #5B6770;
+      border-top-right-radius:25px;
+      border-top-left-radius:25px;
+    }
+    .mobileChooseMechanism > div{
+      margin-top:-20px;
+    }
+
+    .mobileChooseMechanism2{
+      width:75%;
+      height:870px;
+      background:white;
+      position:fixed;
+      z-index:1000;
+      display:block;
+      border:3px solid #5B6770;
+      border-top-right-radius:25px;
+      border-top-left-radius:25px;
+    }
+
+    .mobileChooseMechanism2 > div{
+      margin-top:-30px;
+    }
+
+    .mobileChooseMechanism3{
+      width:80%;
+      height:870px;
+      background:white;
+      position:fixed;
+      z-index:1000;
+      display:block;
+      border:3px solid #5B6770;
+      border-top-right-radius:25px;
+      border-top-left-radius:25px;
+    }
+
+    .mobileChooseMechanism4{
+      width:80%;
+      height:550px;
+      background:white;
+      position:fixed;
+      z-index:1000;
+      display:block;
+      border:3px solid #5B6770;
+      border-top-right-radius:25px;
+      border-top-left-radius:25px;
+    }
+    .mobileChooseMechanism4 > div{
+      margin-top:-35px;
+    }
+
+
+    .mobileChooseMechanism_closed{
+      margin-top:-20px;
+      margin-left:90%;
+      width:60px;
+      height:60px;
+      display:block;
+    }
   }
 }
 </style>
