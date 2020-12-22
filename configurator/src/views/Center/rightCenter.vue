@@ -41,7 +41,14 @@ export default {
     margin-top:20px;
   }
 }
-@media screen and (max-width: 1024px){
+
+@media screen and (max-width: 1170px){
+  .rightCenter{
+    margin-left:18px;
+    margin-top:-16px;
+  }
+}
+@media screen and (max-width: 1023px){
   .download-buy-tablet{
     display:flex;
     flex-direction:row;
@@ -87,8 +94,11 @@ export default {
     margin-right:35px;
 
   }
+  .rightCenter{
+    margin-top:-30px;
+  }
 }
-@media screen and (max-width: 688px){
+@media screen and (max-width: 648px){
   .download-buy-tablet{
     display:none;
   }

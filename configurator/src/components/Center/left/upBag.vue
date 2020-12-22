@@ -1,7 +1,15 @@
 <template>
   <div class="upBag">
     <div class="backgroundBlockUp">
-      <div class="block2">
+      <div class="block2 desBlock2">
+        <img v-for="(imagesUP, idx) in 4"
+             v-bind:src="imagesUP.url"
+             v-on:click="emitImg(imagesUP.url)"
+             v-bind:key="idx"
+             class="backgroundBlockImages upBagBackgroundBlockImages"
+        />
+      </div>
+      <div class="block2 mobBlock2">
         <img v-for="(imagesUP, idx) in imagesUP"
              v-bind:src="imagesUP.url"
              v-on:click="emitImg(imagesUP.url)"
@@ -38,6 +46,7 @@ export default {
         { url: null },
         { url: null },
         { url: null },
+        { url: null },
       ],
     };
   },
@@ -52,6 +61,8 @@ export default {
       this.imagesUP[2].url = URL.createObjectURL(file2);
       const file3 = e.target.files[3];
       this.imagesUP[3].url = URL.createObjectURL(file3);
+      const file4 = e.target.files[4];
+      this.imagesUP[3].url = URL.createObjectURL(file4);
     },
     emitImg: function emitImg(data) {
       console.log(data)
@@ -62,8 +73,11 @@ export default {
 </script>
 
 <style>
-.dis{
-  display:none;
+.desBlock2{
+  display:block;
+}
+.mobBlock2{
+  display: none;
 }
 .upB{
   user-select: none;

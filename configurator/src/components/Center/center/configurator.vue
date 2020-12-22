@@ -1,5 +1,5 @@
 <template>
-  <div class="configuratorBlock" style="border: 1px solid rgb(225,225,255)">
+  <div class="configuratorBlock">
     <div class="configuratorBlock absolute" v-on:click="mechanismBlock('mechanismBlockNone')" style="transition:1s">
       <img class="configuratorBlock" :src="background[0].image.url" v-if="background[0].image.url" style="transition:1s">
       <div class="configuratorBlock" v-bind:style="background[0].colors" v-if="background[0].colors" style="transition:1s"></div>
@@ -478,7 +478,7 @@ import {mapActions, mapGetters} from 'vuex';
 export default {
   data() {
     return {
-      close: 'https://a705b0f2b14d.ngrok.io/images/frameColors/close.jpg',
+      close: 'https://a6f39e9aaa7f.ngrok.io/images/frameColors/close.jpg',
       urlImgBag: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
       active1: false,
       active2: false,
@@ -1956,7 +1956,7 @@ export default {
 
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1023px){
   .logoBinera1{
     margin-top:420px;
   }
@@ -2087,6 +2087,7 @@ export default {
   .configuratorBlockMechanism11Hover{
     width:150px;
     height:150px;
+    margin-left:1  px;
     border:#ff7a00 solid 3px;
   }
 
@@ -2565,7 +2566,7 @@ export default {
 
 }
 
-@media screen and (max-width:688px){
+@media screen and (max-width:648px){
   .logoBinera1{
     margin-top:420px;
   }
@@ -2631,51 +2632,51 @@ export default {
 
   .frameBlockFrameHorizontal1{
     display:block;
-    width:156.2px;
-    height:156.2px;
+    width:245.2px;
+    height:245.2px;
   }
   .frameBlockFrameHorizontal2{
     display:block;
-    width:447.6px;
-    height:245.2px;
+    width:335.7px;
+    height:191px;
   }
   .frameBlockFrameVertical2{
     display:block;
-    width:255.2px;
-    height:447.6px;
+    width:191px;
+    height:335.7px;
     margin-top:-30px;
   }
   .frameBlockFrameHorizontal3{
     display:block;
-    width:369.6px;
-    height:146px;
+    width:314px;
+    height:120px;
   }
   .frameBlockFrameVertical3{
     margin-top:-80px;
     display:block;
-    width:146px;
-    height:369.6px;
+    width:124px;
+    height:314px;
   }
   .frameBlockFrameHorizontal4{
     display:block;
-    width:485.6px;
-    height:146.4px;
+    width:335px;
+    height:101px;
   }
   .frameBlockFrameVertical4{
     display:block;
-    width:146.4px;
-    height:485.6px;
+    width:101px;
+    height:335px;
     margin-top:-20px;
   }
   .frameBlockFrameHorizontal5{
     display:block;
-    width:460px;
-    height:109px;
+    width:350px;
+    height:83px;
   }
   .frameBlockFrameVertical5{
     display:block;
-    width:109px;
-    height:460px;
+    width:83px;
+    height:350px;
   }
 
 
@@ -3182,7 +3183,7 @@ export default {
 
 }
 
-@media screen and (max-width:534px){
+@media screen and (max-width:380px){
   .logoBinera1{
     margin-top:420px;
   }
@@ -3248,51 +3249,50 @@ export default {
 
   .frameBlockFrameHorizontal1{
     display:block;
-    width:256.2px;
-    height:256.2px;
+    width:208px;
+    height:208px;
   }
   .frameBlockFrameHorizontal2{
     display:block;
-    width:447.6px;
-    height:245.2px;
+    width:257px;
+    height:146px;
   }
   .frameBlockFrameVertical2{
     display:block;
-    width:255.2px;
-    height:447.6px;
-    margin-top:-30px;
+    width:146px;
+    height:257px;
   }
   .frameBlockFrameHorizontal3{
     display:block;
-    width:369.6px;
-    height:146px;
+    width:251px;
+    height:99px;
   }
   .frameBlockFrameVertical3{
     margin-top:-80px;
     display:block;
-    width:146px;
-    height:369.6px;
+    width:99px;
+    height:251px;
   }
   .frameBlockFrameHorizontal4{
     display:block;
-    width:485.6px;
-    height:146.4px;
+    width:255px;
+    height:77px;
   }
   .frameBlockFrameVertical4{
     display:block;
-    width:146.4px;
-    height:485.6px;
+    width:77px;
+    height:255px;
     margin-top:-20px;
   }
   .frameBlockFrameHorizontal5{
     display:block;
-    width:460px;
-    height:109px;
+    width:266px;
+    height:63px;
   }
   .frameBlockFrameVertical5{
     display:block;
-    width:109px;
-    height:460px;
+    width:63px;
+    height:266px;
   }
 
 

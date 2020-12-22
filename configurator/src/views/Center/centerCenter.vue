@@ -2,7 +2,7 @@
   <div>
     <configurator style="display:flex; justify-items:center; align-items:center;
     align-content:center; justify-content:center;
-    align-self:center; justify-self:center"></configurator>
+    align-self:center; justify-self:center" class="configuratorCenter"></configurator>
     <div class="mobileCenter">
       <div class="mobileFrame" v-on:click="onSelectFrame(true)">
         <div>
@@ -168,7 +168,17 @@ i {
   margin-top:14px;
   margin-left:20px;
 }
-@media screen and (max-width: 534px){
+
+
+@media screen and (max-width: 1023px){
+    .configuratorCenter{
+      margin-left:-8px;
+      margin-top:-30px;
+    }
+}
+
+
+@media screen and (max-width: 380px){
   .mobileFrame{
     width: 135px;
     height: 52px;

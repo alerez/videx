@@ -4,7 +4,8 @@
       <div class="attributesBlockOne">
         <p>Рамка:</p>
         <div style="color:#FF7A00">
-          <p>{{frame[frameOrientation][material][colorsFrame][numberPostsFrame].article}}</p>
+          <p v-if="numberPostsFrame === 1">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
+          <p v-if="numberPostsFrame !== 1">{{frame[frameOrientation][material][colorsFrame][numberPostsFrame].article}}</p>
         </div>
       </div>
       <div class="attributesBlockRez"></div>

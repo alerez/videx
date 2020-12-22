@@ -164,7 +164,13 @@ export default {
     margin-top:20px;
   }
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1170px){
+  .leftCenter{
+    margin-right:16px;
+    margin-top:-24px;
+  }
+}
+@media screen and (max-width: 1023px){
   .leftCenter{
     display:flex;
     flex-direction:column;
@@ -178,7 +184,8 @@ export default {
   }
   .color-backgroundTwo{
     display:block;
-    margin-top:-34px;
+    margin-top:-38px;
+    margin-left:14.5px;
   }
   .color-background{
     display:none;
@@ -195,13 +202,13 @@ export default {
   .frame-number{
     display:flex;
     flex-direction:row;
-    margin:0 auto;
     justify-content:center;
     justify-items:center;
     justify-self:center;
     align-content:center;
     align-items:center;
     align-self:center;
+    margin:-20px auto 0;
   }
   .download-project{
     display:none;
@@ -229,40 +236,48 @@ export default {
     align-content: center;
     align-items: center;
     align-self: center;
+    height:60px;
   }
   .mobileFrame1{
     width:282px;
+    height:40px;
     border: solid 1px #5B6770;
     margin-right:16px;
+    margin-left:-16px;
+    margin-top:23px;
     border-radius:5px 5px 5px 15px;
   }
   .mobileFrame1 > div{
     display:flex;
+    height:40px;
   }
   .mobileFrame1 > div > p{
     font-family:Inter, sans-serif;
     font-weight:500;
     font-size:13.93px;
     color:#5B6770;
-    padding-top:5px;
-    padding-left:25px;
-    margin-right:10px;
+    padding-top:0;
+    padding-left:15px;
+    margin-right:20px;
   }
   .mobileMechanism1{
     width:282px;
+    height:40px;
     border: solid 1px #5B6770;
     margin-left:16px;
+    margin-top:23px;
     border-radius:5px 5px 15px 5px;
   }
   .mobileMechanism1 > div{
     display:flex;
+    height:40px;
   }
   .mobileMechanism1 > div > p{
     font-family:Inter, sans-serif;
     font-weight:500;
     font-size:13.93px;
     color:#5B6770;
-    padding-top:5px;
+    padding-top:0;
     padding-left:20px;
   }
   i {
@@ -271,7 +286,7 @@ export default {
     border-radius:2px;
     display: inline-block;
     padding: 3px;
-    margin-top:20px;
+    margin-top:15px;
     margin-left:125px;
   }
   .down {
@@ -279,7 +294,7 @@ export default {
     -webkit-transform: rotate(45deg);
   }
 }
-@media screen and (max-width: 688px){
+@media screen and (max-width: 648px){
   .background{
     display:none;
   }

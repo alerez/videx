@@ -78,7 +78,7 @@ export default {
   background: #FF7A00;
 
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
 
   font-family: Ubuntu, sans-serif;
   font-style: normal;

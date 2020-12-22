@@ -47,7 +47,7 @@ export default {
   name: 'centerBlock',
   data () {
     return {
-      close: 'https://a705b0f2b14d.ngrok.io/images/frameColors/close.jpg',
+      close: 'https://a6f39e9aaa7f.ngrok.io/images/frameColors/close.jpg',
     }
   },
   components: {
@@ -142,13 +142,21 @@ export default {
 .mobileChooseMechanism4{
   display:none;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
   .centerBlock{
     display:flex;
     flex-direction:column;
   }
   .center{
-    margin-top:50px;
+    display:flex;
+    flex-direction:column;
+    justify-items:center;
+    justify-self:center;
+    justify-content:center;
+    align-self:center;
+    align-content:center;
+    align-items:center;
+    margin: 0 auto;
   }
   .mobileChooseMechanism{
     width:55%;
@@ -234,7 +242,7 @@ export default {
 
 
 
-  @media screen and (max-width: 534px){
+  @media screen and (max-width: 380px){
     .mobileChooseMechanism{
       width:75%;
       height:550px;

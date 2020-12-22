@@ -1,4 +1,8 @@
 @media screen and (max-width: 1590px) {
+  .desBlock2 {
+    display: block;
+  }
+
   .block1 {
     width: 232px;
     height: 165px;
@@ -162,6 +166,7 @@
   .selectFrameBlock {
     width: 244px;
     height: 102px;
+    padding: 8px;
   }
 
   .selectFrameColorBlock {
@@ -205,7 +210,7 @@
   }
 
   .selectFrameText {
-    margin-top: 0;
+    margin-top: 6px;
   }
 
   .chooseMechanismBlock {
@@ -319,7 +324,7 @@
 
   .backgroundBlock {
     width: 219px;
-    height: 152px;
+    height: 158px;
     filter: none;
   }
 
@@ -331,8 +336,8 @@
   }
 
   .backgroundBlockImages {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     margin: 3px;
     padding: 0;
   }
@@ -343,16 +348,16 @@
   }
 
   .upB {
-    width: 231px;
+    width: 218px;
     height: 33px;
   }
 
   .upBag {
-    margin-left: 15px;
+    margin-top: 15px;
   }
 
   .upBagBackgroundBlockImages {
-    margin-left: 10px;
+    margin-left: 1px;
   }
 
   .upMobileUpBag {
@@ -413,6 +418,10 @@
     font-size: 11.94px;
   }
 
+  .frameOrientationBlockRoz {
+    height: 50px;
+  }
+
   .numberPostsBlock {
     width: 218px;
     height: 48px;
@@ -421,7 +430,7 @@
   }
 
   .numberPostsBlockRoz {
-    height: 49px;
+    height: 32px;
   }
 
   .numberPostsText {
@@ -482,8 +491,9 @@
   }
 
   .selectFrameBlock {
-    width: 244px;
-    height: 102px;
+    width: 218.3px;
+    height: 89.16px;
+    padding: 6px;
   }
 
   .selectFrameColorBlock {
@@ -496,7 +506,7 @@
   }
 
   .selectFrameBlockColorText {
-    font-size: 11.9488px;
+    font-size: 10.9616px;
     line-height: 14px;
     letter-spacing: -0.38502px;
   }
@@ -527,25 +537,26 @@
   }
 
   .selectFrameText {
-    margin-top: 0;
+    font-size: 10.9616px;
+    margin-top: 6px;
   }
 
   .chooseMechanismBlock {
-    width: 244px;
-    height: 101px;
+    width: 221px;
+    height: 92px;
   }
 
   .chooseMechanismBlockTwo {
-    width: 244px;
-    height: 348px;
+    width: 221px;
+    height: 315px;
   }
 
   .chooseMechanismBlockTwoRam {
-    width: 244px;
+    width: 221px;
   }
 
   .chooseMechanismColorText {
-    font-size: 11.9488px;
+    font-size: 10.9616px;
     line-height: 14px;
     letter-spacing: -0.38502px;
   }
@@ -597,7 +608,7 @@
     height: 40px;
     background: #FF7A00;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     font-family: Ubuntu, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -632,6 +643,10 @@
   .buyBlockFavorites > p {
     font-size: 14.0062px;
   }
+
+  .desBlock2 {
+    display: block;
+  }
 }
 @media screen and (max-width: 1023px) {
   .block1 {
@@ -646,9 +661,9 @@
   }
 
   .block2 {
-    width: 282px;
+    width: 285px;
     height: 57px;
-    margin-top: 4px;
+    margin-top: 0;
     filter: none;
   }
 
@@ -672,6 +687,7 @@
   .upBag {
     display: flex;
     margin-left: 15px;
+    margin-top: -5px;
   }
 
   .upBagBackgroundBlockImages {
@@ -680,7 +696,7 @@
 
   .upMobileUpBag {
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 60px;
   }
 
   .colorText {
@@ -694,6 +710,11 @@
 
   .upImg {
     margin-top: -1px;
+  }
+
+  .upBagBackgroundBlockImages {
+    margin-left: 3px;
+    margin-top: 0.5px;
   }
 
   .colorBlock {
@@ -737,6 +758,12 @@
     font-size: 11.94px;
   }
 
+  .frame-orientation {
+    margin-top: 0;
+    margin-right: 14px;
+    margin-left: -14px;
+  }
+
   .numberPostsBlock {
     width: 285px;
     height: 68px;
@@ -754,6 +781,11 @@
 
   .numberPostsBlockText {
     font-size: 15.93px;
+  }
+
+  .number-post {
+    margin-left: 14px;
+    margin-top: 7px;
   }
 
   .downloadProjectBlock {
@@ -774,7 +806,6 @@
   .downloadProjectBlockImg {
     width: 14px;
     height: 14px;
-    margin-top: -3px;
   }
 
   .configuratorBlock {
@@ -790,13 +821,27 @@
   .attributesBlock {
     width: 598px;
     height: 162px;
+    margin-left: -8px;
+    margin-top: 20px;
   }
 
   .attributesCenter {
     margin-bottom: 40px;
   }
+
+  .mobBlock2 {
+    display: block;
+  }
+
+  .desBlock2 {
+    display: none;
+  }
 }
-@media screen and (max-width: 688px) {
+@media screen and (max-width: 648px) {
+  .desBlock2 {
+    display: block;
+  }
+
   .logoBinera1 {
     display: none;
   }
@@ -946,7 +991,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 534px) {
+@media screen and (max-width: 380px) {
   .logoBinera1 {
     display: none;
   }
