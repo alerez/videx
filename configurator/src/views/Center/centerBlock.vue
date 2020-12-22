@@ -1,8 +1,8 @@
 <template>
   <div class="centerBlock">
-    <left-center></left-center>
+    <left-center class="left-center"></left-center>
     <center-center class="center"></center-center>
-    <right-center></right-center>
+    <right-center class="right-center"></right-center>
     <div v-if="mobileSelectFrame === true" class="mobileChooseMechanism">
       <div class="mobileChooseMechanism_closed" v-on:click="onSelectFrame(false)"><img :src="close"></div>
       <div class="mobileChooseMechanism_block">
@@ -146,6 +146,35 @@ export default {
   .centerBlock{
     display:flex;
     flex-direction:column;
+    justify-items:center;
+    justify-self:center;
+    justify-content:center;
+    align-self:center;
+    align-content:center;
+    align-items:center;
+    margin: 0 auto;
+  }
+  .left-center{
+    display:flex;
+    flex-direction:column;
+    justify-items:center;
+    justify-self:center;
+    justify-content:center;
+    align-self:center;
+    align-content:center;
+    align-items:center;
+    margin: 0 auto;
+  }
+  .right-center{
+    display:flex;
+    flex-direction:column;
+    justify-items:center;
+    justify-self:center;
+    justify-content:center;
+    align-self:center;
+    align-content:center;
+    align-items:center;
+    margin: 0 auto;
   }
   .center{
     display:flex;

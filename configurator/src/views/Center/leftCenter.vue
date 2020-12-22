@@ -389,7 +389,7 @@ export default {
     margin-top:11px;
     float:right;
   }
-  @media screen and (max-width: 534px){
+  @media screen and (max-width: 380px){
     .mobileBackground{
       width: 137px;
       height: 52px;
