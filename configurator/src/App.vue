@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <topBlock></topBlock>
-    <centerBlock style="display:flex; justify-items:center; align-items:center;
-    align-content:center; justify-content:center;
-    align-self:center; justify-self:center"></centerBlock>
+    <centerBlock></centerBlock>
     <buttonBlock></buttonBlock>
   </div>
 </template>
@@ -29,3 +27,25 @@ export default {
     },
 };
 </script>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  margin:0;
+  padding:0;
+}
+#app{
+  display:flex;
+  flex-direction:column;
+  align-content:center;
+  align-items:center;
+  align-self:center;
+  justify-content:center;
+  justify-items:center;
+  justify-self:center;
+  margin: 0 auto;
+}
+</style>

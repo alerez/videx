@@ -47,7 +47,7 @@ export default {
   name: 'centerBlock',
   data () {
     return {
-      close: 'https://a6f39e9aaa7f.ngrok.io/images/frameColors/close.jpg',
+      close: 'https://f3ceffacd8de.ngrok.io/images/frameColors/close.jpg',
     }
   },
   components: {
@@ -185,7 +185,7 @@ export default {
     align-self:center;
     align-content:center;
     align-items:center;
-    margin: 0 auto;
+    margin:50px auto 0;
   }
   .mobileChooseMechanism{
     width:55%;

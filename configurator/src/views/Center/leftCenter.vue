@@ -145,6 +145,7 @@ export default {
 .leftCenter{
   margin-left: 0;
   margin-right:52px;
+  margin-top:0;
 }
 .color-backgroundTwo{
   display:none;
@@ -264,7 +265,7 @@ export default {
     width:282px;
     height:40px;
     border: solid 1px #5B6770;
-    margin-left:16px;
+    margin-left:10px;
     margin-top:23px;
     border-radius:5px 5px 15px 5px;
   }
@@ -316,14 +317,13 @@ export default {
     align-self:center;
     align-content:center;
     align-items:center;
-    margin:20px;
   }
   .frame-orientation{
     margin-top:10px;
-    margin-right:6px;
+    margin-right:5px;
   }
   .number-post{
-    margin-left:6px;
+    margin-left:5px;
     margin-top:5px;
   }
 
@@ -333,7 +333,7 @@ export default {
     height: 34px;
     border: solid 1px #5B6770;
     margin-top:10px;
-    margin-right:10px;
+    margin-right:6px;
     border-radius:5px 5px 5px 15px;
   }
   .mobileBackground > div{
@@ -352,7 +352,7 @@ export default {
     height: 34px;
     border: solid 1px #5B6770;
     margin-top:10px;
-    margin-right:6px;
+    margin-left:6px;
     border-radius:5px 5px 15px 5px;
   }
   .mobileColorBackground > div{
