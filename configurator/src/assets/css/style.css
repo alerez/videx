@@ -1013,6 +1013,14 @@
     display: none;
   }
 
+  .numberPostsBlockMobile {
+    display: block;
+  }
+
+  .numberPostsBlockDesktop {
+    display: none;
+  }
+
   .upB {
     width: 264px;
     height: 40px;

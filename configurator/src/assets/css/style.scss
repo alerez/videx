@@ -785,12 +785,10 @@
   }
   ////////////////////configurator////////////////////////
   .configuratorBlock{
-    width: 100%;
-    height: 100vw;
+    @include size(100%,100vw)
   }
   .configuratorBlockBlock{
-    width: 100%;
-    height: 100vw;
+    @include size(100%,100vw)
   }
   ////////////////////attributes////////////////////////
   .attributesBlock{
@@ -857,6 +855,14 @@
   }
 
 
+  .numberPostsBlockMobile{
+    display:block;
+  }
+  .numberPostsBlockDesktop{
+    display:none;
+  }
+
+
 
 
   ////////////////////////upBag/////////////////////////////
@@ -899,8 +905,7 @@
   }
   ////////////////////configurator////////////////////////
   .configuratorBlock{
-    width: 100%;
-    height: 100vw;
+    @include size(100%,100vw);
     display:flex;
     margin: 0 auto;
     justify-self:center;

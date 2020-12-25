@@ -159,7 +159,7 @@ export default {
 @media screen and (max-width: 1590px){
   .leftCenter{
     margin-right:16px;
-    margin-top:32px;
+    margin-top:4px;
   }
   .rightCenter{
     margin-top:20px;
@@ -168,7 +168,7 @@ export default {
 @media screen and (max-width: 1170px){
   .leftCenter{
     margin-right:16px;
-    margin-top:-24px;
+    margin-top:8px;
   }
 }
 @media screen and (max-width: 1023px){

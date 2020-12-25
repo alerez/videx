@@ -47,7 +47,7 @@ export default {
   name: 'centerBlock',
   data () {
     return {
-      close: 'https://f3ceffacd8de.ngrok.io/images/frameColors/close.jpg',
+      close: 'https://b68757abe9f1.ngrok.io/images/frameColors/close.jpg',
     }
   },
   components: {

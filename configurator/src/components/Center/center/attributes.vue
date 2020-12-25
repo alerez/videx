@@ -4,8 +4,9 @@
       <div class="attributesBlockOne">
         <p>Рамка:</p>
         <div style="color:#FF7A00">
-          <p v-if="numberPostsFrame === 1">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
-          <p v-if="numberPostsFrame !== 1">{{frame[frameOrientation][material][colorsFrame][numberPostsFrame].article}}</p>
+          <p v-if="numberPostsFrame === '1'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
+          <p v-else-if="frameOrientation !== 'horizontal'">{{frame.vertical[material][colorsFrame][numberPostsFrame].article}}</p>
+          <p v-else-if="frameOrientation !== 'vertical'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
         </div>
       </div>
       <div class="attributesBlockRez"></div>
@@ -30,17 +31,6 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  data() {
-    return {
-      attribute: [
-        this.mechanismBlockOne.article,
-        this.mechanismBlockTwo.article,
-        this.mechanismBlockThree.article,
-        this.mechanismBlockFour.article,
-        this.mechanismBlockFive.article
-      ]
-    }
-  },
   computed: {
     ...mapGetters(
         [

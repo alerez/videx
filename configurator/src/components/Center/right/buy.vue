@@ -3,9 +3,11 @@
     <div class="buyBlock">
       <div class="buyBlockCost">
         <p class="buyBlockCostOne">Разом до сплати:</p>
-        <p class="buyBlockCostTwo"><span>
-        {{mechanismBlockPrice + frame[frameOrientation][material][colorsFrame][numberPostsFrame].price}}
-        </span> грн</p>
+        <p class="buyBlockCostTwo">
+          <span v-if="numberPostsFrame === '1'">{{mechanismBlockPrice + frame.horizontal[material][colorsFrame]["1"].price}}</span>
+          <span v-else-if="frameOrientation !== 'horizontal'">{{mechanismBlockPrice + frame.vertical[material][colorsFrame][numberPostsFrame].price}}</span>
+          <span v-else-if="frameOrientation !== 'vertical'">{{mechanismBlockPrice + frame.horizontal[material][colorsFrame][numberPostsFrame].price}}</span>
+          грн</p>
       </div>
       <div class="buyBlockButtom">
         <button>Купити</button>
@@ -28,8 +30,22 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['frame', 'frameOrientation', 'material', 'colorsFrame', 'numberPostsFrame', 'mechanismBlockOne', 'mechanismBlockTwo', 'mechanismBlockThree', 'mechanismBlockFour', 'mechanismBlockFive', 'mechanismBlockPrice']),
-    ...mapGetters(['background']),
+    ...mapGetters(
+        [
+            'frame',
+            'frameOrientation',
+            'material',
+            'colorsFrame',
+            'numberPostsFrame',
+            'mechanismBlockOne',
+            'mechanismBlockTwo',
+            'mechanismBlockThree',
+            'mechanismBlockFour',
+            'mechanismBlockFive',
+            'mechanismBlockPrice',
+            'background'
+        ]
+    ),
   },
 };
 </script>

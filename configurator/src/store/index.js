@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 
 Vue.use(Vuex)
-const url = 'https://f3ceffacd8de.ngrok.io';
+const url = 'https://b68757abe9f1.ngrok.io';
 
 const getFrames = {
   method: 'get',
@@ -336,6 +336,14 @@ const store = () => new Vuex.Store({
     chooseFrameMaterial: '',
     chooseFrameItems: [],
 
+    selectFrame: {
+      material: 'plastic',
+      options:[
+        {text: 'Скляні', value: 'glases'},
+        {text: 'Пластик', value: 'plastic'},
+        {text: 'Алюміній', value: 'aluminium'},
+      ],
+    },
 
     frame: {
       horizontal: {},
@@ -789,6 +797,10 @@ const store = () => new Vuex.Store({
       return state.mechanismBlockFive
     },
 
+
+    selectFrame: state => {
+      return state.selectFrame
+    },
     selectedMechanismBlock: state => {
       return state.selectedMechanismBlock
     },
@@ -796,7 +808,9 @@ const store = () => new Vuex.Store({
       return state.materialFrameItems
     },
 
-
+    mechanismBlockArticle: state => {
+      return state.mechanismBlockArticle
+    },
     mechanismBlockPrice: state => {
       return state.mechanismBlockPrice =
           state.mechanismBlockOne.price +

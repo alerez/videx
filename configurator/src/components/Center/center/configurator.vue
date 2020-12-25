@@ -448,25 +448,34 @@
         </div>
       </div>
     </div>
-    <div v-show="numberPostsFrame === '1'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera1">
+    <div v-show="numberPostsFrame === '1' && frameOrientation !== 'horizontal'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera1 logoBinera1Vertical">
       <img src="../../../assets/img/логобинера.png">
     </div>
-    <div v-show="numberPostsFrame === '2'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera2">
+    <div v-show="numberPostsFrame === '1' && frameOrientation !== 'vertical'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera1 logoBinera1Horizontal">
       <img src="../../../assets/img/логобинера.png">
     </div>
-    <div v-show="numberPostsFrame === '3'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera3">
+    <div v-show="numberPostsFrame === '2' && frameOrientation !== 'horizontal'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera2 logoBinera2Vertical">
       <img src="../../../assets/img/логобинера.png">
     </div>
-    <div v-show="numberPostsFrame === '4' && frameOrientation !== 'horizontal'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera4">
+    <div v-show="numberPostsFrame === '2' && frameOrientation !== 'vertical'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera2 logoBinera2Horizontal">
       <img src="../../../assets/img/логобинера.png">
     </div>
-    <div v-show="numberPostsFrame === '5' && frameOrientation !== 'horizontal'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera5">
+    <div v-show="numberPostsFrame === '3' && frameOrientation !== 'horizontal'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera3 logoBinera3Vertical">
       <img src="../../../assets/img/логобинера.png">
     </div>
-    <div v-show="numberPostsFrame === '4' && frameOrientation !== 'vertical'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera1">
+    <div v-show="numberPostsFrame === '3' && frameOrientation !== 'vertical'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera3 logoBinera3Horizontal">
       <img src="../../../assets/img/логобинера.png">
     </div>
-    <div v-show="numberPostsFrame === '5' && frameOrientation !== 'vertical'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera1">
+    <div v-show="numberPostsFrame === '4' && frameOrientation !== 'horizontal'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera4 logoBinera4Vertical">
+      <img src="../../../assets/img/логобинера.png">
+    </div>
+    <div v-show="numberPostsFrame === '4' && frameOrientation !== 'vertical'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera4 logoBinera4Horizontal">
+      <img src="../../../assets/img/логобинера.png">
+    </div>
+    <div v-show="numberPostsFrame === '5' && frameOrientation !== 'horizontal'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera5 logoBinera5Vertical">
+      <img src="../../../assets/img/логобинера.png">
+    </div>
+    <div v-show="numberPostsFrame === '5' && frameOrientation !== 'vertical'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera5 logoBinera5Horizontal">
       <img src="../../../assets/img/логобинера.png">
     </div>
   </div>
@@ -478,7 +487,7 @@ import {mapActions, mapGetters} from 'vuex';
 export default {
   data() {
     return {
-      close: 'https://f3ceffacd8de.ngrok.io/images/frameColors/close.jpg',
+      close: 'https://b68757abe9f1.ngrok.io/images/frameColors/close.jpg',
       urlImgBag: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
       active1: false,
       active2: false,
@@ -2087,7 +2096,6 @@ export default {
   .configuratorBlockMechanism11Hover{
     width:150px;
     height:150px;
-    margin-left:1  px;
     border:#ff7a00 solid 3px;
   }
 

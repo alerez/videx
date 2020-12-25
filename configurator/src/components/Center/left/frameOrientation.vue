@@ -32,8 +32,6 @@ export default {
     frameOrientationFun: function frameOrientationFun() {
         if (this.frameOrientation === 'horizontal'){
           this.EMIT_frameOrientation('vertical')
-          this.EMIT_closedMechanismBlock('mechanismBlockFour');
-          this.EMIT_closedMechanismBlock('mechanismBlockFive');
         }
         else if (this.frameOrientation === 'vertical'){
           this.EMIT_frameOrientation('horizontal')

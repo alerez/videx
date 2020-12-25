@@ -38,14 +38,14 @@ export default {
 @media screen and (max-width: 1590px){
   .rightCenter{
     margin-left:31px;
-    margin-top:20px;
+    margin-top:-30px;
   }
 }
 
 @media screen and (max-width: 1170px){
   .rightCenter{
     margin-left:18px;
-    margin-top:-16px;
+    margin-top:-31px;
   }
 }
 @media screen and (max-width: 1023px){
