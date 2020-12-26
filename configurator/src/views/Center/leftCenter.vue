@@ -258,6 +258,7 @@ export default {
     font-size:13.93px;
     color:#5B6770;
     padding-top:0;
+    margin-top:11px;
     padding-left:15px;
     margin-right:20px;
   }
@@ -280,6 +281,7 @@ export default {
     color:#5B6770;
     padding-top:0;
     padding-left:20px;
+    margin-top:11px;
   }
   i {
     border: solid #5B6770;
