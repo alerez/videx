@@ -13,9 +13,11 @@
       <div class="attributesBlockTwo">
         <p>Механізм:</p>
         <div style="color:#FF7A00; display:flex; flex-direction:column; flex-wrap:wrap">
-          <div v-for="(index, idx) in attribute" v-bind:key="idx">
-            <p>{{index}}</p>
-          </div>
+            <p>{{this.mechanismBlockOne.article}}</p>
+            <p>{{this.mechanismBlockTwo.article}}</p>
+            <p>{{this.mechanismBlockThree.article}}</p>
+            <p>{{this.mechanismBlockFour.article}}</p>
+            <p>{{this.mechanismBlockFive.article}}</p>
         </div>
       </div>
       <div class="attributesBlockRez"></div>
@@ -43,7 +45,8 @@ export default {
             'mechanismBlockTwo',
             'mechanismBlockThree',
             'mechanismBlockFour',
-            'mechanismBlockFive'
+            'mechanismBlockFive',
+            'attribute'
         ]
     ),
     ...mapGetters(['background']),

@@ -30,7 +30,7 @@ export default {
 <style>
 .rightCenter{
   margin-left:54px;
-  margin-top:10px;
+  margin-top:-11px;
 }
 .download-buy{
   display:none;

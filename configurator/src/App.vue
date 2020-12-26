@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <topBlock></topBlock>
+    <topBlock style="width:100%; margin-bottom:20px"></topBlock>
     <centerBlock></centerBlock>
     <buttonBlock></buttonBlock>
   </div>

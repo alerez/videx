@@ -145,7 +145,7 @@ export default {
 .leftCenter{
   margin-left: 0;
   margin-right:52px;
-  margin-top:0;
+  margin-top:-19px;
 }
 .color-backgroundTwo{
   display:none;

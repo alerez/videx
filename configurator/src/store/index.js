@@ -363,28 +363,29 @@ const store = () => new Vuex.Store({
     mechanismBlockOne: {
       price: 0,
       fileURL: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
-      article: {}
+      article: ''
     },
     mechanismBlockTwo: {
       price: 0,
       fileURL: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
-      article: {}
+      article: ''
     },
     mechanismBlockThree: {
       price: 0,
       fileURL: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
-      article: {}
+      article: ''
     },
     mechanismBlockFour: {
       price: 0,
       fileURL: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
-      article: {}
+      article: ''
     },
     mechanismBlockFive: {
       price: 0,
       fileURL: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
-      article: {}
+      article: ''
     },
+
   },
   actions: {
     SET_FRAMES : async ({commit}) => {
@@ -850,6 +851,11 @@ const store = () => new Vuex.Store({
     },
     mobileColorBackground: state => {
       return state.mobileColorBackground
+    },
+
+
+    attribute: state => {
+      return state.attribute
     }
   },
 })
