@@ -3,8 +3,10 @@
     <p class="backgroundText">Встановіть готовий фон:</p>
     <div class="backgroundBlock">
       <div class="block1">
-          <img class="backgroundBlockImages"
-              v-for="index in this.background[0].images" v-on:click="emitImg(index.id)" :key="index.fileURL" :src="index.fileURL">
+        <div v-for="index in this.background[0].images" :key="index.fileURL" class="backgroundBlockImagesHover">
+          <img v-if="activityBackground !== index.id" class="backgroundBlockImages" v-on:click="emitImg(index.id)" :src="index.fileURL">
+          <img v-else-if="activityBackground === index.id" style="border:#ff7a00 solid 2px" class="backgroundBlockImagesHoverImg" v-on:click="emitImg(index.id)" :src="index.fileURL">
+        </div>
       </div>
     </div>
   </div>
@@ -50,7 +52,7 @@ export default {
     this.SET_BACKGROUNDS();
   },
   computed: {
-    ...mapGetters(['background'])
+    ...mapGetters(['background', 'activityBackground'])
   },
 };
 </script>
@@ -77,6 +79,9 @@ export default {
   box-sizing: border-box;
   border-radius: 5px 5px 5px 15px;
   overflow: auto;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 .block1::-webkit-scrollbar {
   width: 16px;
@@ -92,6 +97,9 @@ export default {
   background-color: #FFFFFF;
   border: 2px solid #84C400;
   border-radius: 24px;
+}
+.block1::-webkit-scrollbar-thumb:vertical:hover  {
+  background:#84C400;
 }
 .backgroundText{
   user-select: none;
@@ -118,5 +126,17 @@ export default {
   margin-top: -5px;
   padding-top:-5px;
   cursor:pointer;
+}
+.backgroundBlockImagesHoverImg{
+  width: 59px;
+  height:59px;
+  margin-top:3px;
+  margin-left:2px;
+  border-radius:8px;
+}
+.backgroundBlockImagesHover{
+  width: 63px;
+  height:63px;
+  margin:2.5px;
 }
 </style>

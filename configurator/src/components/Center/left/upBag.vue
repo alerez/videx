@@ -1,14 +1,6 @@
 <template>
   <div class="upBag">
     <div class="backgroundBlockUp">
-      <div class="block2 desBlock2">
-        <img v-for="(imagesUP, idx) in 4"
-             v-bind:src="imagesUP.url"
-             v-on:click="emitImg(imagesUP.url)"
-             v-bind:key="idx"
-             class="backgroundBlockImages upBagBackgroundBlockImages"
-        />
-      </div>
       <div class="block2 mobBlock2">
         <img v-for="(imagesUP, idx) in imagesUP"
              v-bind:src="imagesUP.url"
@@ -46,7 +38,6 @@ export default {
         { url: null },
         { url: null },
         { url: null },
-        { url: null },
       ],
     };
   },
@@ -75,9 +66,6 @@ export default {
 <style>
 .desBlock2{
   display:block;
-}
-.mobBlock2{
-  display: none;
 }
 .upB{
   user-select: none;

@@ -139,6 +139,9 @@ export default {
   border: 2px solid #84C400;
   border-radius: 24px;
 }
+.chooseMechanismBlockTwo::-webkit-scrollbar-thumb:vertical:hover{
+  background:#84C400;
+}
 .chooseMechanismColor{
   display: flex;
 }

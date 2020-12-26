@@ -29,11 +29,23 @@
     padding-left: 9px;
     padding-top: 4px;
   }
-  .backgroundBlockImages {
+  .backgroundBlockImages{
     @include size(44px, 44px);
     margin-left:1px;
     margin-bottom:0;
     border-radius: 8px;
+  }
+  .backgroundBlockImagesHoverImg{
+    width: 39px;
+    height:39px;
+    margin-top:3px;
+    margin-left:2px;
+    border-radius:8px;
+  }
+  .backgroundBlockImagesHover{
+    width: 44px;
+    height:44px;
+    margin:2.5px;
   }
   .backgroundText{
     margin-bottom: 12px;
@@ -280,9 +292,22 @@
     filter:none;
   }
   .backgroundBlockImages{
-    @include size(40px,40px);
-    margin:3px;
-    padding:0;
+    @include size(40px, 40px);
+    margin-left:1px;
+    margin-bottom:0;
+    border-radius: 8px;
+  }
+  .backgroundBlockImagesHoverImg{
+    width: 36px;
+    height:36px;
+    margin-top:3px;
+    margin-left:2px;
+    border-radius:8px;
+  }
+  .backgroundBlockImagesHover{
+    width: 40px;
+    height:40px;
+    margin:2.5px;
   }
   .backgroundText{
     filter:none;
@@ -467,13 +492,13 @@
   }
   .chooseMechanismFlexImg{
     @include size(53px, 53px);
-    margin:15px;
+    margin:11px;
   }
   .chooseMechanismImg{
     width:33px;
     height:33px;
-    margin-left:-58px;
-    margin-top:25px;
+    margin-left:-55px;
+    margin-top:20px;
   }
   .chooseMechanismFlexP{
     margin-left: 20px;
@@ -552,9 +577,22 @@
     filter:none;
   }
   .backgroundBlockImages{
-    @include size(44px,44px);
-    margin:3px;
-    padding:0;
+    @include size(44px, 44px);
+    margin-left:1px;
+    margin-bottom:0;
+    border-radius: 8px;
+  }
+  .backgroundBlockImagesHoverImg{
+    width:40px;
+    height:40px;
+    margin-top:3px;
+    margin-left:2px;
+    border-radius:8px;
+  }
+  .backgroundBlockImagesHover{
+    width: 44px;
+    height:44px;
+    margin:2.5px;
   }
   .backgroundText{
     filter:none;

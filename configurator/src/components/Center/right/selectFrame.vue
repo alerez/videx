@@ -96,7 +96,7 @@
             <p v-if="colorsFrame === 'pink'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].pink.description.ua }}</p>
           </div>
           <div class="selectChooseFrame" @click="materialGetColor('gray')">
-            <img v-if="colorsFrame !== 'gray'" class="selectFrameImg" :src="chooseFrame[selectFrame.selectFrame.material].gray.fileURL">
+            <img v-if="colorsFrame !== 'gray'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].gray.fileURL">
             <img v-if="colorsFrame === 'gray'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].gray.fileURL">
             <p v-if="colorsFrame !== 'gray'" class="selectFrameText">{{ chooseFrame[selectFrame.material].gray.description.ua }}</p>
             <p v-if="colorsFrame === 'gray'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].gray.description.ua }}</p>

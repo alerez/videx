@@ -448,34 +448,7 @@
         </div>
       </div>
     </div>
-    <div v-show="numberPostsFrame === '1' && frameOrientation !== 'horizontal'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera1 logoBinera1Vertical">
-      <img src="../../../assets/img/логобинера.png">
-    </div>
-    <div v-show="numberPostsFrame === '1' && frameOrientation !== 'vertical'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera1 logoBinera1Horizontal">
-      <img src="../../../assets/img/логобинера.png">
-    </div>
-    <div v-show="numberPostsFrame === '2' && frameOrientation !== 'horizontal'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera2 logoBinera2Vertical">
-      <img src="../../../assets/img/логобинера.png">
-    </div>
-    <div v-show="numberPostsFrame === '2' && frameOrientation !== 'vertical'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera2 logoBinera2Horizontal">
-      <img src="../../../assets/img/логобинера.png">
-    </div>
-    <div v-show="numberPostsFrame === '3' && frameOrientation !== 'horizontal'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera3 logoBinera3Vertical">
-      <img src="../../../assets/img/логобинера.png">
-    </div>
-    <div v-show="numberPostsFrame === '3' && frameOrientation !== 'vertical'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera3 logoBinera3Horizontal">
-      <img src="../../../assets/img/логобинера.png">
-    </div>
-    <div v-show="numberPostsFrame === '4' && frameOrientation !== 'horizontal'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera4 logoBinera4Vertical">
-      <img src="../../../assets/img/логобинера.png">
-    </div>
-    <div v-show="numberPostsFrame === '4' && frameOrientation !== 'vertical'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera4 logoBinera4Horizontal">
-      <img src="../../../assets/img/логобинера.png">
-    </div>
-    <div v-show="numberPostsFrame === '5' && frameOrientation !== 'horizontal'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera5 logoBinera5Vertical">
-      <img src="../../../assets/img/логобинера.png">
-    </div>
-    <div v-show="numberPostsFrame === '5' && frameOrientation !== 'vertical'" v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera5 logoBinera5Horizontal">
+    <div v-on:click="mechanismBlock('mechanismBlockNone')" class="logoBinera">
       <img src="../../../assets/img/логобинера.png">
     </div>
   </div>
@@ -589,36 +562,15 @@ export default {
 .absolute{
   position:absolute;
 }
-.logoBinera1{
-  margin-top:702px;
+.logoBinera{
+  margin-top:775px;
   z-index:10;
   user-select: none;
+  margin-left: auto;
 }
-.logoBinera2{
-  margin-top:752px;
-  z-index:10;
-  user-select: none;
-}
-.logoBinera3{
-  margin-top:702px;
-  z-index:10;
-  user-select: none;
-}
-.logoBinera4{
-  margin-top:762px;
-  z-index:10;
-  user-select: none;
-}
-.logoBinera4 > img{
+.logoBinera > img{
   width:203px;
-}
-.logoBinera5{
-  margin-top:792px;
-  z-index:10;
-  user-select: none;
-}
-.logoBinera5 > img{
-  width:170px;
+  margin-right:30px;
 }
 .configuratorBlock{
   width:851px;
@@ -643,7 +595,6 @@ export default {
   display:block;
   width:357px;
   height:641px;
-  margin-top:25px;
 }
 .frameBlockFrameHorizontal3{
   display:block;
@@ -651,7 +602,6 @@ export default {
   height:249px;
 }
 .frameBlockFrameVertical3{
-  margin-top:-70px;
   display:block;
   width:249.5px;
   height:649.5px;
@@ -662,7 +612,6 @@ export default {
   height:213px;
 }
 .frameBlockFrameVertical4{
-  margin-top:-50px;
   display:block;
   width:213px;
   height:728.4px;
@@ -673,7 +622,6 @@ export default {
   height:180px;
 }
 .frameBlockFrameVertical5{
-  margin-top:-40px;
   display:block;
   width:180px;
   height:764px;
@@ -1357,41 +1305,15 @@ export default {
 
 
 @media screen and (max-width:1590px){
-  .logoBinera1{
-    margin-top:420px;
-  }
-  .logoBinera1 > img{
-    width:186.2px;
-    margin:0;
-  }
-
-  .logoBinera2{
+  .logoBinera{
     margin-top:470px;
+    z-index:10;
+    user-select: none;
+    margin-left: auto;
   }
-  .logoBinera2 > img{
-    width:186.2px;
-    margin:0;
-  }
-  .logoBinera3{
-    margin-top:420px;
-  }
-  .logoBinera3 > img{
-    width:186.2px;
-    margin:0;
-  }
-  .logoBinera4{
-    margin-top:490px;
-  }
-  .logoBinera4 > img{
-    width:140.2px;
-    margin:0;
-  }
-  .logoBinera5{
-    margin-top:470px;
-  }
-  .logoBinera5 > img{
-    width:109px;
-    margin:0;
+  .logoBinera > img{
+    width:140px;
+    margin-right:15px;
   }
 
 
@@ -1434,7 +1356,6 @@ export default {
     display:block;
     width:255.2px;
     height:447.6px;
-    margin-top:-30px;
   }
   .frameBlockFrameHorizontal3{
     display:block;
@@ -1442,7 +1363,6 @@ export default {
     height:146px;
   }
   .frameBlockFrameVertical3{
-    margin-top:-80px;
     display:block;
     width:146px;
     height:369.6px;
@@ -1456,7 +1376,6 @@ export default {
     display:block;
     width:146.4px;
     height:485.6px;
-    margin-top:-20px;
   }
   .frameBlockFrameHorizontal5{
     display:block;
@@ -1966,41 +1885,12 @@ export default {
 }
 
 @media screen and (max-width:1023px){
-  .logoBinera1{
-    margin-top:420px;
+  .logoBinera{
+    margin-top:90vw;
+    margin-left:auto;
   }
-  .logoBinera1 > img{
+  .logoBinera > img{
     width:186.2px;
-    margin:0;
-  }
-
-  .logoBinera2{
-    margin-top:470px;
-  }
-  .logoBinera2 > img{
-    width:186.2px;
-    margin:0;
-  }
-  .logoBinera3{
-    margin-top:420px;
-  }
-  .logoBinera3 > img{
-    width:186.2px;
-    margin:0;
-  }
-  .logoBinera4{
-    margin-top:490px;
-  }
-  .logoBinera4 > img{
-    width:140.2px;
-    margin:0;
-  }
-  .logoBinera5{
-    margin-top:470px;
-  }
-  .logoBinera5 > img{
-    width:109px;
-    margin:0;
   }
 
 
@@ -2043,7 +1933,6 @@ export default {
     display:block;
     width:255.2px;
     height:447.6px;
-    margin-top:-30px;
   }
   .frameBlockFrameHorizontal3{
     display:block;
@@ -2051,7 +1940,6 @@ export default {
     height:146px;
   }
   .frameBlockFrameVertical3{
-    margin-top:-80px;
     display:block;
     width:146px;
     height:369.6px;
@@ -2065,7 +1953,6 @@ export default {
     display:block;
     width:146.4px;
     height:485.6px;
-    margin-top:-20px;
   }
   .frameBlockFrameHorizontal5{
     display:block;
@@ -2574,42 +2461,24 @@ export default {
 
 }
 
-@media screen and (max-width:648px){
-  .logoBinera1{
-    margin-top:420px;
+@media screen and (max-width:848px){
+  .logoBinera{
+    margin-top:87vw;
+    margin-left:auto;
   }
-  .logoBinera1 > img{
+  .logoBinera > img{
     width:186.2px;
-    margin:0;
+    margin-right:30px;
   }
+}
 
-  .logoBinera2{
-    margin-top:470px;
+@media screen and (max-width:648px){
+  .logoBinera{
+    margin-top:87vw;
+    margin-left:60vw;
   }
-  .logoBinera2 > img{
+  .logoBinera > img{
     width:186.2px;
-    margin:0;
-  }
-  .logoBinera3{
-    margin-top:420px;
-  }
-  .logoBinera3 > img{
-    width:186.2px;
-    margin:0;
-  }
-  .logoBinera4{
-    margin-top:490px;
-  }
-  .logoBinera4 > img{
-    width:140.2px;
-    margin:0;
-  }
-  .logoBinera5{
-    margin-top:470px;
-  }
-  .logoBinera5 > img{
-    width:109px;
-    margin:0;
   }
 
 
@@ -2652,7 +2521,6 @@ export default {
     display:block;
     width:189px;
     height:339px;
-    margin-top:-10px;
   }
   .frameBlockFrameHorizontal3{
     display:block;
@@ -2660,7 +2528,6 @@ export default {
     height:120px;
   }
   .frameBlockFrameVertical3{
-    margin-top:-20px;
     display:block;
     width:119px;
     height:310px;
@@ -2674,7 +2541,6 @@ export default {
     display:block;
     width:101px;
     height:335px;
-    margin-top:-20px;
   }
   .frameBlockFrameHorizontal5{
     display:block;
@@ -2685,7 +2551,6 @@ export default {
     display:block;
     width:83px;
     height:347px;
-    margin-top:-15px;
   }
 
 

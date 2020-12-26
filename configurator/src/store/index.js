@@ -52,6 +52,7 @@ const store = () => new Vuex.Store({
         colors: '',
       }
     ],
+    activityBackground: 'siWI9thJe',
     imagesUP: [
       { url: null },
       { url: null },
@@ -463,10 +464,12 @@ const store = () => new Vuex.Store({
             console.log(error);
           });
       commit('backgroundColors', null)
+      commit('activityBackground', data)
     },
     EMIT_upBag: ({commit}, data) => {
       commit('upBag', data)
       commit('backgroundColors', null)
+      commit('activityBackground', null)
     },
 
 
@@ -733,6 +736,10 @@ const store = () => new Vuex.Store({
     },
     onMobileColorBackground: (state, data) => {
       return state.mobileColorBackground = data
+    },
+
+    activityBackground: (state, data) => {
+      return state.activityBackground = data
     }
   },
   modules: {},
@@ -856,6 +863,9 @@ const store = () => new Vuex.Store({
 
     attribute: state => {
       return state.attribute
+    },
+    activityBackground: state => {
+      return state.activityBackground
     }
   },
 })

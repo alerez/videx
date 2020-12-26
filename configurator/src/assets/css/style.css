@@ -33,6 +33,20 @@
     border-radius: 8px;
   }
 
+  .backgroundBlockImagesHoverImg {
+    width: 39px;
+    height: 39px;
+    margin-top: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+  }
+
+  .backgroundBlockImagesHover {
+    width: 44px;
+    height: 44px;
+    margin: 2.5px;
+  }
+
   .backgroundText {
     margin-bottom: 12px;
     margin-left: 4px;
@@ -338,8 +352,23 @@
   .backgroundBlockImages {
     width: 40px;
     height: 40px;
-    margin: 3px;
-    padding: 0;
+    margin-left: 1px;
+    margin-bottom: 0;
+    border-radius: 8px;
+  }
+
+  .backgroundBlockImagesHoverImg {
+    width: 36px;
+    height: 36px;
+    margin-top: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+  }
+
+  .backgroundBlockImagesHover {
+    width: 40px;
+    height: 40px;
+    margin: 2.5px;
   }
 
   .backgroundText {
@@ -581,14 +610,14 @@
   .chooseMechanismFlexImg {
     width: 53px;
     height: 53px;
-    margin: 15px;
+    margin: 11px;
   }
 
   .chooseMechanismImg {
     width: 33px;
     height: 33px;
-    margin-left: -58px;
-    margin-top: 25px;
+    margin-left: -55px;
+    margin-top: 20px;
   }
 
   .chooseMechanismFlexP {
@@ -670,8 +699,23 @@
   .backgroundBlockImages {
     width: 44px;
     height: 44px;
-    margin: 3px;
-    padding: 0;
+    margin-left: 1px;
+    margin-bottom: 0;
+    border-radius: 8px;
+  }
+
+  .backgroundBlockImagesHoverImg {
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+  }
+
+  .backgroundBlockImagesHover {
+    width: 44px;
+    height: 44px;
+    margin: 2.5px;
   }
 
   .backgroundText {

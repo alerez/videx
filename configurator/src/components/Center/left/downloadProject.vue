@@ -6,7 +6,7 @@
         <img v-bind:src="download" class="downloadProjectBlockImg">
       </p>
     </div>
-    <div class="downloadProjectBlock displ">
+    <div class="downloadProjectBlock2 displ">
       <p class="downloadProjectBlockText">Завантижити проект (PDF)
         <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
       </p>
@@ -49,7 +49,18 @@ export default {
   border-radius: 5px 5px 5px 15px;
   cursor:pointer;
 }
-
+.poss{
+  display:block;
+}
+.displ{
+  display:none;
+}
+.downloadProjectBlock:hover .poss{
+  display:none;
+}
+.downloadProjectBlock:hover .displ{
+  display:block;
+}
 .downloadProjectBlockText{
   font-family: Ubuntu, sans-serif;
   font-style: normal;
@@ -69,10 +80,12 @@ export default {
   margin-left:6px;
   margin-top:-1px;
 }
-.poss{
-  display:block;
-}
-.displ{
-  display:none;
+.downloadProjectBlock2{
+  user-select: none;
+  width: 320px;
+  height: 51px;
+  background: #ffffff;
+  border-radius: 5px 5px 5px 15px;
+  cursor:pointer;
 }
 </style>
