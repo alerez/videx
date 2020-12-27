@@ -1,13 +1,19 @@
 <template>
   <div class="upBag">
     <div class="backgroundBlockUp">
-      <div class="block2 mobBlock2">
-        <img v-for="(imagesUP, idx) in imagesUP"
-             v-bind:src="imagesUP.url"
-             v-on:click="emitImg(imagesUP.url)"
-             v-bind:key="idx"
-             class="backgroundBlockImages upBagBackgroundBlockImages"
-        />
+      <div class="block2 mobBlock2" style="display:flex; flex-direction:row">
+        <div v-for="(imagesUP, idx) in imagesUP" v-bind:key="idx">
+          <img
+                v-bind:src="imagesUP.url"
+                v-on:click="emitImg(imagesUP.url)"
+                class="backgroundBlockImages upBagBackgroundBlockImages"
+          />
+          <img
+                v-bind:src="imagesUP.url"
+                v-on:click="emitImg(imagesUP.url)"
+                class="backgroundBlockImages upBagBackgroundBlockImages"
+          />
+        </div>
       </div>
     </div>
     <div class="upMobileUpBag">
@@ -56,8 +62,8 @@ export default {
       this.imagesUP[3].url = URL.createObjectURL(file4);
     },
     emitImg: function emitImg(data) {
-      console.log(data)
       this.EMIT_upBag(data)
+
     },
   },
 };

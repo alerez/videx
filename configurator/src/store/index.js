@@ -52,7 +52,9 @@ const store = () => new Vuex.Store({
         colors: '',
       }
     ],
+
     activityBackground: 'siWI9thJe',
+
     imagesUP: [
       { url: null },
       { url: null },
@@ -447,6 +449,7 @@ const store = () => new Vuex.Store({
     EMIT_backgroundColors: ({commit}, data) =>{
      commit('backgroundColors', data)
      commit('background', null)
+     commit('activityBackground', null)
     },
     EMIT_background: async ({commit}, data) => {
       await axios
