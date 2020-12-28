@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08f21971-1991-4c1b-bb88-30dbe0d612c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/center/attributes.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/center/attributes.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/store/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="08f21971-1991-4c1b-bb88-30dbe0d612c1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
