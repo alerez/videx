@@ -848,11 +848,26 @@ $white: rgb(255, 255, 255);
 
 
   ////////////////////selectFrame////////////////////////
+  .selectFrameBlock{
+    border:none;
+  }
   ///////////////////////////////////////////////////////////
 
 
 
   ////////////////////chooseMechanism////////////////////////
+  .chooseMechanismBlockTwo{
+    @include size(100vw,200px)
+  }
+  .chooseMechanismBlockTwoRam{
+    @include size(100vw, 200px);
+    border:none;
+  }
+  .chooseMechanismBlockMobile{
+    display:flex;
+    flex-direction:row;
+    overflow-x:auto;
+  }
   ///////////////////////////////////////////////////////////
 
 
@@ -978,11 +993,26 @@ $white: rgb(255, 255, 255);
 
 
   ////////////////////selectFrame////////////////////////////
+  .selectFrameBlock{
+    border:none;
+  }
   ///////////////////////////////////////////////////////////
 
 
 
   ////////////////////chooseMechanism////////////////////////
+  .chooseMechanismBlockMobile{
+    display:flex;
+    flex-direction:row;
+    overflow-x:auto;
+  }
+  .chooseMechanismBlockTwo{
+    @include size(100vw,200px)
+  }
+  .chooseMechanismBlockTwoRam{
+    @include size(100vw, 200px);
+    border:none;
+  }
   ///////////////////////////////////////////////////////////
 
 
@@ -1100,13 +1130,25 @@ $white: rgb(255, 255, 255);
 
 
   ////////////////////selectFrame////////////////////////////
+  .selectFrameBlock{
+    border:none;
+  }
   ///////////////////////////////////////////////////////////
 
 
 
   ////////////////////chooseMechanism////////////////////////
   .chooseMechanismBlockTwo{
-    @include size(244px,200px)
+    @include size(100vw,200px)
+  }
+  .chooseMechanismBlockTwoRam{
+    @include size(100vw, 200px);
+    border:none;
+  }
+  .chooseMechanismBlockMobile{
+    display:flex;
+    flex-direction:row;
+    overflow-x:auto;
   }
   ///////////////////////////////////////////////////////////
 

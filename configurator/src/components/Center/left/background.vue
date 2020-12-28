@@ -144,7 +144,7 @@ export default {
   margin-top:3px;
   margin-left:2px;
   border-radius:8px;
-  border:#ff7a00 solid 3px;
+  border:#ff7a00 solid 2.5px;
   z-index: 1000;
 }
 .backgroundBlockImagesHoverImg > img{

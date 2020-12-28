@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="chooseMechanismBlockTwoRam">
-      <div class="chooseMechanismBlockTwo">
+      <div class="chooseMechanismBlockTwo chooseMechanismBlockMobile">
         <div class="chooseMechanismFlex" v-for="(index, idx) in chooseMechanism.plastic[mechanismColor]" v-bind:key="idx" v-on:click="doneChooseMechanism(index)">
           <img class="chooseMechanismFlexImg" :src="frame.horizontal.plastic[mechanismColor][1].fileURL">
           <img class="chooseMechanismImg" :src="index.fileURL">

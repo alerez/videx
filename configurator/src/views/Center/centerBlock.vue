@@ -47,7 +47,7 @@ export default {
   name: 'centerBlock',
   data () {
     return {
-      close: 'https://c7aab604874c.ngrok.io/images/frameColors/close.jpg',
+      close: 'https://5acbe7c60245.ngrok.io/images/frameColors/close.jpg',
     }
   },
   components: {
@@ -188,59 +188,62 @@ export default {
     margin:50px auto 0;
   }
   .mobileChooseMechanism{
-    width:85%;
+    width:100%;
     height:350px;
-    background:white;
-    position:fixed;
+    background:rgb(255,255,255);
+    position: fixed;
+    bottom:0;
+    max-width: inherit;
     z-index:1000;
     display:block;
-    margin-top:120px;
+    margin-bottom:auto;
     border: 3px solid #5B6770;
-    border-top-right-radius:25px;
-    border-top-left-radius:25px;
+    border-bottom:none;
   }
   .mobileChooseMechanism2{
-    width:85%;
-    height:600px;
+    width:100%;
+    height:350px;
     background:white;
-    position:fixed;
+    position: fixed;
+    bottom:0;
+    max-width: inherit;
     z-index:1000;
     display:block;
     border: 3px solid #5B6770;
-    border-top-right-radius:25px;
-    border-top-left-radius:25px;
+    border-bottom:none;
   }
   .mobileChooseMechanism2 > div{
     margin-top:-30px;
   }
   .mobileChooseMechanism3{
-    width:85%;
-    height:400px;
+    width:100%;
+    height:350px;
     background:white;
-    position:fixed;
+    position: fixed;
+    bottom:0;
+    max-width: inherit;
     z-index:1000;
     display:block;
     border: 3px solid #5B6770;
-    border-top-right-radius:25px;
-    border-top-left-radius:25px;
+    border-bottom:none;
   }
   .mobileChooseMechanism4{
-    width:85%;
-    height:400px;
+    width:100%;
+    height:350px;
     background:white;
-    position:fixed;
+    position: fixed;
+    bottom:0;
+    max-width: inherit;
     z-index:1000;
     display:block;
     border: 3px solid #5B6770;
-    border-top-right-radius:25px;
-    border-top-left-radius:25px;
+    border-bottom:none;
   }
   .mobileChooseMechanism_closed{
     width:60px;
     height:60px;
     display:block;
-    margin-top:-20px;
-    margin-left:95%;
+    margin:-20px auto 0;
   }
   .mobileChooseMechanism_closed > img{
     width:60px;
@@ -271,31 +274,32 @@ export default {
 }
 @media screen and (max-width: 380px){
   .mobileChooseMechanism{
-    width:75%;
-    height:700px;
+    width:100%;
+    height:250px;
     background:white;
-    position:fixed;
+    position: fixed;
+    bottom:0;
+    max-width: inherit;
     z-index:1000;
     display:block;
     border:3px solid #5B6770;
-    border-top-right-radius:25px;
-    border-top-left-radius:25px;
-    margin-top:0;
+    border-bottom:none;
   }
   .mobileChooseMechanism > div{
     margin-top:-20px;
   }
 
   .mobileChooseMechanism2{
-    width:75%;
-    height:1100px;
+    width:100%;
+    height:350px;
     background:white;
-    position:fixed;
+    position: fixed;
+    bottom:0;
+    max-width: inherit;
     z-index:1000;
     display:block;
     border:3px solid #5B6770;
-    border-top-right-radius:25px;
-    border-top-left-radius:25px;
+    border-bottom:none;
   }
 
   .mobileChooseMechanism2 > div{
@@ -303,27 +307,29 @@ export default {
   }
 
   .mobileChooseMechanism3{
-    width:80%;
-    height:970px;
+    width:100%;
+    height:350px;
     background:white;
-    position:fixed;
+    position: fixed;
+    bottom:0;
+    max-width: inherit;
     z-index:1000;
     display:block;
     border:3px solid #5B6770;
-    border-top-right-radius:25px;
-    border-top-left-radius:25px;
+    border-bottom:none;
   }
 
   .mobileChooseMechanism4{
-    width:80%;
-    height:700px;
+    width:100%;
+    height:220px;
     background:white;
-    position:fixed;
+    position: fixed;
+    bottom:0;
+    max-width: inherit;
     z-index:1000;
     display:block;
     border:3px solid #5B6770;
-    border-top-right-radius:25px;
-    border-top-left-radius:25px;
+    border-bottom:none;
   }
   .mobileChooseMechanism4 > div{
     margin-top:-35px;
@@ -331,11 +337,7 @@ export default {
 
 
   .mobileChooseMechanism_closed{
-    margin-top:-20px;
-    margin-left:90%;
-    width:60px;
-    height:60px;
-    display:block;
+    margin-bottom:20px;
   }
 }
 </style>

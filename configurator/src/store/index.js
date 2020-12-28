@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 
 Vue.use(Vuex)
-const url = 'https://c7aab604874c.ngrok.io';
+const url = 'https://5acbe7c60245.ngrok.io';
 
 const getFrames = {
   method: 'get',

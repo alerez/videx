@@ -872,6 +872,27 @@
     margin: 0 auto;
   }
 
+  .selectFrameBlock {
+    border: none;
+  }
+
+  .chooseMechanismBlockTwo {
+    width: 100vw;
+    height: 200px;
+  }
+
+  .chooseMechanismBlockTwoRam {
+    width: 100vw;
+    height: 200px;
+    border: none;
+  }
+
+  .chooseMechanismBlockMobile {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
   .mobBlock2 {
     display: block;
   }
@@ -971,6 +992,27 @@
   .attributesBlock {
     width: 383px;
     height: 211px;
+  }
+
+  .selectFrameBlock {
+    border: none;
+  }
+
+  .chooseMechanismBlockMobile {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .chooseMechanismBlockTwo {
+    width: 100vw;
+    height: 200px;
+  }
+
+  .chooseMechanismBlockTwoRam {
+    width: 100vw;
+    height: 200px;
+    border: none;
   }
 
   .frame-number {
@@ -1083,9 +1125,25 @@
     justify-self: center;
   }
 
+  .selectFrameBlock {
+    border: none;
+  }
+
   .chooseMechanismBlockTwo {
-    width: 244px;
+    width: 100vw;
     height: 200px;
+  }
+
+  .chooseMechanismBlockTwoRam {
+    width: 100vw;
+    height: 200px;
+    border: none;
+  }
+
+  .chooseMechanismBlockMobile {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
   }
 
   .downloadProjectText {

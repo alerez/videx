@@ -22,8 +22,7 @@
       </div>
       <div class="attributesBlockRez"></div>
       <div class="attributesBlockThree">
-        <p>{{ total }}:</p>
-
+        <p>{{ attributes.total }}:</p>
       </div>
     </div>
   </div>
@@ -67,10 +66,6 @@ export default {
 </script>
 
 <style>
-.attributesBlockText{
-  display: block;
-  margin-top: 5px;
-}
 .attributesBlock{
   user-select: none;
   width: 851px;
@@ -89,7 +84,6 @@ export default {
   font-family: Ubuntu, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
   /* identical to box height, or 799% */
 
   color: #5B6770;
@@ -104,7 +98,6 @@ export default {
   font-family: Ubuntu, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
   /* identical to box height, or 799% */
 
   display: flex;
@@ -121,7 +114,6 @@ export default {
   font-family: Ubuntu, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
   /* identical to box height, or 799% */
 
   display: flex;
@@ -148,5 +140,10 @@ export default {
 }
 .attributesBlock2{
   display: none;
+}
+.attributesBlockText{
+  display: block;
+  margin-top: 5px;
+  font-size:15px;
 }
 </style>
