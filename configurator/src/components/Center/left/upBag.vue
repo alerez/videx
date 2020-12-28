@@ -8,17 +8,12 @@
                 v-on:click="emitImg(imagesUP.url)"
                 class="backgroundBlockImages upBagBackgroundBlockImages"
           />
-          <img
-                v-bind:src="imagesUP.url"
-                v-on:click="emitImg(imagesUP.url)"
-                class="backgroundBlockImages upBagBackgroundBlockImages"
-          />
         </div>
       </div>
     </div>
     <div class="upMobileUpBag">
       <label class="upText upB" >
-        <div class="upText">Завантажити власний фон
+        <div class="upText">{{ upText }}
           <img class="upImg pos" :src="upImgpos" alt="downloads">
           <img class="upImg dis" :src="upImgdis" alt="downloads">
         </div>
@@ -37,6 +32,7 @@ import {mapActions} from 'vuex';
 export default {
   data() {
     return {
+      upText: 'Завантажити власний фон',
       upImgpos: require('../../../assets/img/upB.png'),
       upImgdis: require('../../../assets/img/upBwhite.png'),
       imagesUP: [
@@ -95,14 +91,20 @@ export default {
 .upB:hover .upText{
   color:#FFFFFF;
 }
+.pos{
+  display: flex;
+}
+.dis{
+  display: none;
+}
 .upB:hover .pos{
   display:none;
 }
 .upB:hover .dis{
-  display:block;
+  display:flex;
 }
 .upText{
-
+  width: 320px;
   font-family: Ubuntu, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -111,8 +113,8 @@ export default {
 
   display: flex;
   justify-content:center;
+  align-items: center;
 
-  margin-top:10px;
 
   letter-spacing: 1px;
 

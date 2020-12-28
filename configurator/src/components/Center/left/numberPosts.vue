@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="numberPostsBlockDesktop">
-      <p class="numberPostsText">Кількість постів:</p>
+      <p class="numberPostsText">{{ numberPostsText }}:</p>
       <div class="numberPostsBlock" v-if="frameOrientation === 'horizontal'">
         <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '1'" v-on:click="numberPosts('1')">1</div>
         <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '1'" v-on:click="numberPosts('1')">1</div>
@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="numberPostsBlockMobile">
-      <p class="numberPostsText">Кількість постів:</p>
+      <p class="numberPostsText">{{ numberPostsText }}:</p>
       <div class="numberPostsBlock numberPostsBlockCol" v-if="frameOrientation === 'horizontal'">
       <div style="display:flex; flex-direction:row; height:28px">
         <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '1'" v-on:click="numberPosts('1')"><p></p>1</div>
@@ -87,6 +87,11 @@
 import {mapGetters, mapActions} from 'vuex';
 
 export default {
+  data(){
+    return{
+      numberPostsText: 'Кількість постів',
+    }
+  },
   methods: {
     ...mapActions(['EMIT_numberPostsFrame','EMIT_closedMechanismBlock']),
     numberPosts: function numberPosts(data) {

@@ -1,6 +1,6 @@
 <template>
   <div class="frameOrientation">
-    <p class="frameOrientationText">Орієнтація рамки:</p>
+    <p class="frameOrientationText">{{ frameOrientationText }}:</p>
     <div class="frameOrientationBlock">
       <div class="frameOrientationBlockOne" @click="frameOrientationFun()">
         <img v-if="this.frameOrientation === 'horizontal'" class="frameOrientationBlockOneOne" :src="horizontalColor">
@@ -21,6 +21,7 @@ import {mapGetters, mapActions} from 'vuex';
 export default {
   data() {
     return {
+      frameOrientationText: 'Орієнтація рамки',
       horizontalColor: require('../../../assets/img/horizontalColor.png'),
       horizontal: require('../../../assets/img/horizontal.png'),
       vertical: require('../../../assets/img/vertical.png'),
@@ -81,10 +82,12 @@ export default {
   cursor:pointer;
 }
 .frameOrientationBlockOneOne{
+  transition: 0.5s;
   display: block;
   margin:auto;
 }
 .frameOrientationBlockTwo{
+  transition: 0.5s;
   flex-basis: 49%;
   padding-top:10px;
   cursor:pointer;

@@ -61,7 +61,7 @@ export default {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 15.9247px;
+  font-size: 16.9247px;
   display: flex;
   align-items: flex-end;
   letter-spacing: -0.38927px;
@@ -93,13 +93,12 @@ export default {
 
   background: #FF7A00;
 
-  border: none;
   border-radius: 10px;
 
-  font-family: Ubuntu, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
+  font-family: Ubuntu-Bold, sans-serif;
+  font-weight: 800;
+
+  font-size: 18px;
   line-height: 48px;
   /* or 240% */
 
@@ -107,21 +106,27 @@ export default {
 
   margin-left: 25px;
   cursor:pointer;
+  transition: 0.5s;
+  border:3px solid #FF7A00;
 }
 .buyBlockButtom > button:hover{
   background:#FFFFFF;
   color:#FF7A00;
-  border:1px solid #FF7A00;
+  transition: 0.5s;
 
 }
 .buyBlockFavorites{
   display: flex;
+  flex-direction: row;
+
   margin-left:8px;
+  margin-top: 15px;
 }
 .buyBlockFavorites > img{
   width:23.36px;
   height:20.8px;
-  margin-top:15px;
+
+  display: flex;
 }
 .buyBlockFavorites > p{
   font-family: PT Sans, sans-serif;
@@ -129,13 +134,37 @@ export default {
   font-weight: normal;
   font-size: 18px;
   line-height: 18px;
-  /* identical to box height, or 100% */
 
   display: flex;
   align-items: center;
   letter-spacing: 1.35px;
+
   margin-left: 11px;
 
   color: #B2B2B2;
+}
+
+
+
+
+
+@media screen and (max-width:1590px){
+
+}
+
+@media screen and (max-width:1023px){
+
+}
+
+@media screen and (max-width:848px){
+
+}
+
+@media screen and (max-width:648px){
+
+}
+
+@media screen and (max-width:380px){
+
 }
 </style>

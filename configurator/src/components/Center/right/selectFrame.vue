@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="selectFrameTextTop">Виберіть рамку:</p>
+    <p class="selectFrameTextTop">{{ data.selectFrameTextTop }}:</p>
     <div>
       <label>
         <select class="selectFrameSelect" style="cursor:pointer" v-model="selectFrame.material" required="true" @change="materialGet(selectFrame.material)">
@@ -111,6 +111,11 @@ import {mapGetters,mapActions} from 'vuex';
 
 export default {
 computed: {
+  data(){
+    return{
+      selectFrameTextTop: 'Виберіть рамку',
+    }
+  },
   ...mapGetters(
       [
           'materialFrameItems',
@@ -129,7 +134,6 @@ computed: {
       this.EMIT_frameMaterial(data)
     },
     materialGetColor: function materialGetColor(data){
-      console.log(data)
       this.EMIT_frameMaterialColor(data)
     }
   }

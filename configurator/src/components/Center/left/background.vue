@@ -1,11 +1,15 @@
 <template>
   <div>
-    <p class="backgroundText">Встановіть готовий фон:</p>
+    <p class="backgroundText">{{ BackgroundText }}:</p>
     <div class="backgroundBlock">
       <div class="block1">
         <div v-for="index in this.background[0].images" :key="index.fileURL" class="backgroundBlockImagesHover">
-          <img v-if="activityBackground !== index.id" class="backgroundBlockImages" v-on:click="emitImg(index.id)" :src="index.fileURL">
-          <img v-else-if="activityBackground === index.id" style="border:#ff7a00 solid 2px" class="backgroundBlockImagesHoverImg" v-on:click="emitImg(index.id)" :src="index.fileURL">
+          <div v-if="activityBackground !== index.id" class="backgroundBlockImages" >
+            <img v-on:click="emitImg(index.id)" :src="index.fileURL">
+          </div>
+          <div v-else-if="activityBackground === index.id" class="backgroundBlockImagesHoverImg">
+            <img v-on:click="emitImg(index.id)" :src="index.fileURL">
+          </div>
         </div>
       </div>
     </div>
@@ -18,6 +22,7 @@ import {mapGetters, mapActions} from 'vuex';
 export default {
   data() {
     return {
+      BackgroundText: 'Встановіть готовий фон',
       upImgpos: require('../../../assets/img/upB.png'),
       upImgdis: require('../../../assets/img/upBwhite.png'),
       imagesUP: [
@@ -127,12 +132,26 @@ export default {
   padding-top:-5px;
   cursor:pointer;
 }
+.backgroundBlockImages > img{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
 .backgroundBlockImagesHoverImg{
-  width: 59px;
+  width:59px;
   height:59px;
+  display: block;
   margin-top:3px;
   margin-left:2px;
   border-radius:8px;
+  border:#ff7a00 solid 3px;
+  z-index: 1000;
+}
+.backgroundBlockImagesHoverImg > img{
+  width: 100.5%;
+  height: 100.5%;
+  border-radius: 4px;
+  z-index: -999;
 }
 .backgroundBlockImagesHover{
   width: 63px;

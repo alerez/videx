@@ -460,7 +460,7 @@ import {mapActions, mapGetters} from 'vuex';
 export default {
   data() {
     return {
-      close: 'https://b68757abe9f1.ngrok.io/images/frameColors/close.jpg',
+      close: 'http://localhost:5555/images/frameColors/close.jpg',
       urlImgBag: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
       active1: false,
       active2: false,
@@ -1336,9 +1336,9 @@ export default {
     display:flex;
     margin:0 auto;
     margin-top:-102.5%;
-    padding-left:0.5%;
-    width:40px;
-    height:40px;
+    padding-left:0.43%;
+    width:36px;
+    height:36px;
   }
 
 
@@ -1356,6 +1356,7 @@ export default {
     display:block;
     width:253px;
     height:449px;
+    margin-top: -15px;
   }
   .frameBlockFrameHorizontal3{
     display:block;
@@ -1880,13 +1881,23 @@ export default {
 
 }
 
-@media screen and (max-width:1023px){
+@media screen and (max-width:1170px){
   .logoBinera{
-    margin-top:90vw;
-    margin-left:auto;
+    margin-top:410px;
   }
   .logoBinera > img{
-    width:186.2px;
+    width:140px;
+    margin-right:15px;
+  }
+}
+
+@media screen and (max-width:1023px){
+  .logoBinera{
+    margin-top:92vw;
+  }
+  .logoBinera > img{
+    width:140px;
+    margin-left: 77vw;
   }
 
 
@@ -2459,22 +2470,21 @@ export default {
 
 @media screen and (max-width:848px){
   .logoBinera{
-    margin-top:87vw;
-    margin-left:auto;
+    margin-top:90vw;
   }
   .logoBinera > img{
-    width:186.2px;
-    margin-right:30px;
+    width:140px;
+    margin-left: 75vw;
   }
 }
 
 @media screen and (max-width:648px){
   .logoBinera{
     margin-top:87vw;
-    margin-left:60vw;
   }
   .logoBinera > img{
-    width:186.2px;
+    width:130px;
+    margin-left:65vw;
   }
 
 
@@ -3101,41 +3111,12 @@ export default {
 }
 
 @media screen and (max-width:380px){
-  .logoBinera1{
-    margin-top:420px;
+  .logoBinera{
+    margin-top:85vw;
   }
-  .logoBinera1 > img{
-    width:186.2px;
-    margin:0;
-  }
-
-  .logoBinera2{
-    margin-top:470px;
-  }
-  .logoBinera2 > img{
-    width:186.2px;
-    margin:0;
-  }
-  .logoBinera3{
-    margin-top:420px;
-  }
-  .logoBinera3 > img{
-    width:186.2px;
-    margin:0;
-  }
-  .logoBinera4{
-    margin-top:490px;
-  }
-  .logoBinera4 > img{
-    width:140.2px;
-    margin:0;
-  }
-  .logoBinera5{
-    margin-top:470px;
-  }
-  .logoBinera5 > img{
-    width:109px;
-    margin:0;
+  .logoBinera > img{
+    width:130px;
+    margin-left:65vw;
   }
 
 

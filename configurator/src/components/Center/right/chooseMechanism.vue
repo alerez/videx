@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="chooseMechanismText">Виберіть механізм:</p>
+    <p class="chooseMechanismText">{{ chooseMechanismText }}:</p>
     <div class="selectFrameBlock">
       <div style="display:flex">
         <div class="selectChooseFrame" @click="getMechanismColor('white')">
@@ -47,6 +47,11 @@
 import {mapActions, mapGetters} from 'vuex';
 
 export default {
+  data(){
+    return{
+      chooseMechanismText: 'Виберіть механізм',
+    }
+  },
   computed: {
     ...mapGetters(['chooseMechanismItem', 'chooseFrame', 'chooseMechanism', 'material', 'mechanismColor', 'frame'])
   },
@@ -59,8 +64,6 @@ export default {
       this.EMIT_selectedMechanism(data)
     },
     selectMechanism: function selectMechanism(data){
-      console.log(this[this.chooseMechanismItem][0][0].url)
-      console.log(this[this.chooseMechanismItem][1])
       this.EMIT_mechanism(data)
     },
     getMechanismColor: function getMechanismColor(data){
@@ -103,7 +106,7 @@ export default {
   user-select: none;
   border: 1px solid rgb(233, 233, 233);
   border-radius: 5px 5px 15px 5px;
-  width: 323px;
+  width: 322px;
   margin-top: 11px;
 }
 .chooseMechanismBlockTwo{
@@ -189,8 +192,11 @@ export default {
 }
 .chooseMechanismFlex:hover .chooseMechanismFlexP{
   color:black;
+
   border-bottom:#FF7A00 solid 2px;
-  margin-top:15%;
+
+  margin-top:16%;
+
   height:20px;
 }
 .chooseMechanismFlexImg{
@@ -201,8 +207,8 @@ export default {
 .chooseMechanismImg{
   width:44px;
   height:44px;
-  margin-left:-77px;
-  margin-top:33px;
+  margin-left:-78px;
+  margin-top:32px;
 }
 .chooseMechanismFlexP{
   margin-left: 39px;
@@ -217,5 +223,4 @@ export default {
 
   color: #5B6770;
 }
-
 </style>

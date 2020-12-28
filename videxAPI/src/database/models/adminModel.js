@@ -12,7 +12,7 @@ const adminSchema = new Schema(
             type: String,
             required: true,
             trim: true,
-        }
+        },
     },
     {
         collection: 'admins',

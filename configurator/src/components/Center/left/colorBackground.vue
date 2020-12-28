@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="colorText">Виберіть колір стін:</p>
+    <p class="colorText">{{ colorBackground.text }}:</p>
     <div class="colorBlockBACK">
       <div class="colorBlock">
         <div v-for="(n, idx) in this.cols" v-bind:key="idx" style="display: flex">
@@ -21,6 +21,9 @@ export default {
   name: 'colorBackground',
   data() {
     return {
+      colorBackground: {
+        text: 'Виберіть колір стін',
+      },
       upImgpos: require('../../../assets/img/upB.png'),
       upImgdis: require('../../../assets/img/upBwhite.png'),
       imagesUP: [

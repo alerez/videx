@@ -2,22 +2,35 @@
   width: $width;
   height: $height;
 }
+@mixin border($bottom, $left, $top, $right){
+  border-bottom: $bottom solid $white;
+  border-left: $left solid $white;
+  border-top:$top solid $white;
+  border-right:$right solid $white;
+}
+@mixin centerAbsolute{
+  align-content:center;
+  align-items:center;
+  align-self:center;
+  justify-content:center;
+  justify-items:center;
+  justify-self:center;
+}
 
+$white: rgb(255, 255, 255);
+
+//img{
+//    -webkit-user-select: none;
+//    -moz-user-select: none;
+//    user-select: none;
+//    pointer-events: none;
+//}
 
 @media screen and (max-width: 1590px){
-  .desBlock2{
-    display:block;
-  }
-
-
-
-
+  ////////////////////Background////////////////////////
   .block1{
     @include size(232px,165px);
-    border-bottom: 6px solid rgb(255, 255, 255);
-    border-left: 9px solid rgb(255, 255, 255);
-    border-top:6px solid rgb(255, 255, 255);
-    border-right:5px solid rgb(255, 255, 255);
+    @include border(6px, 9px, 6px, 5px);
   }
   .backgroundBlock{
     @include size(232px,165px);
@@ -31,20 +44,21 @@
   }
   .backgroundBlockImages{
     @include size(44px, 44px);
-    margin-left:1px;
+
+    margin-left:0;
     margin-bottom:0;
-    border-radius: 8px;
   }
   .backgroundBlockImagesHoverImg{
-    width: 39px;
-    height:39px;
+    @include size(39px, 39px);
+
     margin-top:3px;
     margin-left:2px;
+
     border-radius:8px;
   }
   .backgroundBlockImagesHover{
-    width: 44px;
-    height:44px;
+    @include size(44px, 44px);
+
     margin:2.5px;
   }
   .backgroundText{
@@ -52,33 +66,49 @@
     margin-left:4px;
     margin-top:-35px;
   }
+  ///////////////////////////////////////////////////////////
+
+
+
   //////////////////upBag///////////////////////////////////
   .upB{
     @include size(234px,31px);
   }
   .upText{
     font-size:12px;
+
     margin-top:6px;
   }
   .upImg{
     @include size(14px,14px);
+
     margin-left:5px;
     margin-top:1px;
   }
-  ////////////////////colorBackground/////////////////////////////////
+  .desBlock2{
+    display:block;
+  }
+  ////////////////////////////////////////////////////////////
+
+
+
+  ////////////////////colorBackground/////////////////////////
   .colorBlock{
-    @include size(235px,117px)
+    @include size(235px,117px);
   }
   .colorBlockBACK{
     width: 237px
   }
   .colorBack{
-    width: 24px;
-    height: 26px;
+    @include size(24px, 26px);
   }
-  ////////////////////frameOrientation/////////////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////frameOrientation///////////////////////
   .frameOrientationBlock{
-    @include size(234px,86px)
+    @include size(234px,86px);
   }
   .frameOrientationBlockOneOne{
     @include size(67px,38px);
@@ -95,37 +125,56 @@
   .frameOrientationBlockTwo{
     padding-top:10px;
   }
-  ////////////////////numberPosts////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////numberPosts////////////////////////////
   .numberPostsBlock{
     @include size(234px,52px);
+
     font-size: 15.967px;
     line-height: 13px;
   }
   .numberPostsBlockRoz{
     height:34px;
   }
+  ///////////////////////////////////////////////////////////
+
+
+
   ////////////////////downloadProject////////////////////////
   .downloadProjectBlock{
     @include size(234px,38px);
   }
   .downloadProjectText{
-    width:257px;
+    width:234px;
+
     font-size: 12.999px;
   }
   .downloadProjectBlockText{
     font-size: 11.9603px;
+    height: 38px;
   }
   .downloadProjectBlockImg{
     @include size(14px,14px);
   }
-  ////////////////////configurator////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////configurator//////////////////////////
   .configuratorBlock{
     @include size(517px,517px)
   }
   .configuratorBlockBlock{
     @include size(517px,517px)
   }
-  ////////////////////attributes////////////////////////
+  /////////////////////////////////////////////////////////
+
+
+
+  ////////////////////attributes///////////////////////////
   .attributesBlock{
     @include size(521px,175px)
   }
@@ -138,7 +187,11 @@
   .attributesBlockThree{
     font-size: 14px;
   }
-  ////////////////////selectFrame////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////selectFrame////////////////////////////
   .selectFrameSelect{
     @include size(244px,32px)
   }
@@ -178,12 +231,15 @@
     margin-bottom:10px;
   }
   .selectFrameImg{
-    width:30px;
-    height:30px;
+    @include size(30px, 30px);
   }
   .selectFrameText{
     margin-top:6px;
   }
+  ///////////////////////////////////////////////////////////
+
+
+
   ////////////////////chooseMechanism////////////////////////
   .chooseMechanismBlock{
     @include size(244px,101px)
@@ -216,48 +272,34 @@
     margin:15px;
   }
   .chooseMechanismImg{
-    width:33px;
-    height:33px;
-    margin-left:-58px;
-    margin-top:25px;
+    @include size(33px, 33px);
+
+    margin-left:-59px;
+    margin-top:24px;
   }
   .chooseMechanismFlexP{
     margin-left: 20px;
 
-    font-family: Ubuntu,sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 18px;
+
+    color: #5b6770;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  //////////////buy//////////////////////////////////////////
+  .buyBlockButtom > button{
+    @include size(110px, 40px);
+
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    color: #5B6770;
-  }
-//////////////buy///////////////////////
-  .buyBlockButtom > button{
-    width: 110px;
-    height: 40px;
-
-    background: #FF7A00;
-
-    border: none;
-    border-radius: 15px;
-
-    font-family: Ubuntu, sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 16px;
-    /* or 240% */
-
-    display:flex;
-    align-items: center;
-    padding-left:26px;
-
-    color: #FFFFFF;
 
     margin-left: 20px;
-    cursor:pointer;
   }
   .buyBlockCostOne{
     font-size:13px;
@@ -268,51 +310,59 @@
   .buyBlock{
     margin-left:5px;
   }
+  .buyBlockFavorites{
+    margin-top: 5px;
+  }
   .buyBlockFavorites > img{
-    width:19.47px;
-    height:17.33px;
-    margin-top:13px;
+    @include size(19.47px, 17.33px);
   }
   .buyBlockFavorites > p{
     font-size:14.0062px;
   }
+  ///////////////////////////////////////////////////////////
 }
 
 @media screen and (max-width: 1170px){
+  ////////////////////Background////////////////////////
   .block1{
     @include size(219px,158px);
   }
   .backgroundBlock{
     @include size(219px,158px);
+
     filter: none;
   }
   .block2{
     @include size(216.18px,55.68px);
+
     margin-top:4px;
     filter:none;
   }
   .backgroundBlockImages{
     @include size(40px, 40px);
+
     margin-left:1px;
     margin-bottom:0;
-    border-radius: 8px;
   }
   .backgroundBlockImagesHoverImg{
-    width: 36px;
-    height:36px;
+    @include size(36px, 36px);
+
     margin-top:3px;
     margin-left:2px;
-    border-radius:8px;
   }
   .backgroundBlockImagesHover{
-    width: 40px;
-    height:40px;
+    @include size(40px, 40px);
+
     margin:2.5px;
   }
   .backgroundText{
     filter:none;
     font-size:11.94px;
   }
+  ///////////////////////////////////////////////////////////
+
+
+
   ///////////////////////upBag//////////////////////////////
   .upB{
     @include size(218px,33px);
@@ -331,23 +381,33 @@
   }
   .upText{
     font-size:10.94px;
+
     margin-top:10px;
   }
   .upImg{
     margin-top:-1px;
   }
-  ///////////////////////colorBackground//////////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+
+  ///////////////////////colorBackground/////////////////////
   .colorBlock{
     @include size(219px,113px);
   }
   .colorBack{
-    width:31px;
-    height:34px;
+    @include size(31px, 34px);
   }
   .colorBlockBACK{
     width:220px;
   }
-  ////////////////////frameOrientation/////////////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+
+  ////////////////////frameOrientation///////////////////////
   .frameOrientationBlock{
     @include size(218px,63px)
   }
@@ -355,15 +415,13 @@
     padding-top:20px;
   }
   .frameOrientationBlockOne > img{
-    width:54px;
-    height:28px;
+    @include size(54px, 24px);
   }
   .frameOrientationBlockTwo{
     padding-top:5px;
   }
   .frameOrientationBlockTwo > img{
-    width: 28px;
-    height:54px;
+    @include size(28px, 54px);
   }
   .frameOrientationText{
     font-size:11.94px;
@@ -371,9 +429,15 @@
   .frameOrientationBlockRoz{
     height:50px;
   }
-  ////////////////////numberPosts////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+
+  ////////////////////numberPosts////////////////////////////
   .numberPostsBlock{
     @include size(218px,48px);
+
     font-size: 15.9275px;
     line-height: 12px;
   }
@@ -386,6 +450,10 @@
   .numberPostsBlockText{
     font-size:15.93px;
   }
+  ///////////////////////////////////////////////////////////
+
+
+
   ////////////////////downloadProject////////////////////////
   .downloadProjectBlock{
     @include size(218px,36px)
@@ -395,28 +463,43 @@
   }
   .downloadProjectBlockText{
     font-size: 10.9365px;
-    line-height: 9px;
-    padding-top:3px;
+    height: 36px;
   }
   .downloadProjectBlockImg{
     @include size(14px,14px);
+
     margin-top:-3px;
   }
-  ////////////////////configurator////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////configurator///////////////////////////
   .configuratorBlock{
     @include size(456px,456px);
   }
   .configuratorBlockBlock{
     @include size(456px,456px);
   }
-  ////////////////////attributes////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+
+  ////////////////////attributes/////////////////////////////
   .attributesBlock{
     @include size(458px,169px);
   }
   .attributesCenter{
     margin-bottom:40px;
   }
-  ////////////////////selectFrame////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+
+
+  ////////////////////selectFrame////////////////////////////
   .selectFrameSelect{
     @include size(221px,28px)
   }
@@ -425,6 +508,7 @@
   }
   .selectFrameBlock{
     @include size(218.3px,89.16px);
+
     padding:6px;
   }
   .selectFrameColorBlock{
@@ -456,13 +540,17 @@
     margin-bottom:10px;
   }
   .selectFrameImg{
-    width:30px;
-    height:30px;
+    @include size(30px, 30px);
   }
   .selectFrameText{
     font-size:10.9616px;
     margin-top:6px;
   }
+  ///////////////////////////////////////////////////////////
+
+
+
+
   ////////////////////chooseMechanism////////////////////////
   .chooseMechanismBlock{
     @include size(221px,92px)
@@ -492,20 +580,18 @@
   }
   .chooseMechanismFlexImg{
     @include size(53px, 53px);
+
     margin:11px;
   }
   .chooseMechanismImg{
-    width:33px;
-    height:33px;
+    @include size(33px, 33px);
+
     margin-left:-55px;
     margin-top:20px;
   }
   .chooseMechanismFlexP{
     margin-left: 20px;
 
-    font-family: Ubuntu,sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 18px;
     display: flex;
@@ -513,30 +599,17 @@
 
     color: #5B6770;
   }
-  //////////////buy///////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  //////////////buy//////////////////////////////////////////
   .buyBlockButtom > button{
-    width: 110px;
-    height: 40px;
+    @include size(110px, 40px);
 
-    background: #FF7A00;
-
-    border: none;
-    border-radius: 10px;
-
-    font-family: Ubuntu, sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 16px;
-    /* or 240% */
-
-    display:flex;
-    align-items: center;
-    padding-left:26px;
-
-    color: #FFFFFF;
 
     margin-left: 20px;
-    cursor:pointer;
   }
   .buyBlockCostOne{
     font-size:13px;
@@ -547,14 +620,17 @@
   .buyBlock{
     margin-left:5px;
   }
+  .buyBlockFavorites{
+    margin-top: 0;
+  }
   .buyBlockFavorites > img{
-    width:19.47px;
-    height:17.33px;
-    margin-top:13px;
+    @include size(19.47px, 17.33px);
   }
   .buyBlockFavorites > p{
     font-size:14.0062px;
   }
+  ///////////////////////////////////////////////////////////
+
 
 
 
@@ -564,41 +640,49 @@
 }
 
 @media screen and (max-width: 1023px){
+  /////////////////////////////////////////////////////
   .block1{
     @include size(285px,152px);
   }
   .backgroundBlock{
     @include size(285px,152px);
+
     filter: none;
   }
   .block2{
     @include size(285px,57px);
+
     margin-top:0;
     filter:none;
   }
   .backgroundBlockImages{
     @include size(44px, 44px);
+
     margin-left:1px;
     margin-bottom:0;
     border-radius: 8px;
   }
   .backgroundBlockImagesHoverImg{
-    width:40px;
-    height:40px;
+    @include size(40px, 40px);
+
     margin-top:3px;
     margin-left:2px;
     border-radius:8px;
   }
   .backgroundBlockImagesHover{
-    width: 44px;
-    height:44px;
+    @include size(44px, 44px);
+
     margin:2.5px;
   }
   .backgroundText{
     filter:none;
     font-size:11.94px;
   }
-  ///////////////////////upBag//////////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ///////////////////////upBag///////////////////////////////
   .upB{
     @include size(231px,33px);
   }
@@ -628,18 +712,25 @@
     margin-left:3px;
     margin-top:0.5px;
   }
-  ///////////////////////colorBackground//////////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ///////////////////////colorBackground////////////////////
   .colorBlock{
     @include size(285px,152px);
   }
   .colorBack{
-    width:31px;
-    height:34px;
+    @include size(31px, 34px);
   }
   .colorBlockBACK{
     width:285px;
   }
-  ////////////////////frameOrientation/////////////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////frameOrientation//////////////////////
   .frameOrientationBlock{
     @include size(284px,67px)
   }
@@ -647,15 +738,13 @@
     padding-top:20px;
   }
   .frameOrientationBlockOne > img{
-    width:54px;
-    height:28px;
+    @include size(54px, 28px);
   }
   .frameOrientationBlockTwo{
     padding-top:5px;
   }
   .frameOrientationBlockTwo > img{
-    width: 28px;
-    height:54px;
+    @include size(28px, 54px);
   }
   .frameOrientationText{
     font-size:11.94px;
@@ -665,9 +754,14 @@
     margin-right:14px;
     margin-left:-14px;
   }
-  ////////////////////numberPosts////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////numberPosts////////////////////////////
   .numberPostsBlock{
     @include size(285px,68px);
+
     font-size: 15.9275px;
     line-height: 12px;
   }
@@ -684,6 +778,10 @@
     margin-left: 14px;
     margin-top: 7px;
   }
+  ///////////////////////////////////////////////////////////
+
+
+
   ////////////////////downloadProject////////////////////////
   .downloadProjectBlock{
     @include size(218px,36px)
@@ -693,16 +791,19 @@
   }
   .downloadProjectBlockText{
     font-size: 10.9365px;
-    line-height: 9px;
-    padding-top:3px;
+
   }
   .downloadProjectBlockImg{
     @include size(14px,14px);
   }
-  ////////////////////configurator////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////configurator///////////////////////////
   .configuratorBlock{
-    width: 100%;
-    height: 100vw;
+    @include size(100%, 100vw);
+
     margin: 0 auto;
   }
   .configuratorBlockBlock{
@@ -711,6 +812,9 @@
   .configuratorCenter{
     margin: 0 auto;
   }
+  ///////////////////////////////////////////////////////////
+
+
 
   ////////////////////attributes////////////////////////
   .attributesBlock{
@@ -720,9 +824,17 @@
   .attributesCenter{
     margin: 0 auto;
   }
+  ///////////////////////////////////////////////////////////
+
+
+
   ////////////////////selectFrame////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
 
   ////////////////////chooseMechanism////////////////////////
+  ///////////////////////////////////////////////////////////
 
 
   .mobBlock2{
@@ -735,53 +847,53 @@
 }
 
 @media screen and (max-width: 648px){
+  ///////////////////////////////////////////////////////////
   .desBlock2{
     display:block;
   }
-
-
-
-
-
-  .logoBinera1{
-    display:none;
+  .attributesBlock1{
+    display: none;
   }
-  .logoBinera2{
-    display:none;
+  .attributesBlock2{
+    display: flex;
   }
-  .logoBinera3{
-    display:none;
-  }
-  .logoBinera4{
-    display:none;
-  }
-  .logoBinera5{
-    display:none;
-  }
+  ///////////////////////////////////////////////////////////
 
 
-  ///////////////////////upBag//////////////////////////////
+
+  ///////////////////////upBag///////////////////////////////
   .upB{
     @include size(290px,41px);
+
     border-radius: 5px 5px 15px 5px;
+
     margin: 0 auto;
   }
   .upText{
     margin-top:15px;
   }
-  ////////////////////////colorBackground/////////////////////////////
+  //////////////////////////////////////////////////////////
 
-  ////////////////////frameOrientation/////////////////////////////////
+
+
+  ////////////////////////colorBackground///////////////////
+  //////////////////////////////////////////////////////////
+
+
+
+  ////////////////////frameOrientation//////////////////////
   .frameOrientationBlock{
     @include size(185px,54px);
   }
   .frameOrientationBlockOne > img{
     @include size(45px,25px);
+
     margin-left: 25px;
     margin-top: -5px;
   }
   .frameOrientationBlockTwo > img{
     @include size(25px,45px);
+
     margin-left: 35px;
     margin-top: -2px;
   }
@@ -792,9 +904,14 @@
     margin-left:0;
     margin-right:0;
   }
-  ////////////////////numberPosts////////////////////////
+  //////////////////////////////////////////////////////////
+
+
+
+  ////////////////////numberPosts///////////////////////////
   .numberPostsBlock{
     @include size(185px,54px);
+
     font-size: 13.1452px;
     line-height: 10px;
     border-radius: 5px 5px 15px 5px;
@@ -804,7 +921,11 @@
   }
   .numberPostsText{
     margin-bottom:10px;
-  }
+  }//////////////////////////////////////////////////////////
+
+
+
+
   ////////////////////downloadProject////////////////////////
   .downloadProjectBlock{
     @include size(320px,45px);
@@ -814,27 +935,36 @@
   }
   .downloadProjectBlockText{
     font-size: 15.98px;
-    line-height: 14px;
-    padding-top:16px;
+    height: 45px;
   }
   .downloadProjectBlockImg{
     @include size(19px,19px);
     margin-top:-2px;
   }
-  ////////////////////configurator////////////////////////
-  .configuratorBlock{
-    @include size(100%,100vw)
-  }
-  .configuratorBlockBlock{
-    @include size(100%,100vw)
-  }
-  ////////////////////attributes////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////configurator///////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////attributes/////////////////////////////
   .attributesBlock{
     @include size(383px,211px)
   }
-  ////////////////////selectFrame////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////selectFrame////////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
 
   ////////////////////chooseMechanism////////////////////////
+  ///////////////////////////////////////////////////////////
 
 
 
@@ -849,12 +979,7 @@
   .mobileCenter{
     display:flex;
     margin: 0 auto;
-    justify-content:center;
-    justify-items:center;
-    justify-self:center;
-    align-content:center;
-    align-items:center;
-    align-self:center;
+    @include centerAbsolute;
   }
   .mobileRight1{
     display:none;
@@ -862,12 +987,7 @@
   .mobileLeft{
     display:flex;
     margin: 0 auto;
-    justify-content:center;
-    justify-items:center;
-    justify-self:center;
-    align-content:center;
-    align-items:center;
-    align-self:center;
+    @include centerAbsolute;
   }
   .background-Block{
     display:none;
@@ -876,30 +996,14 @@
 }
 
 @media screen and (max-width: 380px){
-  .logoBinera1{
-    display:none;
-  }
-  .logoBinera2{
-    display:none;
-  }
-  .logoBinera3{
-    display:none;
-  }
-  .logoBinera4{
-    display:none;
-  }
-  .logoBinera5{
-    display:none;
-  }
-
-
+  ///////////////////////////////////////////////////////////
   .numberPostsBlockMobile{
     display:block;
   }
   .numberPostsBlockDesktop{
     display:none;
   }
-
+  ///////////////////////////////////////////////////////////
 
 
 
@@ -907,73 +1011,84 @@
   .upB{
     @include size(264px,40px);
   }
-  ///////////////////////////colorBackground//////////////////////////
 
-  ////////////////////frameOrientation/////////////////////////////////
+
+
+  ///////////////////////////colorBackground/////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+
+  ////////////////////frameOrientation///////////////////////
   .frameOrientationBlock{
-    @include size(143px,70px)
+    @include size(143px,70px);
   }
   .frameOrientationBlockOne > img{
     @include size(53px,29px);
+
     margin-left: 11px;
     margin-top: 0;
   }
   .frameOrientationBlockTwo > img{
     @include size(29px,53x);
+
     margin-left: 20px;
     margin-top: 6px;
   }
   .frame-orientation{
-    margin-left:0;
-    margin-top:0;
-    margin-bottom:0;
-    margin-right:3px;
+    margin: 0 3px 0 0;
   }
-  ////////////////////numberPosts////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////numberPosts////////////////////////////
   .numberPostsBlock{
     @include size(143px,70px);
+
     font-size: 12.8067px;
     line-height: 10px;
   }
   .number-post{
-    margin-left:3px;
-    margin-top:0;
-    margin-bottom:0;
-    margin-right:0;
+    margin: 0 0 0 3px;
   }
-  ////////////////////configurator////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////configurator///////////////////////////
   .configuratorBlock{
-    @include size(100%,100vw);
-    display:flex;
-    margin: 0 auto;
-    justify-self:center;
-    justify-items:center;
-    justify-content:center;
-    align-self:center;
-    align-items:center;
-    align-content:center;
+    @include centerAbsolute;
   }
-  .configuratorBlockBlock{
-    @include size(287px,287px);
-  }
-  ////////////////////attributes////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////attributes/////////////////////////////
   .attributesBlock{
     @include size(292px,292px);
+
     display:flex;
     margin: 0 auto;
-    justify-self:center;
-    justify-items:center;
-    justify-content:center;
-    align-self:center;
-    align-items:center;
-    align-content:center;
+    @include centerAbsolute;
   }
-  ////////////////////selectFrame////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////selectFrame////////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
 
   ////////////////////chooseMechanism////////////////////////
   .chooseMechanismBlockTwo{
     @include size(244px,200px)
   }
+  ///////////////////////////////////////////////////////////
+
+
 
   ////////////////////downloadProject////////////////////////
 
@@ -982,31 +1097,13 @@
   }
 
   .downloadProjectBlock{
-    width: 264px;
-    height: 40px;
-
+    @include size(264px, 40px);
   }
   .downloadProjectBlockText{
-    font-family: Ubuntu, sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 12.9838px;
-    line-height: 14px;
-    /* identical to box height, or 108% */
-
-    display: flex;
-    align-items: center;
-    letter-spacing: 1.2543px;
+    height: 40px;
   }
-
-
-
-
-
-
-
-
-
+  ///////////////////////////////////////////////////////////////
 
 
 
@@ -1016,12 +1113,7 @@
   .centerBlock{
     display:flex;
     flex-direction:column;
-    align-content:center;
-    align-items:center;
-    align-self:center;
-    justify-content:center;
-    justify-items:center;
-    justify-self:center;
+    @include centerAbsolute;
     margin: 0 auto;
   }
 
