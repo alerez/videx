@@ -1889,6 +1889,626 @@ export default {
     width:140px;
     margin-right:15px;
   }
+
+  .poster{
+    position:relative;
+  }
+  .closed{
+    display:none;
+  }
+  .poster:hover .closed{
+    display:flex;
+    align-items: center;
+    z-index:100;
+    cursor:pointer;
+    margin: 0 auto;
+    filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.15));
+    transition:0.6s;
+  }
+  .closed > img{
+    display:flex;
+    margin:0 auto;
+    margin-top:-102.5%;
+    padding-left:0.5%;
+    width:40px;
+    height:40px;
+  }
+
+
+  .frameBlockFrameHorizontal1{
+    display:block;
+    width:245.2px;
+    height:245.2px;
+  }
+  .frameBlockFrameHorizontal2{
+    display:block;
+    width:341px;
+    height:189px;
+  }
+  .frameBlockFrameVertical2{
+    display:block;
+    width:189px;
+    height:339px;
+  }
+  .frameBlockFrameHorizontal3{
+    display:block;
+    width:314px;
+    height:120px;
+  }
+  .frameBlockFrameVertical3{
+    display:block;
+    width:119px;
+    height:310px;
+  }
+  .frameBlockFrameHorizontal4{
+    display:block;
+    width:337px;
+    height:99px;
+  }
+  .frameBlockFrameVertical4{
+    display:block;
+    width:101px;
+    height:335px;
+  }
+  .frameBlockFrameHorizontal5{
+    display:block;
+    width:350px;
+    height:83px;
+  }
+  .frameBlockFrameVertical5{
+    display:block;
+    width:83px;
+    height:347px;
+  }
+
+
+
+  .configuratorBlockMechanism11 > img{
+    width:145px;
+    height:147px;
+    border-radius:3px;
+  }
+
+  .configuratorBlockMechanism11{
+    width:145px;
+    height:147px;
+    margin-left:45px;
+    margin-top:-200.5px;
+    border-radius:3px;
+  }
+  .configuratorBlockMechanism11Hover{
+    width:146px;
+    height:149px;
+    margin-left:-5px;
+    margin-top:-6px;
+    border:#ff7a00 solid 4.5px;
+    border-radius:3px;
+    filter:none;
+  }
+
+
+
+  /*
+    Frame 2 horizontal
+  */
+
+  .configuratorBlockMechanism12{
+    width:114px;
+    height:114px;
+    margin-left:34px;
+    margin-top:-155px
+  }
+  .configuratorBlockMechanism22{
+    width:114px;
+    height:114px;
+    margin-left:38px;
+    margin-top:-155px
+  }
+
+  .configuratorBlockMechanism12 > img{
+    width:114px;
+    height:114px;
+  }
+  .configuratorBlockMechanism22 > img{
+    width:114px;
+    height:114px;
+  }
+  .configuratorBlockMechanism12Hover{
+    width:111px;
+    height:114.5px;
+    border:3px solid #ff7a00;
+    margin-left:-2px;
+    margin-top:-122px;
+    filter:none;
+    border-radius:3px;
+  }
+  .configuratorBlockMechanism22Hover{
+    width:111px;
+    height:114.5px;
+    border:3px solid #ff7a00;
+    margin-left:0;
+    margin-top:-122px;
+    margin-left:-2px;
+    filter:none;
+    border-radius:3px;
+  }
+
+  /*
+  Frame 2 vertical
+*/
+
+  .configuratorBlockMechanism122{
+    width:114px;
+    height:114px;
+    margin-left:35px;
+    margin-top:-263px
+  }
+  .configuratorBlockMechanism222{
+    width:114px;
+    height:114px;
+    margin-left:35px;
+    margin-top:-155px
+  }
+  .configuratorBlockMechanism122 > img{
+    width:114px;
+    height:114px;
+  }
+  .configuratorBlockMechanism222 > img{
+    width:114px;
+    height:114px;
+  }
+  .configuratorBlockMechanism122Hover{
+    width:145px;
+    height:145px;
+    border:3px solid #ff7a00;
+    margin-top:-2px;
+    margin-left:-2px;
+    filter:none;
+  }
+  .configuratorBlockMechanism222Hover{
+    width:145px;
+    height:145px;
+    border:3px solid #ff7a00;
+    margin-top:-1.5px;
+    margin-left:-2px;
+    filter:none;
+  }
+
+
+  /*
+    Frame 3
+  */
+
+  .configuratorBlockMechanism13{
+    width:72px;
+    height:72px;
+    margin-top:-98px;
+    margin-left:22px;
+  }
+  .configuratorBlockMechanism23{
+    width:71.5px;
+    height:72px;
+    margin-top:-98px;
+    margin-left:25px;
+  }
+  .configuratorBlockMechanism33{
+    width:71.5px;
+    height:72px;
+    margin-top:-98px;
+    margin-left:24px;
+  }
+  .configuratorBlockMechanism13 > img{
+    width:72px;
+    height:72px;
+  }
+  .configuratorBlockMechanism23 > img{
+    width:71.5px;
+    height:72px;
+  }
+  .configuratorBlockMechanism33 > img{
+    width:71.5px;
+    height:72px;
+  }
+  .configuratorBlockMechanism13Hover{
+    width:72px;
+    height:72px;
+    margin-top:-79px;
+    border-radius:3px;
+    border:#ff7a00 solid 2px;
+    filter:none;
+    margin-left:-1px;
+  }
+  .configuratorBlockMechanism23Hover{
+    width:72px;
+    height:72px;
+    margin-top:-79px;
+    border-radius:3px;
+    border:#ff7a00 solid 2px;
+    filter:none;
+    margin-left:-1.5px;
+  }
+  .configuratorBlockMechanism33Hover{
+    width:72px;
+    height:72px;
+    margin-top:-79px;
+    border-radius:3px;
+    border:#ff7a00 solid 2px;
+    filter:none;
+    margin-left:-1px;
+  }
+
+
+
+
+
+
+
+  .configuratorBlockMechanism133{
+    width:71.5px;
+    height:72px;
+    margin-left:22px;
+    margin-top:-166px
+  }
+  .configuratorBlockMechanism133 > img{
+    width:71.5px;
+    height:72px;
+    border-radius:3px;
+  }
+  .configuratorBlockMechanism233{
+    width:71.5px;
+    height:72px;
+    margin-left:22px;
+    margin-top:-167px
+  }
+  .configuratorBlockMechanism233 > img{
+    width:71.5px;
+    height:72px;
+    border-radius:3px;
+  }
+  .configuratorBlockMechanism333{
+    width:71.5px;
+    height:72px;
+    margin-left:22px;
+    margin-top:-99.5px
+  }
+  .configuratorBlockMechanism333 > img{
+    width:71.5px;
+    height:72px;
+    border-radius:3px;
+  }
+
+
+
+
+
+
+
+
+
+  .configuratorBlockMechanism14{
+    width:59.5px;
+    height:59.5px;
+    margin-top:-81px;
+    margin-left:18px;
+  }
+  .configuratorBlockMechanism14 > img{
+    width:59.5px;
+    height:60px;
+  }
+  .configuratorBlockMechanism24{
+    width:59.5px;
+    height:59.5px;
+    margin-top:-81px;
+    margin-left:20px;
+  }
+  .configuratorBlockMechanism24 > img{
+    width:59.5px;
+    height:60px;
+  }
+  .configuratorBlockMechanism34{
+    width:59.5px;
+    height:59.5px;
+    margin-top:-81px;
+    margin-left:19.5px;
+  }
+  .configuratorBlockMechanism34 > img{
+    width:59.5px;
+    height:60px;
+  }
+  .configuratorBlockMechanism44{
+    width:59.5px;
+    height:59.5px;
+    margin-top:-81px;
+    margin-left:20px;
+  }
+  .configuratorBlockMechanism44 > img{
+    width:59.5px;
+    height:60px;
+  }
+  .configuratorBlockMechanism14Hover{
+    width:58px;
+    height:58px;
+    margin-top:-66px;
+    margin-left:0;
+    filter:none;
+    border-radius:3px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism24Hover{
+    width:58px;
+    height:58px;
+    margin-top:-66px;
+    margin-left:0;
+    filter:none;
+    border-radius:3px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism34Hover{
+    width:58px;
+    height:58px;
+    margin-top:-66px;
+    margin-left:0;
+    filter:none;
+    border-radius:3px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism44Hover{
+    width:58px;
+    height:58px;
+    margin-top:-66px;
+    margin-left:0;
+    filter:none;
+    border-radius:3px;
+    border:2px solid #ff7a00;
+  }
+
+
+
+
+
+
+
+  .configuratorBlockMechanism144{
+    width:59.5px;
+    height:59px;
+    margin-top:-136px;
+    margin-left:19px;
+  }
+  .configuratorBlockMechanism144 > img{
+    width:59.5px;
+    height:59px;
+  }
+  .configuratorBlockMechanism244{
+    width:59.5px;
+    height:59px;
+    margin-top:-137px;
+    margin-left:19px;
+  }
+  .configuratorBlockMechanism244 > img{
+    width:59.5px;
+    height:59px;
+  }
+  .configuratorBlockMechanism344{
+    width:59.5px;
+    height:59px;
+    margin-top:-137.5px;
+    margin-left:19px;
+  }
+  .configuratorBlockMechanism344 > img{
+    width:59.5px;
+    height:59px;
+  }
+  .configuratorBlockMechanism444{
+    width:59.5px;
+    height:59px;
+    margin-top:-83px;
+    margin-left:19px;
+  }
+  .configuratorBlockMechanism444 > img{
+    width:59.5px;
+    height:59px;
+  }
+  .configuratorBlockMechanism144Hover{
+    width:83px;
+    height:84px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism244Hover{
+    width:83px;
+    height:84px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism344Hover{
+    width:83px;
+    height:84px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism444Hover{
+    width:83px;
+    height:84px;
+    margin-top:-2px;
+  }
+
+
+
+
+  .configuratorBlockMechanism15{
+    width:50px;
+    height:50px;
+    margin-top:-68px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism15 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism25{
+    width:50px;
+    height:50px;
+    margin-top:-68px;
+    margin-left:17px;
+  }
+  .configuratorBlockMechanism25 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism35{
+    width:50px;
+    height:50px;
+    margin-top:-68px;
+    margin-left:17px;
+  }
+  .configuratorBlockMechanism35 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism45{
+    width:50px;
+    height:50px;
+    margin-top:-68px;
+    margin-left:17px;
+  }
+  .configuratorBlockMechanism45 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism55{
+    width:50px;
+    height:50px;
+    margin-top:-68px;
+    margin-left:16px;
+  }
+  .configuratorBlockMechanism55 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism15Hover{
+    width:49px;
+    height:49px;
+    margin-top:-55px;
+    margin-left:-1px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism25Hover{
+    width:49px;
+    height:49px;
+    margin-top:-55px;
+    margin-left:-1px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism35Hover{
+    width:49px;
+    height:49px;
+    margin-top:-55px;
+    margin-left:-2px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism45Hover{
+    width:49px;
+    height:49px;
+    margin-top:-55px;
+    margin-left:-2px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism55Hover{
+    width:49px;
+    height:49px;
+    margin-top:-55px;
+    margin-left:-1.5px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+
+
+
+
+
+
+
+  .configuratorBlockMechanism155{
+    width:50px;
+    height:50px;
+    margin-top:-115px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism155 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism255{
+    width:50px;
+    height:50px;
+    margin-top:-116px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism255 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism355{
+    width:50px;
+    height:50px;
+    margin-top:-117px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism355 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism455{
+    width:50px;
+    height:50px;
+    margin-top:-115px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism455 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism555{
+    width:50px;
+    height:50px;
+    margin-top:-69px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism555 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism155Hover{
+    width:61px;
+    height:61px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism255Hover{
+    width:61px;
+    height:61px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism355Hover{
+    width:61px;
+    height:61px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism455Hover{
+    width:61px;
+    height:61px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism555Hover{
+    width:61px;
+    height:61px;
+    margin-top:-2px;
+  }
 }
 
 @media screen and (max-width:1023px){
