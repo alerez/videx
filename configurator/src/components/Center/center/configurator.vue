@@ -460,7 +460,7 @@ import {mapActions, mapGetters} from 'vuex';
 export default {
   data() {
     return {
-      close: 'http://localhost:5555/images/frameColors/close.jpg',
+      close: 'https://c7aab604874c.ngrok.io/images/frameColors/close.jpg',
       urlImgBag: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
       active1: false,
       active2: false,

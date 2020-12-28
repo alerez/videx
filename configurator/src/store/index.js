@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 
 Vue.use(Vuex)
-const url = 'http://localhost:5555';
+const url = 'https://c7aab604874c.ngrok.io';
 
 const getFrames = {
   method: 'get',

@@ -26,27 +26,6 @@
 
       </div>
     </div>
-    <div class="attributesBlock attributesBlock2">
-      <div class="attributesBlockOne">
-        <p>{{ attributes.frame }}:</p>
-        <div style="color:#FF7A00">
-          <p v-if="numberPostsFrame === '1'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
-          <p v-else-if="frameOrientation !== 'horizontal'">{{frame.vertical[material][colorsFrame][numberPostsFrame].article}}</p>
-          <p v-else-if="frameOrientation !== 'vertical'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
-        </div>
-      </div>
-      <div class="attributesBlockRez"></div>
-      <div class="attributesBlockTwo">
-        <p>{{ attributes.mechanism }}:</p>
-        <div style="color:#FF7A00; display:flex; flex-direction:column; flex-wrap:wrap; margin-top: -5px">
-          <p v-if="this.mechanismBlockOne.article" class="attributesBlockText">{{this.mechanismBlockOne.article}}</p>
-          <p v-if="this.mechanismBlockTwo.article" class="attributesBlockText">{{this.mechanismBlockTwo.article}}</p>
-          <p v-if="this.mechanismBlockThree.article" class="attributesBlockText">{{this.mechanismBlockThree.article}}</p>
-          <p v-if="this.mechanismBlockFour.article" class="attributesBlockText">{{this.mechanismBlockFour.article}}</p>
-          <p v-if="this.mechanismBlockFive.article" class="attributesBlockText">{{this.mechanismBlockFive.article}}</p>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 

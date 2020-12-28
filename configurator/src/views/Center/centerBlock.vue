@@ -47,7 +47,7 @@ export default {
   name: 'centerBlock',
   data () {
     return {
-      close: 'https://b68757abe9f1.ngrok.io/images/frameColors/close.jpg',
+      close: 'https://c7aab604874c.ngrok.io/images/frameColors/close.jpg',
     }
   },
   components: {
@@ -188,19 +188,20 @@ export default {
     margin:50px auto 0;
   }
   .mobileChooseMechanism{
-    width:55%;
-    height:550px;
+    width:85%;
+    height:350px;
     background:white;
     position:fixed;
     z-index:1000;
     display:block;
+    margin-top:120px;
     border: 3px solid #5B6770;
     border-top-right-radius:25px;
     border-top-left-radius:25px;
   }
   .mobileChooseMechanism2{
-    width:55%;
-    height:900px;
+    width:85%;
+    height:600px;
     background:white;
     position:fixed;
     z-index:1000;
@@ -213,8 +214,8 @@ export default {
     margin-top:-30px;
   }
   .mobileChooseMechanism3{
-    width:75%;
-    height:650px;
+    width:85%;
+    height:400px;
     background:white;
     position:fixed;
     z-index:1000;
@@ -224,8 +225,8 @@ export default {
     border-top-left-radius:25px;
   }
   .mobileChooseMechanism4{
-    width:75%;
-    height:650px;
+    width:85%;
+    height:400px;
     background:white;
     position:fixed;
     z-index:1000;
@@ -271,7 +272,7 @@ export default {
 @media screen and (max-width: 380px){
   .mobileChooseMechanism{
     width:75%;
-    height:550px;
+    height:700px;
     background:white;
     position:fixed;
     z-index:1000;
@@ -279,6 +280,7 @@ export default {
     border:3px solid #5B6770;
     border-top-right-radius:25px;
     border-top-left-radius:25px;
+    margin-top:0;
   }
   .mobileChooseMechanism > div{
     margin-top:-20px;
@@ -286,7 +288,7 @@ export default {
 
   .mobileChooseMechanism2{
     width:75%;
-    height:870px;
+    height:1100px;
     background:white;
     position:fixed;
     z-index:1000;
@@ -302,7 +304,7 @@ export default {
 
   .mobileChooseMechanism3{
     width:80%;
-    height:870px;
+    height:970px;
     background:white;
     position:fixed;
     z-index:1000;
@@ -314,7 +316,7 @@ export default {
 
   .mobileChooseMechanism4{
     width:80%;
-    height:550px;
+    height:700px;
     background:white;
     position:fixed;
     z-index:1000;
