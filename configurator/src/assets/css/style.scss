@@ -857,10 +857,10 @@ $white: rgb(255, 255, 255);
 
   ////////////////////chooseMechanism////////////////////////
   .chooseMechanismBlockTwo{
-    @include size(100vw,200px)
+    @include size(100vw,220px)
   }
   .chooseMechanismBlockTwoRam{
-    @include size(100vw, 200px);
+    @include size(100vw, 220px);
     border:none;
   }
   .chooseMechanismBlockMobile{
@@ -868,6 +868,39 @@ $white: rgb(255, 255, 255);
     flex-direction:row;
     overflow-x:auto;
   }
+
+  .chooseMechanismFlex{
+    display:flex;
+    flex-direction:column;
+  }
+  .chooseMechanismFlexImg{
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+  }
+  .chooseMechanismImg{
+    width:44px;
+    height:44px;
+    margin-left:33px;
+    margin-top:-78px;
+    display:flex;
+    flex-direction:column;
+  }
+  .chooseMechanismFlexP{
+    margin-left: 21px;
+    margin-top:30px;
+
+    font-family: Ubuntu,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #5B6770;
+  }
+
   ///////////////////////////////////////////////////////////
 
 

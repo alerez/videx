@@ -190,15 +190,6 @@ export default {
   cursor:pointer;
   display: flex;
 }
-.chooseMechanismFlex:hover .chooseMechanismFlexP{
-  color:black;
-
-  border-bottom:#FF7A00 solid 2px;
-
-  margin-top:16%;
-
-  height:20px;
-}
 .chooseMechanismFlexImg{
   width: 70px;
   height: 70px;
