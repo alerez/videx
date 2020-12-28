@@ -6,7 +6,7 @@
     <div v-if="mobileSelectFrame === true" class="mobileChooseMechanism">
       <div class="mobileChooseMechanism_closed" v-on:click="onSelectFrame(false)"><img :src="close" style="cursor:pointer"></div>
       <div class="mobileChooseMechanism_block">
-        <selectFrame></selectFrame>
+        <selectFrame style="margin-top:-50px"></selectFrame>
       </div>
     </div>
     <div v-if="mobileSelectMechanism === true" class="mobileChooseMechanism2">
@@ -47,7 +47,7 @@ export default {
   name: 'centerBlock',
   data () {
     return {
-      close: 'https://5acbe7c60245.ngrok.io/images/frameColors/close.jpg',
+      close: 'https://d773dace96b9.ngrok.io/images/frameColors/close.jpg',
     }
   },
   components: {
@@ -200,6 +200,12 @@ export default {
     border: 3px solid #5B6770;
     border-bottom:none;
   }
+  .mobileChooseMechanism > div{
+
+  }
+  .selectFrameCenterBlock{
+    margin-top:-50px
+  }
   .mobileChooseMechanism2{
     width:100%;
     height:350px;
@@ -213,7 +219,7 @@ export default {
     border-bottom:none;
   }
   .mobileChooseMechanism2 > div{
-    margin-top:-30px;
+
   }
   .mobileChooseMechanism3{
     width:100%;
@@ -243,7 +249,7 @@ export default {
     width:60px;
     height:60px;
     display:block;
-    margin:-20px auto 0;
+    margin:-27px auto 0;
   }
   .mobileChooseMechanism_closed > img{
     width:60px;
@@ -273,6 +279,14 @@ export default {
   }
 }
 @media screen and (max-width: 380px){
+  .left-center{
+    margin-top:-40px;
+    margin-bottom:10px;
+  }
+
+
+
+
   .mobileChooseMechanism{
     width:100%;
     height:250px;

@@ -12,7 +12,7 @@
       <div class="attributesBlockRez"></div>
       <div class="attributesBlockTwo">
         <p>{{ attributes.mechanism }}:</p>
-        <div style="color:#FF7A00; display:flex; flex-direction:column; flex-wrap:wrap; margin-top: -5px">
+        <div style="color:#FF7A00; display:flex; flex-direction:column; flex-wrap:wrap; margin-top: -5px" class="attributesMechanism">
             <p v-if="this.mechanismBlockOne.article" class="attributesBlockText">{{this.mechanismBlockOne.article}}</p>
             <p v-if="this.mechanismBlockTwo.article" class="attributesBlockText">{{this.mechanismBlockTwo.article}}</p>
             <p v-if="this.mechanismBlockThree.article" class="attributesBlockText">{{this.mechanismBlockThree.article}}</p>
@@ -145,5 +145,8 @@ export default {
   display: block;
   margin-top: 5px;
   font-size:15px;
+}
+.attributesMechanism{
+  margin-left:10px;
 }
 </style>

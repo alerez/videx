@@ -247,6 +247,7 @@ export default {
     margin-left:-16px;
     margin-top:23px;
     border-radius:5px 5px 5px 15px;
+    background:#ffffff;
   }
   .mobileFrame1 > div{
     display:flex;
@@ -269,6 +270,7 @@ export default {
     margin-left:10px;
     margin-top:23px;
     border-radius:5px 5px 15px 5px;
+    background:#ffffff;
   }
   .mobileMechanism1 > div{
     display:flex;
@@ -337,6 +339,7 @@ export default {
     margin-top:10px;
     margin-right:6px;
     border-radius:5px 5px 5px 15px;
+    background:#ffffff;
   }
   .mobileBackground > div{
     display:flex;
@@ -356,6 +359,7 @@ export default {
     margin-top:10px;
     margin-left:6px;
     border-radius:5px 5px 15px 5px;
+    background:#ffffff;
   }
   .mobileColorBackground > div{
     display:flex;
@@ -398,6 +402,7 @@ export default {
       margin-right:7.5px;
       margin-top:0;
       margin-left:0;
+      background:#ffffff;
     }
     .mobileColorBackground{
       width: 137px;
@@ -405,6 +410,7 @@ export default {
       margin-left:7.5px;
       margin-top:0;
       margin-right:0;
+      background:#ffffff;
     }
     .mobileBackground > div > p {
       text-align:right;

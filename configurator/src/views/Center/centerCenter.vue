@@ -116,6 +116,7 @@ export default {
   margin-top:10px;
   margin-right:10px;
   border-radius:5px 5px 5px 15px;
+  background:#ffffff;
 }
 .mobileFrame > div{
   display:flex;
@@ -136,6 +137,7 @@ export default {
   margin-top:10px;
   margin-left:10px;
   border-radius:5px 5px 15px 5px;
+  background:#ffffff;
 }
 .mobileMechanism > div{
   display:flex;
@@ -183,17 +185,23 @@ i {
     width: 135px;
     height: 52px;
     margin-right:7.5px;
+    margin-bottom:8px;
+    margin-top:16px;
   }
   .mobileMechanism{
     width: 135px;
     height: 52px;
     margin-left:7.5px;
+    margin-bottom:12px;
+    margin-top:20px;
   }
   .mobileFrame > div > p {
     text-align:right;
     margin-right:17px;
+    margin-top:-3px;
   }
   .mobileMechanism > div > p {
+    margin-top:-3px;
     margin-left:0;
   }
   .centerLeftArrow{

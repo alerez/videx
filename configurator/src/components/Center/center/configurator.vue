@@ -460,7 +460,7 @@ import {mapActions, mapGetters} from 'vuex';
 export default {
   data() {
     return {
-      close: 'https://5acbe7c60245.ngrok.io/images/frameColors/close.jpg',
+      close: 'https://d773dace96b9.ngrok.io/images/frameColors/close.jpg',
       urlImgBag: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
       active1: false,
       active2: false,
@@ -2903,7 +2903,7 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism24{
-    margin-left:114px;
+    margin-left:113px;
     margin-top:-174px
   }
   .configuratorBlockMechanism24 > img{
@@ -2922,7 +2922,7 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism34{
-    margin-left:110px;
+    margin-left:111px;
     margin-top:-174px
   }
   .configuratorBlockMechanism34 > img{
@@ -3060,7 +3060,7 @@ export default {
 
   .configuratorBlockMechanism15{
     margin-left:34px;
-    margin-top:-146.5px;
+    margin-top:-147px;
   }
   .configuratorBlockMechanism15 > img{
     width:108.5px;
@@ -3079,7 +3079,7 @@ export default {
   }
   .configuratorBlockMechanism25{
     margin-left:96px;
-    margin-top:-146.5px;
+    margin-top:-147px;
   }
   .configuratorBlockMechanism25 > img{
     width:108.5px;
@@ -3097,8 +3097,8 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism35{
-    margin-left:95px;
-    margin-top:-146.5px;
+    margin-left:95.5px;
+    margin-top:-147px;
   }
   .configuratorBlockMechanism35 > img{
     width:108.5px;
@@ -3117,7 +3117,7 @@ export default {
   }
   .configuratorBlockMechanism45{
     margin-left:96px;
-    margin-top:-146.5px;
+    margin-top:-147px;
   }
   .configuratorBlockMechanism45 > img{
     width:108.5px;
@@ -3136,7 +3136,7 @@ export default {
   }
   .configuratorBlockMechanism55{
     margin-left:95px;
-    margin-top:-146.5px;
+    margin-top:-147px;
   }
   .configuratorBlockMechanism55 > img{
     width:108.5px;
@@ -3913,8 +3913,8 @@ export default {
     margin-top:85vw;
   }
   .logoBinera > img{
-    width:130px;
-    margin-left:65vw;
+    width:120px;
+    margin-left:61vw;
   }
 
 

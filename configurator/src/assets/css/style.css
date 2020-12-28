@@ -746,7 +746,7 @@
 
   .upText {
     font-size: 10.94px;
-    margin-top: 10px;
+    margin-top: 0;
   }
 
   .upImg {
@@ -872,6 +872,10 @@
     margin: 0 auto;
   }
 
+  .selectFrameTextTop {
+    margin-top: 60px;
+  }
+
   .selectFrameBlock {
     border: none;
     display: flex;
@@ -888,6 +892,10 @@
   .selectFrameText {
     margin-top: -22px;
     margin-left: 7px;
+  }
+
+  .selectFrameBlockBlock {
+    margin-top: 20px;
   }
 
   .chooseMechanismBlockTwo {
@@ -1131,13 +1139,21 @@
 
   .frameOrientationBlockTwo > img {
     width: 29px;
-    height: 53x;
-    margin-left: 20px;
-    margin-top: 6px;
+    height: 73x;
+    margin-left: 17px;
+    margin-top: 4px;
   }
 
   .frame-orientation {
-    margin: 0 3px 0 0;
+    margin: 0 7.5px 0 0;
+  }
+
+  .frameOrientationBlock {
+    margin-top: -3px;
+  }
+
+  .frameOrientationBlockRoz {
+    margin-left: 9px;
   }
 
   .numberPostsBlock {
@@ -1148,7 +1164,7 @@
   }
 
   .number-post {
-    margin: 0 0 0 3px;
+    margin: 0 0 0 7.5px;
   }
 
   .configuratorBlock {
@@ -1201,6 +1217,7 @@
   .downloadProjectBlock {
     width: 264px;
     height: 40px;
+    margin-top: 30px;
   }
 
   .downloadProjectBlockText {
