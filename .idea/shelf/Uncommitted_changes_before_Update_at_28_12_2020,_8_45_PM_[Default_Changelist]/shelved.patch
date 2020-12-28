@@ -1,0 +1,1314 @@
+Index: configurator/src/assets/css/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@media screen and (max-width: 1590px) {\n  .block1 {\n    width: 232px;\n    height: 165px;\n    border-bottom: 6px solid white;\n    border-left: 9px solid white;\n    border-top: 6px solid white;\n    border-right: 5px solid white;\n  }\n\n  .backgroundBlock {\n    width: 232px;\n    height: 165px;\n  }\n\n  .block2 {\n    width: 232px;\n    height: 61px;\n    margin-top: 7px;\n    padding-left: 9px;\n    padding-top: 4px;\n  }\n\n  .backgroundBlockImages {\n    width: 44px;\n    height: 44px;\n    margin-left: 0;\n    margin-bottom: 0;\n  }\n\n  .backgroundBlockImagesHoverImg {\n    width: 39px;\n    height: 39px;\n    margin-top: 3px;\n    margin-left: 2px;\n    border-radius: 8px;\n  }\n\n  .backgroundBlockImagesHover {\n    width: 44px;\n    height: 44px;\n    margin: 2.5px;\n  }\n\n  .backgroundText {\n    margin-bottom: 11px;\n    margin-left: 4px;\n    margin-top: -35px;\n    font-size: 12.94px;\n  }\n\n  .upB {\n    width: 234px;\n    height: 31px;\n    margin-top: 4px;\n  }\n\n  .upText {\n    font-size: 12px;\n  }\n\n  .upImg {\n    width: 14px;\n    height: 14px;\n    margin-left: 5px;\n    margin-top: 1px;\n  }\n\n  .desBlock2 {\n    display: block;\n  }\n\n  .colorBlock {\n    width: 235px;\n    height: 117px;\n  }\n\n  .colorBlockBACK {\n    width: 237px;\n  }\n\n  .colorBack {\n    width: 24px;\n    height: 26px;\n  }\n\n  .colorText {\n    font-size: 12.94px;\n    margin-bottom: 9px;\n  }\n\n  .frameOrientationBlock {\n    width: 234px;\n    height: 86px;\n  }\n\n  .frameOrientationBlockOneOne {\n    width: 67px;\n    height: 38px;\n  }\n\n  .frameOrientationBlockTwoTwo {\n    width: 38px;\n    height: 67px;\n  }\n\n  .frameOrientationBlockRoz {\n    height: 67px;\n  }\n\n  .frameOrientationBlockOne {\n    padding-top: 25px;\n  }\n\n  .frameOrientationBlockTwo {\n    padding-top: 10px;\n  }\n\n  .frameOrientationText {\n    font-size: 12.94px;\n  }\n\n  .numberPostsBlock {\n    width: 234px;\n    height: 52px;\n    font-size: 15.967px;\n    line-height: 13px;\n  }\n\n  .numberPostsBlockRoz {\n    height: 34px;\n  }\n\n  .numberPostsText {\n    font-size: 12.94px;\n    margin-left: 6px;\n  }\n\n  .downloadProjectBlock {\n    width: 234px;\n    height: 38px;\n  }\n\n  .downloadProjectText {\n    width: 234px;\n    font-size: 13px;\n  }\n\n  .downloadProjectBlockText {\n    font-size: 11.9603px;\n    height: 38px;\n  }\n\n  .downloadProjectBlockImg {\n    width: 14px;\n    height: 14px;\n  }\n\n  .configuratorBlock {\n    width: 517px;\n    height: 517px;\n  }\n\n  .configuratorBlockBlock {\n    width: 517px;\n    height: 517px;\n  }\n\n  .attributesBlock {\n    width: 521px;\n    height: 175px;\n  }\n\n  .attributesBlockOne {\n    font-size: 14px;\n  }\n\n  .attributesBlockTwo {\n    font-size: 14px;\n  }\n\n  .attributesBlockThree {\n    font-size: 14px;\n  }\n\n  .selectFrameSelect {\n    width: 244px;\n    height: 32px;\n    font-size: 14px;\n  }\n\n  .selectFrameTextTop {\n    margin-top: 0;\n    font-size: 12.94px;\n  }\n\n  .selectFrameBlock {\n    width: 244px;\n    height: 102px;\n    padding: 8px;\n  }\n\n  .selectFrameColorBlock {\n    margin: 1px;\n  }\n\n  .selectFrameBlockColorBlock {\n    width: 31px;\n    height: 31px;\n  }\n\n  .selectFrameBlockColorText {\n    font-size: 11.9488px;\n    line-height: 14px;\n    letter-spacing: -0.38502px;\n  }\n\n  .selectFrameColorBlock {\n    margin: 8px 0 0;\n  }\n\n  .selectFrameBlockPos {\n    margin-left: 8px;\n  }\n\n  .selectFrameText {\n    margin-left: 5px;\n    margin-bottom: 12px;\n    margin-top: 20px;\n  }\n\n  .selectChooseFrame {\n    display: flex;\n    flex-basis: 50%;\n    margin-bottom: 10px;\n  }\n\n  .selectFrameImg {\n    width: 30px;\n    height: 30px;\n  }\n\n  .selectFrameText {\n    margin-top: 6px;\n  }\n\n  .chooseMechanismBlock {\n    width: 244px;\n    height: 101px;\n  }\n\n  .chooseMechanismText {\n    font-size: 12.08px;\n    margin-bottom: 0;\n    margin-top: 11px;\n  }\n\n  .chooseMechanismBlockTwo {\n    width: 244px;\n    height: 348px;\n  }\n\n  .chooseMechanismBlockTwoRam {\n    width: 244px;\n  }\n\n  .chooseMechanismColorText {\n    font-size: 11.9488px;\n    line-height: 14px;\n    letter-spacing: -0.38502px;\n  }\n\n  .chooseMechanismBlockColorBlock {\n    width: 31px;\n    height: 31px;\n  }\n\n  .chooseMechanismColorBlock {\n    margin: 8px 0 0;\n  }\n\n  .chooseMechanismBlockPos {\n    margin-left: 8px;\n  }\n\n  .chooseMechanismFlex > p {\n    font-size: 14.0062px;\n  }\n\n  .chooseMechanismFlexImg {\n    width: 53px;\n    height: 53px;\n    margin: 15px;\n  }\n\n  .chooseMechanismImg {\n    width: 33px;\n    height: 33px;\n    margin-left: -59px;\n    margin-top: 24px;\n  }\n\n  .chooseMechanismFlexP {\n    margin-left: 20px;\n    font-size: 13px;\n    line-height: 18px;\n    color: #5b6770;\n  }\n\n  .buyBlockButtom > button {\n    width: 110px;\n    height: 40px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 15.37px;\n    margin-left: 20px;\n  }\n\n  .buyBlockCostOne {\n    font-size: 13px;\n  }\n\n  .buyBlockCostTwo {\n    font-size: 26px;\n  }\n\n  .buyBlock {\n    margin-left: 5px;\n  }\n\n  .buyBlockFavorites {\n    margin-top: 5px;\n  }\n\n  .buyBlockFavorites > img {\n    width: 19.47px;\n    height: 17.33px;\n  }\n\n  .buyBlockFavorites > p {\n    font-size: 14.0062px;\n  }\n}\n@media screen and (max-width: 1170px) {\n  .block1 {\n    width: 219px;\n    height: 158px;\n  }\n\n  .backgroundBlock {\n    width: 219px;\n    height: 158px;\n    filter: none;\n  }\n\n  .block2 {\n    width: 216.18px;\n    height: 55.68px;\n    margin-top: 4px;\n    filter: none;\n  }\n\n  .backgroundBlockImages {\n    width: 40px;\n    height: 40px;\n    margin-left: 1px;\n    margin-bottom: 0;\n  }\n\n  .backgroundBlockImagesHoverImg {\n    width: 36px;\n    height: 36px;\n    margin-top: 3px;\n    margin-left: 2px;\n  }\n\n  .backgroundBlockImagesHover {\n    width: 40px;\n    height: 40px;\n    margin: 2.5px;\n  }\n\n  .backgroundText {\n    filter: none;\n    font-size: 11.94px;\n  }\n\n  .upB {\n    width: 218px;\n    height: 33px;\n  }\n\n  .upBag {\n    margin-top: 15px;\n  }\n\n  .upBagBackgroundBlockImages {\n    margin-left: 1px;\n  }\n\n  .upMobileUpBag {\n    margin-top: 10px;\n  }\n\n  .colorText {\n    font-size: 11.94px;\n  }\n\n  .upText {\n    font-size: 10.94px;\n    margin-top: 10px;\n  }\n\n  .upImg {\n    margin-top: -1px;\n  }\n\n  .colorBlock {\n    width: 219px;\n    height: 113px;\n  }\n\n  .colorBack {\n    width: 31px;\n    height: 34px;\n  }\n\n  .colorBlockBACK {\n    width: 220px;\n  }\n\n  .frameOrientationBlock {\n    width: 218px;\n    height: 63px;\n  }\n\n  .frameOrientationBlockOne {\n    padding-top: 20px;\n  }\n\n  .frameOrientationBlockOne > img {\n    width: 54px;\n    height: 24px;\n  }\n\n  .frameOrientationBlockTwo {\n    padding-top: 5px;\n  }\n\n  .frameOrientationBlockTwo > img {\n    width: 28px;\n    height: 54px;\n  }\n\n  .frameOrientationText {\n    font-size: 11.94px;\n  }\n\n  .frameOrientationBlockRoz {\n    height: 50px;\n  }\n\n  .numberPostsBlock {\n    width: 218px;\n    height: 48px;\n    font-size: 15.9275px;\n    line-height: 12px;\n  }\n\n  .numberPostsBlockRoz {\n    height: 32px;\n  }\n\n  .numberPostsText {\n    font-size: 11.94px;\n  }\n\n  .numberPostsBlockText {\n    font-size: 15.93px;\n  }\n\n  .downloadProjectBlock {\n    width: 218px;\n    height: 36px;\n  }\n\n  .downloadProjectText {\n    display: none;\n  }\n\n  .downloadProjectBlockText {\n    font-size: 10.9365px;\n    height: 36px;\n  }\n\n  .downloadProjectBlockImg {\n    width: 14px;\n    height: 14px;\n    margin-top: -3px;\n  }\n\n  .configuratorBlock {\n    width: 456px;\n    height: 456px;\n  }\n\n  .configuratorBlockBlock {\n    width: 456px;\n    height: 456px;\n  }\n\n  .attributesBlock {\n    width: 458px;\n    height: 169px;\n  }\n\n  .attributesCenter {\n    margin-bottom: 40px;\n  }\n\n  .selectFrameSelect {\n    width: 221px;\n    height: 28px;\n  }\n\n  .selectFrameTextTop {\n    margin-top: 0;\n  }\n\n  .selectFrameBlock {\n    width: 218.3px;\n    height: 89.16px;\n    padding: 6px;\n  }\n\n  .selectFrameColorBlock {\n    margin: 1px;\n  }\n\n  .selectFrameBlockColorBlock {\n    width: 31px;\n    height: 31px;\n  }\n\n  .selectFrameBlockColorText {\n    font-size: 10.9616px;\n    line-height: 14px;\n    letter-spacing: -0.38502px;\n  }\n\n  .selectFrameColorBlock {\n    margin: 8px 0 0;\n  }\n\n  .selectFrameBlockPos {\n    margin-left: 8px;\n  }\n\n  .selectFrameText {\n    margin-left: 5px;\n    margin-bottom: 12px;\n    margin-top: 20px;\n  }\n\n  .selectChooseFrame {\n    display: flex;\n    flex-basis: 50%;\n    margin-bottom: 10px;\n  }\n\n  .selectFrameImg {\n    width: 30px;\n    height: 30px;\n  }\n\n  .selectFrameText {\n    font-size: 10.9616px;\n    margin-top: 6px;\n  }\n\n  .chooseMechanismBlock {\n    width: 221px;\n    height: 92px;\n  }\n\n  .chooseMechanismBlockTwo {\n    width: 221px;\n    height: 315px;\n  }\n\n  .chooseMechanismBlockTwoRam {\n    width: 221px;\n  }\n\n  .chooseMechanismColorText {\n    font-size: 10.9616px;\n    line-height: 14px;\n    letter-spacing: -0.38502px;\n  }\n\n  .chooseMechanismBlockColorBlock {\n    width: 31px;\n    height: 31px;\n  }\n\n  .chooseMechanismColorBlock {\n    margin: 8px 0 0;\n  }\n\n  .chooseMechanismBlockPos {\n    margin-left: 8px;\n  }\n\n  .chooseMechanismFlex > p {\n    font-size: 14.0062px;\n  }\n\n  .chooseMechanismFlexImg {\n    width: 53px;\n    height: 53px;\n    margin: 11px;\n  }\n\n  .chooseMechanismImg {\n    width: 33px;\n    height: 33px;\n    margin-left: -55px;\n    margin-top: 20px;\n  }\n\n  .chooseMechanismFlexP {\n    margin-left: 20px;\n    font-size: 16px;\n    line-height: 18px;\n    display: flex;\n    align-items: center;\n    color: #5B6770;\n  }\n\n  .buyBlockButtom > button {\n    width: 110px;\n    height: 40px;\n    font-size: 16px;\n    margin-left: 20px;\n  }\n\n  .buyBlockCostOne {\n    font-size: 13px;\n  }\n\n  .buyBlockCostTwo {\n    font-size: 26px;\n  }\n\n  .buyBlock {\n    margin-left: 5px;\n  }\n\n  .buyBlockFavorites {\n    margin-top: 0;\n  }\n\n  .buyBlockFavorites > img {\n    width: 19.47px;\n    height: 17.33px;\n  }\n\n  .buyBlockFavorites > p {\n    font-size: 14.0062px;\n  }\n\n  .desBlock2 {\n    display: block;\n  }\n}\n@media screen and (max-width: 1023px) {\n  .block1 {\n    width: 285px;\n    height: 152px;\n  }\n\n  .backgroundBlock {\n    width: 285px;\n    height: 152px;\n    filter: none;\n  }\n\n  .block2 {\n    width: 285px;\n    height: 57px;\n    margin-top: 0;\n    filter: none;\n  }\n\n  .backgroundBlockImages {\n    width: 44px;\n    height: 44px;\n    margin-left: 1px;\n    margin-bottom: 0;\n    border-radius: 8px;\n  }\n\n  .backgroundBlockImagesHoverImg {\n    width: 40px;\n    height: 40px;\n    margin-top: 3px;\n    margin-left: 2px;\n    border-radius: 8px;\n  }\n\n  .backgroundBlockImagesHover {\n    width: 44px;\n    height: 44px;\n    margin: 2.5px;\n  }\n\n  .backgroundText {\n    filter: none;\n    font-size: 11.94px;\n  }\n\n  .upB {\n    width: 231px;\n    height: 33px;\n  }\n\n  .upBag {\n    display: flex;\n    margin-left: 15px;\n    margin-top: -5px;\n  }\n\n  .upBagBackgroundBlockImages {\n    margin-left: 10px;\n  }\n\n  .upMobileUpBag {\n    margin-top: 10px;\n    margin-left: 60px;\n  }\n\n  .colorText {\n    font-size: 11.94px;\n  }\n\n  .upText {\n    font-size: 10.94px;\n    margin-top: 10px;\n  }\n\n  .upImg {\n    margin-top: -1px;\n  }\n\n  .upBagBackgroundBlockImages {\n    margin-left: 3px;\n    margin-top: 0.5px;\n  }\n\n  .colorBlock {\n    width: 285px;\n    height: 152px;\n  }\n\n  .colorBack {\n    width: 31px;\n    height: 34px;\n  }\n\n  .colorBlockBACK {\n    width: 285px;\n  }\n\n  .frameOrientationBlock {\n    width: 284px;\n    height: 67px;\n  }\n\n  .frameOrientationBlockOne {\n    padding-top: 20px;\n  }\n\n  .frameOrientationBlockOne > img {\n    width: 54px;\n    height: 28px;\n  }\n\n  .frameOrientationBlockTwo {\n    padding-top: 5px;\n  }\n\n  .frameOrientationBlockTwo > img {\n    width: 28px;\n    height: 54px;\n  }\n\n  .frameOrientationText {\n    font-size: 11.94px;\n  }\n\n  .frame-orientation {\n    margin-top: 0;\n    margin-right: 14px;\n    margin-left: -14px;\n  }\n\n  .numberPostsBlock {\n    width: 285px;\n    height: 68px;\n    font-size: 15.9275px;\n    line-height: 12px;\n  }\n\n  .numberPostsBlockRoz {\n    height: 49px;\n  }\n\n  .numberPostsText {\n    font-size: 11.94px;\n  }\n\n  .numberPostsBlockText {\n    font-size: 15.93px;\n  }\n\n  .number-post {\n    margin-left: 14px;\n    margin-top: 7px;\n  }\n\n  .downloadProjectBlock {\n    width: 218px;\n    height: 36px;\n  }\n\n  .downloadProjectText {\n    display: none;\n  }\n\n  .downloadProjectBlockText {\n    font-size: 10.9365px;\n  }\n\n  .downloadProjectBlockImg {\n    width: 14px;\n    height: 14px;\n  }\n\n  .configuratorBlock {\n    width: 100%;\n    height: 100vw;\n    margin: 0 auto;\n  }\n\n  .configuratorBlockBlock {\n    width: 596px;\n    height: 596px;\n  }\n\n  .configuratorCenter {\n    margin: 0 auto;\n  }\n\n  .attributesBlock {\n    width: 598px;\n    height: 162px;\n    margin-top: 20px;\n  }\n\n  .attributesCenter {\n    margin: 0 auto;\n  }\n\n  .selectFrameBlock {\n    border: none;\n    display: flex;\n    margin: 0 auto;\n    justify-self: center;\n    justify-items: center;\n    justify-content: center;\n  }\n\n  .selectChooseFrame {\n    width: 150px;\n  }\n\n  .selectFrameText {\n    margin-top: -22px;\n    margin-left: 7px;\n  }\n\n  .chooseMechanismBlockTwo {\n    width: 100vw;\n    height: 220px;\n    margin-top: -30px;\n  }\n\n  .chooseMechanismBlockTwoRam {\n    width: 100vw;\n    height: 220px;\n    border: none;\n  }\n\n  .chooseMechanismBlockMobile {\n    display: flex;\n    flex-direction: row;\n    overflow-x: auto;\n  }\n\n  .chooseMechanismFlex {\n    display: flex;\n    flex-direction: column;\n  }\n\n  .chooseMechanismFlexImg {\n    width: 70px;\n    height: 70px;\n    margin: 20px;\n  }\n\n  .chooseMechanismImg {\n    width: 44px;\n    height: 44px;\n    margin-left: 33px;\n    margin-top: -78px;\n    display: flex;\n    flex-direction: column;\n  }\n\n  .chooseMechanismFlexP {\n    margin-left: 21px;\n    margin-top: 30px;\n    font-family: Ubuntu, sans-serif;\n    font-style: normal;\n    font-weight: normal;\n    font-size: 16px;\n    line-height: 18px;\n    display: flex;\n    align-items: center;\n    color: #5B6770;\n  }\n\n  .mobBlock2 {\n    display: block;\n  }\n\n  .desBlock2 {\n    display: none;\n  }\n}\n@media screen and (max-width: 648px) {\n  .desBlock2 {\n    display: block;\n  }\n\n  .attributesBlock1 {\n    display: none;\n  }\n\n  .attributesBlock2 {\n    display: flex;\n  }\n\n  .upB {\n    width: 290px;\n    height: 41px;\n    border-radius: 5px 5px 15px 5px;\n    margin: 0 auto;\n  }\n\n  .upText {\n    margin-top: 15px;\n  }\n\n  .frameOrientationBlock {\n    width: 185px;\n    height: 54px;\n  }\n\n  .frameOrientationBlockOne > img {\n    width: 45px;\n    height: 25px;\n    margin-left: 25px;\n    margin-top: -5px;\n  }\n\n  .frameOrientationBlockTwo > img {\n    width: 25px;\n    height: 45px;\n    margin-left: 35px;\n    margin-top: -2px;\n  }\n\n  .frameOrientationBlockRoz {\n    height: 47px;\n  }\n\n  .frame-orientation {\n    margin-left: 0;\n    margin-right: 0;\n  }\n\n  .numberPostsBlock {\n    width: 185px;\n    height: 54px;\n    font-size: 13.1452px;\n    line-height: 10px;\n    border-radius: 5px 5px 15px 5px;\n  }\n\n  .numberPostsBlockRoz {\n    height: 28px;\n  }\n\n  .numberPostsText {\n    margin-bottom: 10px;\n  }\n\n  .downloadProjectBlock {\n    width: 320px;\n    height: 45px;\n  }\n\n  .downloadProjectText {\n    display: none;\n  }\n\n  .downloadProjectBlockText {\n    font-size: 15.98px;\n    height: 45px;\n  }\n\n  .downloadProjectBlockImg {\n    width: 19px;\n    height: 19px;\n    margin-top: -2px;\n  }\n\n  .attributesBlock {\n    width: 383px;\n    height: 211px;\n  }\n\n  .selectFrameBlock {\n    border: none;\n  }\n\n  .chooseMechanismBlockMobile {\n    display: flex;\n    flex-direction: row;\n    overflow-x: auto;\n  }\n\n  .chooseMechanismBlockTwo {\n    width: 100vw;\n    height: 200px;\n  }\n\n  .chooseMechanismBlockTwoRam {\n    width: 100vw;\n    height: 200px;\n    border: none;\n  }\n\n  .frame-number {\n    margin-top: 0;\n    margin-bottom: -45px;\n  }\n\n  .mobileCenter {\n    display: flex;\n    margin: 0 auto;\n    align-content: center;\n    align-items: center;\n    align-self: center;\n    justify-content: center;\n    justify-items: center;\n    justify-self: center;\n  }\n\n  .mobileRight1 {\n    display: none;\n  }\n\n  .mobileLeft {\n    display: flex;\n    margin: 0 auto;\n    align-content: center;\n    align-items: center;\n    align-self: center;\n    justify-content: center;\n    justify-items: center;\n    justify-self: center;\n  }\n\n  .background-Block {\n    display: none;\n  }\n}\n@media screen and (max-width: 380px) {\n  .numberPostsBlockMobile {\n    display: block;\n  }\n\n  .numberPostsBlockDesktop {\n    display: none;\n  }\n\n  .upB {\n    width: 264px;\n    height: 40px;\n  }\n\n  .upMobileUpBag {\n    margin-top: -20px;\n    margin-left: -15px;\n  }\n\n  .frameOrientationBlock {\n    width: 143px;\n    height: 70px;\n  }\n\n  .frameOrientationBlockOne > img {\n    width: 53px;\n    height: 29px;\n    margin-left: 11px;\n    margin-top: 0;\n  }\n\n  .frameOrientationBlockTwo > img {\n    width: 29px;\n    height: 53x;\n    margin-left: 20px;\n    margin-top: 6px;\n  }\n\n  .frame-orientation {\n    margin: 0 3px 0 0;\n  }\n\n  .numberPostsBlock {\n    width: 143px;\n    height: 70px;\n    font-size: 12.8067px;\n    line-height: 10px;\n  }\n\n  .number-post {\n    margin: 0 0 0 3px;\n  }\n\n  .configuratorBlock {\n    align-content: center;\n    align-items: center;\n    align-self: center;\n    justify-content: center;\n    justify-items: center;\n    justify-self: center;\n  }\n\n  .attributesBlock {\n    width: 292px;\n    height: 292px;\n    display: flex;\n    margin: 0 auto;\n    align-content: center;\n    align-items: center;\n    align-self: center;\n    justify-content: center;\n    justify-items: center;\n    justify-self: center;\n  }\n\n  .selectFrameBlock {\n    border: none;\n  }\n\n  .chooseMechanismBlockTwo {\n    width: 100vw;\n    height: 200px;\n  }\n\n  .chooseMechanismBlockTwoRam {\n    width: 100vw;\n    height: 200px;\n    border: none;\n  }\n\n  .chooseMechanismBlockMobile {\n    display: flex;\n    flex-direction: row;\n    overflow-x: auto;\n  }\n\n  .downloadProjectText {\n    display: none;\n  }\n\n  .downloadProjectBlock {\n    width: 264px;\n    height: 40px;\n  }\n\n  .downloadProjectBlockText {\n    font-size: 12.9838px;\n    height: 40px;\n  }\n\n  .centerBlock {\n    display: flex;\n    flex-direction: column;\n    align-content: center;\n    align-items: center;\n    align-self: center;\n    justify-content: center;\n    justify-items: center;\n    justify-self: center;\n    margin: 0 auto;\n  }\n}\n\n/*# sourceMappingURL=style.css.map */\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/configurator/src/assets/css/style.css b/configurator/src/assets/css/style.css
+--- a/configurator/src/assets/css/style.css	
++++ b/configurator/src/assets/css/style.css	
+@@ -1,1224 +1,2 @@
+-@media screen and (max-width: 1590px) {
+-  .block1 {
+-    width: 232px;
+-    height: 165px;
+-    border-bottom: 6px solid white;
+-    border-left: 9px solid white;
+-    border-top: 6px solid white;
+-    border-right: 5px solid white;
+-  }
+-
+-  .backgroundBlock {
+-    width: 232px;
+-    height: 165px;
+-  }
+-
+-  .block2 {
+-    width: 232px;
+-    height: 61px;
+-    margin-top: 7px;
+-    padding-left: 9px;
+-    padding-top: 4px;
+-  }
+-
+-  .backgroundBlockImages {
+-    width: 44px;
+-    height: 44px;
+-    margin-left: 0;
+-    margin-bottom: 0;
+-  }
+-
+-  .backgroundBlockImagesHoverImg {
+-    width: 39px;
+-    height: 39px;
+-    margin-top: 3px;
+-    margin-left: 2px;
+-    border-radius: 8px;
+-  }
+-
+-  .backgroundBlockImagesHover {
+-    width: 44px;
+-    height: 44px;
+-    margin: 2.5px;
+-  }
+-
+-  .backgroundText {
+-    margin-bottom: 11px;
+-    margin-left: 4px;
+-    margin-top: -35px;
+-    font-size: 12.94px;
+-  }
+-
+-  .upB {
+-    width: 234px;
+-    height: 31px;
+-    margin-top: 4px;
+-  }
+-
+-  .upText {
+-    font-size: 12px;
+-  }
+-
+-  .upImg {
+-    width: 14px;
+-    height: 14px;
+-    margin-left: 5px;
+-    margin-top: 1px;
+-  }
+-
+-  .desBlock2 {
+-    display: block;
+-  }
+-
+-  .colorBlock {
+-    width: 235px;
+-    height: 117px;
+-  }
+-
+-  .colorBlockBACK {
+-    width: 237px;
+-  }
+-
+-  .colorBack {
+-    width: 24px;
+-    height: 26px;
+-  }
+-
+-  .colorText {
+-    font-size: 12.94px;
+-    margin-bottom: 9px;
+-  }
+-
+-  .frameOrientationBlock {
+-    width: 234px;
+-    height: 86px;
+-  }
+-
+-  .frameOrientationBlockOneOne {
+-    width: 67px;
+-    height: 38px;
+-  }
+-
+-  .frameOrientationBlockTwoTwo {
+-    width: 38px;
+-    height: 67px;
+-  }
+-
+-  .frameOrientationBlockRoz {
+-    height: 67px;
+-  }
+-
+-  .frameOrientationBlockOne {
+-    padding-top: 25px;
+-  }
+-
+-  .frameOrientationBlockTwo {
+-    padding-top: 10px;
+-  }
+-
+-  .frameOrientationText {
+-    font-size: 12.94px;
+-  }
+-
+-  .numberPostsBlock {
+-    width: 234px;
+-    height: 52px;
+-    font-size: 15.967px;
+-    line-height: 13px;
+-  }
+-
+-  .numberPostsBlockRoz {
+-    height: 34px;
+-  }
+-
+-  .numberPostsText {
+-    font-size: 12.94px;
+-    margin-left: 6px;
+-  }
+-
+-  .downloadProjectBlock {
+-    width: 234px;
+-    height: 38px;
+-  }
+-
+-  .downloadProjectText {
+-    width: 234px;
+-    font-size: 13px;
+-  }
+-
+-  .downloadProjectBlockText {
+-    font-size: 11.9603px;
+-    height: 38px;
+-  }
+-
+-  .downloadProjectBlockImg {
+-    width: 14px;
+-    height: 14px;
+-  }
+-
+-  .configuratorBlock {
+-    width: 517px;
+-    height: 517px;
+-  }
+-
+-  .configuratorBlockBlock {
+-    width: 517px;
+-    height: 517px;
+-  }
+-
+-  .attributesBlock {
+-    width: 521px;
+-    height: 175px;
+-  }
+-
+-  .attributesBlockOne {
+-    font-size: 14px;
+-  }
+-
+-  .attributesBlockTwo {
+-    font-size: 14px;
+-  }
+-
+-  .attributesBlockThree {
+-    font-size: 14px;
+-  }
+-
+-  .selectFrameSelect {
+-    width: 244px;
+-    height: 32px;
+-    font-size: 14px;
+-  }
+-
+-  .selectFrameTextTop {
+-    margin-top: 0;
+-    font-size: 12.94px;
+-  }
+-
+-  .selectFrameBlock {
+-    width: 244px;
+-    height: 102px;
+-    padding: 8px;
+-  }
+-
+-  .selectFrameColorBlock {
+-    margin: 1px;
+-  }
+-
+-  .selectFrameBlockColorBlock {
+-    width: 31px;
+-    height: 31px;
+-  }
+-
+-  .selectFrameBlockColorText {
+-    font-size: 11.9488px;
+-    line-height: 14px;
+-    letter-spacing: -0.38502px;
+-  }
+-
+-  .selectFrameColorBlock {
+-    margin: 8px 0 0;
+-  }
+-
+-  .selectFrameBlockPos {
+-    margin-left: 8px;
+-  }
+-
+-  .selectFrameText {
+-    margin-left: 5px;
+-    margin-bottom: 12px;
+-    margin-top: 20px;
+-  }
+-
+-  .selectChooseFrame {
+-    display: flex;
+-    flex-basis: 50%;
+-    margin-bottom: 10px;
+-  }
+-
+-  .selectFrameImg {
+-    width: 30px;
+-    height: 30px;
+-  }
+-
+-  .selectFrameText {
+-    margin-top: 6px;
+-  }
+-
+-  .chooseMechanismBlock {
+-    width: 244px;
+-    height: 101px;
+-  }
+-
+-  .chooseMechanismText {
+-    font-size: 12.08px;
+-    margin-bottom: 0;
+-    margin-top: 11px;
+-  }
+-
+-  .chooseMechanismBlockTwo {
+-    width: 244px;
+-    height: 348px;
+-  }
+-
+-  .chooseMechanismBlockTwoRam {
+-    width: 244px;
+-  }
+-
+-  .chooseMechanismColorText {
+-    font-size: 11.9488px;
+-    line-height: 14px;
+-    letter-spacing: -0.38502px;
+-  }
+-
+-  .chooseMechanismBlockColorBlock {
+-    width: 31px;
+-    height: 31px;
+-  }
+-
+-  .chooseMechanismColorBlock {
+-    margin: 8px 0 0;
+-  }
+-
+-  .chooseMechanismBlockPos {
+-    margin-left: 8px;
+-  }
+-
+-  .chooseMechanismFlex > p {
+-    font-size: 14.0062px;
+-  }
+-
+-  .chooseMechanismFlexImg {
+-    width: 53px;
+-    height: 53px;
+-    margin: 15px;
+-  }
+-
+-  .chooseMechanismImg {
+-    width: 33px;
+-    height: 33px;
+-    margin-left: -59px;
+-    margin-top: 24px;
+-  }
+-
+-  .chooseMechanismFlexP {
+-    margin-left: 20px;
+-    font-size: 13px;
+-    line-height: 18px;
+-    color: #5b6770;
+-  }
+-
+-  .buyBlockButtom > button {
+-    width: 110px;
+-    height: 40px;
+-    display: flex;
+-    align-items: center;
+-    justify-content: center;
+-    font-size: 15.37px;
+-    margin-left: 20px;
+-  }
+-
+-  .buyBlockCostOne {
+-    font-size: 13px;
+-  }
+-
+-  .buyBlockCostTwo {
+-    font-size: 26px;
+-  }
+-
+-  .buyBlock {
+-    margin-left: 5px;
+-  }
+-
+-  .buyBlockFavorites {
+-    margin-top: 5px;
+-  }
+-
+-  .buyBlockFavorites > img {
+-    width: 19.47px;
+-    height: 17.33px;
+-  }
+-
+-  .buyBlockFavorites > p {
+-    font-size: 14.0062px;
+-  }
+-}
+-@media screen and (max-width: 1170px) {
+-  .block1 {
+-    width: 219px;
+-    height: 158px;
+-  }
+-
+-  .backgroundBlock {
+-    width: 219px;
+-    height: 158px;
+-    filter: none;
+-  }
+-
+-  .block2 {
+-    width: 216.18px;
+-    height: 55.68px;
+-    margin-top: 4px;
+-    filter: none;
+-  }
+-
+-  .backgroundBlockImages {
+-    width: 40px;
+-    height: 40px;
+-    margin-left: 1px;
+-    margin-bottom: 0;
+-  }
+-
+-  .backgroundBlockImagesHoverImg {
+-    width: 36px;
+-    height: 36px;
+-    margin-top: 3px;
+-    margin-left: 2px;
+-  }
+-
+-  .backgroundBlockImagesHover {
+-    width: 40px;
+-    height: 40px;
+-    margin: 2.5px;
+-  }
+-
+-  .backgroundText {
+-    filter: none;
+-    font-size: 11.94px;
+-  }
+-
+-  .upB {
+-    width: 218px;
+-    height: 33px;
+-  }
+-
+-  .upBag {
+-    margin-top: 15px;
+-  }
+-
+-  .upBagBackgroundBlockImages {
+-    margin-left: 1px;
+-  }
+-
+-  .upMobileUpBag {
+-    margin-top: 10px;
+-  }
+-
+-  .colorText {
+-    font-size: 11.94px;
+-  }
+-
+-  .upText {
+-    font-size: 10.94px;
+-    margin-top: 10px;
+-  }
+-
+-  .upImg {
+-    margin-top: -1px;
+-  }
+-
+-  .colorBlock {
+-    width: 219px;
+-    height: 113px;
+-  }
+-
+-  .colorBack {
+-    width: 31px;
+-    height: 34px;
+-  }
+-
+-  .colorBlockBACK {
+-    width: 220px;
+-  }
+-
+-  .frameOrientationBlock {
+-    width: 218px;
+-    height: 63px;
+-  }
+-
+-  .frameOrientationBlockOne {
+-    padding-top: 20px;
+-  }
+-
+-  .frameOrientationBlockOne > img {
+-    width: 54px;
+-    height: 24px;
+-  }
+-
+-  .frameOrientationBlockTwo {
+-    padding-top: 5px;
+-  }
+-
+-  .frameOrientationBlockTwo > img {
+-    width: 28px;
+-    height: 54px;
+-  }
+-
+-  .frameOrientationText {
+-    font-size: 11.94px;
+-  }
+-
+-  .frameOrientationBlockRoz {
+-    height: 50px;
+-  }
+-
+-  .numberPostsBlock {
+-    width: 218px;
+-    height: 48px;
+-    font-size: 15.9275px;
+-    line-height: 12px;
+-  }
+-
+-  .numberPostsBlockRoz {
+-    height: 32px;
+-  }
+-
+-  .numberPostsText {
+-    font-size: 11.94px;
+-  }
+-
+-  .numberPostsBlockText {
+-    font-size: 15.93px;
+-  }
+-
+-  .downloadProjectBlock {
+-    width: 218px;
+-    height: 36px;
+-  }
+-
+-  .downloadProjectText {
+-    display: none;
+-  }
+-
+-  .downloadProjectBlockText {
+-    font-size: 10.9365px;
+-    height: 36px;
+-  }
+-
+-  .downloadProjectBlockImg {
+-    width: 14px;
+-    height: 14px;
+-    margin-top: -3px;
+-  }
+-
+-  .configuratorBlock {
+-    width: 456px;
+-    height: 456px;
+-  }
+-
+-  .configuratorBlockBlock {
+-    width: 456px;
+-    height: 456px;
+-  }
+-
+-  .attributesBlock {
+-    width: 458px;
+-    height: 169px;
+-  }
+-
+-  .attributesCenter {
+-    margin-bottom: 40px;
+-  }
+-
+-  .selectFrameSelect {
+-    width: 221px;
+-    height: 28px;
+-  }
+-
+-  .selectFrameTextTop {
+-    margin-top: 0;
+-  }
+-
+-  .selectFrameBlock {
+-    width: 218.3px;
+-    height: 89.16px;
+-    padding: 6px;
+-  }
+-
+-  .selectFrameColorBlock {
+-    margin: 1px;
+-  }
+-
+-  .selectFrameBlockColorBlock {
+-    width: 31px;
+-    height: 31px;
+-  }
+-
+-  .selectFrameBlockColorText {
+-    font-size: 10.9616px;
+-    line-height: 14px;
+-    letter-spacing: -0.38502px;
+-  }
+-
+-  .selectFrameColorBlock {
+-    margin: 8px 0 0;
+-  }
+-
+-  .selectFrameBlockPos {
+-    margin-left: 8px;
+-  }
+-
+-  .selectFrameText {
+-    margin-left: 5px;
+-    margin-bottom: 12px;
+-    margin-top: 20px;
+-  }
+-
+-  .selectChooseFrame {
+-    display: flex;
+-    flex-basis: 50%;
+-    margin-bottom: 10px;
+-  }
+-
+-  .selectFrameImg {
+-    width: 30px;
+-    height: 30px;
+-  }
+-
+-  .selectFrameText {
+-    font-size: 10.9616px;
+-    margin-top: 6px;
+-  }
+-
+-  .chooseMechanismBlock {
+-    width: 221px;
+-    height: 92px;
+-  }
+-
+-  .chooseMechanismBlockTwo {
+-    width: 221px;
+-    height: 315px;
+-  }
+-
+-  .chooseMechanismBlockTwoRam {
+-    width: 221px;
+-  }
+-
+-  .chooseMechanismColorText {
+-    font-size: 10.9616px;
+-    line-height: 14px;
+-    letter-spacing: -0.38502px;
+-  }
+-
+-  .chooseMechanismBlockColorBlock {
+-    width: 31px;
+-    height: 31px;
+-  }
+-
+-  .chooseMechanismColorBlock {
+-    margin: 8px 0 0;
+-  }
+-
+-  .chooseMechanismBlockPos {
+-    margin-left: 8px;
+-  }
+-
+-  .chooseMechanismFlex > p {
+-    font-size: 14.0062px;
+-  }
+-
+-  .chooseMechanismFlexImg {
+-    width: 53px;
+-    height: 53px;
+-    margin: 11px;
+-  }
+-
+-  .chooseMechanismImg {
+-    width: 33px;
+-    height: 33px;
+-    margin-left: -55px;
+-    margin-top: 20px;
+-  }
+-
+-  .chooseMechanismFlexP {
+-    margin-left: 20px;
+-    font-size: 16px;
+-    line-height: 18px;
+-    display: flex;
+-    align-items: center;
+-    color: #5B6770;
+-  }
+-
+-  .buyBlockButtom > button {
+-    width: 110px;
+-    height: 40px;
+-    font-size: 16px;
+-    margin-left: 20px;
+-  }
+-
+-  .buyBlockCostOne {
+-    font-size: 13px;
+-  }
+-
+-  .buyBlockCostTwo {
+-    font-size: 26px;
+-  }
+-
+-  .buyBlock {
+-    margin-left: 5px;
+-  }
+-
+-  .buyBlockFavorites {
+-    margin-top: 0;
+-  }
+-
+-  .buyBlockFavorites > img {
+-    width: 19.47px;
+-    height: 17.33px;
+-  }
+-
+-  .buyBlockFavorites > p {
+-    font-size: 14.0062px;
+-  }
+-
+-  .desBlock2 {
+-    display: block;
+-  }
+-}
+-@media screen and (max-width: 1023px) {
+-  .block1 {
+-    width: 285px;
+-    height: 152px;
+-  }
+-
+-  .backgroundBlock {
+-    width: 285px;
+-    height: 152px;
+-    filter: none;
+-  }
+-
+-  .block2 {
+-    width: 285px;
+-    height: 57px;
+-    margin-top: 0;
+-    filter: none;
+-  }
+-
+-  .backgroundBlockImages {
+-    width: 44px;
+-    height: 44px;
+-    margin-left: 1px;
+-    margin-bottom: 0;
+-    border-radius: 8px;
+-  }
+-
+-  .backgroundBlockImagesHoverImg {
+-    width: 40px;
+-    height: 40px;
+-    margin-top: 3px;
+-    margin-left: 2px;
+-    border-radius: 8px;
+-  }
+-
+-  .backgroundBlockImagesHover {
+-    width: 44px;
+-    height: 44px;
+-    margin: 2.5px;
+-  }
+-
+-  .backgroundText {
+-    filter: none;
+-    font-size: 11.94px;
+-  }
+-
+-  .upB {
+-    width: 231px;
+-    height: 33px;
+-  }
+-
+-  .upBag {
+-    display: flex;
+-    margin-left: 15px;
+-    margin-top: -5px;
+-  }
+-
+-  .upBagBackgroundBlockImages {
+-    margin-left: 10px;
+-  }
+-
+-  .upMobileUpBag {
+-    margin-top: 10px;
+-    margin-left: 60px;
+-  }
+-
+-  .colorText {
+-    font-size: 11.94px;
+-  }
+-
+-  .upText {
+-    font-size: 10.94px;
+-    margin-top: 10px;
+-  }
+-
+-  .upImg {
+-    margin-top: -1px;
+-  }
+-
+-  .upBagBackgroundBlockImages {
+-    margin-left: 3px;
+-    margin-top: 0.5px;
+-  }
+-
+-  .colorBlock {
+-    width: 285px;
+-    height: 152px;
+-  }
+-
+-  .colorBack {
+-    width: 31px;
+-    height: 34px;
+-  }
+-
+-  .colorBlockBACK {
+-    width: 285px;
+-  }
+-
+-  .frameOrientationBlock {
+-    width: 284px;
+-    height: 67px;
+-  }
+-
+-  .frameOrientationBlockOne {
+-    padding-top: 20px;
+-  }
+-
+-  .frameOrientationBlockOne > img {
+-    width: 54px;
+-    height: 28px;
+-  }
+-
+-  .frameOrientationBlockTwo {
+-    padding-top: 5px;
+-  }
+-
+-  .frameOrientationBlockTwo > img {
+-    width: 28px;
+-    height: 54px;
+-  }
+-
+-  .frameOrientationText {
+-    font-size: 11.94px;
+-  }
+-
+-  .frame-orientation {
+-    margin-top: 0;
+-    margin-right: 14px;
+-    margin-left: -14px;
+-  }
+-
+-  .numberPostsBlock {
+-    width: 285px;
+-    height: 68px;
+-    font-size: 15.9275px;
+-    line-height: 12px;
+-  }
+-
+-  .numberPostsBlockRoz {
+-    height: 49px;
+-  }
+-
+-  .numberPostsText {
+-    font-size: 11.94px;
+-  }
+-
+-  .numberPostsBlockText {
+-    font-size: 15.93px;
+-  }
+-
+-  .number-post {
+-    margin-left: 14px;
+-    margin-top: 7px;
+-  }
+-
+-  .downloadProjectBlock {
+-    width: 218px;
+-    height: 36px;
+-  }
+-
+-  .downloadProjectText {
+-    display: none;
+-  }
+-
+-  .downloadProjectBlockText {
+-    font-size: 10.9365px;
+-  }
+-
+-  .downloadProjectBlockImg {
+-    width: 14px;
+-    height: 14px;
+-  }
+-
+-  .configuratorBlock {
+-    width: 100%;
+-    height: 100vw;
+-    margin: 0 auto;
+-  }
+-
+-  .configuratorBlockBlock {
+-    width: 596px;
+-    height: 596px;
+-  }
+-
+-  .configuratorCenter {
+-    margin: 0 auto;
+-  }
+-
+-  .attributesBlock {
+-    width: 598px;
+-    height: 162px;
+-    margin-top: 20px;
+-  }
+-
+-  .attributesCenter {
+-    margin: 0 auto;
+-  }
+-
+-  .selectFrameBlock {
+-    border: none;
+-    display: flex;
+-    margin: 0 auto;
+-    justify-self: center;
+-    justify-items: center;
+-    justify-content: center;
+-  }
+-
+-  .selectChooseFrame {
+-    width: 150px;
+-  }
+-
+-  .selectFrameText {
+-    margin-top: -22px;
+-    margin-left: 7px;
+-  }
+-
+-  .chooseMechanismBlockTwo {
+-    width: 100vw;
+-    height: 220px;
+-    margin-top: -30px;
+-  }
+-
+-  .chooseMechanismBlockTwoRam {
+-    width: 100vw;
+-    height: 220px;
+-    border: none;
+-  }
+-
+-  .chooseMechanismBlockMobile {
+-    display: flex;
+-    flex-direction: row;
+-    overflow-x: auto;
+-  }
+-
+-  .chooseMechanismFlex {
+-    display: flex;
+-    flex-direction: column;
+-  }
+-
+-  .chooseMechanismFlexImg {
+-    width: 70px;
+-    height: 70px;
+-    margin: 20px;
+-  }
+-
+-  .chooseMechanismImg {
+-    width: 44px;
+-    height: 44px;
+-    margin-left: 33px;
+-    margin-top: -78px;
+-    display: flex;
+-    flex-direction: column;
+-  }
+-
+-  .chooseMechanismFlexP {
+-    margin-left: 21px;
+-    margin-top: 30px;
+-    font-family: Ubuntu, sans-serif;
+-    font-style: normal;
+-    font-weight: normal;
+-    font-size: 16px;
+-    line-height: 18px;
+-    display: flex;
+-    align-items: center;
+-    color: #5B6770;
+-  }
+-
+-  .mobBlock2 {
+-    display: block;
+-  }
+-
+-  .desBlock2 {
+-    display: none;
+-  }
+-}
+-@media screen and (max-width: 648px) {
+-  .desBlock2 {
+-    display: block;
+-  }
+-
+-  .attributesBlock1 {
+-    display: none;
+-  }
+-
+-  .attributesBlock2 {
+-    display: flex;
+-  }
+-
+-  .upB {
+-    width: 290px;
+-    height: 41px;
+-    border-radius: 5px 5px 15px 5px;
+-    margin: 0 auto;
+-  }
+-
+-  .upText {
+-    margin-top: 15px;
+-  }
+-
+-  .frameOrientationBlock {
+-    width: 185px;
+-    height: 54px;
+-  }
+-
+-  .frameOrientationBlockOne > img {
+-    width: 45px;
+-    height: 25px;
+-    margin-left: 25px;
+-    margin-top: -5px;
+-  }
+-
+-  .frameOrientationBlockTwo > img {
+-    width: 25px;
+-    height: 45px;
+-    margin-left: 35px;
+-    margin-top: -2px;
+-  }
+-
+-  .frameOrientationBlockRoz {
+-    height: 47px;
+-  }
+-
+-  .frame-orientation {
+-    margin-left: 0;
+-    margin-right: 0;
+-  }
+-
+-  .numberPostsBlock {
+-    width: 185px;
+-    height: 54px;
+-    font-size: 13.1452px;
+-    line-height: 10px;
+-    border-radius: 5px 5px 15px 5px;
+-  }
+-
+-  .numberPostsBlockRoz {
+-    height: 28px;
+-  }
+-
+-  .numberPostsText {
+-    margin-bottom: 10px;
+-  }
+-
+-  .downloadProjectBlock {
+-    width: 320px;
+-    height: 45px;
+-  }
+-
+-  .downloadProjectText {
+-    display: none;
+-  }
+-
+-  .downloadProjectBlockText {
+-    font-size: 15.98px;
+-    height: 45px;
+-  }
+-
+-  .downloadProjectBlockImg {
+-    width: 19px;
+-    height: 19px;
+-    margin-top: -2px;
+-  }
+-
+-  .attributesBlock {
+-    width: 383px;
+-    height: 211px;
+-  }
+-
+-  .selectFrameBlock {
+-    border: none;
+-  }
+-
+-  .chooseMechanismBlockMobile {
+-    display: flex;
+-    flex-direction: row;
+-    overflow-x: auto;
+-  }
+-
+-  .chooseMechanismBlockTwo {
+-    width: 100vw;
+-    height: 200px;
+-  }
+-
+-  .chooseMechanismBlockTwoRam {
+-    width: 100vw;
+-    height: 200px;
+-    border: none;
+-  }
+-
+-  .frame-number {
+-    margin-top: 0;
+-    margin-bottom: -45px;
+-  }
+-
+-  .mobileCenter {
+-    display: flex;
+-    margin: 0 auto;
+-    align-content: center;
+-    align-items: center;
+-    align-self: center;
+-    justify-content: center;
+-    justify-items: center;
+-    justify-self: center;
+-  }
+-
+-  .mobileRight1 {
+-    display: none;
+-  }
+-
+-  .mobileLeft {
+-    display: flex;
+-    margin: 0 auto;
+-    align-content: center;
+-    align-items: center;
+-    align-self: center;
+-    justify-content: center;
+-    justify-items: center;
+-    justify-self: center;
+-  }
+-
+-  .background-Block {
+-    display: none;
+-  }
+-}
+-@media screen and (max-width: 380px) {
+-  .numberPostsBlockMobile {
+-    display: block;
+-  }
+-
+-  .numberPostsBlockDesktop {
+-    display: none;
+-  }
+-
+-  .upB {
+-    width: 264px;
+-    height: 40px;
+-  }
+-
+-  .upMobileUpBag {
+-    margin-top: -20px;
+-    margin-left: -15px;
+-  }
+-
+-  .frameOrientationBlock {
+-    width: 143px;
+-    height: 70px;
+-  }
+-
+-  .frameOrientationBlockOne > img {
+-    width: 53px;
+-    height: 29px;
+-    margin-left: 11px;
+-    margin-top: 0;
+-  }
+-
+-  .frameOrientationBlockTwo > img {
+-    width: 29px;
+-    height: 53x;
+-    margin-left: 20px;
+-    margin-top: 6px;
+-  }
+-
+-  .frame-orientation {
+-    margin: 0 3px 0 0;
+-  }
+-
+-  .numberPostsBlock {
+-    width: 143px;
+-    height: 70px;
+-    font-size: 12.8067px;
+-    line-height: 10px;
+-  }
+-
+-  .number-post {
+-    margin: 0 0 0 3px;
+-  }
+-
+-  .configuratorBlock {
+-    align-content: center;
+-    align-items: center;
+-    align-self: center;
+-    justify-content: center;
+-    justify-items: center;
+-    justify-self: center;
+-  }
+-
+-  .attributesBlock {
+-    width: 292px;
+-    height: 292px;
+-    display: flex;
+-    margin: 0 auto;
+-    align-content: center;
+-    align-items: center;
+-    align-self: center;
+-    justify-content: center;
+-    justify-items: center;
+-    justify-self: center;
+-  }
+-
+-  .selectFrameBlock {
+-    border: none;
+-  }
+-
+-  .chooseMechanismBlockTwo {
+-    width: 100vw;
+-    height: 200px;
+-  }
+-
+-  .chooseMechanismBlockTwoRam {
+-    width: 100vw;
+-    height: 200px;
+-    border: none;
+-  }
+-
+-  .chooseMechanismBlockMobile {
+-    display: flex;
+-    flex-direction: row;
+-    overflow-x: auto;
+-  }
+-
+-  .downloadProjectText {
+-    display: none;
+-  }
+-
+-  .downloadProjectBlock {
+-    width: 264px;
+-    height: 40px;
+-  }
+-
+-  .downloadProjectBlockText {
+-    font-size: 12.9838px;
+-    height: 40px;
+-  }
+-
+-  .centerBlock {
+-    display: flex;
+-    flex-direction: column;
+-    align-content: center;
+-    align-items: center;
+-    align-self: center;
+-    justify-content: center;
+-    justify-items: center;
+-    justify-self: center;
+-    margin: 0 auto;
+-  }
+-}
+-
+-/*# sourceMappingURL=style.css.map */
++@media screen and (max-width:1590px){.block1{width:232px;height:165px;border-bottom:6px solid white;border-left:9px solid white;border-top:6px solid white;border-right:5px solid white}.backgroundBlock{width:232px;height:165px}.block2{width:232px;height:61px;margin-top:7px;padding-left:9px;padding-top:4px}.backgroundBlockImages{width:44px;height:44px;margin-left:0;margin-bottom:0}.backgroundBlockImagesHoverImg{width:39px;height:39px;margin-top:3px;margin-left:2px;border-radius:8px}.backgroundBlockImagesHover{width:44px;height:44px;margin:2.5px}.backgroundText{margin-bottom:11px;margin-left:4px;margin-top:-35px;font-size:12.94px}.upB{width:234px;height:31px;margin-top:4px}.upText{font-size:12px}.upImg{width:14px;height:14px;margin-left:5px;margin-top:1px}.desBlock2{display:block}.colorBlock{width:235px;height:117px}.colorBlockBACK{width:237px}.colorBack{width:24px;height:26px}.colorText{font-size:12.94px;margin-bottom:9px}.frameOrientationBlock{width:234px;height:86px}.frameOrientationBlockOneOne{width:67px;height:38px}.frameOrientationBlockTwoTwo{width:38px;height:67px}.frameOrientationBlockRoz{height:67px}.frameOrientationBlockOne{padding-top:25px}.frameOrientationBlockTwo{padding-top:10px}.frameOrientationText{font-size:12.94px}.numberPostsBlock{width:234px;height:52px;font-size:15.967px;line-height:13px}.numberPostsBlockRoz{height:34px}.numberPostsText{font-size:12.94px;margin-left:6px}.downloadProjectBlock{width:234px;height:38px}.downloadProjectText{width:234px;font-size:13px}.downloadProjectBlockText{font-size:11.9603px;height:38px}.downloadProjectBlockImg{width:14px;height:14px}.configuratorBlock{width:517px;height:517px}.configuratorBlockBlock{width:517px;height:517px}.attributesBlock{width:521px;height:175px}.attributesBlockOne{font-size:14px}.attributesBlockTwo{font-size:14px}.attributesBlockThree{font-size:14px}.selectFrameSelect{width:244px;height:32px;font-size:14px}.selectFrameTextTop{margin-top:0;font-size:12.94px}.selectFrameBlock{width:244px;height:102px;padding:8px}.selectFrameColorBlock{margin:1px}.selectFrameBlockColorBlock{width:31px;height:31px}.selectFrameBlockColorText{font-size:11.9488px;line-height:14px;letter-spacing:-0.38502px}.selectFrameColorBlock{margin:8px 0 0}.selectFrameBlockPos{margin-left:8px}.selectFrameText{margin-left:5px;margin-bottom:12px;margin-top:20px}.selectChooseFrame{display:flex;flex-basis:50%;margin-bottom:10px}.selectFrameImg{width:30px;height:30px}.selectFrameText{margin-top:6px}.chooseMechanismBlock{width:244px;height:101px}.chooseMechanismText{font-size:12.08px;margin-bottom:0;margin-top:11px}.chooseMechanismBlockTwo{width:244px;height:348px}.chooseMechanismBlockTwoRam{width:244px}.chooseMechanismColorText{font-size:11.9488px;line-height:14px;letter-spacing:-0.38502px}.chooseMechanismBlockColorBlock{width:31px;height:31px}.chooseMechanismColorBlock{margin:8px 0 0}.chooseMechanismBlockPos{margin-left:8px}.chooseMechanismFlex>p{font-size:14.0062px}.chooseMechanismFlexImg{width:53px;height:53px;margin:15px}.chooseMechanismImg{width:33px;height:33px;margin-left:-59px;margin-top:24px}.chooseMechanismFlexP{margin-left:20px;font-size:13px;line-height:18px;color:#5b6770}.buyBlockButtom>button{width:110px;height:40px;display:flex;align-items:center;justify-content:center;font-size:15.37px;margin-left:20px}.buyBlockCostOne{font-size:13px}.buyBlockCostTwo{font-size:26px}.buyBlock{margin-left:5px}.buyBlockFavorites{margin-top:5px}.buyBlockFavorites>img{width:19.47px;height:17.33px}.buyBlockFavorites>p{font-size:14.0062px}}@media screen and (max-width:1170px){.block1{width:219px;height:158px}.backgroundBlock{width:219px;height:158px;filter:none}.block2{width:216.18px;height:55.68px;margin-top:4px;filter:none}.backgroundBlockImages{width:40px;height:40px;margin-left:1px;margin-bottom:0}.backgroundBlockImagesHoverImg{width:36px;height:36px;margin-top:3px;margin-left:2px}.backgroundBlockImagesHover{width:40px;height:40px;margin:2.5px}.backgroundText{filter:none;font-size:11.94px}.upB{width:218px;height:33px}.upBag{margin-top:15px}.upBagBackgroundBlockImages{margin-left:1px}.upMobileUpBag{margin-top:10px}.colorText{font-size:11.94px}.upText{font-size:10.94px;margin-top:10px}.upImg{margin-top:-1px}.colorBlock{width:219px;height:113px}.colorBack{width:31px;height:34px}.colorBlockBACK{width:220px}.frameOrientationBlock{width:218px;height:63px}.frameOrientationBlockOne{padding-top:20px}.frameOrientationBlockOne>img{width:54px;height:24px}.frameOrientationBlockTwo{padding-top:5px}.frameOrientationBlockTwo>img{width:28px;height:54px}.frameOrientationText{font-size:11.94px}.frameOrientationBlockRoz{height:50px}.numberPostsBlock{width:218px;height:48px;font-size:15.9275px;line-height:12px}.numberPostsBlockRoz{height:32px}.numberPostsText{font-size:11.94px}.numberPostsBlockText{font-size:15.93px}.downloadProjectBlock{width:218px;height:36px}.downloadProjectText{display:none}.downloadProjectBlockText{font-size:10.9365px;height:36px}.downloadProjectBlockImg{width:14px;height:14px;margin-top:-3px}.configuratorBlock{width:456px;height:456px}.configuratorBlockBlock{width:456px;height:456px}.attributesBlock{width:458px;height:169px}.attributesCenter{margin-bottom:40px}.selectFrameSelect{width:221px;height:28px}.selectFrameTextTop{margin-top:0}.selectFrameBlock{width:218.3px;height:89.16px;padding:6px}.selectFrameColorBlock{margin:1px}.selectFrameBlockColorBlock{width:31px;height:31px}.selectFrameBlockColorText{font-size:10.9616px;line-height:14px;letter-spacing:-0.38502px}.selectFrameColorBlock{margin:8px 0 0}.selectFrameBlockPos{margin-left:8px}.selectFrameText{margin-left:5px;margin-bottom:12px;margin-top:20px}.selectChooseFrame{display:flex;flex-basis:50%;margin-bottom:10px}.selectFrameImg{width:30px;height:30px}.selectFrameText{font-size:10.9616px;margin-top:6px}.chooseMechanismBlock{width:221px;height:92px}.chooseMechanismBlockTwo{width:221px;height:315px}.chooseMechanismBlockTwoRam{width:221px}.chooseMechanismColorText{font-size:10.9616px;line-height:14px;letter-spacing:-0.38502px}.chooseMechanismBlockColorBlock{width:31px;height:31px}.chooseMechanismColorBlock{margin:8px 0 0}.chooseMechanismBlockPos{margin-left:8px}.chooseMechanismFlex>p{font-size:14.0062px}.chooseMechanismFlexImg{width:53px;height:53px;margin:11px}.chooseMechanismImg{width:33px;height:33px;margin-left:-55px;margin-top:20px}.chooseMechanismFlexP{margin-left:20px;font-size:16px;line-height:18px;display:flex;align-items:center;color:#5B6770}.buyBlockButtom>button{width:110px;height:40px;font-size:16px;margin-left:20px}.buyBlockCostOne{font-size:13px}.buyBlockCostTwo{font-size:26px}.buyBlock{margin-left:5px}.buyBlockFavorites{margin-top:0}.buyBlockFavorites>img{width:19.47px;height:17.33px}.buyBlockFavorites>p{font-size:14.0062px}.desBlock2{display:block}}@media screen and (max-width:1023px){.block1{width:285px;height:152px}.backgroundBlock{width:285px;height:152px;filter:none}.block2{width:285px;height:57px;margin-top:0;filter:none}.backgroundBlockImages{width:44px;height:44px;margin-left:1px;margin-bottom:0;border-radius:8px}.backgroundBlockImagesHoverImg{width:40px;height:40px;margin-top:3px;margin-left:2px;border-radius:8px}.backgroundBlockImagesHover{width:44px;height:44px;margin:2.5px}.backgroundText{filter:none;font-size:11.94px}.upB{width:231px;height:33px}.upBag{display:flex;margin-left:15px;margin-top:-5px}.upBagBackgroundBlockImages{margin-left:10px}.upMobileUpBag{margin-top:10px;margin-left:60px}.colorText{font-size:11.94px}.upText{font-size:10.94px;margin-top:10px}.upImg{margin-top:-1px}.upBagBackgroundBlockImages{margin-left:3px;margin-top:0.5px}.colorBlock{width:285px;height:152px}.colorBack{width:31px;height:34px}.colorBlockBACK{width:285px}.frameOrientationBlock{width:284px;height:67px}.frameOrientationBlockOne{padding-top:20px}.frameOrientationBlockOne>img{width:54px;height:28px}.frameOrientationBlockTwo{padding-top:5px}.frameOrientationBlockTwo>img{width:28px;height:54px}.frameOrientationText{font-size:11.94px}.frame-orientation{margin-top:0;margin-right:14px;margin-left:-14px}.numberPostsBlock{width:285px;height:68px;font-size:15.9275px;line-height:12px}.numberPostsBlockRoz{height:49px}.numberPostsText{font-size:11.94px}.numberPostsBlockText{font-size:15.93px}.number-post{margin-left:14px;margin-top:7px}.downloadProjectBlock{width:218px;height:36px}.downloadProjectText{display:none}.downloadProjectBlockText{font-size:10.9365px}.downloadProjectBlockImg{width:14px;height:14px}.configuratorBlock{width:100%;height:100vw;margin:0 auto}.configuratorBlockBlock{width:596px;height:596px}.configuratorCenter{margin:0 auto}.attributesBlock{width:598px;height:162px;margin-top:20px}.attributesCenter{margin:0 auto}.selectFrameBlock{border:none;display:flex;margin:0 auto;justify-self:center;justify-items:center;justify-content:center}.selectChooseFrame{width:150px}.selectFrameText{margin-top:-22px;margin-left:7px}.chooseMechanismBlockTwo{width:100vw;height:220px;margin-top:-30px}.chooseMechanismBlockTwoRam{width:100vw;height:220px;border:none}.chooseMechanismBlockMobile{display:flex;flex-direction:row;overflow-x:auto}.chooseMechanismFlex{display:flex;flex-direction:column}.chooseMechanismFlexImg{width:70px;height:70px;margin:20px}.chooseMechanismImg{width:44px;height:44px;margin-left:33px;margin-top:-78px;display:flex;flex-direction:column}.chooseMechanismFlexP{margin-left:21px;margin-top:30px;font-family:Ubuntu,sans-serif;font-style:normal;font-weight:normal;font-size:16px;line-height:18px;display:flex;align-items:center;color:#5B6770}.mobBlock2{display:block}.desBlock2{display:none}}@media screen and (max-width:648px){.desBlock2{display:block}.attributesBlock1{display:none}.attributesBlock2{display:flex}.upB{width:290px;height:41px;border-radius:5px 5px 15px 5px;margin:0 auto}.upText{margin-top:15px}.frameOrientationBlock{width:185px;height:54px}.frameOrientationBlockOne>img{width:45px;height:25px;margin-left:25px;margin-top:-5px}.frameOrientationBlockTwo>img{width:25px;height:45px;margin-left:35px;margin-top:-2px}.frameOrientationBlockRoz{height:47px}.frame-orientation{margin-left:0;margin-right:0}.numberPostsBlock{width:185px;height:54px;font-size:13.1452px;line-height:10px;border-radius:5px 5px 15px 5px}.numberPostsBlockRoz{height:28px}.numberPostsText{margin-bottom:10px}.downloadProjectBlock{width:320px;height:45px}.downloadProjectText{display:none}.downloadProjectBlockText{font-size:15.98px;height:45px}.downloadProjectBlockImg{width:19px;height:19px;margin-top:-2px}.attributesBlock{width:383px;height:211px}.selectFrameBlock{border:none}.chooseMechanismBlockMobile{display:flex;flex-direction:row;overflow-x:auto}.chooseMechanismBlockTwo{width:100vw;height:200px}.chooseMechanismBlockTwoRam{width:100vw;height:200px;border:none}.frame-number{margin-top:0;margin-bottom:-45px}.mobileCenter{display:flex;margin:0 auto;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.mobileRight1{display:none}.mobileLeft{display:flex;margin:0 auto;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.background-Block{display:none}}@media screen and (max-width:380px){.numberPostsBlockMobile{display:block}.numberPostsBlockDesktop{display:none}.upB{width:264px;height:40px}.upMobileUpBag{margin-top:-20px;margin-left:-15px}.frameOrientationBlock{width:143px;height:70px}.frameOrientationBlockOne>img{width:53px;height:29px;margin-left:11px;margin-top:0}.frameOrientationBlockTwo>img{width:29px;height:53x;margin-left:20px;margin-top:6px}.frame-orientation{margin:0 3px 0 0}.numberPostsBlock{width:143px;height:70px;font-size:12.8067px;line-height:10px}.number-post{margin:0 0 0 3px}.configuratorBlock{align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.attributesBlock{width:292px;height:292px;display:flex;margin:0 auto;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.selectFrameBlock{border:none}.chooseMechanismBlockTwo{width:100vw;height:200px}.chooseMechanismBlockTwoRam{width:100vw;height:200px;border:none}.chooseMechanismBlockMobile{display:flex;flex-direction:row;overflow-x:auto}.downloadProjectText{display:none}.downloadProjectBlock{width:264px;height:40px}.downloadProjectBlockText{font-size:12.9838px;height:40px}.centerBlock{display:flex;flex-direction:column;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center;margin:0 auto}}
++/*# sourceMappingURL=style.css.map */
+\ No newline at end of file
+Index: configurator/src/assets/css/style.css.map
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\"version\":3,\"sourceRoot\":\"\",\"sources\":[\"style.scss\"],\"names\":[],\"mappings\":\"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\",\"file\":\"style.css\"}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/configurator/src/assets/css/style.css.map b/configurator/src/assets/css/style.css.map
+--- a/configurator/src/assets/css/style.css.map	
++++ b/configurator/src/assets/css/style.css.map	
+@@ -1,1 +1,1 @@
+-{"version":3,"sourceRoot":"","sources":["style.scss"],"names":[],"mappings":"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","file":"style.css"}
+\ No newline at end of file
++{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"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","file":"style.css"}
+\ No newline at end of file
+Index: configurator/src/assets/css/style-dist.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@media screen and (max-width:1590px){.block1{width:232px;height:165px;border-bottom:6px solid white;border-left:9px solid white;border-top:6px solid white;border-right:5px solid white}.backgroundBlock{width:232px;height:165px}.block2{width:232px;height:61px;margin-top:7px;padding-left:9px;padding-top:4px}.backgroundBlockImages{width:44px;height:44px;margin-left:0;margin-bottom:0}.backgroundBlockImagesHoverImg{width:39px;height:39px;margin-top:3px;margin-left:2px;border-radius:8px}.backgroundBlockImagesHover{width:44px;height:44px;margin:2.5px}.backgroundText{margin-bottom:11px;margin-left:4px;margin-top:-35px;font-size:12.94px}.upB{width:234px;height:31px;margin-top:4px}.upText{font-size:12px}.upImg{width:14px;height:14px;margin-left:5px;margin-top:1px}.desBlock2{display:block}.colorBlock{width:235px;height:117px}.colorBlockBACK{width:237px}.colorBack{width:24px;height:26px}.colorText{font-size:12.94px;margin-bottom:9px}.frameOrientationBlock{width:234px;height:86px}.frameOrientationBlockOneOne{width:67px;height:38px}.frameOrientationBlockTwoTwo{width:38px;height:67px}.frameOrientationBlockRoz{height:67px}.frameOrientationBlockOne{padding-top:25px}.frameOrientationBlockTwo{padding-top:10px}.frameOrientationText{font-size:12.94px}.numberPostsBlock{width:234px;height:52px;font-size:15.967px;line-height:13px}.numberPostsBlockRoz{height:34px}.numberPostsText{font-size:12.94px;margin-left:6px}.downloadProjectBlock{width:234px;height:38px}.downloadProjectText{width:234px;font-size:13px}.downloadProjectBlockText{font-size:11.9603px;height:38px}.downloadProjectBlockImg{width:14px;height:14px}.configuratorBlock{width:517px;height:517px}.configuratorBlockBlock{width:517px;height:517px}.attributesBlock{width:521px;height:175px}.attributesBlockOne{font-size:14px}.attributesBlockTwo{font-size:14px}.attributesBlockThree{font-size:14px}.selectFrameSelect{width:244px;height:32px;font-size:14px}.selectFrameTextTop{margin-top:0;font-size:12.94px}.selectFrameBlock{width:244px;height:102px;padding:8px}.selectFrameColorBlock{margin:1px}.selectFrameBlockColorBlock{width:31px;height:31px}.selectFrameBlockColorText{font-size:11.9488px;line-height:14px;letter-spacing:-0.38502px}.selectFrameColorBlock{margin:8px 0 0}.selectFrameBlockPos{margin-left:8px}.selectFrameText{margin-left:5px;margin-bottom:12px;margin-top:20px}.selectChooseFrame{display:flex;flex-basis:50%;margin-bottom:10px}.selectFrameImg{width:30px;height:30px}.selectFrameText{margin-top:6px}.chooseMechanismBlock{width:244px;height:101px}.chooseMechanismText{font-size:12.08px;margin-bottom:0;margin-top:11px}.chooseMechanismBlockTwo{width:244px;height:348px}.chooseMechanismBlockTwoRam{width:244px}.chooseMechanismColorText{font-size:11.9488px;line-height:14px;letter-spacing:-0.38502px}.chooseMechanismBlockColorBlock{width:31px;height:31px}.chooseMechanismColorBlock{margin:8px 0 0}.chooseMechanismBlockPos{margin-left:8px}.chooseMechanismFlex>p{font-size:14.0062px}.chooseMechanismFlexImg{width:53px;height:53px;margin:15px}.chooseMechanismImg{width:33px;height:33px;margin-left:-59px;margin-top:24px}.chooseMechanismFlexP{margin-left:20px;font-size:13px;line-height:18px;color:#5b6770}.buyBlockButtom>button{width:110px;height:40px;display:flex;align-items:center;justify-content:center;font-size:15.37px;margin-left:20px}.buyBlockCostOne{font-size:13px}.buyBlockCostTwo{font-size:26px}.buyBlock{margin-left:5px}.buyBlockFavorites{margin-top:5px}.buyBlockFavorites>img{width:19.47px;height:17.33px}.buyBlockFavorites>p{font-size:14.0062px}}@media screen and (max-width:1170px){.block1{width:219px;height:158px}.backgroundBlock{width:219px;height:158px;filter:none}.block2{width:216.18px;height:55.68px;margin-top:4px;filter:none}.backgroundBlockImages{width:40px;height:40px;margin-left:1px;margin-bottom:0}.backgroundBlockImagesHoverImg{width:36px;height:36px;margin-top:3px;margin-left:2px}.backgroundBlockImagesHover{width:40px;height:40px;margin:2.5px}.backgroundText{filter:none;font-size:11.94px}.upB{width:218px;height:33px}.upBag{margin-top:15px}.upBagBackgroundBlockImages{margin-left:1px}.upMobileUpBag{margin-top:10px}.colorText{font-size:11.94px}.upText{font-size:10.94px;margin-top:10px}.upImg{margin-top:-1px}.colorBlock{width:219px;height:113px}.colorBack{width:31px;height:34px}.colorBlockBACK{width:220px}.frameOrientationBlock{width:218px;height:63px}.frameOrientationBlockOne{padding-top:20px}.frameOrientationBlockOne>img{width:54px;height:24px}.frameOrientationBlockTwo{padding-top:5px}.frameOrientationBlockTwo>img{width:28px;height:54px}.frameOrientationText{font-size:11.94px}.frameOrientationBlockRoz{height:50px}.numberPostsBlock{width:218px;height:48px;font-size:15.9275px;line-height:12px}.numberPostsBlockRoz{height:32px}.numberPostsText{font-size:11.94px}.numberPostsBlockText{font-size:15.93px}.downloadProjectBlock{width:218px;height:36px}.downloadProjectText{display:none}.downloadProjectBlockText{font-size:10.9365px;height:36px}.downloadProjectBlockImg{width:14px;height:14px;margin-top:-3px}.configuratorBlock{width:456px;height:456px}.configuratorBlockBlock{width:456px;height:456px}.attributesBlock{width:458px;height:169px}.attributesCenter{margin-bottom:40px}.selectFrameSelect{width:221px;height:28px}.selectFrameTextTop{margin-top:0}.selectFrameBlock{width:218.3px;height:89.16px;padding:6px}.selectFrameColorBlock{margin:1px}.selectFrameBlockColorBlock{width:31px;height:31px}.selectFrameBlockColorText{font-size:10.9616px;line-height:14px;letter-spacing:-0.38502px}.selectFrameColorBlock{margin:8px 0 0}.selectFrameBlockPos{margin-left:8px}.selectFrameText{margin-left:5px;margin-bottom:12px;margin-top:20px}.selectChooseFrame{display:flex;flex-basis:50%;margin-bottom:10px}.selectFrameImg{width:30px;height:30px}.selectFrameText{font-size:10.9616px;margin-top:6px}.chooseMechanismBlock{width:221px;height:92px}.chooseMechanismBlockTwo{width:221px;height:315px}.chooseMechanismBlockTwoRam{width:221px}.chooseMechanismColorText{font-size:10.9616px;line-height:14px;letter-spacing:-0.38502px}.chooseMechanismBlockColorBlock{width:31px;height:31px}.chooseMechanismColorBlock{margin:8px 0 0}.chooseMechanismBlockPos{margin-left:8px}.chooseMechanismFlex>p{font-size:14.0062px}.chooseMechanismFlexImg{width:53px;height:53px;margin:11px}.chooseMechanismImg{width:33px;height:33px;margin-left:-55px;margin-top:20px}.chooseMechanismFlexP{margin-left:20px;font-size:16px;line-height:18px;display:flex;align-items:center;color:#5B6770}.buyBlockButtom>button{width:110px;height:40px;font-size:16px;margin-left:20px}.buyBlockCostOne{font-size:13px}.buyBlockCostTwo{font-size:26px}.buyBlock{margin-left:5px}.buyBlockFavorites{margin-top:0}.buyBlockFavorites>img{width:19.47px;height:17.33px}.buyBlockFavorites>p{font-size:14.0062px}.desBlock2{display:block}}@media screen and (max-width:1023px){.block1{width:285px;height:152px}.backgroundBlock{width:285px;height:152px;filter:none}.block2{width:285px;height:57px;margin-top:0;filter:none}.backgroundBlockImages{width:44px;height:44px;margin-left:1px;margin-bottom:0;border-radius:8px}.backgroundBlockImagesHoverImg{width:40px;height:40px;margin-top:3px;margin-left:2px;border-radius:8px}.backgroundBlockImagesHover{width:44px;height:44px;margin:2.5px}.backgroundText{filter:none;font-size:11.94px}.upB{width:231px;height:33px}.upBag{display:flex;margin-left:15px;margin-top:-5px}.upBagBackgroundBlockImages{margin-left:10px}.upMobileUpBag{margin-top:10px;margin-left:60px}.colorText{font-size:11.94px}.upText{font-size:10.94px;margin-top:10px}.upImg{margin-top:-1px}.upBagBackgroundBlockImages{margin-left:3px;margin-top:0.5px}.colorBlock{width:285px;height:152px}.colorBack{width:31px;height:34px}.colorBlockBACK{width:285px}.frameOrientationBlock{width:284px;height:67px}.frameOrientationBlockOne{padding-top:20px}.frameOrientationBlockOne>img{width:54px;height:28px}.frameOrientationBlockTwo{padding-top:5px}.frameOrientationBlockTwo>img{width:28px;height:54px}.frameOrientationText{font-size:11.94px}.frame-orientation{margin-top:0;margin-right:14px;margin-left:-14px}.numberPostsBlock{width:285px;height:68px;font-size:15.9275px;line-height:12px}.numberPostsBlockRoz{height:49px}.numberPostsText{font-size:11.94px}.numberPostsBlockText{font-size:15.93px}.number-post{margin-left:14px;margin-top:7px}.downloadProjectBlock{width:218px;height:36px}.downloadProjectText{display:none}.downloadProjectBlockText{font-size:10.9365px}.downloadProjectBlockImg{width:14px;height:14px}.configuratorBlock{width:100%;height:100vw;margin:0 auto}.configuratorBlockBlock{width:596px;height:596px}.configuratorCenter{margin:0 auto}.attributesBlock{width:598px;height:162px;margin-top:20px}.attributesCenter{margin:0 auto}.mobBlock2{display:block}.desBlock2{display:none}}@media screen and (max-width:648px){.desBlock2{display:block}.attributesBlock1{display:none}.attributesBlock2{display:flex}.upB{width:290px;height:41px;border-radius:5px 5px 15px 5px;margin:0 auto}.upText{margin-top:15px}.frameOrientationBlock{width:185px;height:54px}.frameOrientationBlockOne>img{width:45px;height:25px;margin-left:25px;margin-top:-5px}.frameOrientationBlockTwo>img{width:25px;height:45px;margin-left:35px;margin-top:-2px}.frameOrientationBlockRoz{height:47px}.frame-orientation{margin-left:0;margin-right:0}.numberPostsBlock{width:185px;height:54px;font-size:13.1452px;line-height:10px;border-radius:5px 5px 15px 5px}.numberPostsBlockRoz{height:28px}.numberPostsText{margin-bottom:10px}.downloadProjectBlock{width:320px;height:45px}.downloadProjectText{display:none}.downloadProjectBlockText{font-size:15.98px;height:45px}.downloadProjectBlockImg{width:19px;height:19px;margin-top:-2px}.attributesBlock{width:383px;height:211px}.frame-number{margin-top:0;margin-bottom:-45px}.mobileCenter{display:flex;margin:0 auto;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.mobileRight1{display:none}.mobileLeft{display:flex;margin:0 auto;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.background-Block{display:none}}@media screen and (max-width:380px){.numberPostsBlockMobile{display:block}.numberPostsBlockDesktop{display:none}.upB{width:264px;height:40px}.frameOrientationBlock{width:143px;height:70px}.frameOrientationBlockOne>img{width:53px;height:29px;margin-left:11px;margin-top:0}.frameOrientationBlockTwo>img{width:29px;height:53x;margin-left:20px;margin-top:6px}.frame-orientation{margin:0 3px 0 0}.numberPostsBlock{width:143px;height:70px;font-size:12.8067px;line-height:10px}.number-post{margin:0 0 0 3px}.configuratorBlock{align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.attributesBlock{width:292px;height:292px;display:flex;margin:0 auto;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.chooseMechanismBlockTwo{width:244px;height:200px}.downloadProjectText{display:none}.downloadProjectBlock{width:264px;height:40px}.downloadProjectBlockText{font-size:12.9838px;height:40px}.centerBlock{display:flex;flex-direction:column;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center;margin:0 auto}}\n/*# sourceMappingURL=style-dist.css.map */
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/configurator/src/assets/css/style-dist.css b/configurator/src/assets/css/style-dist.css
+--- a/configurator/src/assets/css/style-dist.css	
++++ b/configurator/src/assets/css/style-dist.css	
+@@ -1,2 +1,2 @@
+-@media screen and (max-width:1590px){.block1{width:232px;height:165px;border-bottom:6px solid white;border-left:9px solid white;border-top:6px solid white;border-right:5px solid white}.backgroundBlock{width:232px;height:165px}.block2{width:232px;height:61px;margin-top:7px;padding-left:9px;padding-top:4px}.backgroundBlockImages{width:44px;height:44px;margin-left:0;margin-bottom:0}.backgroundBlockImagesHoverImg{width:39px;height:39px;margin-top:3px;margin-left:2px;border-radius:8px}.backgroundBlockImagesHover{width:44px;height:44px;margin:2.5px}.backgroundText{margin-bottom:11px;margin-left:4px;margin-top:-35px;font-size:12.94px}.upB{width:234px;height:31px;margin-top:4px}.upText{font-size:12px}.upImg{width:14px;height:14px;margin-left:5px;margin-top:1px}.desBlock2{display:block}.colorBlock{width:235px;height:117px}.colorBlockBACK{width:237px}.colorBack{width:24px;height:26px}.colorText{font-size:12.94px;margin-bottom:9px}.frameOrientationBlock{width:234px;height:86px}.frameOrientationBlockOneOne{width:67px;height:38px}.frameOrientationBlockTwoTwo{width:38px;height:67px}.frameOrientationBlockRoz{height:67px}.frameOrientationBlockOne{padding-top:25px}.frameOrientationBlockTwo{padding-top:10px}.frameOrientationText{font-size:12.94px}.numberPostsBlock{width:234px;height:52px;font-size:15.967px;line-height:13px}.numberPostsBlockRoz{height:34px}.numberPostsText{font-size:12.94px;margin-left:6px}.downloadProjectBlock{width:234px;height:38px}.downloadProjectText{width:234px;font-size:13px}.downloadProjectBlockText{font-size:11.9603px;height:38px}.downloadProjectBlockImg{width:14px;height:14px}.configuratorBlock{width:517px;height:517px}.configuratorBlockBlock{width:517px;height:517px}.attributesBlock{width:521px;height:175px}.attributesBlockOne{font-size:14px}.attributesBlockTwo{font-size:14px}.attributesBlockThree{font-size:14px}.selectFrameSelect{width:244px;height:32px;font-size:14px}.selectFrameTextTop{margin-top:0;font-size:12.94px}.selectFrameBlock{width:244px;height:102px;padding:8px}.selectFrameColorBlock{margin:1px}.selectFrameBlockColorBlock{width:31px;height:31px}.selectFrameBlockColorText{font-size:11.9488px;line-height:14px;letter-spacing:-0.38502px}.selectFrameColorBlock{margin:8px 0 0}.selectFrameBlockPos{margin-left:8px}.selectFrameText{margin-left:5px;margin-bottom:12px;margin-top:20px}.selectChooseFrame{display:flex;flex-basis:50%;margin-bottom:10px}.selectFrameImg{width:30px;height:30px}.selectFrameText{margin-top:6px}.chooseMechanismBlock{width:244px;height:101px}.chooseMechanismText{font-size:12.08px;margin-bottom:0;margin-top:11px}.chooseMechanismBlockTwo{width:244px;height:348px}.chooseMechanismBlockTwoRam{width:244px}.chooseMechanismColorText{font-size:11.9488px;line-height:14px;letter-spacing:-0.38502px}.chooseMechanismBlockColorBlock{width:31px;height:31px}.chooseMechanismColorBlock{margin:8px 0 0}.chooseMechanismBlockPos{margin-left:8px}.chooseMechanismFlex>p{font-size:14.0062px}.chooseMechanismFlexImg{width:53px;height:53px;margin:15px}.chooseMechanismImg{width:33px;height:33px;margin-left:-59px;margin-top:24px}.chooseMechanismFlexP{margin-left:20px;font-size:13px;line-height:18px;color:#5b6770}.buyBlockButtom>button{width:110px;height:40px;display:flex;align-items:center;justify-content:center;font-size:15.37px;margin-left:20px}.buyBlockCostOne{font-size:13px}.buyBlockCostTwo{font-size:26px}.buyBlock{margin-left:5px}.buyBlockFavorites{margin-top:5px}.buyBlockFavorites>img{width:19.47px;height:17.33px}.buyBlockFavorites>p{font-size:14.0062px}}@media screen and (max-width:1170px){.block1{width:219px;height:158px}.backgroundBlock{width:219px;height:158px;filter:none}.block2{width:216.18px;height:55.68px;margin-top:4px;filter:none}.backgroundBlockImages{width:40px;height:40px;margin-left:1px;margin-bottom:0}.backgroundBlockImagesHoverImg{width:36px;height:36px;margin-top:3px;margin-left:2px}.backgroundBlockImagesHover{width:40px;height:40px;margin:2.5px}.backgroundText{filter:none;font-size:11.94px}.upB{width:218px;height:33px}.upBag{margin-top:15px}.upBagBackgroundBlockImages{margin-left:1px}.upMobileUpBag{margin-top:10px}.colorText{font-size:11.94px}.upText{font-size:10.94px;margin-top:10px}.upImg{margin-top:-1px}.colorBlock{width:219px;height:113px}.colorBack{width:31px;height:34px}.colorBlockBACK{width:220px}.frameOrientationBlock{width:218px;height:63px}.frameOrientationBlockOne{padding-top:20px}.frameOrientationBlockOne>img{width:54px;height:24px}.frameOrientationBlockTwo{padding-top:5px}.frameOrientationBlockTwo>img{width:28px;height:54px}.frameOrientationText{font-size:11.94px}.frameOrientationBlockRoz{height:50px}.numberPostsBlock{width:218px;height:48px;font-size:15.9275px;line-height:12px}.numberPostsBlockRoz{height:32px}.numberPostsText{font-size:11.94px}.numberPostsBlockText{font-size:15.93px}.downloadProjectBlock{width:218px;height:36px}.downloadProjectText{display:none}.downloadProjectBlockText{font-size:10.9365px;height:36px}.downloadProjectBlockImg{width:14px;height:14px;margin-top:-3px}.configuratorBlock{width:456px;height:456px}.configuratorBlockBlock{width:456px;height:456px}.attributesBlock{width:458px;height:169px}.attributesCenter{margin-bottom:40px}.selectFrameSelect{width:221px;height:28px}.selectFrameTextTop{margin-top:0}.selectFrameBlock{width:218.3px;height:89.16px;padding:6px}.selectFrameColorBlock{margin:1px}.selectFrameBlockColorBlock{width:31px;height:31px}.selectFrameBlockColorText{font-size:10.9616px;line-height:14px;letter-spacing:-0.38502px}.selectFrameColorBlock{margin:8px 0 0}.selectFrameBlockPos{margin-left:8px}.selectFrameText{margin-left:5px;margin-bottom:12px;margin-top:20px}.selectChooseFrame{display:flex;flex-basis:50%;margin-bottom:10px}.selectFrameImg{width:30px;height:30px}.selectFrameText{font-size:10.9616px;margin-top:6px}.chooseMechanismBlock{width:221px;height:92px}.chooseMechanismBlockTwo{width:221px;height:315px}.chooseMechanismBlockTwoRam{width:221px}.chooseMechanismColorText{font-size:10.9616px;line-height:14px;letter-spacing:-0.38502px}.chooseMechanismBlockColorBlock{width:31px;height:31px}.chooseMechanismColorBlock{margin:8px 0 0}.chooseMechanismBlockPos{margin-left:8px}.chooseMechanismFlex>p{font-size:14.0062px}.chooseMechanismFlexImg{width:53px;height:53px;margin:11px}.chooseMechanismImg{width:33px;height:33px;margin-left:-55px;margin-top:20px}.chooseMechanismFlexP{margin-left:20px;font-size:16px;line-height:18px;display:flex;align-items:center;color:#5B6770}.buyBlockButtom>button{width:110px;height:40px;font-size:16px;margin-left:20px}.buyBlockCostOne{font-size:13px}.buyBlockCostTwo{font-size:26px}.buyBlock{margin-left:5px}.buyBlockFavorites{margin-top:0}.buyBlockFavorites>img{width:19.47px;height:17.33px}.buyBlockFavorites>p{font-size:14.0062px}.desBlock2{display:block}}@media screen and (max-width:1023px){.block1{width:285px;height:152px}.backgroundBlock{width:285px;height:152px;filter:none}.block2{width:285px;height:57px;margin-top:0;filter:none}.backgroundBlockImages{width:44px;height:44px;margin-left:1px;margin-bottom:0;border-radius:8px}.backgroundBlockImagesHoverImg{width:40px;height:40px;margin-top:3px;margin-left:2px;border-radius:8px}.backgroundBlockImagesHover{width:44px;height:44px;margin:2.5px}.backgroundText{filter:none;font-size:11.94px}.upB{width:231px;height:33px}.upBag{display:flex;margin-left:15px;margin-top:-5px}.upBagBackgroundBlockImages{margin-left:10px}.upMobileUpBag{margin-top:10px;margin-left:60px}.colorText{font-size:11.94px}.upText{font-size:10.94px;margin-top:10px}.upImg{margin-top:-1px}.upBagBackgroundBlockImages{margin-left:3px;margin-top:0.5px}.colorBlock{width:285px;height:152px}.colorBack{width:31px;height:34px}.colorBlockBACK{width:285px}.frameOrientationBlock{width:284px;height:67px}.frameOrientationBlockOne{padding-top:20px}.frameOrientationBlockOne>img{width:54px;height:28px}.frameOrientationBlockTwo{padding-top:5px}.frameOrientationBlockTwo>img{width:28px;height:54px}.frameOrientationText{font-size:11.94px}.frame-orientation{margin-top:0;margin-right:14px;margin-left:-14px}.numberPostsBlock{width:285px;height:68px;font-size:15.9275px;line-height:12px}.numberPostsBlockRoz{height:49px}.numberPostsText{font-size:11.94px}.numberPostsBlockText{font-size:15.93px}.number-post{margin-left:14px;margin-top:7px}.downloadProjectBlock{width:218px;height:36px}.downloadProjectText{display:none}.downloadProjectBlockText{font-size:10.9365px}.downloadProjectBlockImg{width:14px;height:14px}.configuratorBlock{width:100%;height:100vw;margin:0 auto}.configuratorBlockBlock{width:596px;height:596px}.configuratorCenter{margin:0 auto}.attributesBlock{width:598px;height:162px;margin-top:20px}.attributesCenter{margin:0 auto}.mobBlock2{display:block}.desBlock2{display:none}}@media screen and (max-width:648px){.desBlock2{display:block}.attributesBlock1{display:none}.attributesBlock2{display:flex}.upB{width:290px;height:41px;border-radius:5px 5px 15px 5px;margin:0 auto}.upText{margin-top:15px}.frameOrientationBlock{width:185px;height:54px}.frameOrientationBlockOne>img{width:45px;height:25px;margin-left:25px;margin-top:-5px}.frameOrientationBlockTwo>img{width:25px;height:45px;margin-left:35px;margin-top:-2px}.frameOrientationBlockRoz{height:47px}.frame-orientation{margin-left:0;margin-right:0}.numberPostsBlock{width:185px;height:54px;font-size:13.1452px;line-height:10px;border-radius:5px 5px 15px 5px}.numberPostsBlockRoz{height:28px}.numberPostsText{margin-bottom:10px}.downloadProjectBlock{width:320px;height:45px}.downloadProjectText{display:none}.downloadProjectBlockText{font-size:15.98px;height:45px}.downloadProjectBlockImg{width:19px;height:19px;margin-top:-2px}.attributesBlock{width:383px;height:211px}.frame-number{margin-top:0;margin-bottom:-45px}.mobileCenter{display:flex;margin:0 auto;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.mobileRight1{display:none}.mobileLeft{display:flex;margin:0 auto;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.background-Block{display:none}}@media screen and (max-width:380px){.numberPostsBlockMobile{display:block}.numberPostsBlockDesktop{display:none}.upB{width:264px;height:40px}.frameOrientationBlock{width:143px;height:70px}.frameOrientationBlockOne>img{width:53px;height:29px;margin-left:11px;margin-top:0}.frameOrientationBlockTwo>img{width:29px;height:53x;margin-left:20px;margin-top:6px}.frame-orientation{margin:0 3px 0 0}.numberPostsBlock{width:143px;height:70px;font-size:12.8067px;line-height:10px}.number-post{margin:0 0 0 3px}.configuratorBlock{align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.attributesBlock{width:292px;height:292px;display:flex;margin:0 auto;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.chooseMechanismBlockTwo{width:244px;height:200px}.downloadProjectText{display:none}.downloadProjectBlock{width:264px;height:40px}.downloadProjectBlockText{font-size:12.9838px;height:40px}.centerBlock{display:flex;flex-direction:column;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center;margin:0 auto}}
++@media screen and (max-width:1590px){.block1{width:232px;height:165px;border-bottom:6px solid white;border-left:9px solid white;border-top:6px solid white;border-right:5px solid white}.backgroundBlock{width:232px;height:165px}.block2{width:232px;height:61px;margin-top:7px;padding-left:9px;padding-top:4px}.backgroundBlockImages{width:44px;height:44px;margin-left:0;margin-bottom:0}.backgroundBlockImagesHoverImg{width:39px;height:39px;margin-top:3px;margin-left:2px;border-radius:8px}.backgroundBlockImagesHover{width:44px;height:44px;margin:2.5px}.backgroundText{margin-bottom:11px;margin-left:4px;margin-top:-35px;font-size:12.94px}.upB{width:234px;height:31px;margin-top:4px}.upText{font-size:12px}.upImg{width:14px;height:14px;margin-left:5px;margin-top:1px}.desBlock2{display:block}.colorBlock{width:235px;height:117px}.colorBlockBACK{width:237px}.colorBack{width:24px;height:26px}.colorText{font-size:12.94px;margin-bottom:9px}.frameOrientationBlock{width:234px;height:86px}.frameOrientationBlockOneOne{width:67px;height:38px}.frameOrientationBlockTwoTwo{width:38px;height:67px}.frameOrientationBlockRoz{height:67px}.frameOrientationBlockOne{padding-top:25px}.frameOrientationBlockTwo{padding-top:10px}.frameOrientationText{font-size:12.94px}.numberPostsBlock{width:234px;height:52px;font-size:15.967px;line-height:13px}.numberPostsBlockRoz{height:34px}.numberPostsText{font-size:12.94px;margin-left:6px}.downloadProjectBlock{width:234px;height:38px}.downloadProjectText{width:234px;font-size:13px}.downloadProjectBlockText{font-size:11.9603px;height:38px}.downloadProjectBlockImg{width:14px;height:14px}.configuratorBlock{width:517px;height:517px}.configuratorBlockBlock{width:517px;height:517px}.attributesBlock{width:521px;height:175px}.attributesBlockOne{font-size:14px}.attributesBlockTwo{font-size:14px}.attributesBlockThree{font-size:14px}.selectFrameSelect{width:244px;height:32px;font-size:14px}.selectFrameTextTop{margin-top:0;font-size:12.94px}.selectFrameBlock{width:244px;height:102px;padding:8px}.selectFrameColorBlock{margin:1px}.selectFrameBlockColorBlock{width:31px;height:31px}.selectFrameBlockColorText{font-size:11.9488px;line-height:14px;letter-spacing:-0.38502px}.selectFrameColorBlock{margin:8px 0 0}.selectFrameBlockPos{margin-left:8px}.selectFrameText{margin-left:5px;margin-bottom:12px;margin-top:20px}.selectChooseFrame{display:flex;flex-basis:50%;margin-bottom:10px}.selectFrameImg{width:30px;height:30px}.selectFrameText{margin-top:6px}.chooseMechanismBlock{width:244px;height:101px}.chooseMechanismText{font-size:12.08px;margin-bottom:0;margin-top:11px}.chooseMechanismBlockTwo{width:244px;height:348px}.chooseMechanismBlockTwoRam{width:244px}.chooseMechanismColorText{font-size:11.9488px;line-height:14px;letter-spacing:-0.38502px}.chooseMechanismBlockColorBlock{width:31px;height:31px}.chooseMechanismColorBlock{margin:8px 0 0}.chooseMechanismBlockPos{margin-left:8px}.chooseMechanismFlex>p{font-size:14.0062px}.chooseMechanismFlexImg{width:53px;height:53px;margin:15px}.chooseMechanismImg{width:33px;height:33px;margin-left:-59px;margin-top:24px}.chooseMechanismFlexP{margin-left:20px;font-size:13px;line-height:18px;color:#5b6770}.buyBlockButtom>button{width:110px;height:40px;display:flex;align-items:center;justify-content:center;font-size:15.37px;margin-left:20px}.buyBlockCostOne{font-size:13px}.buyBlockCostTwo{font-size:26px}.buyBlock{margin-left:5px}.buyBlockFavorites{margin-top:5px}.buyBlockFavorites>img{width:19.47px;height:17.33px}.buyBlockFavorites>p{font-size:14.0062px}}@media screen and (max-width:1170px){.block1{width:219px;height:158px}.backgroundBlock{width:219px;height:158px;filter:none}.block2{width:216.18px;height:55.68px;margin-top:4px;filter:none}.backgroundBlockImages{width:40px;height:40px;margin-left:1px;margin-bottom:0}.backgroundBlockImagesHoverImg{width:36px;height:36px;margin-top:3px;margin-left:2px}.backgroundBlockImagesHover{width:40px;height:40px;margin:2.5px}.backgroundText{filter:none;font-size:11.94px}.upB{width:218px;height:33px}.upBag{margin-top:15px}.upBagBackgroundBlockImages{margin-left:1px}.upMobileUpBag{margin-top:10px}.colorText{font-size:11.94px}.upText{font-size:10.94px;margin-top:10px}.upImg{margin-top:-1px}.colorBlock{width:219px;height:113px}.colorBack{width:31px;height:34px}.colorBlockBACK{width:220px}.frameOrientationBlock{width:218px;height:63px}.frameOrientationBlockOne{padding-top:20px}.frameOrientationBlockOne>img{width:54px;height:24px}.frameOrientationBlockTwo{padding-top:5px}.frameOrientationBlockTwo>img{width:28px;height:54px}.frameOrientationText{font-size:11.94px}.frameOrientationBlockRoz{height:50px}.numberPostsBlock{width:218px;height:48px;font-size:15.9275px;line-height:12px}.numberPostsBlockRoz{height:32px}.numberPostsText{font-size:11.94px}.numberPostsBlockText{font-size:15.93px}.downloadProjectBlock{width:218px;height:36px}.downloadProjectText{display:none}.downloadProjectBlockText{font-size:10.9365px;height:36px}.downloadProjectBlockImg{width:14px;height:14px;margin-top:-3px}.configuratorBlock{width:456px;height:456px}.configuratorBlockBlock{width:456px;height:456px}.attributesBlock{width:458px;height:169px}.attributesCenter{margin-bottom:40px}.selectFrameSelect{width:221px;height:28px}.selectFrameTextTop{margin-top:0}.selectFrameBlock{width:218.3px;height:89.16px;padding:6px}.selectFrameColorBlock{margin:1px}.selectFrameBlockColorBlock{width:31px;height:31px}.selectFrameBlockColorText{font-size:10.9616px;line-height:14px;letter-spacing:-0.38502px}.selectFrameColorBlock{margin:8px 0 0}.selectFrameBlockPos{margin-left:8px}.selectFrameText{margin-left:5px;margin-bottom:12px;margin-top:20px}.selectChooseFrame{display:flex;flex-basis:50%;margin-bottom:10px}.selectFrameImg{width:30px;height:30px}.selectFrameText{font-size:10.9616px;margin-top:6px}.chooseMechanismBlock{width:221px;height:92px}.chooseMechanismBlockTwo{width:221px;height:315px}.chooseMechanismBlockTwoRam{width:221px}.chooseMechanismColorText{font-size:10.9616px;line-height:14px;letter-spacing:-0.38502px}.chooseMechanismBlockColorBlock{width:31px;height:31px}.chooseMechanismColorBlock{margin:8px 0 0}.chooseMechanismBlockPos{margin-left:8px}.chooseMechanismFlex>p{font-size:14.0062px}.chooseMechanismFlexImg{width:53px;height:53px;margin:11px}.chooseMechanismImg{width:33px;height:33px;margin-left:-55px;margin-top:20px}.chooseMechanismFlexP{margin-left:20px;font-size:16px;line-height:18px;display:flex;align-items:center;color:#5B6770}.buyBlockButtom>button{width:110px;height:40px;font-size:16px;margin-left:20px}.buyBlockCostOne{font-size:13px}.buyBlockCostTwo{font-size:26px}.buyBlock{margin-left:5px}.buyBlockFavorites{margin-top:0}.buyBlockFavorites>img{width:19.47px;height:17.33px}.buyBlockFavorites>p{font-size:14.0062px}.desBlock2{display:block}}@media screen and (max-width:1023px){.block1{width:285px;height:152px}.backgroundBlock{width:285px;height:152px;filter:none}.block2{width:285px;height:57px;margin-top:0;filter:none}.backgroundBlockImages{width:44px;height:44px;margin-left:1px;margin-bottom:0;border-radius:8px}.backgroundBlockImagesHoverImg{width:40px;height:40px;margin-top:3px;margin-left:2px;border-radius:8px}.backgroundBlockImagesHover{width:44px;height:44px;margin:2.5px}.backgroundText{filter:none;font-size:11.94px}.upB{width:231px;height:33px}.upBag{display:flex;margin-left:15px;margin-top:-5px}.upBagBackgroundBlockImages{margin-left:10px}.upMobileUpBag{margin-top:10px;margin-left:60px}.colorText{font-size:11.94px}.upText{font-size:10.94px;margin-top:10px}.upImg{margin-top:-1px}.upBagBackgroundBlockImages{margin-left:3px;margin-top:0.5px}.colorBlock{width:285px;height:152px}.colorBack{width:31px;height:34px}.colorBlockBACK{width:285px}.frameOrientationBlock{width:284px;height:67px}.frameOrientationBlockOne{padding-top:20px}.frameOrientationBlockOne>img{width:54px;height:28px}.frameOrientationBlockTwo{padding-top:5px}.frameOrientationBlockTwo>img{width:28px;height:54px}.frameOrientationText{font-size:11.94px}.frame-orientation{margin-top:0;margin-right:14px;margin-left:-14px}.numberPostsBlock{width:285px;height:68px;font-size:15.9275px;line-height:12px}.numberPostsBlockRoz{height:49px}.numberPostsText{font-size:11.94px}.numberPostsBlockText{font-size:15.93px}.number-post{margin-left:14px;margin-top:7px}.downloadProjectBlock{width:218px;height:36px}.downloadProjectText{display:none}.downloadProjectBlockText{font-size:10.9365px}.downloadProjectBlockImg{width:14px;height:14px}.configuratorBlock{width:100%;height:100vw;margin:0 auto}.configuratorBlockBlock{width:596px;height:596px}.configuratorCenter{margin:0 auto}.attributesBlock{width:598px;height:162px;margin-top:20px}.attributesCenter{margin:0 auto}.selectFrameBlock{border:none;display:flex;margin:0 auto;justify-self:center;justify-items:center;justify-content:center}.selectChooseFrame{width:150px}.selectFrameText{margin-top:-22px;margin-left:7px}.chooseMechanismBlockTwo{width:100vw;height:220px;margin-top:-30px}.chooseMechanismBlockTwoRam{width:100vw;height:220px;border:none}.chooseMechanismBlockMobile{display:flex;flex-direction:row;overflow-x:auto}.chooseMechanismFlex{display:flex;flex-direction:column}.chooseMechanismFlexImg{width:70px;height:70px;margin:20px}.chooseMechanismImg{width:44px;height:44px;margin-left:33px;margin-top:-78px;display:flex;flex-direction:column}.chooseMechanismFlexP{margin-left:21px;margin-top:30px;font-family:Ubuntu,sans-serif;font-style:normal;font-weight:normal;font-size:16px;line-height:18px;display:flex;align-items:center;color:#5B6770}.mobBlock2{display:block}.desBlock2{display:none}}@media screen and (max-width:648px){.desBlock2{display:block}.attributesBlock1{display:none}.attributesBlock2{display:flex}.upB{width:290px;height:41px;border-radius:5px 5px 15px 5px;margin:0 auto}.upText{margin-top:15px}.frameOrientationBlock{width:185px;height:54px}.frameOrientationBlockOne>img{width:45px;height:25px;margin-left:25px;margin-top:-5px}.frameOrientationBlockTwo>img{width:25px;height:45px;margin-left:35px;margin-top:-2px}.frameOrientationBlockRoz{height:47px}.frame-orientation{margin-left:0;margin-right:0}.numberPostsBlock{width:185px;height:54px;font-size:13.1452px;line-height:10px;border-radius:5px 5px 15px 5px}.numberPostsBlockRoz{height:28px}.numberPostsText{margin-bottom:10px}.downloadProjectBlock{width:320px;height:45px}.downloadProjectText{display:none}.downloadProjectBlockText{font-size:15.98px;height:45px}.downloadProjectBlockImg{width:19px;height:19px;margin-top:-2px}.attributesBlock{width:383px;height:211px}.selectFrameBlock{border:none}.chooseMechanismBlockMobile{display:flex;flex-direction:row;overflow-x:auto}.chooseMechanismBlockTwo{width:100vw;height:200px}.chooseMechanismBlockTwoRam{width:100vw;height:200px;border:none}.frame-number{margin-top:0;margin-bottom:-45px}.mobileCenter{display:flex;margin:0 auto;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.mobileRight1{display:none}.mobileLeft{display:flex;margin:0 auto;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.background-Block{display:none}}@media screen and (max-width:380px){.numberPostsBlockMobile{display:block}.numberPostsBlockDesktop{display:none}.upB{width:264px;height:40px}.upMobileUpBag{margin-top:-20px;margin-left:-15px}.frameOrientationBlock{width:143px;height:70px}.frameOrientationBlockOne>img{width:53px;height:29px;margin-left:11px;margin-top:0}.frameOrientationBlockTwo>img{width:29px;height:53x;margin-left:20px;margin-top:6px}.frame-orientation{margin:0 3px 0 0}.numberPostsBlock{width:143px;height:70px;font-size:12.8067px;line-height:10px}.number-post{margin:0 0 0 3px}.configuratorBlock{align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.attributesBlock{width:292px;height:292px;display:flex;margin:0 auto;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center}.selectFrameBlock{border:none}.chooseMechanismBlockTwo{width:100vw;height:200px}.chooseMechanismBlockTwoRam{width:100vw;height:200px;border:none}.chooseMechanismBlockMobile{display:flex;flex-direction:row;overflow-x:auto}.downloadProjectText{display:none}.downloadProjectBlock{width:264px;height:40px}.downloadProjectBlockText{font-size:12.9838px;height:40px}.centerBlock{display:flex;flex-direction:column;align-content:center;align-items:center;align-self:center;justify-content:center;justify-items:center;justify-self:center;margin:0 auto}}
+ /*# sourceMappingURL=style-dist.css.map */
+\ No newline at end of file
+Index: configurator/src/assets/css/style-dist.css.map
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\"version\":3,\"sources\":[\"style.scss\",\"style.css\"],\"names\":[],\"mappings\":\"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\",\"file\":\"style-dist.css\"}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/configurator/src/assets/css/style-dist.css.map b/configurator/src/assets/css/style-dist.css.map
+--- a/configurator/src/assets/css/style-dist.css.map	
++++ b/configurator/src/assets/css/style-dist.css.map	
+@@ -1,1 +1,1 @@
+-{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"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","file":"style-dist.css"}
+\ No newline at end of file
++{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"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","file":"style-dist.css"}
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"08f21971-1991-4c1b-bb88-30dbe0d612c1\" name=\"Default Changelist\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/configurator/src/assets/css/style-dist.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/configurator/src/assets/css/style-dist.css\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/configurator/src/assets/css/style.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/configurator/src/assets/css/style.css\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/configurator/src/assets/css/style.css.map\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/configurator/src/assets/css/style.css.map\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/configurator/src/assets/css/style.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/configurator/src/assets/css/style.scss\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1mF8z7TW2ZzxkANuyaYJ0ycyU9z\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"NewWatcherDialog.advanced.open\" value=\"true\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"run.code.analysis.last.selected.profile\" value=\"pProject Default\" />\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"08f21971-1991-4c1b-bb88-30dbe0d612c1\" name=\"Default Changelist\" comment=\"\" />\n      <created>1609078242023</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1609078242023</updated>\n      <workItem from=\"1609078247497\" duration=\"23013000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"CUSTOM_BOOLEAN_PROPERTIES\">\n                <map>\n                  <entry key=\"Show.Git.Branches\" value=\"true\" />\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -7,8 +7,10 @@
+       <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.css.map" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/center/attributes.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/center/attributes.vue" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/configurator/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/store/index.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/configurator/src/views/Center/centerBlock.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/views/Center/centerBlock.vue" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -44,7 +46,7 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1609078242023</updated>
+-      <workItem from="1609078247497" duration="23013000" />
++      <workItem from="1609078247497" duration="26417000" />
+     </task>
+     <servers />
+   </component>

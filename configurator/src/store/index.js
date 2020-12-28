@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 
 Vue.use(Vuex)
-const url = 'https://d773dace96b9.ngrok.io';
+const url = 'http://localhost:5555';
 
 const getFrames = {
   method: 'get',
@@ -366,28 +366,35 @@ const store = () => new Vuex.Store({
     mechanismBlockOne: {
       price: 0,
       fileURL: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
-      article: ''
+      article: '',
+      num: 0,
     },
     mechanismBlockTwo: {
       price: 0,
       fileURL: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
-      article: ''
+      article: '',
+      num: 0,
     },
     mechanismBlockThree: {
       price: 0,
       fileURL: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
-      article: ''
+      article: '',
+      num: 0,
     },
     mechanismBlockFour: {
       price: 0,
       fileURL: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
-      article: ''
+      article: '',
+      num: 0,
     },
     mechanismBlockFive: {
       price: 0,
       fileURL: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
-      article: ''
+      article: '',
+      num: 0,
     },
+
+    attributeNum: 0,
 
   },
   actions: {
@@ -554,6 +561,7 @@ const store = () => new Vuex.Store({
                   price: picParam.price,
                   productCode: picParam.productCode,
                   article: picParam.article,
+                  num: 1,
           }
           return stateFrame
       }, {})
@@ -600,6 +608,7 @@ const store = () => new Vuex.Store({
           productCode: picParam.productCode,
           price: picParam.price,
           article: picParam.article,
+          num: 1,
         })
         return stateMechanism
       }, {},)
@@ -718,6 +727,7 @@ const store = () => new Vuex.Store({
     closedMechanismBlock: (state, data) => {
       return state[data] = {
         price: 0,
+        num: 0,
         fileURL: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png'
       }
     },
@@ -829,6 +839,15 @@ const store = () => new Vuex.Store({
           state.mechanismBlockThree.price +
           state.mechanismBlockFour.price +
           state.mechanismBlockFive.price
+    },
+    attributeNum: state => {
+      return state.attributeNum =
+      state.mechanismBlockOne.num +
+      state.mechanismBlockTwo.num +
+      state.mechanismBlockThree.num +
+      state.mechanismBlockFour.num +
+      state.mechanismBlockFive.num +
+      state.frame.horizontal[state.material][state.colorsFrame][state.numberPostsFrame].num
     },
     chooseMechanismItem: state => {
       return state.chooseMechanismItem

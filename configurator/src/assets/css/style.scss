@@ -193,10 +193,33 @@ $white: rgb(255, 255, 255);
   .attributesBlockOne{
     font-size: 14px;
   }
+  .attributesBlockRez{
+    height: 89px;
+    margin-top: 15px;
+  }
   .attributesBlockTwo{
     font-size: 14px;
+    flex-basis: 85%;
   }
   .attributesBlockThree{
+    font-size: 14px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .attributesBlockThree > div{
+    display: flex;
+    flex-direction: row;
+  }
+  .attributeNum{
+    margin-top: 0;
+    margin-left: 7px;
+    font-size: 14px;
+  }
+  .attributesMechanism{
+    font-size: 14px;
+  }
+  .attributesMechanism > p{
     font-size: 14px;
   }
   ///////////////////////////////////////////////////////////
