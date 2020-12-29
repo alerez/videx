@@ -1,0 +1,1281 @@
+@mixin size($width, $height){
+  width: $width;
+  height: $height;
+}
+@mixin border($bottom, $left, $top, $right){
+  border-bottom: $bottom solid $white;
+  border-left: $left solid $white;
+  border-top:$top solid $white;
+  border-right:$right solid $white;
+}
+@mixin centerAbsolute{
+  align-content:center;
+  align-items:center;
+  align-self:center;
+  justify-content:center;
+  justify-items:center;
+  justify-self:center;
+}
+
+$white: rgb(255, 255, 255);
+
+//img{
+//    -webkit-user-select: none;
+//    -moz-user-select: none;
+//    user-select: none;
+//    pointer-events: none;
+//}
+
+@media screen and (max-width: 1590px){
+  ////////////////////Background////////////////////////
+  .block1{
+    @include size(232px,165px);
+    @include border(6px, 9px, 6px, 5px);
+  }
+  .backgroundBlock{
+    @include size(232px,165px);
+  }
+  .block2{
+    @include size(232px,61px);
+    margin-top:7px;
+
+    padding-left: 9px;
+    padding-top: 4px;
+  }
+  .backgroundBlockImages{
+    @include size(44px, 44px);
+
+    margin-left:0;
+    margin-bottom:0;
+  }
+  .backgroundBlockImagesHoverImg{
+    @include size(39px, 39px);
+
+    margin-top:3px;
+    margin-left:2px;
+
+    border-radius:8px;
+  }
+  .backgroundBlockImagesHover{
+    @include size(44px, 44px);
+
+    margin:2.5px;
+  }
+  .backgroundText{
+    margin-bottom: 11px;
+    margin-left:4px;
+    margin-top:-35px;
+
+    font-size: 12.94px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  //////////////////upBag///////////////////////////////////
+  .upB{
+    @include size(234px,31px);
+    margin-top: 4px;
+  }
+  .upText{
+    font-size:12px;
+  }
+  .upImg{
+    @include size(14px,14px);
+
+    margin-left:5px;
+    margin-top:1px;
+  }
+  .desBlock2{
+    display:block;
+  }
+  ////////////////////////////////////////////////////////////
+
+
+
+  ////////////////////colorBackground/////////////////////////
+  .colorBlock{
+    @include size(235px,117px);
+  }
+  .colorBlockBACK{
+    width: 237px
+  }
+  .colorBack{
+    @include size(24px, 26px);
+  }
+  .colorText{
+    font-size: 12.94px;
+    margin-bottom: 9px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////frameOrientation///////////////////////
+  .frameOrientationBlock{
+    @include size(234px,86px);
+  }
+  .frameOrientationBlockOneOne{
+    @include size(67px,38px);
+  }
+  .frameOrientationBlockTwoTwo{
+    @include size(38px,67px);
+  }
+  .frameOrientationBlockRoz{
+    height:67px;
+  }
+  .frameOrientationBlockOne{
+    padding-top:25px;
+  }
+  .frameOrientationBlockTwo{
+    padding-top:10px;
+  }
+  .frameOrientationText{
+    font-size: 12.94px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////numberPosts////////////////////////////
+  .numberPostsBlock{
+    @include size(234px,52px);
+
+    font-size: 15.967px;
+    line-height: 13px;
+  }
+  .numberPostsBlockRoz{
+    height:34px;
+  }
+  .numberPostsText{
+    font-size: 12.94px;
+    margin-left: 6px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////downloadProject////////////////////////
+  .downloadProjectBlock{
+    @include size(234px,38px);
+  }
+  .downloadProjectText{
+    width:234px;
+
+    font-size: 13px;
+  }
+  .downloadProjectBlockText{
+    font-size: 11.9603px;
+    height: 38px;
+  }
+  .downloadProjectBlockImg{
+    @include size(14px,14px);
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////configurator//////////////////////////
+  .configuratorBlock{
+    @include size(517px,517px)
+  }
+  .configuratorBlockBlock{
+    @include size(517px,517px)
+  }
+  /////////////////////////////////////////////////////////
+
+
+
+  ////////////////////attributes///////////////////////////
+  .attributesBlock{
+    display: none;
+  }
+  .attributesBlock1{
+    @include size(521px,175px);
+    margin-top: 32px;
+
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+
+    border-radius: 5px 5px 15px 15px;
+    user-select: none;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .attributesBlockOne{
+    font-size: 14px;
+  }
+  .attributesBlockRez{
+    height: 89px;
+    margin-top: 15px;
+  }
+  .attributesBlockTwo{
+    font-size: 14px;
+    flex-basis: 75%;
+  }
+  .attributesBlockThree{
+    font-size: 14px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .attributesBlockThree > div{
+    display: flex;
+    flex-direction: row;
+  }
+  .attributeNum{
+    margin-top: 0;
+    margin-left: 7px;
+    font-size: 14px;
+  }
+  .attributesMechanism{
+    font-size: 14px;
+  }
+  .attributesMechanism > p{
+    font-size: 14px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////selectFrame////////////////////////////
+  .selectFrameSelect{
+    @include size(244px,32px);
+    font-size: 14px;
+  }
+  .selectFrameTextTop{
+    margin-top:0;
+    font-size: 12.94px;
+  }
+  .selectFrameBlock{
+    @include size(244px,102px);
+    padding:8px;
+  }
+  .selectFrameColorBlock{
+    margin:1px;
+  }
+  .selectFrameBlockColorBlock{
+    @include size(31px,31px)
+  }
+  .selectFrameBlockColorText{
+    font-size: 11.9488px;
+    line-height: 14px;
+    letter-spacing: -0.38502px;
+  }
+  .selectFrameColorBlock{
+    margin: 8px 0 0;
+  }
+  .selectFrameBlockPos{
+    margin-left:8px;
+  }
+  .selectFrameText{
+    margin-left:5px;
+    margin-bottom:12px;
+    margin-top:20px;
+  }
+
+  .selectChooseFrame{
+    display:flex;
+    flex-basis:50%;
+    margin-bottom:10px;
+  }
+  .selectFrameImg{
+    @include size(30px, 30px);
+  }
+  .selectFrameText{
+    margin-top:6px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////chooseMechanism////////////////////////
+  .chooseMechanismBlock{
+    @include size(244px,101px)
+  }
+  .chooseMechanismText{
+    font-size: 12.08px;
+    margin-bottom: 0;
+    margin-top: 11px;
+  }
+  .chooseMechanismBlockTwo{
+    @include size(244px,348px)
+  }
+  .chooseMechanismBlockTwoRam{
+    width:244px;
+  }
+  .chooseMechanismColorText{
+    font-size: 11.9488px;
+    line-height: 14px;
+    letter-spacing: -0.38502px;
+  }
+  .chooseMechanismBlockColorBlock{
+    @include size(31px,31px)
+  }
+  .chooseMechanismColorBlock{
+    margin: 8px 0 0;
+  }
+  .chooseMechanismBlockPos{
+    margin-left:8px;
+  }
+  .chooseMechanismFlex > p{
+    font-size: 14.0062px;
+  }
+  .chooseMechanismFlexImg{
+    @include size(53px, 53px);
+    margin:15px;
+  }
+  .chooseMechanismImg{
+    @include size(33px, 33px);
+
+    margin-left:-59px;
+    margin-top:24px;
+  }
+  .chooseMechanismFlexP{
+    margin-left: 20px;
+
+    font-size: 13px;
+    line-height: 18px;
+
+    color: #5b6770;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  //////////////buy//////////////////////////////////////////
+  .buyBlockButtom > button{
+    @include size(110px, 40px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15.37px;
+
+    margin-left: 20px;
+  }
+  .buyBlockCostOne{
+    font-size:13px;
+  }
+  .buyBlockCostTwo{
+    font-size:26px;
+  }
+  .buyBlock{
+    margin-left:5px;
+  }
+  .buyBlockFavorites{
+    margin-top: 5px;
+  }
+  .buyBlockFavorites > img{
+    @include size(19.47px, 17.33px);
+  }
+  .buyBlockFavorites > p{
+    font-size:14.0062px;
+  }
+  ///////////////////////////////////////////////////////////
+}
+
+@media screen and (max-width: 1170px){
+  ////////////////////Background////////////////////////
+  .block1{
+    @include size(219px,158px);
+  }
+  .backgroundBlock{
+    @include size(219px,158px);
+
+    filter: none;
+  }
+  .block2{
+    @include size(216.18px,55.68px);
+
+    margin-top:4px;
+    filter:none;
+  }
+  .backgroundBlockImages{
+    @include size(40px, 40px);
+
+    margin-left:1px;
+    margin-bottom:0;
+  }
+  .backgroundBlockImagesHoverImg{
+    @include size(36px, 36px);
+
+    margin-top:3px;
+    margin-left:2px;
+  }
+  .backgroundBlockImagesHover{
+    @include size(40px, 40px);
+
+    margin:2.5px;
+  }
+  .backgroundText{
+    filter:none;
+    font-size:11.94px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ///////////////////////upBag//////////////////////////////
+  .upB{
+    @include size(218px,33px);
+  }
+  .upBag{
+    margin-top:15px;
+  }
+  .upBagBackgroundBlockImages{
+    margin-left:1px;
+  }
+  .upMobileUpBag{
+    margin-top:10px;
+  }
+  .colorText{
+    font-size:11.94px;
+  }
+  .upText{
+    font-size:10.94px;
+
+    margin-top:10px;
+  }
+  .upImg{
+    margin-top:-1px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+
+  ///////////////////////colorBackground/////////////////////
+  .colorBlock{
+    @include size(219px,113px);
+  }
+  .colorBack{
+    @include size(31px, 34px);
+  }
+  .colorBlockBACK{
+    width:220px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+
+  ////////////////////frameOrientation///////////////////////
+  .frameOrientationBlock{
+    @include size(218px,63px)
+  }
+  .frameOrientationBlockOne{
+    padding-top:20px;
+  }
+  .frameOrientationBlockOne > img{
+    @include size(54px, 24px);
+  }
+  .frameOrientationBlockTwo{
+    padding-top:5px;
+  }
+  .frameOrientationBlockTwo > img{
+    @include size(28px, 54px);
+  }
+  .frameOrientationText{
+    font-size:11.94px;
+  }
+  .frameOrientationBlockRoz{
+    height:50px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+
+  ////////////////////numberPosts////////////////////////////
+  .numberPostsBlock{
+    @include size(218px,48px);
+
+    font-size: 15.9275px;
+    line-height: 12px;
+  }
+  .numberPostsBlockRoz{
+    height:32px;
+  }
+  .numberPostsText{
+    font-size:11.94px;
+  }
+  .numberPostsBlockText{
+    font-size:15.93px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////downloadProject////////////////////////
+  .downloadProjectBlock{
+    @include size(218px,36px)
+  }
+  .downloadProjectText{
+    display:none;
+  }
+  .downloadProjectBlockText{
+    font-size: 10.9365px;
+    height: 36px;
+  }
+  .downloadProjectBlockImg{
+    @include size(14px,14px);
+
+    margin-top:-3px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////configurator///////////////////////////
+  .configuratorBlock{
+    @include size(456px,456px);
+  }
+  .configuratorBlockBlock{
+    @include size(456px,456px);
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+
+  ////////////////////attributes/////////////////////////////
+  .attributesBlock{
+    @include size(458px,169px);
+  }
+  .attributesCenter{
+    margin-bottom:40px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+
+
+  ////////////////////selectFrame////////////////////////////
+  .selectFrameSelect{
+    @include size(221px,28px)
+  }
+  .selectFrameTextTop{
+    margin-top:0;
+  }
+  .selectFrameBlock{
+    @include size(218.3px,89.16px);
+
+    padding:6px;
+  }
+  .selectFrameColorBlock{
+    margin:1px;
+  }
+  .selectFrameBlockColorBlock{
+    @include size(31px,31px)
+  }
+  .selectFrameBlockColorText{
+    font-size: 10.9616px;
+    line-height: 14px;
+    letter-spacing: -0.38502px;
+  }
+  .selectFrameColorBlock{
+    margin: 8px 0 0;
+  }
+  .selectFrameBlockPos{
+    margin-left:8px;
+  }
+  .selectFrameText{
+    margin-left:5px;
+    margin-bottom:12px;
+    margin-top:20px;
+  }
+
+  .selectChooseFrame{
+    display:flex;
+    flex-basis:50%;
+    margin-bottom:10px;
+  }
+  .selectFrameImg{
+    @include size(30px, 30px);
+  }
+  .selectFrameText{
+    font-size:10.9616px;
+    margin-top:6px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+
+  ////////////////////chooseMechanism////////////////////////
+  .chooseMechanismBlock{
+    @include size(221px,92px)
+  }
+  .chooseMechanismBlockTwo{
+    @include size(221px,315px)
+  }
+  .chooseMechanismBlockTwoRam{
+    width:221px;
+  }
+  .chooseMechanismColorText{
+    font-size: 10.9616px;
+    line-height: 14px;
+    letter-spacing: -0.38502px;
+  }
+  .chooseMechanismBlockColorBlock{
+    @include size(31px,31px)
+  }
+  .chooseMechanismColorBlock{
+    margin: 8px 0 0;
+  }
+  .chooseMechanismBlockPos{
+    margin-left:8px;
+  }
+  .chooseMechanismFlex > p{
+    font-size: 14.0062px;
+  }
+  .chooseMechanismFlexImg{
+    @include size(53px, 53px);
+
+    margin:11px;
+  }
+  .chooseMechanismImg{
+    @include size(33px, 33px);
+
+    margin-left:-55px;
+    margin-top:20px;
+  }
+  .chooseMechanismFlexP{
+    margin-left: 20px;
+
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #5B6770;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  //////////////buy//////////////////////////////////////////
+  .buyBlockButtom > button{
+    @include size(110px, 40px);
+
+    font-size: 16px;
+
+    margin-left: 20px;
+  }
+  .buyBlockCostOne{
+    font-size:13px;
+  }
+  .buyBlockCostTwo{
+    font-size:26px;
+  }
+  .buyBlock{
+    margin-left:5px;
+  }
+  .buyBlockFavorites{
+    margin-top: 0;
+  }
+  .buyBlockFavorites > img{
+    @include size(19.47px, 17.33px);
+  }
+  .buyBlockFavorites > p{
+    font-size:14.0062px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+
+  .desBlock2{
+    display:block;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  /////////////////////////////////////////////////////
+  .block1{
+    @include size(285px,152px);
+  }
+  .backgroundBlock{
+    @include size(285px,152px);
+
+    filter: none;
+  }
+  .block2{
+    @include size(285px,57px);
+
+    margin-top:0;
+    filter:none;
+  }
+  .backgroundBlockImages{
+    @include size(44px, 44px);
+
+    margin-left:1px;
+    margin-bottom:0;
+    border-radius: 8px;
+  }
+  .backgroundBlockImagesHoverImg{
+    @include size(40px, 40px);
+
+    margin-top:3px;
+    margin-left:2px;
+    border-radius:8px;
+  }
+  .backgroundBlockImagesHover{
+    @include size(44px, 44px);
+
+    margin:2.5px;
+  }
+  .backgroundText{
+    filter:none;
+    font-size:11.94px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ///////////////////////upBag///////////////////////////////
+  .upB{
+    @include size(231px,33px);
+  }
+  .upBag{
+    display:flex;
+    margin-left:15px;
+    margin-top:-5px;
+  }
+  .upBagBackgroundBlockImages{
+    margin-left:10px;
+  }
+  .upMobileUpBag{
+    margin-top:10px;
+    margin-left:60px;
+  }
+  .colorText{
+    font-size:11.94px;
+  }
+  .upText{
+    font-size:10.94px;
+    margin-top:0;
+  }
+  .upImg{
+    margin-top:-1px;
+  }
+  .upBagBackgroundBlockImages{
+    margin-left:3px;
+    margin-top:0.5px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ///////////////////////colorBackground////////////////////
+  .colorBlock{
+    @include size(285px,152px);
+  }
+  .colorBack{
+    @include size(31px, 34px);
+  }
+  .colorBlockBACK{
+    width:285px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////frameOrientation//////////////////////
+  .frameOrientationBlock{
+    @include size(284px,67px)
+  }
+  .frameOrientationBlockOne{
+    padding-top:20px;
+  }
+  .frameOrientationBlockOne > img{
+    @include size(54px, 28px);
+  }
+  .frameOrientationBlockTwo{
+    padding-top:5px;
+  }
+  .frameOrientationBlockTwo > img{
+    @include size(28px, 54px);
+  }
+  .frameOrientationText{
+    font-size:11.94px;
+  }
+  .frame-orientation{
+    margin-top:0;
+    margin-right:14px;
+    margin-left:-14px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////numberPosts////////////////////////////
+  .numberPostsBlock{
+    @include size(285px,68px);
+
+    font-size: 15.9275px;
+    line-height: 12px;
+  }
+  .numberPostsBlockRoz{
+    height:49px;
+  }
+  .numberPostsText{
+    font-size:11.94px;
+  }
+  .numberPostsBlockText{
+    font-size:15.93px;
+  }
+  .number-post {
+    margin-left: 14px;
+    margin-top: 7px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////downloadProject////////////////////////
+  .downloadProjectBlock{
+    @include size(218px,36px)
+  }
+  .downloadProjectText{
+    display:none;
+  }
+  .downloadProjectBlockText{
+    font-size: 10.9365px;
+
+  }
+  .downloadProjectBlockImg{
+    @include size(14px,14px);
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////configurator///////////////////////////
+  .configuratorBlock{
+    @include size(100%, 100vw);
+
+    margin: 0 auto;
+  }
+  .configuratorBlockBlock{
+    @include size(596px,596px);
+  }
+  .configuratorCenter{
+    margin: 0 auto;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////attributes////////////////////////
+  .attributesBlock{
+    @include size(598px,162px);
+    margin-top: 20px;
+  }
+  .attributesCenter{
+    margin: 0 auto;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////selectFrame////////////////////////
+  .selectFrameTextTop{
+    margin-top:60px;
+  }
+  .selectFrameBlock{
+    width: 100vw;
+    border:none;
+    display:flex;
+    margin: 0 auto;
+    justify-self:center;
+    justify-items:center;
+    justify-content:center;
+  }
+  .selectChooseFrame{
+    width: 20vw;
+  }
+  .selectFrameText{
+    margin-top:-22px;
+    margin-left:7px;
+  }
+  .selectFrameBlockBlock{
+    margin-top:20px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////chooseMechanism////////////////////////
+  .chooseMechanismBlockTwo{
+    @include size(100vw,220px);
+    margin-top:-30px;
+  }
+  .chooseMechanismBlockTwoRam{
+    @include size(100vw, 220px);
+    border:none;
+  }
+  .chooseMechanismBlockMobile{
+    display:flex;
+    flex-direction:row;
+    overflow-x:auto;
+  }
+
+  .chooseMechanismFlex{
+    display:flex;
+    flex-direction:column;
+  }
+  .chooseMechanismFlexImg{
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+  }
+  .chooseMechanismImg{
+    width:44px;
+    height:44px;
+    margin-left:33px;
+    margin-top:-78px;
+    display:flex;
+    flex-direction:column;
+  }
+  .chooseMechanismFlexP{
+    margin-left: 21px;
+    margin-top:30px;
+
+    font-family: Ubuntu,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #5B6770;
+  }
+
+  ///////////////////////////////////////////////////////////
+
+
+  .mobBlock2{
+    display:block;
+  }
+  .desBlock2{
+    display:none;
+  }
+
+}
+
+@media screen and (max-width: 648px){
+  ///////////////////////////////////////////////////////////
+  .desBlock2{
+    display:block;
+  }
+  .attributesBlock1{
+    display: none;
+  }
+  .attributesBlock2{
+    display: flex;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ///////////////////////upBag///////////////////////////////
+  .upB{
+    @include size(290px,41px);
+
+    border-radius: 5px 5px 15px 5px;
+
+    margin: 0 auto;
+  }
+  .upText{
+    margin-top:15px;
+  }
+  //////////////////////////////////////////////////////////
+
+
+
+  ////////////////////////colorBackground///////////////////
+  //////////////////////////////////////////////////////////
+
+
+
+  ////////////////////frameOrientation//////////////////////
+  .frameOrientationBlock{
+    @include size(185px,54px);
+  }
+  .frameOrientationBlockOne > img{
+    @include size(45px,25px);
+
+    margin-left: 25px;
+    margin-top: -5px;
+  }
+  .frameOrientationBlockTwo > img{
+    @include size(25px,45px);
+
+    margin-left: 35px;
+    margin-top: -2px;
+  }
+  .frameOrientationBlockRoz{
+    height:47px;
+  }
+  .frame-orientation{
+    margin-left:0;
+    margin-right:0;
+  }
+  //////////////////////////////////////////////////////////
+
+
+
+  ////////////////////numberPosts///////////////////////////
+  .numberPostsBlock{
+    @include size(185px,54px);
+
+    font-size: 13.1452px;
+    line-height: 10px;
+    border-radius: 5px 5px 15px 5px;
+  }
+  .numberPostsBlockRoz{
+    height:28px;
+  }
+  .numberPostsText{
+    margin-bottom:10px;
+  }//////////////////////////////////////////////////////////
+
+
+
+
+  ////////////////////downloadProject////////////////////////
+  .downloadProjectBlock{
+    @include size(320px,45px);
+  }
+  .downloadProjectText{
+   display:none;
+  }
+  .downloadProjectBlockText{
+    font-size: 15.98px;
+    height: 45px;
+  }
+  .downloadProjectBlockImg{
+    @include size(19px,19px);
+    margin-top:-2px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////configurator///////////////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////attributes/////////////////////////////
+  .attributesBlock{
+    @include size(383px,211px)
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////selectFrame////////////////////////////
+  .selectFrameBlock{
+    border:none;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////chooseMechanism////////////////////////
+  .chooseMechanismBlockMobile{
+    display:flex;
+    flex-direction:row;
+    overflow-x:auto;
+  }
+  .chooseMechanismBlockTwo{
+    @include size(100vw,200px)
+  }
+  .chooseMechanismBlockTwoRam{
+    @include size(100vw, 200px);
+    border:none;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+////////////////mobile/////////////////////////
+
+  .frame-number{
+    margin-top:0;
+    margin-bottom:-45px;
+  }
+
+
+  .mobileCenter{
+    display:flex;
+    margin: 0 auto;
+    @include centerAbsolute;
+  }
+  .mobileRight1{
+    display:none;
+  }
+  .mobileLeft{
+    display:flex;
+    margin: 0 auto;
+    @include centerAbsolute;
+  }
+  .background-Block{
+    display:none;
+  }
+
+}
+
+@media screen and (max-width: 380px){
+  ///////////////////////////////////////////////////////////
+  .numberPostsBlockMobile{
+    display:block;
+  }
+  .numberPostsBlockDesktop{
+    display:none;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////////upBag/////////////////////////////
+  .upB{
+    @include size(264px,40px);
+  }
+  .upMobileUpBag{
+    margin-top:-20px;
+    margin-left:-15px;
+  }
+
+
+  ///////////////////////////colorBackground/////////////////
+  ///////////////////////////////////////////////////////////
+
+
+
+
+  ////////////////////frameOrientation///////////////////////
+  .frameOrientationBlock{
+    @include size(143px,70px);
+  }
+  .frameOrientationBlockOne > img{
+    @include size(53px,29px);
+
+    margin-left: 11px;
+    margin-top: 0;
+  }
+  .frameOrientationBlockTwo > img{
+    @include size(29px,73x);
+
+    margin-left: 17px;
+    margin-top: 4px;
+  }
+  .frame-orientation{
+    margin: 0 7.5px 0 0;
+  }
+  .frameOrientationBlock{
+    margin-top:-3px;
+  }
+  .frameOrientationBlockRoz{
+    margin-left:9px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////numberPosts////////////////////////////
+  .numberPostsBlock{
+    @include size(143px,70px);
+
+    font-size: 12.8067px;
+    line-height: 10px;
+  }
+  .number-post{
+    margin: 0 0 0 7.5px;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////configurator///////////////////////////
+  .configuratorBlock{
+    @include centerAbsolute;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////attributes/////////////////////////////
+  .attributesBlock{
+    @include size(292px,292px);
+
+    display:flex;
+    margin: 0 auto;
+    @include centerAbsolute;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////selectFrame////////////////////////////
+  .selectFrameBlock{
+    border:none;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////chooseMechanism////////////////////////
+  .chooseMechanismBlockTwo{
+    @include size(100vw,200px)
+  }
+  .chooseMechanismBlockTwoRam{
+    @include size(100vw, 200px);
+    border:none;
+  }
+  .chooseMechanismBlockMobile{
+    display:flex;
+    flex-direction:row;
+    overflow-x:auto;
+  }
+  ///////////////////////////////////////////////////////////
+
+
+
+  ////////////////////downloadProject////////////////////////
+
+  .downloadProjectText{
+    display:none;
+  }
+
+  .downloadProjectBlock{
+    @include size(264px, 40px);
+    margin-top:30px;
+  }
+  .downloadProjectBlockText{
+    font-size: 12.9838px;
+    height: 40px;
+  }
+  ///////////////////////////////////////////////////////////////
+
+
+
+
+
+
+  .centerBlock{
+    display:flex;
+    flex-direction:column;
+    @include centerAbsolute;
+    margin: 0 auto;
+  }
+
+}

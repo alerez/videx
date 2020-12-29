@@ -1,46 +1,128 @@
 <template>
   <div>
-<!--    <div class="attributesBlock attributesBlock1">-->
-<!--      <div class="attributesBlockOne">-->
-<!--        <div>-->
-<!--          <p>{{ attributes.frame }}:</p>-->
-<!--        </div>-->
-<!--        <div style="color:#FF7A00" class="attributeFrame">-->
-<!--          <p v-if="numberPostsFrame === '1'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>-->
-<!--          <p v-else-if="frameOrientation !== 'horizontal'">{{frame.vertical[material][colorsFrame][numberPostsFrame].article}}</p>-->
-<!--          <p v-else-if="frameOrientation !== 'vertical'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="attributesBlockRez"></div>-->
-<!--      <div class="attributesBlockTwo" style="display: flex; flex-direction: column">-->
-<!--        <div style="width: 100%; margin-left: 15px; margin-bottom: 5px">-->
-<!--          <p>{{ attributes.mechanism }}:</p>-->
-<!--        </div>-->
-<!--        <div class="attributesMechanism">-->
-<!--            <p v-if="this.mechanismBlockOne.article" class="attributesBlockText">{{this.mechanismBlockOne.article}}</p>-->
-<!--            <p v-if="this.mechanismBlockTwo.article" class="attributesBlockText">{{this.mechanismBlockTwo.article}}</p>-->
-<!--            <p v-if="this.mechanismBlockThree.article" class="attributesBlockText">{{this.mechanismBlockThree.article}}</p>-->
-<!--            <p v-if="this.mechanismBlockFour.article" class="attributesBlockText">{{this.mechanismBlockFour.article}}</p>-->
-<!--            <p v-if="this.mechanismBlockFive.article" class="attributesBlockText">{{this.mechanismBlockFive.article}}</p>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="attributesBlockRez"></div>-->
-<!--      <div class="attributesBlockThree" style="display: flex; flex-direction: column">-->
-<!--        <div>-->
-<!--          <p>{{ attributes.total }}:</p>-->
-<!--        </div>-->
-<!--        <div style="display: flex" class="attributeNum">-->
-<!--          <p style="padding-right: 5px">{{ attributeNum }}</p>-->
-<!--          <span v-if="attributeNum === 1"> позиція</span>-->
-<!--          <span v-else-if="attributeNum === 2"> позиції</span>-->
-<!--          <span v-else-if="attributeNum === 3"> позиції</span>-->
-<!--          <span v-else-if="attributeNum === 4"> позиції</span>-->
-<!--          <span v-else-if="attributeNum === 5"> позицій</span>-->
-<!--          <span v-else-if="attributeNum === 6"> позицій</span>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-    <div class="attributesBlock attributesBlock1" style="display: flex; flex-direction: column">
+    <div class="attributesBlock">
+      <div class="attributesBlockOne">
+        <div>
+          <p>{{ attributes.frame }}:</p>
+        </div>
+        <div style="color:#FF7A00" class="attributeFrame">
+          <p v-if="numberPostsFrame === '1'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
+          <p v-else-if="frameOrientation !== 'horizontal'">{{frame.vertical[material][colorsFrame][numberPostsFrame].article}}</p>
+          <p v-else-if="frameOrientation !== 'vertical'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
+        </div>
+      </div>
+      <div class="attributesBlockRez"></div>
+      <div class="attributesBlockTwo" style="display: flex; flex-direction: column">
+        <div style="width: 100%; margin-left: 15px; margin-bottom: 5px">
+          <p>{{ attributes.mechanism }}:</p>
+        </div>
+        <div class="attributesMechanism">
+            <p v-if="this.mechanismBlockOne.article" class="attributesBlockText">{{this.mechanismBlockOne.article}}</p>
+            <p v-if="this.mechanismBlockTwo.article" class="attributesBlockText">{{this.mechanismBlockTwo.article}}</p>
+            <p v-if="this.mechanismBlockThree.article" class="attributesBlockText">{{this.mechanismBlockThree.article}}</p>
+            <p v-if="this.mechanismBlockFour.article" class="attributesBlockText">{{this.mechanismBlockFour.article}}</p>
+            <p v-if="this.mechanismBlockFive.article" class="attributesBlockText">{{this.mechanismBlockFive.article}}</p>
+        </div>
+      </div>
+      <div class="attributesBlockRez"></div>
+      <div class="attributesBlockThree" style="display: flex; flex-direction: column">
+        <div>
+          <p>{{ attributes.total }}:</p>
+        </div>
+        <div style="display: flex" class="attributeNum">
+          <p style="padding-right: 5px">{{ attributeNum }}</p>
+          <span v-if="attributeNum === 1"> позиція</span>
+          <span v-else-if="attributeNum === 2"> позиції</span>
+          <span v-else-if="attributeNum === 3"> позиції</span>
+          <span v-else-if="attributeNum === 4"> позиції</span>
+          <span v-else-if="attributeNum === 5"> позицій</span>
+          <span v-else-if="attributeNum === 6"> позицій</span>
+        </div>
+      </div>
+    </div>
+    <div class="attributesBlock1">
+      <div style="display: flex">
+        <div class="attributesBlockOne">
+          <div>
+            <p>{{ attributes.frame }}:</p>
+          </div>
+          <div class="attributeFrame">
+            <p v-if="numberPostsFrame === '1'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
+            <p v-else-if="frameOrientation !== 'horizontal'">{{frame.vertical[material][colorsFrame][numberPostsFrame].article}}</p>
+            <p v-else-if="frameOrientation !== 'vertical'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
+          </div>
+        </div>
+        <div class="attributesBlockRez"></div>
+        <div class="attributesBlockTwo">
+          <div style="width: 100%; margin-left: 15px; margin-bottom: 5px">
+            <p>{{ attributes.mechanism }}:</p>
+          </div>
+          <div class="attributesMechanism">
+            <p v-if="this.mechanismBlockOne.article" class="attributesBlockText">{{this.mechanismBlockOne.article}}</p>
+            <p v-if="this.mechanismBlockTwo.article" class="attributesBlockText">{{this.mechanismBlockTwo.article}}</p>
+            <p v-if="this.mechanismBlockThree.article" class="attributesBlockText">{{this.mechanismBlockThree.article}}</p>
+            <p v-if="this.mechanismBlockFour.article" class="attributesBlockText">{{this.mechanismBlockFour.article}}</p>
+            <p v-if="this.mechanismBlockFive.article" class="attributesBlockText">{{this.mechanismBlockFive.article}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="attributesBlockThree">
+        <div>
+          <p>{{ attributes.total }}:</p>
+        </div>
+        <div class="attributeNum">
+          <p style="padding-right: 5px">{{ attributeNum }}</p>
+          <span v-if="attributeNum === 1"> позиція</span>
+          <span v-else-if="attributeNum === 2"> позиції</span>
+          <span v-else-if="attributeNum === 3"> позиції</span>
+          <span v-else-if="attributeNum === 4"> позиції</span>
+          <span v-else-if="attributeNum === 5"> позицій</span>
+          <span v-else-if="attributeNum === 6"> позицій</span>
+        </div>
+      </div>
+    </div>
+    <div class="attributesBlock2">
+      <div style="display: flex">
+        <div class="attributesBlockOne">
+          <div>
+            <p>{{ attributes.frame }}:</p>
+          </div>
+          <div class="attributeFrame">
+            <p v-if="numberPostsFrame === '1'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
+            <p v-else-if="frameOrientation !== 'horizontal'">{{frame.vertical[material][colorsFrame][numberPostsFrame].article}}</p>
+            <p v-else-if="frameOrientation !== 'vertical'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
+          </div>
+        </div>
+        <div class="attributesBlockRez"></div>
+        <div class="attributesBlockTwo">
+          <div style="width: 100%; margin-left: 15px; margin-bottom: 5px">
+            <p>{{ attributes.mechanism }}:</p>
+          </div>
+          <div class="attributesMechanism">
+            <p v-if="this.mechanismBlockOne.article" class="attributesBlockText">{{this.mechanismBlockOne.article}}</p>
+            <p v-if="this.mechanismBlockTwo.article" class="attributesBlockText">{{this.mechanismBlockTwo.article}}</p>
+            <p v-if="this.mechanismBlockThree.article" class="attributesBlockText">{{this.mechanismBlockThree.article}}</p>
+            <p v-if="this.mechanismBlockFour.article" class="attributesBlockText">{{this.mechanismBlockFour.article}}</p>
+            <p v-if="this.mechanismBlockFive.article" class="attributesBlockText">{{this.mechanismBlockFive.article}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="attributesBlockThree">
+        <div>
+          <p>{{ attributes.total }}:</p>
+        </div>
+        <div class="attributeNum">
+          <p style="padding-right: 5px">{{ attributeNum }}</p>
+          <span v-if="attributeNum === 1"> позиція</span>
+          <span v-else-if="attributeNum === 2"> позиції</span>
+          <span v-else-if="attributeNum === 3"> позиції</span>
+          <span v-else-if="attributeNum === 4"> позиції</span>
+          <span v-else-if="attributeNum === 5"> позицій</span>
+          <span v-else-if="attributeNum === 6"> позицій</span>
+        </div>
+      </div>
+    </div>
+    <div class="attributesBlock3">
       <div style="display: flex">
         <div class="attributesBlockOne">
           <div>
@@ -137,6 +219,15 @@ export default {
 
   display: flex;
 }
+.attributesBlock1{
+  display: none;
+}
+.attributesBlock2{
+  display: none;
+}
+.attributesBlock3{
+  display: none;
+}
 .attributesBlockOne{
   font-family: Ubuntu, sans-serif;
   font-style: normal;
@@ -218,9 +309,6 @@ export default {
   flex-basis: 0.1%;
 
   margin: auto;
-}
-.attributesBlock2{
-  display: none;
 }
 .attributesBlockText{
   display: block;

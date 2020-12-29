@@ -188,7 +188,21 @@ $white: rgb(255, 255, 255);
 
   ////////////////////attributes///////////////////////////
   .attributesBlock{
-    @include size(521px,175px)
+    display: none;
+  }
+  .attributesBlock1{
+    @include size(521px,175px);
+    margin-top: 32px;
+
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+
+    border-radius: 5px 5px 15px 15px;
+    user-select: none;
+
+    display: flex;
+    flex-direction: column;
   }
   .attributesBlockOne{
     font-size: 14px;
@@ -199,7 +213,7 @@ $white: rgb(255, 255, 255);
   }
   .attributesBlockTwo{
     font-size: 14px;
-    flex-basis: 85%;
+    flex-basis: 75%;
   }
   .attributesBlockThree{
     font-size: 14px;
@@ -875,6 +889,7 @@ $white: rgb(255, 255, 255);
     margin-top:60px;
   }
   .selectFrameBlock{
+    width: 100vw;
     border:none;
     display:flex;
     margin: 0 auto;
@@ -883,7 +898,7 @@ $white: rgb(255, 255, 255);
     justify-content:center;
   }
   .selectChooseFrame{
-    width:150px;
+    width: 20vw;
   }
   .selectFrameText{
     margin-top:-22px;
@@ -1060,8 +1075,12 @@ $white: rgb(255, 255, 255);
 
 
   ////////////////////attributes/////////////////////////////
-  .attributesBlock{
-    @include size(383px,211px)
+  .attributesBlock1{
+    display: none;
+  }
+  .attributesBlock2{
+    display: flex;
+    @include size(383px,211px);
   }
   ///////////////////////////////////////////////////////////
 
