@@ -72,12 +72,12 @@
         </div>
         <div class="attributeNum">
           <p style="padding-right: 5px">{{ attributeNum }}</p>
-          <span v-if="attributeNum === 1"> позиція</span>
-          <span v-else-if="attributeNum === 2"> позиції</span>
-          <span v-else-if="attributeNum === 3"> позиції</span>
-          <span v-else-if="attributeNum === 4"> позиції</span>
-          <span v-else-if="attributeNum === 5"> позицій</span>
-          <span v-else-if="attributeNum === 6"> позицій</span>
+          <span v-if="attributeNum === 1"> позиция</span>
+          <span v-else-if="attributeNum === 2"> позиции</span>
+          <span v-else-if="attributeNum === 3"> позиции</span>
+          <span v-else-if="attributeNum === 4"> позиции</span>
+          <span v-else-if="attributeNum === 5"> позиций</span>
+          <span v-else-if="attributeNum === 6"> позиций</span>
         </div>
       </div>
     </div>
@@ -92,8 +92,8 @@ export default {
     return{
       attributes: {
         frame: 'Рамка',
-        mechanism: 'Механізм',
-        total: 'Усього',
+        mechanism: 'Механизм',
+        total: 'Всего',
       }
     }
   },

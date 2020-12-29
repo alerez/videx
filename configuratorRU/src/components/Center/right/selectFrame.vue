@@ -16,28 +16,28 @@
           <div class="selectChooseFrame" @click="materialGetColor('white')">
             <img v-if="colorsFrame !== 'white'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].white.fileURL">
             <img v-if="colorsFrame === 'white'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].white.fileURL">
-            <p v-if="colorsFrame !== 'white'" class="selectFrameText">{{ chooseFrame[selectFrame.material].white.description.ua }}</p>
-            <p v-if="colorsFrame === 'white'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].white.description.ua }}</p>
+            <p v-if="colorsFrame !== 'white'" class="selectFrameText">{{ chooseFrame[selectFrame.material].white.description.ru }}</p>
+            <p v-if="colorsFrame === 'white'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].white.description.ru }}</p>
           </div>
           <div class="selectChooseFrame" @click="materialGetColor('black')">
             <img v-if="colorsFrame !== 'black'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].black.fileURL">
             <img v-if="colorsFrame === 'black'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].black.fileURL">
-            <p v-if="colorsFrame !== 'black'" class="selectFrameText">{{ chooseFrame[selectFrame.material].black.description.ua }}</p>
-            <p v-if="colorsFrame === 'black'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].black.description.ua }}</p>
+            <p v-if="colorsFrame !== 'black'" class="selectFrameText">{{ chooseFrame[selectFrame.material].black.description.ru }}</p>
+            <p v-if="colorsFrame === 'black'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].black.description.ru }}</p>
           </div>
         </div>
         <div style="display:flex">
           <div class="selectChooseFrame" @click="materialGetColor('red')">
             <img v-if="colorsFrame !== 'red'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].red.fileURL">
             <img v-if="colorsFrame === 'red'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].red.fileURL">
-            <p v-if="colorsFrame !== 'red'" class="selectFrameText">{{ chooseFrame[selectFrame.material].red.description.ua }}</p>
-            <p v-if="colorsFrame === 'red'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].red.description.ua }}</p>
+            <p v-if="colorsFrame !== 'red'" class="selectFrameText">{{ chooseFrame[selectFrame.material].red.description.ru }}</p>
+            <p v-if="colorsFrame === 'red'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].red.description.ru }}</p>
           </div>
           <div class="selectChooseFrame" @click="materialGetColor('green')">
             <img v-if="colorsFrame !== 'green'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].green.fileURL">
             <img v-if="colorsFrame === 'green'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].green.fileURL">
-            <p v-if="colorsFrame !== 'green'" class="selectFrameText">{{ chooseFrame[selectFrame.material].green.description.ua }}</p>
-            <p v-if="colorsFrame === 'green'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].green.description.ua }}</p>
+            <p v-if="colorsFrame !== 'green'" class="selectFrameText">{{ chooseFrame[selectFrame.material].green.description.ru }}</p>
+            <p v-if="colorsFrame === 'green'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].green.description.ru }}</p>
           </div>
         </div>
       </div>
@@ -46,28 +46,28 @@
           <div class="selectChooseFrame" @click="materialGetColor('white')">
             <img v-if="colorsFrame !== 'white'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].white.fileURL">
             <img v-if="colorsFrame === 'white'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].white.fileURL">
-            <p v-if="colorsFrame !== 'white'" class="selectFrameText">{{ chooseFrame[selectFrame.material].white.description.ua }}</p>
-            <p v-if="colorsFrame === 'white'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].white.description.ua }}</p>
+            <p v-if="colorsFrame !== 'white'" class="selectFrameText">{{ chooseFrame[selectFrame.material].white.description.ru }}</p>
+            <p v-if="colorsFrame === 'white'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].white.description.ru }}</p>
           </div>
           <div class="selectChooseFrame" @click="materialGetColor('silver')">
             <img v-if="colorsFrame !== 'silver'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].silver.fileURL">
             <img v-if="colorsFrame === 'silver'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].silver.fileURL">
-            <p v-if="colorsFrame !== 'silver'" class="selectFrameText">{{ chooseFrame[selectFrame.material].silver.description.ua }}</p>
-            <p v-if="colorsFrame === 'silver'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].silver.description.ua }}</p>
+            <p v-if="colorsFrame !== 'silver'" class="selectFrameText">{{ chooseFrame[selectFrame.material].silver.description.ru }}</p>
+            <p v-if="colorsFrame === 'silver'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].silver.description.ru }}</p>
           </div>
         </div>
         <div style="display:flex">
           <div class="selectChooseFrame" @click="materialGetColor('crema')">
             <img v-if="colorsFrame !== 'crema'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].crema.fileURL">
             <img v-if="colorsFrame === 'crema'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].crema.fileURL">
-            <p v-if="colorsFrame !== 'crema'" class="selectFrameText">{{ chooseFrame[selectFrame.material].crema.description.ua }}</p>
-            <p v-if="colorsFrame === 'crema'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].crema.description.ua }}</p>
+            <p v-if="colorsFrame !== 'crema'" class="selectFrameText">{{ chooseFrame[selectFrame.material].crema.description.ru }}</p>
+            <p v-if="colorsFrame === 'crema'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].crema.description.ru }}</p>
           </div>
           <div class="selectChooseFrame" @click="materialGetColor('black')">
             <img v-if="colorsFrame !== 'black'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].black.fileURL">
             <img v-if="colorsFrame === 'black'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].black.fileURL">
-            <p v-if="colorsFrame !== 'black'" class="selectFrameText">{{ chooseFrame[selectFrame.material].black.description.ua }}</p>
-            <p v-if="colorsFrame === 'black'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].black.description.ua }}</p>
+            <p v-if="colorsFrame !== 'black'" class="selectFrameText">{{ chooseFrame[selectFrame.material].black.description.ru }}</p>
+            <p v-if="colorsFrame === 'black'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].black.description.ru }}</p>
           </div>
         </div>
       </div>
@@ -76,28 +76,28 @@
           <div class="selectChooseFrame" @click="materialGetColor('black')">
             <img v-if="colorsFrame !== 'black'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].black.fileURL">
             <img v-if="colorsFrame === 'black'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].black.fileURL">
-            <p v-if="colorsFrame !== 'black'" class="selectFrameText">{{ chooseFrame[selectFrame.material].black.description.ua }}</p>
-            <p v-if="colorsFrame === 'black'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].black.description.ua }}</p>
+            <p v-if="colorsFrame !== 'black'" class="selectFrameText">{{ chooseFrame[selectFrame.material].black.description.ru }}</p>
+            <p v-if="colorsFrame === 'black'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].black.description.ru }}</p>
           </div>
           <div class="selectChooseFrame" @click="materialGetColor('brown')">
             <img v-if="colorsFrame !== 'brown'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].brown.fileURL">
             <img v-if="colorsFrame === 'brown'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].brown.fileURL">
-            <p v-if="colorsFrame !== 'brown'" class="selectFrameText">{{ chooseFrame[selectFrame.material].brown.description.ua }}</p>
-            <p v-if="colorsFrame === 'brown'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].brown.description.ua }}</p>
+            <p v-if="colorsFrame !== 'brown'" class="selectFrameText">{{ chooseFrame[selectFrame.material].brown.description.ru }}</p>
+            <p v-if="colorsFrame === 'brown'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].brown.description.ru }}</p>
           </div>
         </div>
         <div style="display:flex">
           <div class="selectChooseFrame" @click="materialGetColor('pink')">
             <img v-if="colorsFrame !== 'pink'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].pink.fileURL">
             <img v-if="colorsFrame === 'pink'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].pink.fileURL">
-            <p v-if="colorsFrame !== 'pink'" class="selectFrameText">{{ chooseFrame[selectFrame.material].pink.description.ua }}</p>
-            <p v-if="colorsFrame === 'pink'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].pink.description.ua }}</p>
+            <p v-if="colorsFrame !== 'pink'" class="selectFrameText">{{ chooseFrame[selectFrame.material].pink.description.ru }}</p>
+            <p v-if="colorsFrame === 'pink'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].pink.description.ru }}</p>
           </div>
           <div class="selectChooseFrame" @click="materialGetColor('gray')">
             <img v-if="colorsFrame !== 'gray'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].gray.fileURL">
             <img v-if="colorsFrame === 'gray'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].gray.fileURL">
-            <p v-if="colorsFrame !== 'gray'" class="selectFrameText">{{ chooseFrame[selectFrame.material].gray.description.ua }}</p>
-            <p v-if="colorsFrame === 'gray'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].gray.description.ua }}</p>
+            <p v-if="colorsFrame !== 'gray'" class="selectFrameText">{{ chooseFrame[selectFrame.material].gray.description.ru }}</p>
+            <p v-if="colorsFrame === 'gray'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].gray.description.ru }}</p>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@ export default {
 computed: {
   data(){
     return{
-      selectFrameTextTop: 'Виберіть рамку',
+      selectFrameTextTop: 'Виберите рамку',
     }
   },
   ...mapGetters(

@@ -32,7 +32,7 @@ import {mapActions} from 'vuex';
 export default {
   data() {
     return {
-      upText: 'Завантажити власний фон',
+      upText: 'Download own wallpapers',
       upImgpos: require('../../../assets/img/upB.png'),
       upImgdis: require('../../../assets/img/upBwhite.png'),
       imagesUP: [

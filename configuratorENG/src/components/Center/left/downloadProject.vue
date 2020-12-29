@@ -17,8 +17,8 @@ export default {
   data() {
     return {
       downloadText: {
-        ProjectText: '*Змінюйте розташування механізмів пересуваючи їх порядок.',
-        BlockText: 'Завантижити проект (PDF)'
+        ProjectText: '*Change position of mechanisms by shifting them.',
+        BlockText: 'Download project (PDF)'
       },
       download: require('../../../assets/img/download.png'),
       downloadGreen: require('../../../assets/img/downloadGreen.png'),

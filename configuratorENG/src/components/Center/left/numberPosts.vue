@@ -159,7 +159,7 @@ import {mapGetters, mapActions} from 'vuex';
 export default {
   data(){
     return{
-      numberPostsText: 'Кількість постів',
+      numberPostsText: 'Number of gangs',
     }
   },
   methods: {

@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       colorBackground: {
-        text: 'Виберіть колір стін',
+        text: 'Choose wall color',
       },
       upImgpos: require('../../../assets/img/upB.png'),
       upImgdis: require('../../../assets/img/upBwhite.png'),

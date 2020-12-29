@@ -31,12 +31,12 @@
         </div>
         <div style="display: flex" class="attributeNum">
           <p style="padding-right: 5px">{{ attributeNum }}</p>
-          <span v-if="attributeNum === 1"> позиція</span>
-          <span v-else-if="attributeNum === 2"> позиції</span>
-          <span v-else-if="attributeNum === 3"> позиції</span>
-          <span v-else-if="attributeNum === 4"> позиції</span>
-          <span v-else-if="attributeNum === 5"> позицій</span>
-          <span v-else-if="attributeNum === 6"> позицій</span>
+          <span v-if="attributeNum === 1"> item</span>
+          <span v-else-if="attributeNum === 2"> items</span>
+          <span v-else-if="attributeNum === 3"> items</span>
+          <span v-else-if="attributeNum === 4"> items</span>
+          <span v-else-if="attributeNum === 5"> items</span>
+          <span v-else-if="attributeNum === 6"> items</span>
         </div>
       </div>
     </div>
@@ -72,12 +72,12 @@
         </div>
         <div class="attributeNum">
           <p style="padding-right: 5px">{{ attributeNum }}</p>
-          <span v-if="attributeNum === 1"> позиція</span>
-          <span v-else-if="attributeNum === 2"> позиції</span>
-          <span v-else-if="attributeNum === 3"> позиції</span>
-          <span v-else-if="attributeNum === 4"> позиції</span>
-          <span v-else-if="attributeNum === 5"> позицій</span>
-          <span v-else-if="attributeNum === 6"> позицій</span>
+          <span v-if="attributeNum === 1"> item</span>
+          <span v-else-if="attributeNum === 2"> items</span>
+          <span v-else-if="attributeNum === 3"> items</span>
+          <span v-else-if="attributeNum === 4"> items</span>
+          <span v-else-if="attributeNum === 5"> items</span>
+          <span v-else-if="attributeNum === 6"> items</span>
         </div>
       </div>
     </div>
@@ -91,9 +91,9 @@ export default {
   data(){
     return{
       attributes: {
-        frame: 'Рамка',
-        mechanism: 'Механізм',
-        total: 'Усього',
+        frame: 'Frame',
+        mechanism: 'Mechanism',
+        total: 'Total',
       }
     }
   },

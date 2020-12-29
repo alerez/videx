@@ -2,20 +2,20 @@
   <div>
     <div class="buyBlock">
       <div class="buyBlockCost">
-        <p class="buyBlockCostOne">Разом до сплати:</p>
+        <p class="buyBlockCostOne">Total:</p>
         <p class="buyBlockCostTwo">
           <span v-if="numberPostsFrame === '1'">{{mechanismBlockPrice + frame.horizontal[material][colorsFrame]["1"].price}}</span>
           <span v-else-if="frameOrientation !== 'horizontal'">{{mechanismBlockPrice + frame.vertical[material][colorsFrame][numberPostsFrame].price}}</span>
           <span v-else-if="frameOrientation !== 'vertical'">{{mechanismBlockPrice + frame.horizontal[material][colorsFrame][numberPostsFrame].price}}</span>
-          грн</p>
+          UAH</p>
       </div>
       <div class="buyBlockButtom">
-        <button>Купити</button>
+        <button>Buy</button>
       </div>
     </div>
     <div class="buyBlockFavorites" style="cursor:pointer">
       <img :src="favorites">
-      <p>Додати в обранне</p>
+      <p>Add to favorites</p>
     </div>
   </div>
 </template>

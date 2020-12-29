@@ -21,7 +21,7 @@ import {mapGetters, mapActions} from 'vuex';
 export default {
   data() {
     return {
-      frameOrientationText: 'Орієнтація рамки',
+      frameOrientationText: 'Frame orientation',
       horizontalColor: require('../../../assets/img/horizontalColor.png'),
       horizontal: require('../../../assets/img/horizontal.png'),
       vertical: require('../../../assets/img/vertical.png'),
