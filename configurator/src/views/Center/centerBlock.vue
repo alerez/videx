@@ -5,11 +5,11 @@
     <right-center class="right-center"></right-center>
     <div v-if="mobileSelectFrame === true" class="mobileChooseMechanism">
       <div v-on:click="onSelectFrame(false)">
-        <div class="mobileChooseMechanism_closed_border"></div>
         <div class="mobileChooseMechanism_closed">
           <div>
-            <svg width="211" height="133" viewBox="0 0 211 133" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M113.031 129.469L207.885 20.8422C212.038 16.0758 212.038 8.35334 207.885 3.57485C203.732 -1.19162 196.987 -1.19162 192.834 3.57485L105.505 103.585L18.1769 3.58688C14.0239 -1.17958 7.27831 -1.17958 3.11477 3.58688C-1.03826 8.35334 -1.03826 16.0878 3.11477 20.8543L97.9694 129.481C102.079 134.175 108.931 134.175 113.031 129.469Z" fill="#FF7A00"/>
+            <svg width="520" height="518" viewBox="0 0 520 518" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M260 518C403.594 518 520 402.095 520 259.12C520 116.144 403.594 0.239929 260 0.239929C116.406 0.239929 0 116.144 0 259.12C0 402.095 116.406 518 260 518Z" fill="#FF7A00"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M392.031 212.392C400.641 220.965 400.641 234.864 392.031 243.437L260.838 374.066L260.826 374.053L260.08 374.795L128.477 243.759C119.867 235.186 119.867 221.287 128.477 212.714L138.31 202.924C146.92 194.351 160.879 194.351 169.489 202.924L260.093 293.137L351.019 202.602C359.629 194.029 373.589 194.029 382.199 202.602L392.031 212.392Z" fill="white"/>
             </svg>
           </div>
         </div>
@@ -20,11 +20,11 @@
     </div>
     <div v-if="mobileSelectMechanism === true" class="mobileChooseMechanism2">
       <div v-on:click="onSelectMechanism(false)">
-        <div class="mobileChooseMechanism_closed_border"></div>
-        <div class="mobileChooseMechanism_closed">
+        <div class="mobileChooseMechanism_closed2">
           <div>
-            <svg width="211" height="133" viewBox="0 0 211 133" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M113.031 129.469L207.885 20.8422C212.038 16.0758 212.038 8.35334 207.885 3.57485C203.732 -1.19162 196.987 -1.19162 192.834 3.57485L105.505 103.585L18.1769 3.58688C14.0239 -1.17958 7.27831 -1.17958 3.11477 3.58688C-1.03826 8.35334 -1.03826 16.0878 3.11477 20.8543L97.9694 129.481C102.079 134.175 108.931 134.175 113.031 129.469Z" fill="#FF7A00"/>
+            <svg width="520" height="518" viewBox="0 0 520 518" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M260 518C403.594 518 520 402.095 520 259.12C520 116.144 403.594 0.239929 260 0.239929C116.406 0.239929 0 116.144 0 259.12C0 402.095 116.406 518 260 518Z" fill="#FF7A00"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M392.031 212.392C400.641 220.965 400.641 234.864 392.031 243.437L260.838 374.066L260.826 374.053L260.08 374.795L128.477 243.759C119.867 235.186 119.867 221.287 128.477 212.714L138.31 202.924C146.92 194.351 160.879 194.351 169.489 202.924L260.093 293.137L351.019 202.602C359.629 194.029 373.589 194.029 382.199 202.602L392.031 212.392Z" fill="white"/>
             </svg>
           </div>
         </div>
@@ -35,11 +35,11 @@
     </div>
     <div v-if="mobileBackground === true" class="mobileChooseMechanism3">
       <div v-on:click="onMobileBackground(false)">
-        <div class="mobileChooseMechanism_closed_border"></div>
-        <div class="mobileChooseMechanism_closed">
+        <div class="mobileChooseMechanism_closed3">
           <div>
-            <svg width="211" height="133" viewBox="0 0 211 133" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M113.031 129.469L207.885 20.8422C212.038 16.0758 212.038 8.35334 207.885 3.57485C203.732 -1.19162 196.987 -1.19162 192.834 3.57485L105.505 103.585L18.1769 3.58688C14.0239 -1.17958 7.27831 -1.17958 3.11477 3.58688C-1.03826 8.35334 -1.03826 16.0878 3.11477 20.8543L97.9694 129.481C102.079 134.175 108.931 134.175 113.031 129.469Z" fill="#FF7A00"/>
+            <svg width="520" height="518" viewBox="0 0 520 518" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M260 518C403.594 518 520 402.095 520 259.12C520 116.144 403.594 0.239929 260 0.239929C116.406 0.239929 0 116.144 0 259.12C0 402.095 116.406 518 260 518Z" fill="#FF7A00"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M392.031 212.392C400.641 220.965 400.641 234.864 392.031 243.437L260.838 374.066L260.826 374.053L260.08 374.795L128.477 243.759C119.867 235.186 119.867 221.287 128.477 212.714L138.31 202.924C146.92 194.351 160.879 194.351 169.489 202.924L260.093 293.137L351.019 202.602C359.629 194.029 373.589 194.029 382.199 202.602L392.031 212.392Z" fill="white"/>
             </svg>
           </div>
         </div>
@@ -51,11 +51,11 @@
     </div>
     <div v-if="mobileColorBackground === true" class="mobileChooseMechanism4">
       <div v-on:click="onMobileColorBackground(false)">
-        <div class="mobileChooseMechanism_closed_border"></div>
-        <div class="mobileChooseMechanism_closed">
+        <div class="mobileChooseMechanism_closed4">
           <div>
-            <svg width="211" height="133" viewBox="0 0 211 133" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M113.031 129.469L207.885 20.8422C212.038 16.0758 212.038 8.35334 207.885 3.57485C203.732 -1.19162 196.987 -1.19162 192.834 3.57485L105.505 103.585L18.1769 3.58688C14.0239 -1.17958 7.27831 -1.17958 3.11477 3.58688C-1.03826 8.35334 -1.03826 16.0878 3.11477 20.8543L97.9694 129.481C102.079 134.175 108.931 134.175 113.031 129.469Z" fill="#FF7A00"/>
+            <svg width="520" height="518" viewBox="0 0 520 518" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M260 518C403.594 518 520 402.095 520 259.12C520 116.144 403.594 0.239929 260 0.239929C116.406 0.239929 0 116.144 0 259.12C0 402.095 116.406 518 260 518Z" fill="#FF7A00"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M392.031 212.392C400.641 220.965 400.641 234.864 392.031 243.437L260.838 374.066L260.826 374.053L260.08 374.795L128.477 243.759C119.867 235.186 119.867 221.287 128.477 212.714L138.31 202.924C146.92 194.351 160.879 194.351 169.489 202.924L260.093 293.137L351.019 202.602C359.629 194.029 373.589 194.029 382.199 202.602L392.031 212.392Z" fill="white"/>
             </svg>
           </div>
         </div>
@@ -237,7 +237,7 @@ export default {
     border-bottom:none;
   }
   .mobileChooseMechanism > div{
-
+    margin-top:-20px;
   }
   .selectFrameCenterBlock{
     margin-top:-50px
@@ -255,11 +255,11 @@ export default {
     border-bottom:none;
   }
   .mobileChooseMechanism2 > div{
-
+    margin-top:-20px;
   }
   .mobileChooseMechanism3{
     width:100%;
-    height:350px;
+    height:380px;
     background:white;
     position: fixed;
     bottom:0;
@@ -269,6 +269,10 @@ export default {
     border: 3px solid #5B6770;
     border-bottom:none;
   }
+  .mobileChooseMechanism3 > div{
+    margin-top:-10px;
+  }
+
   .mobileChooseMechanism4{
     width:100%;
     height:350px;
@@ -281,33 +285,73 @@ export default {
     border: 3px solid #5B6770;
     border-bottom:none;
   }
+  .mobileChooseMechanism4 > div{
+    margin-top:-45px;
+  }
   .mobileChooseMechanism_closed{
-    width:35px;
-    height:35px;
+    width:36px;
+    height:80px;
     display:block;
     margin:-24px auto 0;
-    background: #FFFFFF;
     z-index: 1000;
     padding: 5px;
     cursor: pointer;
-  }
-  .mobileChooseMechanism_closed_border{
-    width:35px;
-    height:12px;
-    display:block;
-    margin:-25px auto 0;
-    border-top: 2px solid #5b6770;
-    border-left: 2px solid #5b6770;
-    border-right: 2px solid #5b6770;
-    padding: 5px;
-    cursor: pointer;
-    position: relative;
+    position:relative;
   }
   .mobileChooseMechanism_closed > div > svg{
-    width:35px;
-    height:35px;
+    width:36px;
+    height:36px;
     display:block;
     position:relative;
+  }
+  .mobileChooseMechanism_closed2{
+    width:36px;
+    height:80px;
+    display:block;
+    margin:-24px auto 0;
+    z-index: 1000;
+    padding: 5px;
+    cursor: pointer;
+    position:relative;
+  }
+  .mobileChooseMechanism_closed2 > div > svg{
+    width:36px;
+    height:36px;
+    display:block;
+    position:relative;
+  }
+  .mobileChooseMechanism_closed3{
+    width:36px;
+    height:80px;
+    display:block;
+    margin:-24px auto 0;
+    z-index: 1000;
+    padding: 5px;
+    cursor: pointer;
+    position:relative;
+  }
+  .mobileChooseMechanism_closed3 > div > svg{
+    width:36px;
+    height:36px;
+    display:block;
+    position:relative;
+  }
+  .mobileChooseMechanism_closed4{
+    width:36px;
+    height:80px;
+    display:block;
+    margin:-24px auto 0;
+    z-index: 1000;
+    padding: 5px;
+    cursor: pointer;
+    position:relative;
+  }
+  .mobileChooseMechanism_closed4 > div > svg{
+    width:36px;
+    height:36px;
+    display:block;
+    position:relative;
+    margin-top:20px;
   }
   .mobileChooseMechanism_block{
     margin: 0 auto;
@@ -352,12 +396,12 @@ export default {
     border-bottom:none;
   }
   .mobileChooseMechanism > div{
-    margin-top:-20px;
+    margin-top:-40px;
   }
 
   .mobileChooseMechanism2{
     width:100%;
-    height:350px;
+    height:300px;
     background:white;
     position: fixed;
     bottom:0;
@@ -369,7 +413,7 @@ export default {
   }
 
   .mobileChooseMechanism2 > div{
-    margin-top:-30px;
+    margin-top:-40px;
   }
 
   .mobileChooseMechanism3{
@@ -384,6 +428,9 @@ export default {
     border:3px solid #5B6770;
     border-bottom:none;
   }
+  .mobileChooseMechanism3 > div{
+    margin-top:-10px;
+  }
 
   .mobileChooseMechanism4{
     width:100%;
@@ -397,13 +444,78 @@ export default {
     border:3px solid #5B6770;
     border-bottom:none;
   }
-  .mobileChooseMechanism4 > div{
-    margin-top:-35px;
-  }
 
 
   .mobileChooseMechanism_closed{
     margin-bottom:20px;
+  }
+  .mobileChooseMechanism_closed{
+    width:36px;
+    height:80px;
+    display:block;
+    margin:-24px auto 0;
+    z-index: 1000;
+    padding: 5px;
+    cursor: pointer;
+    position:relative;
+  }
+  .mobileChooseMechanism_closed > div > svg{
+    width:40px;
+    height:40px;
+    display:block;
+    position:relative;
+    margin-top:13px;
+  }
+  .mobileChooseMechanism_closed2{
+    width:36px;
+    height:80px;
+    display:block;
+    margin:-24px auto 0;
+    z-index: 1000;
+    padding: 5px;
+    cursor: pointer;
+    position:relative;
+  }
+  .mobileChooseMechanism_closed2 > div > svg{
+    width:40px;
+    height:40px;
+    display:block;
+    position:relative;
+    margin-top:12px;
+  }
+  .mobileChooseMechanism_closed3{
+    width:36px;
+    height:80px;
+    display:block;
+    margin:-24px auto 0;
+    z-index: 1000;
+    padding: 5px;
+    cursor: pointer;
+    position:relative;
+  }
+  .mobileChooseMechanism_closed3 > div > svg{
+    width:40px;
+    height:40px;
+    display:block;
+    position:relative;
+    margin-top:-3px;
+  }
+  .mobileChooseMechanism_closed4{
+    width:36px;
+    height:80px;
+    display:block;
+    margin:-24px auto 0;
+    z-index: 1000;
+    padding: 5px;
+    cursor: pointer;
+    position:relative;
+  }
+  .mobileChooseMechanism_closed4 > div > svg{
+    width:40px;
+    height:40px;
+    display:block;
+    position:relative;
+    margin-top:20px;
   }
 }
 </style>

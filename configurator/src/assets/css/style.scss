@@ -168,6 +168,10 @@ $white: rgb(255, 255, 255);
     font-size: 11.9603px;
     height: 38px;
   }
+  .downloadProjectBlock:hover .downloadProjectBlockText2{
+    font-size: 11.9603px;
+    height: 38px;
+  }
   .downloadProjectBlockImg{
     @include size(14px,14px);
   }
@@ -526,6 +530,10 @@ $white: rgb(255, 255, 255);
 
     margin-top:-3px;
   }
+  .downloadProjectBlock:hover .downloadProjectBlockText2{
+    font-size: 10.9365px;
+    height: 36px;
+  }
   ///////////////////////////////////////////////////////////
 
 
@@ -847,7 +855,9 @@ $white: rgb(255, 255, 255);
   }
   .downloadProjectBlockText{
     font-size: 10.9365px;
-
+  }
+  .downloadProjectBlock:hover .downloadProjectBlockText2{
+    font-size: 10.9365px;
   }
   .downloadProjectBlockImg{
     @include size(14px,14px);
@@ -996,6 +1006,10 @@ $white: rgb(255, 255, 255);
   .upText{
     margin-top:15px;
   }
+  .upMobileUpBag{
+    margin-top:-10px;
+    margin-left:0;
+  }
   //////////////////////////////////////////////////////////
 
 
@@ -1061,6 +1075,10 @@ $white: rgb(255, 255, 255);
     font-size: 15.98px;
     height: 45px;
   }
+  .downloadProjectBlock:hover .downloadProjectBlockText2{
+    font-size: 15.9365px;
+    height: 45px;
+  }
   .downloadProjectBlockImg{
     @include size(19px,19px);
     margin-top:-2px;
@@ -1075,12 +1093,20 @@ $white: rgb(255, 255, 255);
 
 
   ////////////////////attributes/////////////////////////////
+  .attributesBlock{
+    display: none;
+  }
   .attributesBlock1{
     display: none;
   }
   .attributesBlock2{
-    display: flex;
-    @include size(383px,211px);
+    display: none;
+  }
+  .attributesBlock3{
+    display:none;
+  }
+  .attributesBlock4{
+    display:none;
   }
   ///////////////////////////////////////////////////////////
 
@@ -1156,7 +1182,7 @@ $white: rgb(255, 255, 255);
   }
   .upMobileUpBag{
     margin-top:-20px;
-    margin-left:-15px;
+    margin-left:0;
   }
 
 
@@ -1262,10 +1288,13 @@ $white: rgb(255, 255, 255);
 
   .downloadProjectBlock{
     @include size(264px, 40px);
-    margin-top:30px;
   }
   .downloadProjectBlockText{
     font-size: 12.9838px;
+    height: 40px;
+  }
+  .downloadProjectBlock:hover .downloadProjectBlockText2{
+    font-size: 12.9365px;
     height: 40px;
   }
   ///////////////////////////////////////////////////////////////
@@ -1281,5 +1310,6 @@ $white: rgb(255, 255, 255);
     @include centerAbsolute;
     margin: 0 auto;
   }
+
 
 }
