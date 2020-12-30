@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="08f21971-1991-4c1b-bb88-30dbe0d612c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/numberPosts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/numberPosts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +67,7 @@
       <updated>1609078242023</updated>
       <workItem from="1609078247497" duration="23013000" />
       <workItem from="1609240119047" duration="5462000" />
-      <workItem from="1609330507752" duration="6305000" />
+      <workItem from="1609330507752" duration="7910000" />
     </task>
     <servers />
   </component>
