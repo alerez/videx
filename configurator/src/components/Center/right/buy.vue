@@ -96,7 +96,7 @@ export default {
   border-radius: 10px;
 
   font-family: Ubuntu-Bold, sans-serif;
-  font-weight: 800;
+  font-weight: 600;
 
   font-size: 18px;
   line-height: 48px;
