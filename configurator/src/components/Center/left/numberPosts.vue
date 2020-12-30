@@ -37,119 +37,50 @@
     </div>
     <div class="numberPostsBlockMobile">
       <p class="numberPostsText">{{ numberPostsText }}:</p>
-      <div class="numberPostsBlock" v-if="frameOrientation === 'horizontal'">
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '1'" v-on:click="numberPosts('1')">1</div>
-        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '1'" v-on:click="numberPosts('1')">1</div>
-        <div class="numberPostsBlockRoz"></div>
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '2'" v-on:click="numberPosts('2')">2</div>
-        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '2'" v-on:click="numberPosts('2')">2</div>
-        <div class="numberPostsBlockRoz"></div>
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '3'" v-on:click="numberPosts('3')">3</div>
-        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '3'" v-on:click="numberPosts('3')">3</div>
-        <div class="numberPostsBlockRoz"></div>
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '4'" v-on:click="numberPosts('4')">4</div>
-        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '4'" v-on:click="numberPosts('4')">4</div>
-        <div class="numberPostsBlockRoz"></div>
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '5'" v-on:click="numberPosts('5')">5</div>
-        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '5'" v-on:click="numberPosts('5')">5</div>
+      <div class="numberPostsBlock numberPostsBlockColMobile" v-if="frameOrientation === 'horizontal'"  style="display: flex; flex-direction: column">
+        <div style="display: flex" class="numberPostsTextBlockMobile">
+          <div class="numberPostsBlockTextMobile" v-if="this.numberPostsFrame !== '1'" v-on:click="numberPosts('1')"><p style="margin-left: 5px">1</p></div>
+          <div class="numberPostsBlockTextMobile numberPostsBlockTextColor" v-if="this.numberPostsFrame === '1'" v-on:click="numberPosts('1')"><p style="margin-left: 5px">1</p></div>
+          <div style="width: 1px; height: 24px; background: #E9E9E9; position:absolute; margin-left: 35px; margin-top: -8px"></div>
+          <div class="numberPostsBlockTextMobile" v-if="this.numberPostsFrame !== '2'" v-on:click="numberPosts('2')"><p style="margin-left: 7.5px">2</p></div>
+          <div class="numberPostsBlockTextMobile numberPostsBlockTextColor" v-if="this.numberPostsFrame === '2'" v-on:click="numberPosts('2')"><p style="margin-left: 7.5px">2</p></div>
+          <div style="width: 1px; height: 24px; background: #E9E9E9; position:absolute; margin-left: 85px; margin-top: -8px"></div>
+          <div class="numberPostsBlockTextMobile" v-if="this.numberPostsFrame !== '3'" v-on:click="numberPosts('3')"><p style="margin-left: 7.5px">3</p></div>
+          <div class="numberPostsBlockTextMobile numberPostsBlockTextColor" v-if="this.numberPostsFrame === '3'" v-on:click="numberPosts('3')"><p style="margin-left: 7.5px">3</p></div>
+        </div>
+        <div style="width: 133px; height: 1px; background: #E9E9E9"></div>
+        <div style="display: flex" class="numberPostsTextBlockMobile">
+          <div class="numberPostsBlockTextMobile" v-if="this.numberPostsFrame !== '4'" v-on:click="numberPosts('4')"><p style="margin-left: 5px">4</p></div>
+          <div class="numberPostsBlockTextMobile numberPostsBlockTextColor" v-if="this.numberPostsFrame === '4'" v-on:click="numberPosts('4')"><p style="margin-left: 5px">4</p></div>
+          <div style="width: 1px; height: 24px; background: #E9E9E9; position:absolute; margin-left: 35px; margin-top: -6px"></div>
+          <div class="numberPostsBlockTextMobile" v-if="this.numberPostsFrame !== '5'" v-on:click="numberPosts('5')"><p style="margin-left: 7.5px">5</p></div>
+          <div class="numberPostsBlockTextMobile numberPostsBlockTextColor" v-if="this.numberPostsFrame === '5'" v-on:click="numberPosts('5')"><p style="margin-left: 7.5px">5</p></div>
+          <div style="width: 1px; height: 24px; background: #E9E9E9; position:absolute; margin-left: 85px; margin-top: -6px"></div>
+          <div class="numberPostsBlockTextMobile"> </div>
+        </div>
       </div>
-      <div class="numberPostsBlock" v-if="this.frameOrientation === 'vertical'">
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '1'" v-on:click="numberPosts('1')">1</div>
-        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '1'" v-on:click="numberPosts('1')">1</div>
-        <div class="numberPostsBlockRoz"></div>
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '2'" v-on:click="numberPosts('2')">2</div>
-        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '2'" v-on:click="numberPosts('2')">2</div>
-        <div class="numberPostsBlockRoz"></div>
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '3'" v-on:click="numberPosts('3')">3</div>
-        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '3'" v-on:click="numberPosts('3')">3</div>
-        <div class="numberPostsBlockRoz"></div>
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '4'" v-on:click="numberPosts('4')">4</div>
-        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '4'" v-on:click="numberPosts('4')">4</div>
-        <div class="numberPostsBlockRoz"></div>
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '5'" v-on:click="numberPosts('5')">5</div>
-        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '5'" v-on:click="numberPosts('4')">5</div>
+      <div class="numberPostsBlock numberPostsBlockCol" v-if="this.frameOrientation === 'vertical'">
+        <div  style="display:flex; flex-direction:row">
+          <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '1'" v-on:click="numberPosts('1')"><p>1</p></div>
+          <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '1'" v-on:click="numberPosts('1')"><p>1</p></div>
+          <div class="numberPostsBlockRoz"></div>
+          <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '2'" v-on:click="numberPosts('2')">2</div>
+          <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '2'" v-on:click="numberPosts('2')">2</div>
+          <div class="numberPostsBlockRoz"></div>
+          <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '3'" v-on:click="numberPosts('3')">3</div>
+          <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '3'" v-on:click="numberPosts('3')">3</div>
+        </div>
+        <div style="display:flex; flex-direction:row">
+          <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '4'" v-on:click="numberPosts('4')">4</div>
+          <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '4'" v-on:click="numberPosts('4')">4</div>
+          <div class="numberPostsBlockRoz"></div>
+          <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '5'" v-on:click="numberPosts('5')">5</div>
+          <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '5'" v-on:click="numberPosts('5')">5</div>
+          <div class="numberPostsBlockRoz"></div>
+          <div class="numberPostsBlockText"> </div>
+        </div>
       </div>
     </div>
-<!--    <div class="numberPostsBlockMobile">-->
-<!--      <p class="numberPostsText">{{ numberPostsText }}:</p>-->
-<!--      <div class="numberPostsBlock" v-if="frameOrientation === 'horizontal'">-->
-<!--        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '1'" v-on:click="numberPosts('1')">1</div>-->
-<!--        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '1'" v-on:click="numberPosts('1')">1</div>-->
-<!--        <div class="numberPostsBlockRoz"></div>-->
-<!--        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '2'" v-on:click="numberPosts('2')">2</div>-->
-<!--        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '2'" v-on:click="numberPosts('2')">2</div>-->
-<!--        <div class="numberPostsBlockRoz"></div>-->
-<!--        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '3'" v-on:click="numberPosts('3')">3</div>-->
-<!--        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '3'" v-on:click="numberPosts('3')">3</div>-->
-<!--        <div class="numberPostsBlockRoz"></div>-->
-<!--        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '4'" v-on:click="numberPosts('4')">4</div>-->
-<!--        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '4'" v-on:click="numberPosts('4')">4</div>-->
-<!--        <div class="numberPostsBlockRoz"></div>-->
-<!--        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '5'" v-on:click="numberPosts('5')">5</div>-->
-<!--        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '5'" v-on:click="numberPosts('5')">5</div>-->
-<!--      </div>-->
-<!--      <div class="numberPostsBlock" v-if="this.frameOrientation === 'vertical'">-->
-<!--        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '1'" v-on:click="numberPosts('1')">1</div>-->
-<!--        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '1'" v-on:click="numberPosts('1')">1</div>-->
-<!--        <div class="numberPostsBlockRoz"></div>-->
-<!--        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '2'" v-on:click="numberPosts('2')">2</div>-->
-<!--        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '2'" v-on:click="numberPosts('2')">2</div>-->
-<!--        <div class="numberPostsBlockRoz"></div>-->
-<!--        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '3'" v-on:click="numberPosts('3')">3</div>-->
-<!--        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '3'" v-on:click="numberPosts('3')">3</div>-->
-<!--        <div class="numberPostsBlockRoz"></div>-->
-<!--        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '4'" v-on:click="numberPosts('4')">4</div>-->
-<!--        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '4'" v-on:click="numberPosts('4')">4</div>-->
-<!--        <div class="numberPostsBlockRoz"></div>-->
-<!--        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '5'" v-on:click="numberPosts('5')">5</div>-->
-<!--        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '5'" v-on:click="numberPosts('4')">5</div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="numberPostsBlockMobile">-->
-<!--      <p class="numberPostsText">{{ numberPostsText }}:</p>-->
-<!--      <div class="numberPostsBlock numberPostsBlockCol" v-if="frameOrientation === 'horizontal'">-->
-<!--      <div style="display:flex; flex-direction:row; height:28px">-->
-<!--        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '1'" v-on:click="numberPosts('1')"><p></p>1</div>-->
-<!--        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '1'" v-on:click="numberPosts('1')"><p></p>1</div>-->
-<!--        <div class="numberPostsBlockRoz"></div>-->
-<!--        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '2'" v-on:click="numberPosts('2')"><p>2</p></div>-->
-<!--        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '2'" v-on:click="numberPosts('2')"><p>2</p></div>-->
-<!--        <div class="numberPostsBlockRoz"></div>-->
-<!--        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '3'" v-on:click="numberPosts('3')"><p>3</p></div>-->
-<!--        <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '3'" v-on:click="numberPosts('3')"><p>3</p></div>-->
-<!--      </div>-->
-<!--        <div style="display:flex; flex-direction:row">-->
-<!--          <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '4'" v-on:click="numberPosts('4')"><p>4</p></div>-->
-<!--          <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '4'" v-on:click="numberPosts('4')"><p>4</p></div>-->
-<!--          <div class="numberPostsBlockRoz"></div>-->
-<!--          <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '5'" v-on:click="numberPosts('5')"><p>5</p></div>-->
-<!--          <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '5'" v-on:click="numberPosts('5')"><p>5</p></div>-->
-<!--          <div class="numberPostsBlockRoz"></div>-->
-<!--          <div class="numberPostsBlockText"> </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="numberPostsBlock numberPostsBlockCol" v-if="this.frameOrientation === 'vertical'">-->
-<!--        <div  style="display:flex; flex-direction:row">-->
-<!--          <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '1'" v-on:click="numberPosts('1')"><p>1</p></div>-->
-<!--          <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '1'" v-on:click="numberPosts('1')"><p>1</p></div>-->
-<!--          <div class="numberPostsBlockRoz"></div>-->
-<!--          <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '2'" v-on:click="numberPosts('2')">2</div>-->
-<!--          <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '2'" v-on:click="numberPosts('2')">2</div>-->
-<!--          <div class="numberPostsBlockRoz"></div>-->
-<!--          <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '3'" v-on:click="numberPosts('3')">3</div>-->
-<!--          <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '3'" v-on:click="numberPosts('3')">3</div>-->
-<!--        </div>-->
-<!--        <div style="display:flex; flex-direction:row">-->
-<!--          <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '4'" v-on:click="numberPosts('4')">4</div>-->
-<!--          <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '4'" v-on:click="numberPosts('4')">4</div>-->
-<!--          <div class="numberPostsBlockRoz"></div>-->
-<!--          <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '5'" v-on:click="numberPosts('5')">5</div>-->
-<!--          <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '5'" v-on:click="numberPosts('5')">5</div>-->
-<!--          <div class="numberPostsBlockRoz"></div>-->
-<!--          <div class="numberPostsBlockText"> </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
   </div>
 </template>
 

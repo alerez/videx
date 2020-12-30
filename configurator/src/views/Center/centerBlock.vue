@@ -80,12 +80,6 @@ import upBag from "@/components/Center/left/upBag.vue";
 import {mapActions, mapGetters} from "vuex";
 
 export default {
-  name: 'centerBlock',
-  data () {
-    return {
-      close: 'https://d773dace96b9.ngrok.io/images/frameColors/close.jpg',
-    }
-  },
   components: {
     ColorBackground,
     ChooseMechanism,

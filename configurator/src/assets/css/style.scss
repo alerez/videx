@@ -848,7 +848,8 @@ $white: rgb(255, 255, 255);
 
   ////////////////////downloadProject////////////////////////
   .downloadProjectBlock{
-    @include size(218px,36px)
+    @include size(218px,36px);
+    margin-left: 60px;
   }
   .downloadProjectText{
     display:none;
@@ -1230,6 +1231,16 @@ $white: rgb(255, 255, 255);
   }
   .number-post{
     margin: 0 0 0 7.5px;
+  }
+
+  .numberPostsBlockTextMobile{
+    width: 40px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  .numberPostsTextBlockMobile{
+    margin-left: 20px;
+    margin-top: 12px;
   }
   ///////////////////////////////////////////////////////////
 
