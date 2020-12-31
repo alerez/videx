@@ -78,7 +78,7 @@ export default {
   border: 1px solid #84C400;
   box-sizing: border-box;
 
-  margin-top: 30px;
+  margin-top: 15px;
   border-radius: 5px 5px 5px 15px;
   cursor:pointer;
 }

@@ -144,7 +144,7 @@ export default {
 <style>
 .leftCenter{
   margin-left: 0;
-  margin-right:52px;
+  margin-right:54px;
   margin-top:-19px;
 }
 .color-backgroundTwo{
@@ -247,7 +247,7 @@ export default {
     margin-left:-16px;
     margin-top:23px;
     border-radius:5px 5px 5px 15px;
-    background:#ffffff;
+    background:white;
   }
   .mobileFrame1 > div{
     display:flex;

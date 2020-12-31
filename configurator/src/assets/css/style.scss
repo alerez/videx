@@ -89,6 +89,9 @@ $white: rgb(255, 255, 255);
   .desBlock2{
     display:block;
   }
+  .upBagBackgroundBlockImages{
+    margin-left:2px;
+  }
   ////////////////////////////////////////////////////////////
 
 
@@ -359,7 +362,7 @@ $white: rgb(255, 255, 255);
 
     font-size: 15.37px;
 
-    margin-left: 20px;
+    margin-left: 0;
   }
   .buyBlockCostOne{
     font-size:13px;
@@ -428,13 +431,13 @@ $white: rgb(255, 255, 255);
     @include size(218px,33px);
   }
   .upBag{
-    margin-top:15px;
+    margin-top:3px;
   }
   .upBagBackgroundBlockImages{
     margin-left:1px;
   }
   .upMobileUpBag{
-    margin-top:10px;
+    margin-top:3px;
   }
   .colorText{
     font-size:11.94px;
@@ -442,7 +445,7 @@ $white: rgb(255, 255, 255);
   .upText{
     font-size:10.94px;
 
-    margin-top:10px;
+    margin-top:3px;
   }
   .upImg{
     margin-top:-1px;
@@ -516,7 +519,8 @@ $white: rgb(255, 255, 255);
 
   ////////////////////downloadProject////////////////////////
   .downloadProjectBlock{
-    @include size(218px,36px)
+    @include size(218px,36px);
+    margin-top:12px;
   }
   .downloadProjectText{
     display:none;
@@ -540,10 +544,10 @@ $white: rgb(255, 255, 255);
 
   ////////////////////configurator///////////////////////////
   .configuratorBlock{
-    @include size(456px,456px);
+    @include size(516px,456px);
   }
   .configuratorBlockBlock{
-    @include size(456px,456px);
+    @include size(516px,456px);
   }
   ///////////////////////////////////////////////////////////
 
@@ -552,7 +556,7 @@ $white: rgb(255, 255, 255);
 
   ////////////////////attributes/////////////////////////////
   .attributesBlock{
-    @include size(458px,169px);
+    @include size(456px,169px);
   }
   .attributesCenter{
     margin-bottom:40px;
@@ -673,7 +677,7 @@ $white: rgb(255, 255, 255);
 
     font-size: 16px;
 
-    margin-left: 20px;
+    margin-left: -35px;
   }
   .buyBlockCostOne{
     font-size:13px;
@@ -817,6 +821,7 @@ $white: rgb(255, 255, 255);
     margin-top:0;
     margin-right:14px;
     margin-left:-14px;
+    margin-bottom:15px;
   }
   ///////////////////////////////////////////////////////////
 
@@ -841,6 +846,7 @@ $white: rgb(255, 255, 255);
   .number-post {
     margin-left: 14px;
     margin-top: 7px;
+    margin-bottom:15px;
   }
   ///////////////////////////////////////////////////////////
 
@@ -850,6 +856,7 @@ $white: rgb(255, 255, 255);
   .downloadProjectBlock{
     @include size(218px,36px);
     margin-left: 60px;
+    margin-top:0;
   }
   .downloadProjectText{
     display:none;
@@ -998,18 +1005,21 @@ $white: rgb(255, 255, 255);
 
   ///////////////////////upBag///////////////////////////////
   .upB{
-    @include size(290px,41px);
+    @include size(285px,41px);
 
     border-radius: 5px 5px 15px 5px;
 
     margin: 0 auto;
   }
   .upText{
-    margin-top:15px;
+    margin-top:0;
   }
   .upMobileUpBag{
-    margin-top:-10px;
+    margin-top:0;
     margin-left:0;
+  }
+  .backgroundBlockUp{
+    margin-top:5px;
   }
   //////////////////////////////////////////////////////////
 
@@ -1303,11 +1313,27 @@ $white: rgb(255, 255, 255);
 
   ////////////////////attributes/////////////////////////////
   .attributesBlock{
-    @include size(292px,292px);
+    display:none;
+  }
+  .attributesBlock1{
+    display:none;
+  }
+  .attributesBlock2{
+    display:none;
+  }
+  .attributesBlock3{
+    display:block;
 
-    display:flex;
-    margin: 0 auto;
-    @include centerAbsolute;
+    width: 290px;
+    height: 289.38px;
+
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+
+    border-radius: 5px 5px 15px 15px;
+
+    user-select:none;
   }
   ///////////////////////////////////////////////////////////
 

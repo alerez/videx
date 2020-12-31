@@ -104,6 +104,11 @@ export default {
   }
   .download-buy-mobile{
     display:block;
+    margin-left:-60px;
+    margin-top:30px;
+  }
+  .buy-tablet{
+    margin-top:20px;
   }
 }
 @media screen and (max-width: 380px){

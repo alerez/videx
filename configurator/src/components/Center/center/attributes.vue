@@ -83,7 +83,7 @@
     </div>
     <div class="attributesBlock2">
       <div style="display: flex">
-        <div class="attributesBlockOne">
+        <div class="attributesBlockOne" style="flex-basis:50%">
           <div>
             <p>{{ attributes.frame }}:</p>
           </div>
@@ -98,7 +98,7 @@
           <div style="width: 100%; margin-left: 15px; margin-bottom: 5px">
             <p>{{ attributes.mechanism }}:</p>
           </div>
-          <div class="attributesMechanism">
+          <div class="attributesMechanism" style="display:flex; flex-wrap:nowrap; margin-bottom:40px">
             <p v-if="this.mechanismBlockOne.article" class="attributesBlockText">{{this.mechanismBlockOne.article}}</p>
             <p v-if="this.mechanismBlockTwo.article" class="attributesBlockText">{{this.mechanismBlockTwo.article}}</p>
             <p v-if="this.mechanismBlockThree.article" class="attributesBlockText">{{this.mechanismBlockThree.article}}</p>
@@ -123,23 +123,22 @@
       </div>
     </div>
     <div class="attributesBlock3">
-      <div style="display: flex">
-        <div class="attributesBlockOne">
-          <div>
+      <div style="display: flex; flex-direction:column; align-self:center; align-content:center; align-items:center; margin: 0 auto">
+        <div class="attributesBlockOne" style="margin-left:0">
+          <div style="display:flex; flex-direction:column; align-self:center; align-content:center; align-items:center; margin: 0 auto; margin-bottom:5px">
             <p>{{ attributes.frame }}:</p>
           </div>
-          <div class="attributeFrame">
+          <div class="attributeFrame" style="display:flex; flex-direction:column; align-self:center; align-content:center; align-items:center; margin: 0 auto">
             <p v-if="numberPostsFrame === '1'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
             <p v-else-if="frameOrientation !== 'horizontal'">{{frame.vertical[material][colorsFrame][numberPostsFrame].article}}</p>
             <p v-else-if="frameOrientation !== 'vertical'">{{frame.horizontal[material][colorsFrame][numberPostsFrame].article}}</p>
           </div>
         </div>
-        <div class="attributesBlockRez"></div>
-        <div class="attributesBlockTwo">
-          <div style="width: 100%; margin-left: 15px; margin-bottom: 5px">
+        <div class="attributesBlockTwo" style="display:flex; flex-direction:column; align-self:center; align-content:center; align-items:center; margin: 0 auto">
+          <div style="display:flex; flex-direction:column; align-self:center; align-content:center; align-items:center; margin: 0 auto; margin-bottom:5px">
             <p>{{ attributes.mechanism }}:</p>
           </div>
-          <div class="attributesMechanism">
+          <div class="attributesMechanism" style="display:flex; flex-direction:column; flex-wrap:nowrap; align-self:center; align-content:center; align-items:center; margin-bottom:40px">
             <p v-if="this.mechanismBlockOne.article" class="attributesBlockText">{{this.mechanismBlockOne.article}}</p>
             <p v-if="this.mechanismBlockTwo.article" class="attributesBlockText">{{this.mechanismBlockTwo.article}}</p>
             <p v-if="this.mechanismBlockThree.article" class="attributesBlockText">{{this.mechanismBlockThree.article}}</p>
@@ -148,11 +147,11 @@
           </div>
         </div>
       </div>
-      <div class="attributesBlockThree">
-        <div>
+      <div class="attributesBlockThree" style="display:flex; flex-direction:column; align-self:center; align-content:center; align-items:center">
+        <div style="display:flex; flex-direction:column; align-self:center; align-content:center; align-items:center;margin-bottom:5px">
           <p>{{ attributes.total }}:</p>
         </div>
-        <div class="attributeNum">
+        <div class="attributeNum" style="display:flex; align-self:center; align-content:center; align-items:center; margin: 0 auto;">
           <p style="padding-right: 5px">{{ attributeNum }}</p>
           <span v-if="attributeNum === 1"> позиція</span>
           <span v-else-if="attributeNum === 2"> позиції</span>

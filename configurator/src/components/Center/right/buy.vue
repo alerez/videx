@@ -2,12 +2,12 @@
   <div>
     <div class="buyBlock">
       <div class="buyBlockCost">
-        <p class="buyBlockCostOne">Разом до сплати:</p>
-        <p class="buyBlockCostTwo">
-          <span v-if="numberPostsFrame === '1'">{{mechanismBlockPrice + frame.horizontal[material][colorsFrame]["1"].price}}</span>
-          <span v-else-if="frameOrientation !== 'horizontal'">{{mechanismBlockPrice + frame.vertical[material][colorsFrame][numberPostsFrame].price}}</span>
-          <span v-else-if="frameOrientation !== 'vertical'">{{mechanismBlockPrice + frame.horizontal[material][colorsFrame][numberPostsFrame].price}}</span>
-          грн</p>
+        <p class="buyBlockCostOne">Разом:</p>
+        <div class="buyBlockCostTwo" style="display:flex">
+          <p v-if="numberPostsFrame === '1'">{{mechanismBlockPrice + frame.horizontal[material][colorsFrame]["1"].price}} грн</p>
+          <p v-else-if="frameOrientation !== 'horizontal'">{{mechanismBlockPrice + frame.vertical[material][colorsFrame][numberPostsFrame].price}} грн</p>
+          <p v-else-if="frameOrientation !== 'vertical'">{{mechanismBlockPrice + frame.horizontal[material][colorsFrame][numberPostsFrame].price}} грн</p>
+        </div>
       </div>
       <div class="buyBlockButtom">
         <button>Купити</button>
@@ -72,6 +72,7 @@ export default {
   margin: 11px 11px 11px 0;
 }
 .buyBlockCostTwo{
+  width:119px;
   user-select: none;
   font-family: Ubuntu, sans-serif;
   font-style: normal;
@@ -104,7 +105,7 @@ export default {
 
   color: #FFFFFF;
 
-  margin-left: 25px;
+  margin-left: 45px;
   cursor:pointer;
   transition: 0.5s;
   border:3px solid #FF7A00;

@@ -75,9 +75,9 @@ export default {
   width: 321px;
   height: 229px;
 
-  border-bottom: 7px solid rgb(255, 255, 255);
+  border-bottom: 10px solid rgb(255, 255, 255);
   border-left: 13px solid rgb(255, 255, 255);
-  border-top:5px solid rgb(255, 255, 255);
+  border-top:10px solid rgb(255, 255, 255);
   border-right:10px solid rgb(255, 255, 255);
 
   background:rgb(255, 255, 255);

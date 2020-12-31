@@ -47,5 +47,6 @@ body{
   justify-items:center;
   justify-self:center;
   margin: 0 auto;
+  background:#F9F9F9;
 }
 </style>

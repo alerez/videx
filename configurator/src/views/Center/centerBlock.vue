@@ -183,6 +183,7 @@ export default {
     align-content:center;
     align-items:center;
     margin: 0 auto;
+    margin-top:-20px;
   }
   .left-center{
     display:flex;
@@ -231,7 +232,7 @@ export default {
     border-bottom:none;
   }
   .mobileChooseMechanism > div{
-    margin-top:-20px;
+    margin-top:-40px;
   }
   .selectFrameCenterBlock{
     margin-top:-50px
@@ -249,7 +250,7 @@ export default {
     border-bottom:none;
   }
   .mobileChooseMechanism2 > div{
-    margin-top:-20px;
+    margin-top:-40px;
   }
   .mobileChooseMechanism3{
     width:100%;
@@ -297,6 +298,7 @@ export default {
     height:36px;
     display:block;
     position:relative;
+    margin-top:15px;
   }
   .mobileChooseMechanism_closed2{
     width:36px;
@@ -313,6 +315,7 @@ export default {
     height:36px;
     display:block;
     position:relative;
+    margin-top:15px;
   }
   .mobileChooseMechanism_closed3{
     width:36px;
@@ -370,7 +373,7 @@ export default {
 }
 @media screen and (max-width: 380px){
   .left-center{
-    margin-top:-40px;
+    margin-top:0;
     margin-bottom:10px;
   }
 
