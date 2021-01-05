@@ -181,7 +181,6 @@ export default {
   flex-direction:column;
   flex-wrap:wrap;
   margin-top: -3px;
-  height: 70px;
 }
 .attributesMechanism > p{
   margin-top: 5px;
