@@ -2605,22 +2605,22 @@ export default {
   }
   .frameBlockFrameHorizontal4{
     display:block;
-    width:728.4px;
-    height:213px;
+    width:650px;
+    height:188px;
   }
   .frameBlockFrameVertical4{
     display:block;
-    width:213px;
+    width:186px;
     height:630px;
   }
   .frameBlockFrameHorizontal5{
     display:block;
-    width:764px;
-    height:180px;
+    width:650px;
+    height:155px;
   }
   .frameBlockFrameVertical5{
     display:block;
-    width:180px;
+    width:152px;
     height:630px;
   }
 
@@ -2916,12 +2916,12 @@ export default {
 
 
   .configuratorBlockMechanism14{
-    margin-left:39px;
-    margin-top:-174px
+    margin-left:35px;
+    margin-top:-154px
   }
   .configuratorBlockMechanism14 > img{
-    width:128px;
-    height:128px;
+    width:114px;
+    height:114px;
     border-radius:3px;
   }
   .configuratorBlockMechanism14Hover{
@@ -2935,12 +2935,12 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism24{
-    margin-left:113px;
-    margin-top:-174px
+    margin-left:93px;
+    margin-top:-154px
   }
   .configuratorBlockMechanism24 > img{
-    width:128px;
-    height:128px;
+    width:114px;
+    height:114px;
     border-radius:3px;
   }
   .configuratorBlockMechanism24Hover{
@@ -2954,12 +2954,12 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism34{
-    margin-left:111px;
-    margin-top:-174px
+    margin-left:93px;
+    margin-top:-154px;
   }
   .configuratorBlockMechanism34 > img{
-    width:128px;
-    height:128px;
+    width:114px;
+    height:114px;
     border-radius:3px;
   }
   .configuratorBlockMechanism34Hover{
@@ -2973,12 +2973,12 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism44{
-    margin-left:112px;
-    margin-top:-174px
+    margin-left:93px;
+    margin-top:-154px;
   }
   .configuratorBlockMechanism44 > img{
-    width:128px;
-    height:128px;
+    width:114px;
+    height:114px;
     border-radius:3px;
   }
   .configuratorBlockMechanism44Hover{
@@ -3000,14 +3000,14 @@ export default {
 
 
   .configuratorBlockMechanism144{
-    width:128.5px;
-    height:128.5px;
-    margin-left:39px;
-    margin-top:-297.5px
+    width:110px;
+    height:110.5px;
+    margin-left:35px;
+    margin-top:-255.5px
   }
   .configuratorBlockMechanism144 > img{
-    width:128.5px;
-    height:128.5px;
+    width:110px;
+    height:110.5px;
     border-radius:3px;
   }
   .configuratorBlockMechanism144Hover{
@@ -3021,14 +3021,14 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism244{
-    width:128.5px;
-    height:128.5px;
-    margin-left:39px;
-    margin-top:-298px
+    width:110px;
+    height:110.5px;
+    margin-left:35px;
+    margin-top:-257px
   }
   .configuratorBlockMechanism244 > img{
-    width:128.5px;
-    height:128.5px;
+    width:110px;
+    height:110.5px;
     border-radius:3px;
   }
   .configuratorBlockMechanism244Hover{
@@ -3042,14 +3042,14 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism344{
-    width:128.5px;
-    height:128.5px;
-    margin-left:39px;
-    margin-top:-300px
+    width:110px;
+    height:110.5px;
+    margin-left:35px;
+    margin-top:-258px
   }
   .configuratorBlockMechanism344 > img{
-    width:128.5px;
-    height:128.5px;
+    width:110px;
+    height:110.5px;
     border-radius:3px;
   }
   .configuratorBlockMechanism344Hover{
@@ -3063,14 +3063,14 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism444{
-    width:128.5px;
-    height:128.5px;
-    margin-left:39px;
-    margin-top:-180.5px
+    width:110px;
+    height:110.5px;
+    margin-left:35px;
+    margin-top:-157px
   }
   .configuratorBlockMechanism444 > img{
-    width:128.5px;
-    height:128.5px;
+    width:110px;
+    height:110.5px;
     border-radius:3px;
   }
   .configuratorBlockMechanism444Hover{
@@ -3091,12 +3091,12 @@ export default {
 
 
   .configuratorBlockMechanism15{
-    margin-left:34px;
-    margin-top:-147px;
+    margin-left:29px;
+    margin-top:-126px;
   }
   .configuratorBlockMechanism15 > img{
-    width:108.5px;
-    height:108.5px;
+    width:92px;
+    height:92px;
     border-radius:3px;
   }
   .configuratorBlockMechanism15Hover{
@@ -3110,12 +3110,12 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism25{
-    margin-left:96px;
-    margin-top:-147px;
+    margin-left:74px;
+    margin-top:-126px;
   }
   .configuratorBlockMechanism25 > img{
-    width:108.5px;
-    height:108.5px;
+    width:92px;
+    height:92px;
     border-radius:3px;
   }
   .configuratorBlockMechanism25Hover{
@@ -3129,12 +3129,12 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism35{
-    margin-left:95.5px;
-    margin-top:-147px;
+    margin-left:74px;
+    margin-top:-126px;
   }
   .configuratorBlockMechanism35 > img{
-    width:108.5px;
-    height:108.5px;
+    width:92px;
+    height:92px;
     border-radius:3px;
   }
   .configuratorBlockMechanism35Hover{
@@ -3148,12 +3148,12 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism45{
-    margin-left:96px;
-    margin-top:-147px;
+    margin-left:74px;
+    margin-top:-126px;
   }
   .configuratorBlockMechanism45 > img{
-    width:108.5px;
-    height:108.5px;
+    width:92px;
+    height:92px;
     border-radius:3px;
   }
   .configuratorBlockMechanism45Hover{
@@ -3167,12 +3167,12 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism55{
-    margin-left:95px;
-    margin-top:-147px;
+    margin-left:74px;
+    margin-top:-126px;
   }
   .configuratorBlockMechanism55 > img{
-    width:108.5px;
-    height:108.5px;
+    width:92px;
+    height:92px;
     border-radius:3px;
   }
   .configuratorBlockMechanism55Hover{
@@ -3192,14 +3192,14 @@ export default {
 
 
   .configuratorBlockMechanism155{
-    width:109px;
-    height:109px;
-    margin-left:33px;
-    margin-top:-252.5px;
+    width:91px;
+    height:91px;
+    margin-left:28px;
+    margin-top:-209px;
   }
   .configuratorBlockMechanism155 > img{
-    width:109px;
-    height:109px;
+    width:91px;
+    height:91px;
     border-radius:3px;
   }
   .configuratorBlockMechanism155Hover{
@@ -3213,14 +3213,14 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism255{
-    width:109px;
-    height:109px;
-    margin-left:33px;
-    margin-top:-254px;
+    width:91px;
+    height:91px;
+    margin-left:28px;
+    margin-top:-211px;
   }
   .configuratorBlockMechanism255 > img{
-    width:109px;
-    height:109px;
+    width:91px;
+    height:91px;
     border-radius:3px;
   }
   .configuratorBlockMechanism255Hover{
@@ -3234,14 +3234,14 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism355{
-    width:109px;
-    height:109px;
-    margin-left:33px;
-    margin-top:-255px;
+    width:91px;
+    height:91px;
+    margin-left:28px;
+    margin-top:-212px;
   }
   .configuratorBlockMechanism355 > img{
-    width:109px;
-    height:109px;
+    width:91px;
+    height:91px;
     border-radius:3px;
   }
   .configuratorBlockMechanism355Hover{
@@ -3255,14 +3255,14 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism455{
-    width:109px;
-    height:109px;
-    margin-left:33px;
-    margin-top:-254px;
+    width:91px;
+    height:91px;
+    margin-left:28px;
+    margin-top:-210px;
   }
   .configuratorBlockMechanism455 > img{
-    width:109px;
-    height:109px;
+    width:91px;
+    height:91px;
     border-radius:3px;
   }
   .configuratorBlockMechanism455Hover{
@@ -3276,14 +3276,14 @@ export default {
     filter: drop-shadow(2px 2px 5px rgba(255, 122, 0, 1));
   }
   .configuratorBlockMechanism555{
-    width:109px;
-    height:109px;
-    margin-left:33px;
-    margin-top:-151px;
+    width:91px;
+    height:91px;
+    margin-left:28px;
+    margin-top:-125px;
   }
   .configuratorBlockMechanism555 > img{
-    width:109px;
-    height:109px;
+    width:91px;
+    height:91px;
     border-radius:3px;
   }
   .configuratorBlockMechanism555Hover{
@@ -3308,7 +3308,638 @@ export default {
   }
 }
 
-@media screen and (max-width:648px){
+@media screen and (max-width:680px){
+  .logoBinera{
+    margin-top:87vw;
+  }
+  .logoBinera > img{
+    width:130px;
+    margin-left:65vw;
+  }
+
+
+  .poster{
+    position:relative;
+  }
+  .closed{
+    display:none;
+  }
+  .poster:hover .closed{
+    display:flex;
+    align-items: center;
+    z-index:100;
+    cursor:pointer;
+    margin: 0 auto;
+    filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.15));
+    transition:0.6s;
+  }
+  .closed > img{
+    display:flex;
+    margin:0 auto;
+    margin-top:-102.5%;
+    padding-left:0.5%;
+    width:40px;
+    height:40px;
+  }
+
+
+  .frameBlockFrameHorizontal1{
+    display:block;
+    width:335px;
+    height:335px;
+  }
+  .frameBlockFrameHorizontal2{
+    display:block;
+    width:510px;
+    height:280px;
+  }
+  .frameBlockFrameVertical2{
+    display:block;
+    width:289px;
+    height:510px;
+  }
+  .frameBlockFrameHorizontal3{
+    display:block;
+    width:510px;
+    height:193px;
+  }
+  .frameBlockFrameVertical3{
+    display:block;
+    width:119px;
+    height:510px;
+  }
+  .frameBlockFrameHorizontal4{
+    display:block;
+    width:510px;
+    height:150px;
+  }
+  .frameBlockFrameVertical4{
+    display:block;
+    width:101px;
+    height:510px;
+  }
+  .frameBlockFrameHorizontal5{
+    display:block;
+    width:510px;
+    height:83px;
+  }
+  .frameBlockFrameVertical5{
+    display:block;
+    width:83px;
+    height:510px;
+  }
+
+
+
+  .configuratorBlockMechanism11 > img{
+    width:197px;
+    height:199px;
+    border-radius:3px;
+  }
+
+  .configuratorBlockMechanism11{
+    width:200px;
+    height:200px;
+    margin-left:62px;
+    margin-top:-273px;
+    border-radius:3px;
+  }
+  .configuratorBlockMechanism11Hover{
+    width:146px;
+    height:149px;
+    margin-left:-5px;
+    margin-top:-6px;
+    border:#ff7a00 solid 4.5px;
+    border-radius:3px;
+    filter:none;
+  }
+
+
+
+  /*
+    Frame 2 horizontal
+  */
+
+  .configuratorBlockMechanism12{
+    width:114px;
+    height:114px;
+    margin-left:53px;
+    margin-top:-228px
+  }
+  .configuratorBlockMechanism22{
+    width:114px;
+    height:114px;
+    margin-left:113px;
+    margin-top:-228px
+  }
+
+  .configuratorBlockMechanism12 > img{
+    width:166px;
+    height:166px;
+  }
+  .configuratorBlockMechanism22 > img{
+    width:166px;
+    height:166px;
+  }
+  .configuratorBlockMechanism12Hover{
+    width:111px;
+    height:114.5px;
+    border:3px solid #ff7a00;
+    margin-left:-2px;
+    margin-top:-122px;
+    filter:none;
+    border-radius:3px;
+  }
+  .configuratorBlockMechanism22Hover{
+    width:111px;
+    height:114.5px;
+    border:3px solid #ff7a00;
+    margin-left:0;
+    margin-top:-122px;
+    margin-left:-2px;
+    filter:none;
+    border-radius:3px;
+  }
+
+  /*
+  Frame 2 vertical
+*/
+
+  .configuratorBlockMechanism122{
+    width:114px;
+    height:114px;
+    margin-left:35px;
+    margin-top:-263px
+  }
+  .configuratorBlockMechanism222{
+    width:114px;
+    height:114px;
+    margin-left:35px;
+    margin-top:-155px
+  }
+  .configuratorBlockMechanism122 > img{
+    width:114px;
+    height:114px;
+  }
+  .configuratorBlockMechanism222 > img{
+    width:114px;
+    height:114px;
+  }
+  .configuratorBlockMechanism122Hover{
+    width:145px;
+    height:145px;
+    border:3px solid #ff7a00;
+    margin-top:-2px;
+    margin-left:-2px;
+    filter:none;
+  }
+  .configuratorBlockMechanism222Hover{
+    width:145px;
+    height:145px;
+    border:3px solid #ff7a00;
+    margin-top:-1.5px;
+    margin-left:-2px;
+    filter:none;
+  }
+
+
+  /*
+    Frame 3
+  */
+
+  .configuratorBlockMechanism13{
+    width:114px;
+    height:114px;
+    margin-top:-157px;
+    margin-left:37px;
+  }
+  .configuratorBlockMechanism23{
+    width:114px;
+    height:114px;
+    margin-top:-157px;
+    margin-left:43px;
+  }
+  .configuratorBlockMechanism33{
+    width:114px;
+    height:114px;
+    margin-top:-157px;
+    margin-left:41px;
+  }
+  .configuratorBlockMechanism13 > img{
+    width:114px;
+    height:114px;
+  }
+  .configuratorBlockMechanism23 > img{
+    width:114px;
+    height:114px;
+  }
+  .configuratorBlockMechanism33 > img{
+    width:114px;
+    height:114px;
+  }
+  .configuratorBlockMechanism13Hover{
+    width:72px;
+    height:72px;
+    margin-top:-79px;
+    border-radius:3px;
+    border:#ff7a00 solid 2px;
+    filter:none;
+    margin-left:-1px;
+  }
+  .configuratorBlockMechanism23Hover{
+    width:72px;
+    height:72px;
+    margin-top:-79px;
+    border-radius:3px;
+    border:#ff7a00 solid 2px;
+    filter:none;
+    margin-left:-1.5px;
+  }
+  .configuratorBlockMechanism33Hover{
+    width:72px;
+    height:72px;
+    margin-top:-79px;
+    border-radius:3px;
+    border:#ff7a00 solid 2px;
+    filter:none;
+    margin-left:-1px;
+  }
+
+
+
+
+
+
+
+  .configuratorBlockMechanism133{
+    width:71.5px;
+    height:72px;
+    margin-left:22px;
+    margin-top:-166px
+  }
+  .configuratorBlockMechanism133 > img{
+    width:71.5px;
+    height:72px;
+    border-radius:3px;
+  }
+  .configuratorBlockMechanism233{
+    width:71.5px;
+    height:72px;
+    margin-left:22px;
+    margin-top:-167px
+  }
+  .configuratorBlockMechanism233 > img{
+    width:71.5px;
+    height:72px;
+    border-radius:3px;
+  }
+  .configuratorBlockMechanism333{
+    width:71.5px;
+    height:72px;
+    margin-left:22px;
+    margin-top:-99.5px
+  }
+  .configuratorBlockMechanism333 > img{
+    width:71.5px;
+    height:72px;
+    border-radius:3px;
+  }
+
+
+
+
+
+
+
+
+
+  .configuratorBlockMechanism14{
+    width:88px;
+    height:88px;
+    margin-top:-122px;
+    margin-left:28px;
+  }
+  .configuratorBlockMechanism14 > img{
+    width:88px;
+    height:88px;
+  }
+  .configuratorBlockMechanism24{
+    width:88px;
+    height:88px;
+    margin-top:-122px;
+    margin-left:32px;
+  }
+  .configuratorBlockMechanism24 > img{
+    width:88px;
+    height:88px;
+  }
+  .configuratorBlockMechanism34{
+    width:88px;
+    height:88px;
+    margin-top:-122px;
+    margin-left:32px;
+  }
+  .configuratorBlockMechanism34 > img{
+    width:88px;
+    height:88px;
+  }
+  .configuratorBlockMechanism44{
+    width:88px;
+    height:88px;
+    margin-top:-122px;
+    margin-left:32px;
+  }
+  .configuratorBlockMechanism44 > img{
+    width:88px;
+    height:88px;
+  }
+  .configuratorBlockMechanism14Hover{
+    width:58px;
+    height:58px;
+    margin-top:-66px;
+    margin-left:0;
+    filter:none;
+    border-radius:3px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism24Hover{
+    width:58px;
+    height:58px;
+    margin-top:-66px;
+    margin-left:0;
+    filter:none;
+    border-radius:3px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism34Hover{
+    width:58px;
+    height:58px;
+    margin-top:-66px;
+    margin-left:0;
+    filter:none;
+    border-radius:3px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism44Hover{
+    width:58px;
+    height:58px;
+    margin-top:-66px;
+    margin-left:0;
+    filter:none;
+    border-radius:3px;
+    border:2px solid #ff7a00;
+  }
+
+
+
+
+
+
+
+  .configuratorBlockMechanism144{
+    width:59.5px;
+    height:59px;
+    margin-top:-136px;
+    margin-left:19px;
+  }
+  .configuratorBlockMechanism144 > img{
+    width:59.5px;
+    height:59px;
+  }
+  .configuratorBlockMechanism244{
+    width:59.5px;
+    height:59px;
+    margin-top:-137px;
+    margin-left:19px;
+  }
+  .configuratorBlockMechanism244 > img{
+    width:59.5px;
+    height:59px;
+  }
+  .configuratorBlockMechanism344{
+    width:59.5px;
+    height:59px;
+    margin-top:-137.5px;
+    margin-left:19px;
+  }
+  .configuratorBlockMechanism344 > img{
+    width:59.5px;
+    height:59px;
+  }
+  .configuratorBlockMechanism444{
+    width:59.5px;
+    height:59px;
+    margin-top:-83px;
+    margin-left:19px;
+  }
+  .configuratorBlockMechanism444 > img{
+    width:59.5px;
+    height:59px;
+  }
+  .configuratorBlockMechanism144Hover{
+    width:83px;
+    height:84px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism244Hover{
+    width:83px;
+    height:84px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism344Hover{
+    width:83px;
+    height:84px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism444Hover{
+    width:83px;
+    height:84px;
+    margin-top:-2px;
+  }
+
+
+
+
+  .configuratorBlockMechanism15{
+    width:50px;
+    height:50px;
+    margin-top:-68px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism15 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism25{
+    width:50px;
+    height:50px;
+    margin-top:-68px;
+    margin-left:17px;
+  }
+  .configuratorBlockMechanism25 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism35{
+    width:50px;
+    height:50px;
+    margin-top:-68px;
+    margin-left:17px;
+  }
+  .configuratorBlockMechanism35 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism45{
+    width:50px;
+    height:50px;
+    margin-top:-68px;
+    margin-left:17px;
+  }
+  .configuratorBlockMechanism45 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism55{
+    width:50px;
+    height:50px;
+    margin-top:-68px;
+    margin-left:16px;
+  }
+  .configuratorBlockMechanism55 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism15Hover{
+    width:49px;
+    height:49px;
+    margin-top:-55px;
+    margin-left:-1px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism25Hover{
+    width:49px;
+    height:49px;
+    margin-top:-55px;
+    margin-left:-1px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism35Hover{
+    width:49px;
+    height:49px;
+    margin-top:-55px;
+    margin-left:-2px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism45Hover{
+    width:49px;
+    height:49px;
+    margin-top:-55px;
+    margin-left:-2px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism55Hover{
+    width:49px;
+    height:49px;
+    margin-top:-55px;
+    margin-left:-1.5px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+
+
+
+
+
+
+
+  .configuratorBlockMechanism155{
+    width:50px;
+    height:50px;
+    margin-top:-115px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism155 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism255{
+    width:50px;
+    height:50px;
+    margin-top:-116px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism255 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism355{
+    width:50px;
+    height:50px;
+    margin-top:-117px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism355 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism455{
+    width:50px;
+    height:50px;
+    margin-top:-115px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism455 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism555{
+    width:50px;
+    height:50px;
+    margin-top:-69px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism555 > img{
+    width:50px;
+    height:50px;
+  }
+  .configuratorBlockMechanism155Hover{
+    width:61px;
+    height:61px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism255Hover{
+    width:61px;
+    height:61px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism355Hover{
+    width:61px;
+    height:61px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism455Hover{
+    width:61px;
+    height:61px;
+    margin-top:-2px;
+  }
+  .configuratorBlockMechanism555Hover{
+    width:61px;
+    height:61px;
+    margin-top:-2px;
+  }
+}
+
+@media screen and (max-width: 548px){
   .logoBinera{
     margin-top:87vw;
   }
@@ -3360,7 +3991,7 @@ export default {
   }
   .frameBlockFrameHorizontal3{
     display:block;
-    width:314px;
+    width:341px;
     height:120px;
   }
   .frameBlockFrameVertical3{
@@ -3370,7 +4001,7 @@ export default {
   }
   .frameBlockFrameHorizontal4{
     display:block;
-    width:337px;
+    width:341px;
     height:99px;
   }
   .frameBlockFrameVertical4{
@@ -3380,7 +4011,7 @@ export default {
   }
   .frameBlockFrameHorizontal5{
     display:block;
-    width:350px;
+    width:341px;
     height:83px;
   }
   .frameBlockFrameVertical5{
@@ -3937,7 +4568,6 @@ export default {
     height:61px;
     margin-top:-2px;
   }
-
 }
 
 @media screen and (max-width:380px){
