@@ -4629,6 +4629,7 @@ export default {
     display:block;
     width:99px;
     height:258px;
+    margin-top:-20px;
   }
   .frameBlockFrameHorizontal4{
     display:block;
@@ -4650,6 +4651,7 @@ export default {
     display:block;
     width:63px;
     height:266px;
+    margin-top:-20px;
   }
 
 

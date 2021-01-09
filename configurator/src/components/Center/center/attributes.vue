@@ -253,7 +253,7 @@ export default {
 
   color: #5B6770;
 
-  flex-basis: 45%;
+  flex-basis: 50%;
 
   margin-left:18px;
 

@@ -932,7 +932,7 @@ $white: rgb(255, 255, 255);
   ////////////////////chooseMechanism////////////////////////
   .chooseMechanismBlockTwo{
     @include size(100vw,220px);
-    margin-top:-30px;
+    margin-top:10px;
   }
   .chooseMechanismBlockTwoRam{
     @include size(100vw, 220px);
@@ -1173,6 +1173,13 @@ $white: rgb(255, 255, 255);
   ////////////////////selectFrame////////////////////////////
   .selectFrameBlock{
     border:none;
+    display: contents;
+  }
+  .selectFrameBlock > div{
+    margin-top: 5px;
+  }
+  .selectFrameText{
+    margin-top: 6px;
   }
   ///////////////////////////////////////////////////////////
 
@@ -1190,6 +1197,7 @@ $white: rgb(255, 255, 255);
   .chooseMechanismBlockTwoRam{
     @include size(100vw, 200px);
     border:none;
+    margin-top: -20px;
   }
   ///////////////////////////////////////////////////////////
 
