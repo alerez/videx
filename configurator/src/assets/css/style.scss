@@ -1181,6 +1181,9 @@ $white: rgb(255, 255, 255);
   .selectFrameText{
     margin-top: 6px;
   }
+  .selectChooseFrame{
+    width: 30vw;
+  }
   ///////////////////////////////////////////////////////////
 
 
@@ -1245,6 +1248,7 @@ $white: rgb(255, 255, 255);
   ////////////////////////upBag/////////////////////////////
   .upB{
     @include size(264px,40px);
+    margin-top: 15px;
   }
   .upMobileUpBag{
     margin-top:-20px;
