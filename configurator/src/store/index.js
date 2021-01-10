@@ -65,32 +65,6 @@ const store = () => new Vuex.Store({
       }
     ],
 
-    pdf: jsonToQuery({
-      "templateName": "2H.ejs",
-      "data": {
-        "totalPrice": state => state.mechanismBlockPrice,
-        "background":  state => state.background[0].image.url,
-        "frame": {
-          "fileURL":   state => state.frame.horizontal[ state => state.material][ state => state.colorsFrame][ state => state.numberPostsFrame].fileURL,
-          "productCode":  state => state.frame.horizontal[ state => state.material][ state => state.colorsFrame][ state => state.numberPostsFrame].productCode,
-          "article":  state => state.frame.horizontal[ state => state.material][ state => state.colorsFrame][ state => state.numberPostsFrame].article,
-          "price":  state => state.frame.horizontal[ state => state.material][ state => state.colorsFrame][ state => state.numberPostsFrame].price
-        },
-        "firstItem": {
-          "fileURL":  state => state.mechanismBlockOne.fileURL,
-          "productCode":  state => state.mechanismBlockOne.productCode,
-          "article":  state => state.mechanismBlockOne.article,
-          "price":  state => state.mechanismBlockOne.price,
-        },
-        "secondItem": {
-          "fileURL":  state => state.mechanismBlockTwo.fileURL,
-          "productCode":  state => state.mechanismBlockTwo.productCode,
-          "article":  state => state.mechanismBlockTwo.article,
-          "price":  state => state.mechanismBlockTwo.price,
-        }
-      }
-    }),
-
     activityBackground: 'siWI9thJe',
 
     imagesUP: [
@@ -882,6 +856,7 @@ const store = () => new Vuex.Store({
           state.mechanismBlockFive.price
     },
     attributeNum: state => {
+      console.log(state, state.frame.horizontal[state.material]);
       return state.attributeNum =
       state.mechanismBlockOne.num +
       state.mechanismBlockTwo.num +
@@ -930,8 +905,45 @@ const store = () => new Vuex.Store({
     activityBackground: state => {
       return state.activityBackground
     },
-    pdf: state => {
-      return state.pdf
+
+    pdf: (state) => {
+        console.log( {state});
+        console.log(1);
+        let horizontalElement = state.frame.horizontal[state.material] || {};
+        console.log(2);
+        let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
+        console.log(3);
+        let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+        console.log(4);
+        let fileURL = horizontalElementElementElement.fileURL || '';
+        console.log(5);
+        let obj = {
+            "templateName": "2H.ejs",
+            "data": {
+                "totalPrice":  state.mechanismBlockPrice,
+                "background":  state.background[0].image.url,
+                "frame": {
+                    "fileURL":   fileURL.fileURL ,
+                    "productCode":  horizontalElementElementElement.productCode,
+                    "article":  horizontalElementElementElement.article ,
+                    "price":  horizontalElementElementElement.price
+                },
+                "firstItem": {
+                    "fileURL":  state.mechanismBlockOne.fileURL,
+                    "productCode":  state.mechanismBlockOne.productCode,
+                    "article":  state.mechanismBlockOne.article,
+                    "price":  state.mechanismBlockOne.price,
+                },
+                "secondItem": {
+                    "fileURL":  state.mechanismBlockTwo.fileURL,
+                    "productCode":  state.mechanismBlockTwo.productCode,
+                    "article":  state.mechanismBlockTwo.article,
+                    "price":  state.mechanismBlockTwo.price,
+                }
+            }
+        };
+        console.log(obj);
+        return jsonToQuery(obj)
     }
   },
 })

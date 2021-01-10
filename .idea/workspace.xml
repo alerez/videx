@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="08f21971-1991-4c1b-bb88-30dbe0d612c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/downloadProject.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/downloadProject.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/store/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +67,7 @@
       <workItem from="1609240119047" duration="5462000" />
       <workItem from="1609330507752" duration="9061000" />
       <workItem from="1609852760782" duration="15207000" />
-      <workItem from="1610048943724" duration="24998000" />
+      <workItem from="1610048943724" duration="27794000" />
     </task>
     <servers />
   </component>

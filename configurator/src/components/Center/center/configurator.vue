@@ -4,7 +4,7 @@
       <img class="configuratorBlock" :src="background[0].image.url" v-if="background[0].image.url" style="transition:1s">
       <div class="configuratorBlock" v-bind:style="background[0].colors" v-if="background[0].colors" style="transition:1s"></div>
     </div>
-    <div class="frameBlock">
+    <div class="frameBlock" >
       <div v-on:click="mechanismBlock('mechanismBlockNone')" v-if="numberPostsFrame === '1'">
         <img class="frameBlockFrameHorizontal1" v-bind:src="frame['horizontal'][material][colorsFrame][numberPostsFrame].fileURL">
       </div>
@@ -490,6 +490,9 @@ export default {
             'background'
         ]
     ),
+  },
+  mounted(){
+    console.log('pochemu' , this.frame[this.frameOrientation][this.material]);
   },
   methods: {
     ...mapActions(

@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex';
+import { mapGetters } from 'vuex';
 export default {
   data() {
     return {
@@ -27,14 +27,8 @@ export default {
       downloadGreen: require('../../../assets/img/downloadGreen.png'),
     }
   },
-  methods: {
-    ...mapActions(['POST_PDF']),
-    emitDown: function emitDown(){
-      this.POST_PDF();
-    }
-  },
   computed: {
-    ...mapGetters(['pdf'])
+    ...mapGetters(['pdf']),
   }
 
 };
