@@ -12,12 +12,12 @@ async function renderHtml(templateName, data) {
 async function makePdf(html) {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    const path = `src/files/${ shortid.generate() }.pdf`;
+    const path = `src/files/${shortid.generate()}.pdf`;
 
     await page.setContent(html);
     await page.pdf({
         path,
-        format: 'A4'
+        format: 'A4',
     });
     await browser.close();
 

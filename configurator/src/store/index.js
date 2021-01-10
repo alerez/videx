@@ -3,7 +3,11 @@ import Vuex from 'vuex'
 import axios from 'axios'
 
 Vue.use(Vuex)
-const url = 'http://localhost:5555';
+const url = 'https://e14fcd231da6.ngrok.io';
+// const queryString = require('query-string');
+// const request = require('request');
+const jsonToQuery = require('json-to-http-query-string');
+
 
 const getFrames = {
   method: 'get',
@@ -40,8 +44,16 @@ const getBackgrounds = {
   headers: {
     'Content-Type': 'application/json'
   },
-  data : JSON.stringify({"type":"bad"})
+  data: JSON.stringify({"type":"bad"})
 };
+
+const postPdf = {
+  method: 'get',
+  url: "http://localhost:5555/pdf?",
+  headers: {
+    'Content-Type': 'application/json'
+  },
+}
 
 const store = () => new Vuex.Store({
   state: {
@@ -52,6 +64,32 @@ const store = () => new Vuex.Store({
         colors: '',
       }
     ],
+
+    pdf: jsonToQuery({
+      "templateName": "2H.ejs",
+      "data":{
+        "totalPrice": 34333,
+        "background": "http://localhost:5555/images/backgrounds/8.jpg",
+        "frame": {
+          "fileURL": "http://localhost:5555/images/frames/2H_White.png",
+          "productCode": 14111,
+          "article": "VF-TEST1",
+          "price": 99
+        },
+        "firstItem": {
+          "fileURL": "http://localhost:5555/images/mechanisms/1.jpg",
+          "productCode": 11542,
+          "article": "VF-TEST2",
+          "price": 99
+        },
+        "secondItem": {
+          "fileURL": "http://localhost:5555/images/mechanisms/1.jpg",
+          "productCode": 13213,
+          "article": "VF-TEST3",
+          "price": 99
+        }
+      }
+    }),
 
     activityBackground: 'siWI9thJe',
 
@@ -449,6 +487,9 @@ const store = () => new Vuex.Store({
           .catch(function (error) {
             console.log(error);
           });
+    },
+    POST_PDF: async () => {
+      await jsonToQuery(postPdf)
     },
 
 
@@ -888,6 +929,9 @@ const store = () => new Vuex.Store({
     },
     activityBackground: state => {
       return state.activityBackground
+    },
+    pdf: state => {
+      return state.pdf
     }
   },
 })

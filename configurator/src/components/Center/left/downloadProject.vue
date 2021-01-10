@@ -1,18 +1,21 @@
 <template>
   <div>
     <p class="downloadProjectText">{{ downloadText.ProjectText }}</p>
-    <div class="downloadProjectBlock">
-      <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
-        <img v-bind:src="download" class="downloadProjectBlockImg">
-      </p>
-      <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
-        <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
-      </p>
-    </div>
+    <a :href="'https://e14fcd231da6.ngrok.io/pdf?' + pdf">
+      <div class="downloadProjectBlock">
+        <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
+          <img v-bind:src="download" class="downloadProjectBlockImg">
+        </p>
+        <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
+          <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
+        </p>
+      </div>
+    </a>
   </div>
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex';
 export default {
   data() {
     return {
@@ -23,6 +26,15 @@ export default {
       download: require('../../../assets/img/download.png'),
       downloadGreen: require('../../../assets/img/downloadGreen.png'),
     }
+  },
+  methods: {
+    ...mapActions(['POST_PDF']),
+    emitDown: function emitDown(){
+      this.POST_PDF();
+    }
+  },
+  computed: {
+    ...mapGetters(['pdf'])
   }
 
 };

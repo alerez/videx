@@ -440,12 +440,9 @@ const store = () => new Vuex.Store({
           });
     },
 
-    SET_BACKGROUNDS : async ({commit}) => {
+    SET_BACKGROUNDS : async () => {
       await axios(getBackgrounds)
           .then(response => response.data)
-          .then(res => {
-            commit('SET_BACKGROUND', res)
-          })
           .catch(function (error) {
             console.log(error);
           });

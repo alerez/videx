@@ -460,7 +460,7 @@ import {mapActions, mapGetters} from 'vuex';
 export default {
   data() {
     return {
-      close: 'http://localhost:5555/images/frameColors/close.jpg',
+      close: 'https://e14fcd231da6.ngrok.io/images/frameColors/close.jpg',
       urlImgBag: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
       active1: false,
       active2: false,
@@ -4670,10 +4670,10 @@ export default {
     border-radius:3px;
   }
   .configuratorBlockMechanism11Hover{
-    width:126px;
-    height:129px;
-    margin-left:-5px;
-    margin-top:-6px;
+    width:120px;
+    height:120px;
+    margin-left:-3px;
+    margin-top:-3px;
     border:#ff7a00 solid 4.5px;
     border-radius:3px;
     filter:none;
@@ -4707,20 +4707,19 @@ export default {
     height:85px;
   }
   .configuratorBlockMechanism12Hover{
-    width:85px;
-    height:85px;
+    width:82px;
+    height:82px;
     border:3px solid #ff7a00;
-    margin-left:-2px;
-    margin-top:-122px;
+    margin-left:-1px;
+    margin-top:-90px;
     filter:none;
     border-radius:3px;
   }
   .configuratorBlockMechanism22Hover{
-    width:85px;
-    height:85px;
+    width:82px;
+    height:82px;
     border:3px solid #ff7a00;
-    margin-left:0;
-    margin-top:-122px;
+    margin-top:-90px;
     margin-left:-2px;
     filter:none;
     border-radius:3px;
@@ -4751,16 +4750,16 @@ export default {
     height:87px;
   }
   .configuratorBlockMechanism122Hover{
-    width:87px;
-    height:87px;
+    width:85px;
+    height:85px;
     border:3px solid #ff7a00;
     margin-top:-2px;
     margin-left:-2px;
     filter:none;
   }
   .configuratorBlockMechanism222Hover{
-    width:87px;
-    height:87px;
+    width:85px;
+    height:85px;
     border:3px solid #ff7a00;
     margin-top:-1.5px;
     margin-left:-2px;
@@ -4803,9 +4802,9 @@ export default {
     height:57px;
   }
   .configuratorBlockMechanism13Hover{
-    width:57px;
-    height:57px;
-    margin-top:-79px;
+    width:56px;
+    height:56px;
+    margin-top:-63px;
     border-radius:3px;
     border:#ff7a00 solid 2px;
     filter:none;
@@ -4814,7 +4813,7 @@ export default {
   .configuratorBlockMechanism23Hover{
     width:57px;
     height:57px;
-    margin-top:-79px;
+    margin-top:-63px;
     border-radius:3px;
     border:#ff7a00 solid 2px;
     filter:none;
@@ -4823,7 +4822,7 @@ export default {
   .configuratorBlockMechanism33Hover{
     width:57px;
     height:57px;
-    margin-top:-79px;
+    margin-top:-63px;
     border-radius:3px;
     border:#ff7a00 solid 2px;
     filter:none;
@@ -4869,6 +4868,22 @@ export default {
     height:60px;
     border-radius:3px;
   }
+  .configuratorBlockMechanism133Hover{
+    width:57px;
+    height:57px;
+    filter: none;
+  }
+  .configuratorBlockMechanism233Hover{
+    width:57px;
+    height:57px;
+    filter: none;
+  }
+  .configuratorBlockMechanism333Hover{
+    width:57px;
+    height:57px;
+    filter: none;
+  }
+
 
 
 
@@ -4915,40 +4930,40 @@ export default {
     margin-left:14px;
   }
   .configuratorBlockMechanism44 > img{
-    width:43px;
+    width:43.5px;
     height:43px;
   }
   .configuratorBlockMechanism14Hover{
-    width:58px;
-    height:58px;
-    margin-top:-66px;
+    width:40px;
+    height:40px;
+    margin-top:-48px;
     margin-left:0;
     filter:none;
     border-radius:3px;
     border:2px solid #ff7a00;
   }
   .configuratorBlockMechanism24Hover{
-    width:58px;
-    height:58px;
-    margin-top:-66px;
+    width:40px;
+    height:40px;
+    margin-top:-48px;
     margin-left:0;
     filter:none;
     border-radius:3px;
     border:2px solid #ff7a00;
   }
   .configuratorBlockMechanism34Hover{
-    width:58px;
-    height:58px;
-    margin-top:-66px;
+    width:40px;
+    height:40px;
+    margin-top:-48px;
     margin-left:0;
     filter:none;
     border-radius:3px;
     border:2px solid #ff7a00;
   }
   .configuratorBlockMechanism44Hover{
-    width:58px;
-    height:58px;
-    margin-top:-66px;
+    width:40px;
+    height:40px;
+    margin-top:-48px;
     margin-left:0;
     filter:none;
     border-radius:3px;
@@ -5002,24 +5017,36 @@ export default {
     height:46px;
   }
   .configuratorBlockMechanism144Hover{
-    width:83px;
-    height:84px;
-    margin-top:-2px;
+    width:43px;
+    height:43px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 2px solid #FF7A00;
   }
   .configuratorBlockMechanism244Hover{
-    width:83px;
-    height:84px;
-    margin-top:-2px;
+    width:43px;
+    height:43px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 2px solid #FF7A00;
   }
   .configuratorBlockMechanism344Hover{
-    width:83px;
-    height:84px;
-    margin-top:-2px;
+    width:43px;
+    height:43px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 2px solid #FF7A00;
   }
   .configuratorBlockMechanism444Hover{
-    width:83px;
-    height:84px;
-    margin-top:-2px;
+    width:43px;
+    height:43px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 2px solid #FF7A00;
   }
 
 
@@ -5076,49 +5103,49 @@ export default {
     height:37px;
   }
   .configuratorBlockMechanism15Hover{
-    width:49px;
-    height:49px;
-    margin-top:-55px;
-    margin-left:-1px;
+    width:36px;
+    height:36px;
+    margin-top:-42px;
+    margin-left:0;
     filter:none;
     border-radius:1px;
-    border:2px solid #ff7a00;
+    border:1px solid #ff7a00;
   }
   .configuratorBlockMechanism25Hover{
-    width:49px;
-    height:49px;
-    margin-top:-55px;
-    margin-left:-1px;
+    width:36px;
+    height:36px;
+    margin-top:-42px;
+    margin-left:0;
     filter:none;
     border-radius:1px;
-    border:2px solid #ff7a00;
+    border:1px solid #ff7a00;
   }
   .configuratorBlockMechanism35Hover{
-    width:49px;
-    height:49px;
-    margin-top:-55px;
-    margin-left:-2px;
+    width:36px;
+    height:36px;
+    margin-top:-42px;
+    margin-left:0;
     filter:none;
     border-radius:1px;
-    border:2px solid #ff7a00;
+    border:1px solid #ff7a00;
   }
   .configuratorBlockMechanism45Hover{
-    width:49px;
-    height:49px;
-    margin-top:-55px;
-    margin-left:-2px;
+    width:36px;
+    height:36px;
+    margin-top:-42px;
+    margin-left:1px;
     filter:none;
     border-radius:1px;
-    border:2px solid #ff7a00;
+    border:1px solid #ff7a00;
   }
   .configuratorBlockMechanism55Hover{
-    width:49px;
-    height:49px;
-    margin-top:-55px;
-    margin-left:-1.5px;
+    width:36px;
+    height:36px;
+    margin-top:-42px;
+    margin-left:0;
     filter:none;
     border-radius:1px;
-    border:2px solid #ff7a00;
+    border:1px solid #ff7a00;
   }
 
 
@@ -5178,29 +5205,44 @@ export default {
     height:39px;
   }
   .configuratorBlockMechanism155Hover{
-    width:61px;
-    height:61px;
-    margin-top:-2px;
+    width:37px;
+    height:37px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 1px solid #FF7A00;
   }
   .configuratorBlockMechanism255Hover{
-    width:61px;
-    height:61px;
-    margin-top:-2px;
+    width:37px;
+    height:37px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 1px solid #FF7A00;
   }
   .configuratorBlockMechanism355Hover{
-    width:61px;
-    height:61px;
-    margin-top:-2px;
+    width:37px;
+    height:37px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 1px solid #FF7A00;
   }
   .configuratorBlockMechanism455Hover{
-    width:61px;
-    height:61px;
-    margin-top:-2px;
+    width:37px;
+    height:37px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 1px solid #FF7A00;
   }
   .configuratorBlockMechanism555Hover{
-    width:61px;
-    height:61px;
-    margin-top:-2px;
+    width:37px;
+    height:37px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 1px solid #FF7A00;
   }
 
 }
