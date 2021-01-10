@@ -67,26 +67,26 @@ const store = () => new Vuex.Store({
 
     pdf: jsonToQuery({
       "templateName": "2H.ejs",
-      "data":{
-        "totalPrice": 34333,
-        "background": "http://localhost:5555/images/backgrounds/8.jpg",
+      "data": {
+        "totalPrice": state => state.mechanismBlockPrice,
+        "background":  state => state.background[0].image.url,
         "frame": {
-          "fileURL": "http://localhost:5555/images/frames/2H_White.png",
-          "productCode": 14111,
-          "article": "VF-TEST1",
-          "price": 99
+          "fileURL":   state => state.frame.horizontal[ state => state.material][ state => state.colorsFrame][ state => state.numberPostsFrame].fileURL,
+          "productCode":  state => state.frame.horizontal[ state => state.material][ state => state.colorsFrame][ state => state.numberPostsFrame].productCode,
+          "article":  state => state.frame.horizontal[ state => state.material][ state => state.colorsFrame][ state => state.numberPostsFrame].article,
+          "price":  state => state.frame.horizontal[ state => state.material][ state => state.colorsFrame][ state => state.numberPostsFrame].price
         },
         "firstItem": {
-          "fileURL": "http://localhost:5555/images/mechanisms/1.jpg",
-          "productCode": 11542,
-          "article": "VF-TEST2",
-          "price": 99
+          "fileURL":  state => state.mechanismBlockOne.fileURL,
+          "productCode":  state => state.mechanismBlockOne.productCode,
+          "article":  state => state.mechanismBlockOne.article,
+          "price":  state => state.mechanismBlockOne.price,
         },
         "secondItem": {
-          "fileURL": "http://localhost:5555/images/mechanisms/1.jpg",
-          "productCode": 13213,
-          "article": "VF-TEST3",
-          "price": 99
+          "fileURL":  state => state.mechanismBlockTwo.fileURL,
+          "productCode":  state => state.mechanismBlockTwo.productCode,
+          "article":  state => state.mechanismBlockTwo.article,
+          "price":  state => state.mechanismBlockTwo.price,
         }
       }
     }),
