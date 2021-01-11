@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="08f21971-1991-4c1b-bb88-30dbe0d612c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/downloadProject.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/downloadProject.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/store/index.js" afterDir="false" />
@@ -67,7 +73,8 @@
       <workItem from="1609240119047" duration="5462000" />
       <workItem from="1609330507752" duration="9061000" />
       <workItem from="1609852760782" duration="15207000" />
-      <workItem from="1610048943724" duration="27794000" />
+      <workItem from="1610048943724" duration="28118000" />
+      <workItem from="1610353686962" duration="15379000" />
     </task>
     <servers />
   </component>

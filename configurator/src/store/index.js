@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 
 Vue.use(Vuex)
-const url = 'https://e14fcd231da6.ngrok.io';
+const url = 'https://b931494ad10e.ngrok.io';
 // const queryString = require('query-string');
 // const request = require('request');
 const jsonToQuery = require('json-to-http-query-string');
@@ -906,7 +906,7 @@ const store = () => new Vuex.Store({
       return state.activityBackground
     },
 
-    pdf: (state) => {
+    pdf1: (state) => {
         console.log( {state});
         console.log(1);
         let horizontalElement = state.frame.horizontal[state.material] || {};
@@ -918,12 +918,17 @@ const store = () => new Vuex.Store({
         let fileURL = horizontalElementElementElement.fileURL || '';
         console.log(5);
         let obj = {
-            "templateName": "2H.ejs",
+            "templateName": "1.ejs",
             "data": {
-                "totalPrice":  state.mechanismBlockPrice,
+                "totalPrice": state.mechanismBlockOne.price +
+                    state.mechanismBlockTwo.price +
+                    state.mechanismBlockThree.price +
+                    state.mechanismBlockFour.price +
+                    state.mechanismBlockFive.price +
+                    horizontalElementElementElement.price,
                 "background":  state.background[0].image.url,
                 "frame": {
-                    "fileURL":   fileURL.fileURL ,
+                    "fileURL":   fileURL ,
                     "productCode":  horizontalElementElementElement.productCode,
                     "article":  horizontalElementElementElement.article ,
                     "price":  horizontalElementElementElement.price
@@ -934,17 +939,435 @@ const store = () => new Vuex.Store({
                     "article":  state.mechanismBlockOne.article,
                     "price":  state.mechanismBlockOne.price,
                 },
-                "secondItem": {
-                    "fileURL":  state.mechanismBlockTwo.fileURL,
-                    "productCode":  state.mechanismBlockTwo.productCode,
-                    "article":  state.mechanismBlockTwo.article,
-                    "price":  state.mechanismBlockTwo.price,
-                }
             }
         };
         console.log(obj);
         return jsonToQuery(obj)
-    }
+    },
+    pdf2H: (state) => {
+      console.log( {state});
+      console.log(1);
+      let horizontalElement = state.frame.horizontal[state.material] || {};
+      console.log(2);
+      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
+      console.log(3);
+      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      console.log(4);
+      let fileURL = horizontalElementElementElement.fileURL || '';
+      console.log(5);
+      let obj = {
+        "templateName": "2H.ejs",
+        "data": {
+          "totalPrice": state.mechanismBlockOne.price +
+              state.mechanismBlockTwo.price +
+              state.mechanismBlockThree.price +
+              state.mechanismBlockFour.price +
+              state.mechanismBlockFive.price +
+              horizontalElementElementElement.price,
+          "background":  state.background[0].image.url,
+          "frame": {
+            "fileURL":   fileURL ,
+            "productCode":  horizontalElementElementElement.productCode,
+            "article":  horizontalElementElementElement.article ,
+            "price":  horizontalElementElementElement.price
+          },
+          "firstItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "secondItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+        }
+      };
+      console.log(obj);
+      return jsonToQuery(obj)
+    },
+    pdf2V: (state) => {
+      console.log( {state});
+      console.log(1);
+      let horizontalElement = state.frame.horizontal[state.material] || {};
+      console.log(2);
+      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
+      console.log(3);
+      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      console.log(4);
+      let fileURL = horizontalElementElementElement.fileURL || '';
+      console.log(5);
+      let obj = {
+        "templateName": "2V.ejs",
+        "data": {
+          "totalPrice": state.mechanismBlockOne.price +
+              state.mechanismBlockTwo.price +
+              state.mechanismBlockThree.price +
+              state.mechanismBlockFour.price +
+              state.mechanismBlockFive.price +
+              horizontalElementElementElement.price,
+          "background":  state.background[0].image.url,
+          "frame": {
+            "fileURL":   fileURL ,
+            "productCode":  horizontalElementElementElement.productCode,
+            "article":  horizontalElementElementElement.article ,
+            "price":  horizontalElementElementElement.price
+          },
+          "firstItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "secondItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+        }
+      };
+      console.log(obj);
+      return jsonToQuery(obj)
+    },
+    pdf3H: (state) => {
+      console.log( {state});
+      console.log(1);
+      let horizontalElement = state.frame.horizontal[state.material] || {};
+      console.log(2);
+      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
+      console.log(3);
+      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      console.log(4);
+      let fileURL = horizontalElementElementElement.fileURL || '';
+      console.log(5);
+      let obj = {
+        "templateName": "3H.ejs",
+        "data": {
+          "totalPrice": state.mechanismBlockOne.price +
+              state.mechanismBlockTwo.price +
+              state.mechanismBlockThree.price +
+              state.mechanismBlockFour.price +
+              state.mechanismBlockFive.price +
+              horizontalElementElementElement.price,
+          "background":  state.background[0].image.url,
+          "frame": {
+            "fileURL":   fileURL ,
+            "productCode":  horizontalElementElementElement.productCode,
+            "article":  horizontalElementElementElement.article ,
+            "price":  horizontalElementElementElement.price
+          },
+          "firstItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "secondItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "thirdItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+        }
+      };
+      console.log(obj);
+      return jsonToQuery(obj)
+    },
+    pdf3V: (state) => {
+      console.log( {state});
+      console.log(1);
+      let horizontalElement = state.frame.horizontal[state.material] || {};
+      console.log(2);
+      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
+      console.log(3);
+      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      console.log(4);
+      let fileURL = horizontalElementElementElement.fileURL || '';
+      console.log(5);
+      let obj = {
+        "templateName": "3V.ejs",
+        "data": {
+          "totalPrice": state.mechanismBlockOne.price +
+              state.mechanismBlockTwo.price +
+              state.mechanismBlockThree.price +
+              state.mechanismBlockFour.price +
+              state.mechanismBlockFive.price +
+              horizontalElementElementElement.price,
+          "background":  state.background[0].image.url,
+          "frame": {
+            "fileURL":   fileURL ,
+            "productCode":  horizontalElementElementElement.productCode,
+            "article":  horizontalElementElementElement.article ,
+            "price":  horizontalElementElementElement.price
+          },
+          "firstItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "secondItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "thirdItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+        }
+      };
+      console.log(obj);
+      return jsonToQuery(obj)
+    },
+    pdf4H: (state) => {
+      console.log( {state});
+      console.log(1);
+      let horizontalElement = state.frame.horizontal[state.material] || {};
+      console.log(2);
+      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
+      console.log(3);
+      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      console.log(4);
+      let fileURL = horizontalElementElementElement.fileURL || '';
+      console.log(5);
+      let obj = {
+        "templateName": "4H.ejs",
+        "data": {
+          "totalPrice": state.mechanismBlockOne.price +
+              state.mechanismBlockTwo.price +
+              state.mechanismBlockThree.price +
+              state.mechanismBlockFour.price +
+              state.mechanismBlockFive.price +
+              horizontalElementElementElement.price,
+          "background":  state.background[0].image.url,
+          "frame": {
+            "fileURL":   fileURL ,
+            "productCode":  horizontalElementElementElement.productCode,
+            "article":  horizontalElementElementElement.article ,
+            "price":  horizontalElementElementElement.price
+          },
+          "firstItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "secondItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "thirdItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "fourthItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+        }
+      };
+      console.log(obj);
+      return jsonToQuery(obj)
+    },
+    pdf4V: (state) => {
+      console.log( {state});
+      console.log(1);
+      let horizontalElement = state.frame.horizontal[state.material] || {};
+      console.log(2);
+      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
+      console.log(3);
+      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      console.log(4);
+      let fileURL = horizontalElementElementElement.fileURL || '';
+      console.log(5);
+      let obj = {
+        "templateName": "4V.ejs",
+        "data": {
+          "totalPrice": state.mechanismBlockOne.price +
+              state.mechanismBlockTwo.price +
+              state.mechanismBlockThree.price +
+              state.mechanismBlockFour.price +
+              state.mechanismBlockFive.price +
+              horizontalElementElementElement.price,
+          "background":  state.background[0].image.url,
+          "frame": {
+            "fileURL":   fileURL ,
+            "productCode":  horizontalElementElementElement.productCode,
+            "article":  horizontalElementElementElement.article ,
+            "price":  horizontalElementElementElement.price
+          },
+          "firstItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "secondItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "thirdItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "fourthItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+        }
+      };
+      console.log(obj);
+      return jsonToQuery(obj)
+    },
+    pdf5H: (state) => {
+      console.log( {state});
+      console.log(1);
+      let horizontalElement = state.frame.horizontal[state.material] || {};
+      console.log(2);
+      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
+      console.log(3);
+      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      console.log(4);
+      let fileURL = horizontalElementElementElement.fileURL || '';
+      console.log(5);
+      let obj = {
+        "templateName": "5H.ejs",
+        "data": {
+          "totalPrice": state.mechanismBlockOne.price +
+              state.mechanismBlockTwo.price +
+              state.mechanismBlockThree.price +
+              state.mechanismBlockFour.price +
+              state.mechanismBlockFive.price +
+              horizontalElementElementElement.price,
+          "background":  state.background[0].image.url,
+          "frame": {
+            "fileURL":   fileURL ,
+            "productCode":  horizontalElementElementElement.productCode,
+            "article":  horizontalElementElementElement.article ,
+            "price":  horizontalElementElementElement.price
+          },
+          "firstItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "secondItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "thirdItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "fourthItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "fifthItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+        }
+      };
+      console.log(obj);
+      return jsonToQuery(obj)
+    },
+    pdf5V: (state) => {
+      console.log( {state});
+      console.log(1);
+      let horizontalElement = state.frame.horizontal[state.material] || {};
+      console.log(2);
+      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
+      console.log(3);
+      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      console.log(4);
+      let fileURL = horizontalElementElementElement.fileURL || '';
+      console.log(5);
+      let obj = {
+        "templateName": "5V.ejs",
+        "data": {
+          "totalPrice": state.mechanismBlockOne.price +
+              state.mechanismBlockTwo.price +
+              state.mechanismBlockThree.price +
+              state.mechanismBlockFour.price +
+              state.mechanismBlockFive.price +
+              horizontalElementElementElement.price,
+          "background":  state.background[0].image.url,
+          "frame": {
+            "fileURL":   fileURL ,
+            "productCode":  horizontalElementElementElement.productCode,
+            "article":  horizontalElementElementElement.article ,
+            "price":  horizontalElementElementElement.price
+          },
+          "firstItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "secondItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "thirdItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "fourthItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+          "fifthItem": {
+            "fileURL":  state.mechanismBlockOne.fileURL,
+            "productCode":  state.mechanismBlockOne.productCode,
+            "article":  state.mechanismBlockOne.article,
+            "price":  state.mechanismBlockOne.price,
+          },
+        }
+      };
+      console.log(obj);
+      return jsonToQuery(obj)
+    },
   },
 })
 export default store
