@@ -1,7 +1,7 @@
 <template>
   <div>
     <p class="downloadProjectText">{{ downloadText.ProjectText }}</p>
-    <a v-show="numberPostsFrame === '1'" :href="'https://b931494ad10e.ngrok.io/pdf?' + pdf1" style="text-decoration: none">
+    <a v-show="numberPostsFrame === '1'" :href="urlDown + pdf1" style="text-decoration: none">
       <div class="downloadProjectBlock">
         <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
           <img v-bind:src="download" class="downloadProjectBlockImg">
@@ -11,7 +11,7 @@
         </p>
       </div>
     </a>
-    <a v-show="numberPostsFrame === '2' && frameOrientation === 'horizontal'" :href="'https://b931494ad10e.ngrok.io/pdf?' + pdf2H" style="text-decoration: none">
+    <a v-show="numberPostsFrame === '2' && frameOrientation === 'horizontal'" :href="urlDown + pdf2H" style="text-decoration: none">
       <div class="downloadProjectBlock">
         <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
           <img v-bind:src="download" class="downloadProjectBlockImg">
@@ -21,7 +21,7 @@
         </p>
       </div>
     </a>
-    <a v-show="numberPostsFrame === '2' && frameOrientation === 'vertical'" :href="'https://b931494ad10e.ngrok.io/pdf?' + pdf2V" style="text-decoration: none">
+    <a v-show="numberPostsFrame === '2' && frameOrientation === 'vertical'" :href="urlDown + pdf2V" style="text-decoration: none">
       <div class="downloadProjectBlock">
         <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
           <img v-bind:src="download" class="downloadProjectBlockImg">
@@ -31,7 +31,7 @@
         </p>
       </div>
     </a>
-    <a v-show="numberPostsFrame === '3' && frameOrientation === 'horizontal'" :href="'https://b931494ad10e.ngrok.io/pdf?' + pdf3H" style="text-decoration: none">
+    <a v-show="numberPostsFrame === '3' && frameOrientation === 'horizontal'" :href="urlDown + pdf3H" style="text-decoration: none">
       <div class="downloadProjectBlock">
         <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
           <img v-bind:src="download" class="downloadProjectBlockImg">
@@ -41,7 +41,7 @@
         </p>
       </div>
     </a>
-    <a v-show="numberPostsFrame === '3' && frameOrientation === 'vertical'" :href="'https://b931494ad10e.ngrok.io/pdf?' + pdf3V" style="text-decoration: none">
+    <a v-show="numberPostsFrame === '3' && frameOrientation === 'vertical'" :href="urlDown + pdf3V" style="text-decoration: none">
       <div class="downloadProjectBlock">
         <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
           <img v-bind:src="download" class="downloadProjectBlockImg">
@@ -51,7 +51,7 @@
         </p>
       </div>
     </a>
-    <a v-show="numberPostsFrame === '4' && frameOrientation === 'horizontal'" :href="'https://b931494ad10e.ngrok.io/pdf?' + pdf4H" style="text-decoration: none">
+    <a v-show="numberPostsFrame === '4' && frameOrientation === 'horizontal'" :href="urlDown + pdf4H" style="text-decoration: none">
       <div class="downloadProjectBlock">
         <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
           <img v-bind:src="download" class="downloadProjectBlockImg">
@@ -61,7 +61,7 @@
         </p>
       </div>
     </a>
-    <a v-show="numberPostsFrame === '4' && frameOrientation === 'vertical'" :href="'https://b931494ad10e.ngrok.io/pdf?' + pdf4V" style="text-decoration: none">
+    <a v-show="numberPostsFrame === '4' && frameOrientation === 'vertical'" :href="urlDown + pdf4V" style="text-decoration: none">
       <div class="downloadProjectBlock">
         <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
           <img v-bind:src="download" class="downloadProjectBlockImg">
@@ -71,7 +71,7 @@
         </p>
       </div>
     </a>
-    <a v-show="numberPostsFrame === '5' && frameOrientation === 'horizontal'" :href="'https://b931494ad10e.ngrok.io/pdf?' + pdf5H" style="text-decoration: none">
+    <a v-show="numberPostsFrame === '5' && frameOrientation === 'horizontal'" :href="urlDown + pdf5H" style="text-decoration: none">
       <div class="downloadProjectBlock">
         <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
           <img v-bind:src="download" class="downloadProjectBlockImg">
@@ -81,7 +81,7 @@
         </p>
       </div>
     </a>
-    <a v-show="numberPostsFrame === '5' && frameOrientation === 'vertical'" :href="'https://b931494ad10e.ngrok.io/pdf?' + pdf5V" style="text-decoration: none">
+    <a v-show="numberPostsFrame === '5' && frameOrientation === 'vertical'" :href="urlDown + pdf5V" style="text-decoration: none">
       <div class="downloadProjectBlock">
         <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
           <img v-bind:src="download" class="downloadProjectBlockImg">
@@ -99,6 +99,7 @@ import { mapGetters } from 'vuex';
 export default {
   data() {
     return {
+      urlDown: 'https://ac23ab430291.ngrok.io/pdf?',
       downloadText: {
         ProjectText: '*Змінюйте розташування механізмів пересуваючи їх порядок.',
         BlockText: 'Завантижити проект (PDF)'

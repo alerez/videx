@@ -29,10 +29,11 @@ export default {
     }
   },
   methods: {
-    ...mapActions(['EMIT_frameOrientation','EMIT_closedMechanismBlock']),
+    ...mapActions(['EMIT_frameOrientation','EMIT_closedMechanismBlock','EMIT_numberPostsFrame']),
     frameOrientationFun: function frameOrientationFun() {
         if (this.frameOrientation === 'horizontal'){
           this.EMIT_frameOrientation('vertical')
+          this.EMIT_numberPostsFrame('1')
         }
         else if (this.frameOrientation === 'vertical'){
           this.EMIT_frameOrientation('horizontal')
@@ -40,7 +41,11 @@ export default {
     },
   },
   computed: {
-    ...mapGetters(['frameOrientation'])
+    ...mapGetters(
+        [
+            'frameOrientation',
+        ]
+    )
   }
 };
 </script>

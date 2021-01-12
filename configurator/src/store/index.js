@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 
 Vue.use(Vuex)
-const url = 'https://b931494ad10e.ngrok.io';
+const url = 'https://ac23ab430291.ngrok.io';
 // const queryString = require('query-string');
 // const request = require('request');
 const jsonToQuery = require('json-to-http-query-string');
@@ -66,6 +66,7 @@ const store = () => new Vuex.Store({
     ],
 
     activityBackground: 'siWI9thJe',
+    activityBackgroundUP: 4,
 
     imagesUP: [
       { url: null },
@@ -472,6 +473,7 @@ const store = () => new Vuex.Store({
      commit('backgroundColors', data)
      commit('background', null)
      commit('activityBackground', null)
+     commit('activityBackgroundUP', 4)
     },
     EMIT_background: async ({commit}, data) => {
       await axios
@@ -490,10 +492,15 @@ const store = () => new Vuex.Store({
           });
       commit('backgroundColors', null)
       commit('activityBackground', data)
+      commit('activityBackgroundUP', 4)
     },
     EMIT_upBag: ({commit}, data) => {
       commit('upBag', data)
       commit('backgroundColors', null)
+      commit('activityBackground', null)
+    },
+    EMIT_upBagUP: ({commit}, data) => {
+      commit('activityBackgroundUP', data)
       commit('activityBackground', null)
     },
 
@@ -768,6 +775,9 @@ const store = () => new Vuex.Store({
 
     activityBackground: (state, data) => {
       return state.activityBackground = data
+    },
+    activityBackgroundUP: (state, data) => {
+      return state.activityBackgroundUP = data
     }
   },
   modules: {},
@@ -904,6 +914,9 @@ const store = () => new Vuex.Store({
     },
     activityBackground: state => {
       return state.activityBackground
+    },
+    activityBackgroundUP: state => {
+      return state.activityBackgroundUP
     },
 
     pdf1: (state) => {

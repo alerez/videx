@@ -26,7 +26,7 @@
             <p v-if="colorsFrame === 'black'" style="color:#FF7A00" class="selectFrameText">{{ chooseFrame[selectFrame.material].black.description.ua }}</p>
           </div>
         </div>
-        <div style="display:flex">
+        <div v-show="this.numberPostsFrame !== '5'" style="display:flex">
           <div class="selectChooseFrame" @click="materialGetColor('red')">
             <img v-if="colorsFrame !== 'red'" class="selectFrameImg" :src="chooseFrame[selectFrame.material].red.fileURL">
             <img v-if="colorsFrame === 'red'" style="border: 2px solid #ff7a00; border-radius:50%" class="selectFrameImgSize" :src="chooseFrame[selectFrame.material].red.fileURL">
@@ -120,7 +120,8 @@ computed: {
           'materialFrameItems',
           'chooseFrame',
           'colorsFrame',
-          'selectFrame'
+          'selectFrame',
+          'numberPostsFrame',
       ]
   )
 },

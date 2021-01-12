@@ -14,24 +14,25 @@
         <div class="numberPostsBlockRoz"></div>
         <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '4'" v-on:click="numberPosts('4')">4</div>
         <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '4'" v-on:click="numberPosts('4')">4</div>
-        <div class="numberPostsBlockRoz"></div>
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '5'" v-on:click="numberPosts('5')">5</div>
+        <div class="numberPostsBlockRoz"  v-show="this.colorsFrame !== 'red' && this.colorsFrame !== 'green'"></div>
+        <div class="numberPostsBlockText"  v-show="this.colorsFrame !== 'red' && this.colorsFrame !== 'green'" v-if="this.numberPostsFrame !== '5'" v-on:click="numberPosts('5')">5</div>
         <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '5'" v-on:click="numberPosts('5')">5</div>
       </div>
       <div class="numberPostsBlock" v-if="this.frameOrientation === 'vertical'">
+        <div v-show="this.material === 'glases' || this.material === 'aluminium'" class="numberPostsBlockRoz"></div>
         <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '1'" v-on:click="numberPosts('1')">1</div>
         <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '1'" v-on:click="numberPosts('1')">1</div>
-        <div class="numberPostsBlockRoz"></div>
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '2'" v-on:click="numberPosts('2')">2</div>
+        <div class="numberPostsBlockRoz" ></div>
+        <div class="numberPostsBlockText" v-show="colorsFrame !== 'red' && colorsFrame !== 'green'" v-if="this.numberPostsFrame !== '2'" v-on:click="numberPosts('2')">2</div>
         <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '2'" v-on:click="numberPosts('2')">2</div>
-        <div class="numberPostsBlockRoz"></div>
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '3'" v-on:click="numberPosts('3')">3</div>
+        <div class="numberPostsBlockRoz"  v-show="colorsFrame !== 'red' && colorsFrame !== 'green'"></div>
+        <div class="numberPostsBlockText"  v-show="colorsFrame !== 'red' && colorsFrame !== 'green'" v-if="this.numberPostsFrame !== '3'" v-on:click="numberPosts('3')">3</div>
         <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '3'" v-on:click="numberPosts('3')">3</div>
-        <div class="numberPostsBlockRoz"></div>
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '4'" v-on:click="numberPosts('4')">4</div>
+        <div class="numberPostsBlockRoz"  v-show="colorsFrame !== 'red' && colorsFrame !== 'green'"></div>
+        <div class="numberPostsBlockText" v-show="this.material !== 'glases' && this.material !== 'aluminium'" v-if="this.numberPostsFrame !== '4'" v-on:click="numberPosts('4')">4</div>
         <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '4'" v-on:click="numberPosts('4')">4</div>
-        <div class="numberPostsBlockRoz"></div>
-        <div class="numberPostsBlockText" v-if="this.numberPostsFrame !== '5'" v-on:click="numberPosts('5')">5</div>
+        <div v-show="this.material !== 'glases' && this.material !== 'aluminium'" class="numberPostsBlockRoz"></div>
+        <div class="numberPostsBlockText" v-show="this.material !== 'glases' && this.material !== 'aluminium'" v-if="this.numberPostsFrame !== '5'" v-on:click="numberPosts('5')">5</div>
         <div class="numberPostsBlockText numberPostsBlockTextColor" v-if="this.numberPostsFrame === '5'" v-on:click="numberPosts('4')">5</div>
       </div>
     </div>
@@ -121,13 +122,15 @@ export default {
   computed: {
     ...mapGetters(
         [
+            'material',
+            'colorsFrame',
             'numberPostsFrame',
             'frameOrientation',
             'mechanismBlockOne',
             'mechanismBlockTwo',
             'mechanismBlockThree',
             'mechanismBlockFour',
-            'mechanismBlockFive'
+            'mechanismBlockFive',
         ]
     )
   }

@@ -3,11 +3,20 @@
     <div class="backgroundBlockUp">
       <div class="block2 mobBlock2" style="display:flex; flex-direction:row">
         <div v-for="(imagesUP, idx) in imagesUP" v-bind:key="idx">
-          <img
+          <div v-if="activityBackgroundUP !== idx">
+            <img
                 v-bind:src="imagesUP.url"
-                v-on:click="emitImg(imagesUP.url)"
+                v-on:click="emitImg(imagesUP.url, idx)"
                 class="backgroundBlockImages upBagBackgroundBlockImages"
-          />
+            />
+          </div>
+          <div  v-if="activityBackgroundUP === idx">
+            <img style="border: #FF7A00 solid 2px; border-radius: 10px"
+                v-bind:src="imagesUP.url"
+                v-on:click="emitImg(imagesUP.url, idx)"
+                class="backgroundBlockImages upBagBackgroundBlockImages backgroundBlockImagesHoverImg"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -27,7 +36,7 @@
 </template>
 
 <script>
-import {mapActions} from 'vuex';
+import {mapActions, mapGetters} from 'vuex';
 
 export default {
   data() {
@@ -44,24 +53,19 @@ export default {
     };
   },
   methods: {
-    ...mapActions(['EMIT_upBag']),
+    ...mapActions(['EMIT_upBag', 'EMIT_upBagUP']),
     onFileChange(e) {
       const file = e.target.files[0];
-      this.imagesUP[0].url = URL.createObjectURL(file);
-      const file1 = e.target.files[1];
-      this.imagesUP[1].url = URL.createObjectURL(file1);
-      const file2 = e.target.files[2];
-      this.imagesUP[2].url = URL.createObjectURL(file2);
-      const file3 = e.target.files[3];
-      this.imagesUP[3].url = URL.createObjectURL(file3);
-      const file4 = e.target.files[4];
-      this.imagesUP[3].url = URL.createObjectURL(file4);
+      this.imagesUP[this.activityBackgroundUP].url = URL.createObjectURL(file);
     },
-    emitImg: function emitImg(data) {
+    emitImg: function emitImg(data, idx) {
       this.EMIT_upBag(data)
-
+      this.EMIT_upBagUP(idx)
     },
   },
+  computed: {
+    ...mapGetters(['activityBackgroundUP'])
+  }
 };
 </script>
 
