@@ -33,7 +33,35 @@ export default {
     frameOrientationFun: function frameOrientationFun() {
         if (this.frameOrientation === 'horizontal'){
           this.EMIT_frameOrientation('vertical')
-          this.EMIT_numberPostsFrame('1')
+          if(this.material === 'glases' || this.material === 'aluminium'){
+            if(this.colorsFrame === 'red' || this.colorsFrame === 'green'){
+              this.EMIT_numberPostsFrame('1')
+            }
+            else if(this.numberPostsFrame === '5'){
+              this.EMIT_numberPostsFrame('3')
+            }
+            else if(this.numberPostsFrame === '4'){
+              this.EMIT_numberPostsFrame('3')
+            }
+            else if(this.numberPostsFrame === '3'){
+              this.EMIT_numberPostsFrame('3')
+            }
+            else if(this.numberPostsFrame === '2'){
+              this.EMIT_numberPostsFrame('2')
+            }
+            else if(this.numberPostsFrame === '1') {
+              this.EMIT_numberPostsFrame('1')
+            }
+          }
+          else if(this.numberPostsFrame === '1'){
+            this.EMIT_numberPostsFrame('1')
+          }
+          else if(this.numberPostsFrame === '2'){
+            this.EMIT_numberPostsFrame('2')
+          }
+          else if(this.numberPostsFrame === '3'){
+            this.EMIT_numberPostsFrame('3')
+          }
         }
         else if (this.frameOrientation === 'vertical'){
           this.EMIT_frameOrientation('horizontal')
@@ -44,6 +72,9 @@ export default {
     ...mapGetters(
         [
             'frameOrientation',
+            'colorsFrame',
+            'numberPostsFrame',
+            'material'
         ]
     )
   }

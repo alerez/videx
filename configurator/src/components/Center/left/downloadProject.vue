@@ -1,96 +1,110 @@
 <template>
   <div>
     <p class="downloadProjectText">{{ downloadText.ProjectText }}</p>
-    <a v-show="numberPostsFrame === '1'" :href="urlDown + pdf1" style="text-decoration: none">
-      <div class="downloadProjectBlock">
-        <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
-          <img v-bind:src="download" class="downloadProjectBlockImg">
-        </p>
-        <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
-          <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
-        </p>
-      </div>
-    </a>
-    <a v-show="numberPostsFrame === '2' && frameOrientation === 'horizontal'" :href="urlDown + pdf2H" style="text-decoration: none">
-      <div class="downloadProjectBlock">
-        <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
-          <img v-bind:src="download" class="downloadProjectBlockImg">
-        </p>
-        <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
-          <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
-        </p>
-      </div>
-    </a>
-    <a v-show="numberPostsFrame === '2' && frameOrientation === 'vertical'" :href="urlDown + pdf2V" style="text-decoration: none">
-      <div class="downloadProjectBlock">
-        <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
-          <img v-bind:src="download" class="downloadProjectBlockImg">
-        </p>
-        <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
-          <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
-        </p>
-      </div>
-    </a>
-    <a v-show="numberPostsFrame === '3' && frameOrientation === 'horizontal'" :href="urlDown + pdf3H" style="text-decoration: none">
-      <div class="downloadProjectBlock">
-        <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
-          <img v-bind:src="download" class="downloadProjectBlockImg">
-        </p>
-        <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
-          <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
-        </p>
-      </div>
-    </a>
-    <a v-show="numberPostsFrame === '3' && frameOrientation === 'vertical'" :href="urlDown + pdf3V" style="text-decoration: none">
-      <div class="downloadProjectBlock">
-        <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
-          <img v-bind:src="download" class="downloadProjectBlockImg">
-        </p>
-        <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
-          <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
-        </p>
-      </div>
-    </a>
-    <a v-show="numberPostsFrame === '4' && frameOrientation === 'horizontal'" :href="urlDown + pdf4H" style="text-decoration: none">
-      <div class="downloadProjectBlock">
-        <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
-          <img v-bind:src="download" class="downloadProjectBlockImg">
-        </p>
-        <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
-          <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
-        </p>
-      </div>
-    </a>
-    <a v-show="numberPostsFrame === '4' && frameOrientation === 'vertical'" :href="urlDown + pdf4V" style="text-decoration: none">
-      <div class="downloadProjectBlock">
-        <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
-          <img v-bind:src="download" class="downloadProjectBlockImg">
-        </p>
-        <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
-          <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
-        </p>
-      </div>
-    </a>
-    <a v-show="numberPostsFrame === '5' && frameOrientation === 'horizontal'" :href="urlDown + pdf5H" style="text-decoration: none">
-      <div class="downloadProjectBlock">
-        <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
-          <img v-bind:src="download" class="downloadProjectBlockImg">
-        </p>
-        <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
-          <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
-        </p>
-      </div>
-    </a>
-    <a v-show="numberPostsFrame === '5' && frameOrientation === 'vertical'" :href="urlDown + pdf5V" style="text-decoration: none">
-      <div class="downloadProjectBlock">
-        <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
-          <img v-bind:src="download" class="downloadProjectBlockImg">
-        </p>
-        <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
-          <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
-        </p>
-      </div>
-    </a>
+    <div v-show="frameOrientation === 'horizontal'">
+      <a v-if="numberPostsFrame === '1'" :href="urlDown + pdf1" style="text-decoration: none">
+        <div class="downloadProjectBlock">
+          <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
+            <img v-bind:src="download" class="downloadProjectBlockImg">
+          </p>
+          <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
+            <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
+          </p>
+        </div>
+      </a>
+      <a v-else-if="numberPostsFrame === '2'" :href="urlDown + pdf2H" style="text-decoration: none">
+        <div class="downloadProjectBlock">
+          <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
+            <img v-bind:src="download" class="downloadProjectBlockImg">
+          </p>
+          <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
+            <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
+          </p>
+        </div>
+      </a>
+      <a v-else-if="numberPostsFrame === '3'" :href="urlDown + pdf3H" style="text-decoration: none">
+        <div class="downloadProjectBlock">
+          <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
+            <img v-bind:src="download" class="downloadProjectBlockImg">
+          </p>
+          <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
+            <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
+          </p>
+        </div>
+      </a>
+      <a v-else-if="numberPostsFrame === '4'" :href="urlDown + pdf4H" style="text-decoration: none">
+        <div class="downloadProjectBlock">
+          <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
+            <img v-bind:src="download" class="downloadProjectBlockImg">
+          </p>
+          <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
+            <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
+          </p>
+        </div>
+      </a>
+      <a v-else-if="numberPostsFrame === '5'" :href="urlDown + pdf5H" style="text-decoration: none">
+        <div class="downloadProjectBlock">
+          <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
+            <img v-bind:src="download" class="downloadProjectBlockImg">
+          </p>
+          <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
+            <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
+          </p>
+        </div>
+      </a>
+    </div>
+    <div v-show="frameOrientation === 'vertical'">
+      <a v-if="numberPostsFrame === '1'" :href="urlDown + pdf1" style="text-decoration: none">
+        <div class="downloadProjectBlock">
+          <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
+            <img v-bind:src="download" class="downloadProjectBlockImg">
+          </p>
+          <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
+            <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
+          </p>
+        </div>
+      </a>
+      <a v-else-if="numberPostsFrame === '2'" :href="urlDown + pdf2V" style="text-decoration: none">
+        <div class="downloadProjectBlock">
+          <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
+            <img v-bind:src="download" class="downloadProjectBlockImg">
+          </p>
+          <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
+            <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
+          </p>
+        </div>
+      </a>
+      <a v-else-if="numberPostsFrame === '3'" :href="urlDown + pdf3V" style="text-decoration: none">
+        <div class="downloadProjectBlock">
+          <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
+            <img v-bind:src="download" class="downloadProjectBlockImg">
+          </p>
+          <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
+            <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
+          </p>
+        </div>
+      </a>
+      <a v-else-if="numberPostsFrame === '4'" :href="urlDown + pdf4V" style="text-decoration: none">
+        <div class="downloadProjectBlock">
+          <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
+            <img v-bind:src="download" class="downloadProjectBlockImg">
+          </p>
+          <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
+            <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
+          </p>
+        </div>
+      </a>
+      <a v-else-if="numberPostsFrame === '5'" :href="urlDown + pdf5V" style="text-decoration: none">
+        <div class="downloadProjectBlock">
+          <p class="downloadProjectBlockText poss">{{ downloadText.BlockText }}
+            <img v-bind:src="download" class="downloadProjectBlockImg">
+          </p>
+          <p class="downloadProjectBlockText2 displ">{{ downloadText.BlockText }}
+            <img v-bind:src="downloadGreen" class="downloadProjectBlockImg">
+          </p>
+        </div>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -99,7 +113,7 @@ import { mapGetters } from 'vuex';
 export default {
   data() {
     return {
-      urlDown: 'https://ac23ab430291.ngrok.io/pdf?',
+      urlDown: 'https://11d217247cbe.ngrok.io/pdf?',
       downloadText: {
         ProjectText: '*Змінюйте розташування механізмів пересуваючи їх порядок.',
         BlockText: 'Завантижити проект (PDF)'

@@ -57,6 +57,7 @@ export default {
     onFileChange(e) {
       const file = e.target.files[0];
       this.imagesUP[this.activityBackgroundUP].url = URL.createObjectURL(file);
+      this.EMIT_upBag(URL.createObjectURL(file))
     },
     emitImg: function emitImg(data, idx) {
       this.EMIT_upBag(data)

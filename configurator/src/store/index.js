@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 
 Vue.use(Vuex)
-const url = 'https://ac23ab430291.ngrok.io';
+const url = 'https://11d217247cbe.ngrok.io';
 // const queryString = require('query-string');
 // const request = require('request');
 const jsonToQuery = require('json-to-http-query-string');
@@ -1004,7 +1004,7 @@ const store = () => new Vuex.Store({
     pdf2V: (state) => {
       console.log( {state});
       console.log(1);
-      let horizontalElement = state.frame.horizontal[state.material] || {};
+      let horizontalElement = state.frame.vertical[state.material] || {};
       console.log(2);
       let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
       console.log(3);
@@ -1098,7 +1098,7 @@ const store = () => new Vuex.Store({
     pdf3V: (state) => {
       console.log( {state});
       console.log(1);
-      let horizontalElement = state.frame.horizontal[state.material] || {};
+      let horizontalElement = state.frame.vertical[state.material] || {};
       console.log(2);
       let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
       console.log(3);
@@ -1204,7 +1204,7 @@ const store = () => new Vuex.Store({
     pdf4V: (state) => {
       console.log( {state});
       console.log(1);
-      let horizontalElement = state.frame.horizontal[state.material] || {};
+      let horizontalElement = state.frame.vertical[state.material] || {};
       console.log(2);
       let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
       console.log(3);
@@ -1322,7 +1322,7 @@ const store = () => new Vuex.Store({
     pdf5V: (state) => {
       console.log( {state});
       console.log(1);
-      let horizontalElement = state.frame.horizontal[state.material] || {};
+      let horizontalElement = state.frame.vertical[state.material] || {};
       console.log(2);
       let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
       console.log(3);

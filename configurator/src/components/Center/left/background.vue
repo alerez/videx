@@ -148,8 +148,8 @@ export default {
   z-index: 1000;
 }
 .backgroundBlockImagesHoverImg > img{
-  width: 100.5%;
-  height: 100.5%;
+  width:59px;
+  height:59px;
   border-radius: 4px;
   z-index: -999;
 }

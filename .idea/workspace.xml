@@ -2,14 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08f21971-1991-4c1b-bb88-30dbe0d612c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/videxAPI/src/files/templates/frame.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/background.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/background.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/downloadProject.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/downloadProject.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/frameOrientation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/frameOrientation.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/numberPosts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/numberPosts.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/upBag.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/upBag.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/right/chooseMechanism.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/right/chooseMechanism.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/right/selectFrame.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/right/selectFrame.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videxAPI/src/files/templates/1.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/videxAPI/src/files/templates/1.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videxAPI/src/files/templates/2H.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/videxAPI/src/files/templates/2H.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videxAPI/src/files/templates/2V.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/videxAPI/src/files/templates/2V.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videxAPI/src/files/templates/3H.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/videxAPI/src/files/templates/3H.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videxAPI/src/files/templates/3V.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/videxAPI/src/files/templates/3V.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videxAPI/src/files/templates/4H.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/videxAPI/src/files/templates/4H.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videxAPI/src/files/templates/5H.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/videxAPI/src/files/templates/5H.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videxAPI/src/validation/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/videxAPI/src/validation/validation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/videxAPI/src/files/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,6 +69,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/videxAPI/src/files/templates" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -73,7 +90,8 @@
       <workItem from="1609852760782" duration="15207000" />
       <workItem from="1610048943724" duration="28118000" />
       <workItem from="1610353686962" duration="15379000" />
-      <workItem from="1610445360046" duration="13515000" />
+      <workItem from="1610445360046" duration="13688000" />
+      <workItem from="1610534094676" duration="17755000" />
     </task>
     <servers />
   </component>

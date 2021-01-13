@@ -381,7 +381,7 @@ function pdfInput(data) {
                                 .string()
                                 .required(),
                         })
-                        .required(),
+                        .optional(),
                     secondItem: Joi
                         .object({
                             fileURL: Joi
