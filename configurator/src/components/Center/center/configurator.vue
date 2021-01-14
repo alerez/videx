@@ -9,24 +9,24 @@
         <img class="frameBlockFrameHorizontal1" v-bind:src="frame['horizontal'][material][colorsFrame][numberPostsFrame].fileURL">
       </div>
       <div v-on:click="mechanismBlock('mechanismBlockNone')" v-else-if="numberPostsFrame === '2'">
-        <img class="frameBlockFrameHorizontal2" v-show="frameOrientation !== 'vertical'" v-bind:src="frame[frameOrientation][material][colorsFrame][numberPostsFrame].fileURL">
-        <img class="frameBlockFrameVertical2" v-show="frameOrientation !== 'horizontal'" v-bind:src="frame[frameOrientation][material][colorsFrame][numberPostsFrame].fileURL">
+        <img class="frameBlockFrameHorizontal2" v-show="frameOrientation !== 'vertical'" v-bind:src="frameOrintationMaterialColor">
+        <img class="frameBlockFrameVertical2" v-show="frameOrientation !== 'horizontal'" v-bind:src="frameOrintationMaterialColor">
       </div>
       <div v-on:click="mechanismBlock('mechanismBlockNone')" v-else-if="numberPostsFrame === '3'">
-        <img class="frameBlockFrameHorizontal3" v-show="frameOrientation !== 'vertical'" v-bind:src="frame[frameOrientation][material][colorsFrame][numberPostsFrame].fileURL">
-        <img class="frameBlockFrameVertical3" v-show="frameOrientation !== 'horizontal'" v-bind:src="frame[frameOrientation][material][colorsFrame][numberPostsFrame].fileURL">
+        <img class="frameBlockFrameHorizontal3" v-show="frameOrientation !== 'vertical'" v-bind:src="frameOrintationMaterialColor">
+        <img class="frameBlockFrameVertical3" v-show="frameOrientation !== 'horizontal'" v-bind:src="frameOrintationMaterialColor">
       </div>
       <div v-on:click="mechanismBlock('mechanismBlockNone')" v-else-if="numberPostsFrame === '4'">
-        <img class="frameBlockFrameHorizontal4" v-show="frameOrientation !== 'vertical'" v-bind:src="frame[frameOrientation][material][colorsFrame][numberPostsFrame].fileURL">
-        <img class="frameBlockFrameVertical4" v-show="frameOrientation !== 'horizontal'" v-bind:src="frame[frameOrientation][material][colorsFrame][numberPostsFrame].fileURL">
+        <img class="frameBlockFrameHorizontal4" v-show="frameOrientation !== 'vertical'" v-bind:src="frameOrintationMaterialColor">
+        <img class="frameBlockFrameVertical4" v-show="frameOrientation !== 'horizontal'" v-bind:src="frameOrintationMaterialColor">
       </div>
       <div v-on:click="mechanismBlock('mechanismBlockNone')" v-else-if="numberPostsFrame === '5'">
-        <img class="frameBlockFrameHorizontal5" v-show="frameOrientation !== 'vertical'" v-bind:src="frame[frameOrientation][material][colorsFrame][numberPostsFrame].fileURL">
-        <img class="frameBlockFrameVertical5" v-show="frameOrientation !== 'horizontal'" v-bind:src="frame[frameOrientation][material][colorsFrame][numberPostsFrame].fileURL">
+        <img class="frameBlockFrameHorizontal5" v-show="frameOrientation !== 'vertical'" v-bind:src="frameOrintationMaterialColor">
+        <img class="frameBlockFrameVertical5" v-show="frameOrientation !== 'horizontal'" v-bind:src="frameOrintationMaterialColor">
       </div>
       <div>
         <div v-show="frameOrientation !== 'vertical'" class="absolute" style="display:flex; flex-direction:row">
-          <div class="absolute" style="display:flex" v-if="numberPostsFrame === '1'">
+          <div class="absolute" style="display:flex" v-show="numberPostsFrame === '1'">
             <div class="configuratorBlockMechanism11 poster" v-if="mechanismBlockOne && active1 === true" v-on:click="mechanismBlock('mechanismBlockOne')">
               <div class="configuratorBlockMechanism11Hover"></div>
               <img v-bind:src="mechanismBlockOne.fileURL">
@@ -41,7 +41,7 @@
               </div>
             </div>
           </div>
-          <div class="absolute" style="display:flex" v-if="numberPostsFrame === '2'">
+          <div class="absolute" style="display:flex" v-show="numberPostsFrame === '2'">
             <div class="configuratorBlockMechanism12 poster" v-if="mechanismBlockOne && active1 === true" v-on:click="mechanismBlock('mechanismBlockOne')">
               <img v-bind:src="mechanismBlockOne.fileURL">
               <div class="configuratorBlockMechanism12Hover"></div>
@@ -69,7 +69,7 @@
               </div>
             </div>
           </div>
-          <div class="absolute" style="display:flex" v-if="numberPostsFrame === '3'">
+          <div class="absolute" style="display:flex" v-show="numberPostsFrame === '3'">
             <div class="configuratorBlockMechanism13 poster" v-if="mechanismBlockOne && active1 === true" v-on:click="mechanismBlock('mechanismBlockOne')">
               <img v-bind:src="mechanismBlockOne.fileURL">
               <div class="configuratorBlockMechanism13Hover"></div>
@@ -110,7 +110,7 @@
               </div>
             </div>
           </div>
-          <div class="absolute" style="display:flex" v-if="numberPostsFrame === '4'">
+          <div class="absolute" style="display:flex" v-show="numberPostsFrame === '4'">
             <div class="configuratorBlockMechanism14 poster" v-if="mechanismBlockOne && active1 === true" v-on:click="mechanismBlock('mechanismBlockOne')">
               <img v-bind:src="mechanismBlockOne.fileURL">
               <div class="configuratorBlockMechanism14Hover"></div>
@@ -164,7 +164,7 @@
               </div>
             </div>
           </div>
-          <div class="absolute" style="display:flex" v-if="numberPostsFrame === '5'">
+          <div class="absolute" style="display:flex" v-show="numberPostsFrame === '5'">
             <div class="configuratorBlockMechanism15 poster" v-if="mechanismBlockOne && active1 === true" v-on:click="mechanismBlock('mechanismBlockOne')">
               <img v-bind:src="mechanismBlockOne.fileURL">
               <div class="configuratorBlockMechanism15Hover"></div>
@@ -233,7 +233,7 @@
           </div>
         </div>
         <div v-show="frameOrientation !== 'horizontal'" class="absolute" style="display:flex; flex-direction:column">
-          <div class="absolute" style="display:flex; flex-direction:column" v-if="numberPostsFrame === '1'">
+          <div class="absolute" style="display:flex; flex-direction:column" v-show="numberPostsFrame === '1'">
             <div class="configuratorBlockMechanism11 poster" v-if="mechanismBlockOne && active1 === true" v-on:click="mechanismBlock('mechanismBlockOne')">
               <div class="configuratorBlockMechanism11Hover"></div>
               <img v-bind:src="mechanismBlockOne.fileURL">
@@ -248,7 +248,7 @@
               </div>
             </div>
           </div>
-          <div class="absolute" style="display:flex; flex-direction:column" v-if="numberPostsFrame === '2'">
+          <div class="absolute" style="display:flex; flex-direction:column" v-show="numberPostsFrame === '2'">
             <div class="configuratorBlockMechanism222 poster" v-if="mechanismBlockTwo && active2 === true" v-on:click="mechanismBlock('mechanismBlockTwo')">
               <div class="configuratorBlockMechanism222Hover"></div>
               <img v-bind:src="mechanismBlockTwo.fileURL">
@@ -276,7 +276,7 @@
               </div>
             </div>
           </div>
-          <div class="absolute" style="display:flex; flex-direction:column" v-if="numberPostsFrame === '3'">
+          <div class="absolute" style="display:flex; flex-direction:column" v-show="numberPostsFrame === '3'">
             <div class="configuratorBlockMechanism333 poster" v-if="mechanismBlockThree && active3 === true" v-on:click="mechanismBlock('mechanismBlockThree')">
               <div class="configuratorBlockMechanism333Hover"></div>
               <img v-bind:src="mechanismBlockThree.fileURL">
@@ -317,7 +317,7 @@
               </div>
             </div>
           </div>
-          <div class="absolute" style="display:flex; flex-direction:column" v-if="numberPostsFrame === '4'">
+          <div class="absolute" style="display:flex; flex-direction:column" v-show="numberPostsFrame === '4'">
             <div class="configuratorBlockMechanism444 poster" v-if="mechanismBlockFour && active4 === true" v-on:click="mechanismBlock('mechanismBlockFour')">
               <div class="configuratorBlockMechanism444Hover"></div>
               <img v-bind:src="mechanismBlockFour.fileURL">
@@ -374,7 +374,7 @@
               </div>
             </div>
           </div>
-          <div class="absolute" style="display:flex; flex-direction:column" v-if="numberPostsFrame === '5'">
+          <div class="absolute" style="display:flex; flex-direction:column" v-show="numberPostsFrame === '5'">
             <div class="configuratorBlockMechanism555 poster" v-if="mechanismBlockFive && active5 === true" v-on:click="mechanismBlock('mechanismBlockFive')">
               <div class="configuratorBlockMechanism555Hover"></div>
               <img v-bind:src="mechanismBlockFive.fileURL">
@@ -460,7 +460,7 @@ import {mapActions, mapGetters} from 'vuex';
 export default {
   data() {
     return {
-      close: 'https://11d217247cbe.ngrok.io/images/frameColors/close.jpg',
+      close: 'https://275c805ba2b9.ngrok.io/images/frameColors/close.jpg',
       urlImgBag: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
       active1: false,
       active2: false,
@@ -487,7 +487,8 @@ export default {
             'mechanismBlockFour',
             'mechanismBlockFive',
             'selectedMechanismBlock',
-            'background'
+            'background',
+            'frameOrintationMaterialColor'
         ]
     ),
   },
@@ -589,46 +590,55 @@ export default {
   display:block;
   width:361px;
   height:360px;
+  transition: 1s;
 }
 .frameBlockFrameHorizontal2{
   display:block;
   width:669px;
   height:367px;
+  transition: 1s;
 }
 .frameBlockFrameVertical2{
   display:block;
   width:357px;
   height:641px;
+  transition: 1s;
 }
 .frameBlockFrameHorizontal3{
   display:block;
   width:764px;
   height:293px;
+  transition: 1s;
 }
 .frameBlockFrameVertical3{
   display:block;
   width:293px;
   height:764px;
+  transition: 1s;
 }
 .frameBlockFrameHorizontal4{
   display:block;
   width:764px;
   height:225px;
+  transition: 1s;
 }
 .frameBlockFrameVertical4{
   display:block;
   width:225px;
   height:764px;
+  transition: 1s;
 }
 .frameBlockFrameHorizontal5{
   display:block;
   width:763px;
   height:180px;
+  transition: 1s;
 }
 .frameBlockFrameVertical5{
   display:block;
   width:180px;
   height:764px;
+  transition: 1s;
 }
 
 
@@ -4670,6 +4680,709 @@ export default {
 }
 
 @media screen and (max-width:380px){
+  .logoBinera{
+    margin-top:85vw;
+  }
+  .logoBinera > img{
+    width:100px;
+    margin-left:61vw;
+  }
+
+
+  .poster{
+    position:relative;
+  }
+  .closed{
+    display:none;
+  }
+  .poster:hover .closed{
+    display:flex;
+    align-items: center;
+    z-index:100;
+    cursor:pointer;
+    margin: 0 auto;
+    filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.15));
+    transition:0.6s;
+  }
+  .closed > img{
+    display:flex;
+    margin:0 auto;
+    margin-top:-112.5%;
+    padding-left:0.5%;
+    width:21px;
+    height:21px;
+  }
+
+
+  .frameBlockFrameHorizontal1{
+    display:block;
+    width:208px;
+    height:208px;
+  }
+  .frameBlockFrameHorizontal2{
+    display:block;
+    width:257px;
+    height:142px;
+  }
+  .frameBlockFrameVertical2{
+    display:block;
+    width:145px;
+    height:259px;
+  }
+  .frameBlockFrameHorizontal3{
+    display:block;
+    width:310px;
+    height:115px;
+  }
+  .frameBlockFrameVertical3{
+    display:block;
+    width:103px;
+    height:310px;
+  }
+  .frameBlockFrameHorizontal4{
+    display:block;
+    width:310px;
+    height:77px;
+  }
+  .frameBlockFrameVertical4{
+    display:block;
+    width:80px;
+    height:310px;
+  }
+  .frameBlockFrameHorizontal5{
+    display:block;
+    width:310px;
+    height:63.5px;
+  }
+  .frameBlockFrameVertical5{
+    display:block;
+    width:63px;
+    height:310px;
+  }
+
+
+
+  .configuratorBlockMechanism11 > img{
+    width:123px;
+    height:125px;
+    border-radius:3px;
+  }
+
+  .configuratorBlockMechanism11{
+    width:123px;
+    height:125px;
+    margin-left:38px;
+    margin-top:-169.5px;
+    border-radius:3px;
+  }
+  .configuratorBlockMechanism11Hover{
+    width:120px;
+    height:120px;
+    margin-left:-3px;
+    margin-top:-3px;
+    border:#ff7a00 solid 4.5px;
+    border-radius:3px;
+    filter:none;
+  }
+
+
+
+  /*
+    Frame 2 horizontal
+  */
+
+  .configuratorBlockMechanism12{
+    width:85px;
+    height:85px;
+    margin-left:26px;
+    margin-top:-116px
+  }
+  .configuratorBlockMechanism22{
+    width:85px;
+    height:85px;
+    margin-left:29.5px;
+    margin-top:-116px
+  }
+
+  .configuratorBlockMechanism12 > img{
+    width:85px;
+    height:85px;
+  }
+  .configuratorBlockMechanism22 > img{
+    width:85px;
+    height:85px;
+  }
+  .configuratorBlockMechanism12Hover{
+    width:82px;
+    height:82px;
+    border:3px solid #ff7a00;
+    margin-left:-1px;
+    margin-top:-91px;
+    filter:none;
+    border-radius:3px;
+  }
+  .configuratorBlockMechanism22Hover{
+    width:82px;
+    height:82px;
+    border:3px solid #ff7a00;
+    margin-top:-91px;
+    margin-left:-2px;
+    filter:none;
+    border-radius:3px;
+  }
+
+  /*
+  Frame 2 vertical
+*/
+
+  .configuratorBlockMechanism122{
+    width:87px;
+    height:87px;
+    margin-left:27px;
+    margin-top:-201px
+  }
+  .configuratorBlockMechanism222{
+    width:87px;
+    height:87px;
+    margin-left:27px;
+    margin-top:-118px
+  }
+  .configuratorBlockMechanism122 > img{
+    width:87px;
+    height:87px;
+  }
+  .configuratorBlockMechanism222 > img{
+    width:87px;
+    height:87px;
+  }
+  .configuratorBlockMechanism122Hover{
+    width:85px;
+    height:85px;
+    border:3px solid #ff7a00;
+    margin-top:-2px;
+    margin-left:-2px;
+    filter:none;
+    border-radius: 3px;
+  }
+  .configuratorBlockMechanism222Hover{
+    width:85px;
+    height:85px;
+    border:3px solid #ff7a00;
+    margin-top:-1.5px;
+    margin-left:-2px;
+    filter:none;
+    border-radius: 3px;
+  }
+
+
+  /*
+    Frame 3
+  */
+
+  .configuratorBlockMechanism13{
+    width:71px;
+    height:71px;
+    margin-top:-95px;
+    margin-left:22px;
+  }
+  .configuratorBlockMechanism23{
+    width:71px;
+    height:71px;
+    margin-top:-95px;
+    margin-left:24px;
+  }
+  .configuratorBlockMechanism33{
+    width:71px;
+    height:71px;
+    margin-top:-95px;
+    margin-left:24px;
+  }
+  .configuratorBlockMechanism13 > img{
+    width:71px;
+    height:71px;
+  }
+  .configuratorBlockMechanism23 > img{
+    width:71px;
+    height:71px;
+  }
+  .configuratorBlockMechanism33 > img{
+    width:71px;
+    height:71px;
+  }
+  .configuratorBlockMechanism13Hover{
+    width:68px;
+    height:68px;
+    margin-top:-77px;
+    border-radius:2px;
+    border: #ff7a00 solid 2px;
+    filter:none;
+    margin-left:-1px;
+  }
+  .configuratorBlockMechanism23Hover{
+    width:68px;
+    height:68px;
+    margin-top:-77px;
+    border-radius:2px;
+    border:#ff7a00 solid 2px;
+    filter:none;
+    margin-left:-1px;
+  }
+  .configuratorBlockMechanism33Hover{
+    width:68px;
+    height:68px;
+    margin-top:-77px;
+    border-radius:2px;
+    border:#ff7a00 solid 2px;
+    filter:none;
+    margin-left:-1.5px;
+  }
+
+
+
+
+
+
+
+  .configuratorBlockMechanism133{
+    width:61px;
+    height:61px;
+    margin-left:19px;
+    margin-top:-141.5px
+  }
+  .configuratorBlockMechanism133 > img{
+    width:61.5px;
+    height:61.5px;
+    border-radius:3px;
+  }
+  .configuratorBlockMechanism233{
+    width:61px;
+    height:61px;
+    margin-left:19px;
+    margin-top:-142px
+  }
+  .configuratorBlockMechanism233 > img{
+    width:61.5px;
+    height:61.5px;
+    border-radius:3px;
+  }
+  .configuratorBlockMechanism333{
+    width:61px;
+    height:61px;
+    margin-left:19px;
+    margin-top:-85.5px
+  }
+  .configuratorBlockMechanism333 > img{
+    width:61.5px;
+    height:61.5px;
+    border-radius:3px;
+  }
+  .configuratorBlockMechanism133Hover{
+    width:57px;
+    height:57px;
+    filter: none;
+    margin-left: 0;
+    margin-top: 0;
+    border: 2px solid #FF7A00;
+  }
+  .configuratorBlockMechanism233Hover{
+    width:57px;
+    height:57px;
+    filter: none;
+    margin-left: 0;
+    margin-top: 0;
+    border: 2px solid #FF7A00;
+  }
+  .configuratorBlockMechanism333Hover{
+    width:57px;
+    height:57px;
+    filter: none;
+    margin-left: 0;
+    margin-top: 0;
+    border: 2px solid #FF7A00;
+  }
+
+
+
+
+
+
+
+
+
+
+  .configuratorBlockMechanism14{
+    width:46px;
+    height:46px;
+    margin-top:-62.5px;
+    margin-left:14.5px;
+  }
+  .configuratorBlockMechanism14 > img{
+    width:46.5px;
+    height:45.5px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism24{
+    width:46px;
+    height:46px;
+    margin-top:-62.5px;
+    margin-left:17px;
+  }
+  .configuratorBlockMechanism24 > img{
+    width:46px;
+    height:45.5px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism34{
+    width:46px;
+    height:46px;
+    margin-top:-62.5px;
+    margin-left:16.5px;
+  }
+  .configuratorBlockMechanism34 > img{
+    width:46px;
+    height:45.5px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism44{
+    width:46px;
+    height:46px;
+    margin-top:-62.5px;
+    margin-left:16.5px;
+  }
+  .configuratorBlockMechanism44 > img{
+    width:46px;
+    height:45.5px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism14Hover{
+    width:45px;
+    height:45px;
+    margin-top:-53px;
+    margin-left:-1px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism24Hover{
+    width:45px;
+    height:45px;
+    margin-top:-53px;
+    margin-left:-1px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism34Hover{
+    width:45px;
+    height:45px;
+    margin-top:-53px;
+    margin-left:-1px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+  .configuratorBlockMechanism44Hover{
+    width:45px;
+    height:45px;
+    margin-top:-53px;
+    margin-left:-1px;
+    filter:none;
+    border-radius:1px;
+    border:2px solid #ff7a00;
+  }
+
+
+
+
+
+
+
+  .configuratorBlockMechanism144{
+    width:47px;
+    height:47px;
+    margin-top:-109px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism144 > img{
+    width:47.5px;
+    height:47px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism244{
+    width:47px;
+    height:47px;
+    margin-top:-108px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism244 > img{
+    width:47.5px;
+    height:47px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism344{
+    width:47px;
+    height:47px;
+    margin-top:-110px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism344 > img{
+    width:47.5px;
+    height:47px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism444{
+    width:47px;
+    height:47px;
+    margin-top:-66px;
+    margin-left:15px;
+  }
+  .configuratorBlockMechanism444 > img{
+    width:47.5px;
+    height:47px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism144Hover{
+    width:43px;
+    height:43px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 2px solid #FF7A00;
+  }
+  .configuratorBlockMechanism244Hover{
+    width:43px;
+    height:43px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 2px solid #FF7A00;
+  }
+  .configuratorBlockMechanism344Hover{
+    width:43px;
+    height:43px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 2px solid #FF7A00;
+  }
+  .configuratorBlockMechanism444Hover{
+    width:43px;
+    height:43px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 2px solid #FF7A00;
+  }
+
+
+
+
+  .configuratorBlockMechanism15{
+    width:38px;
+    height:38px;
+    margin-top:-51.5px;
+    margin-left:12px;
+  }
+  .configuratorBlockMechanism15 > img{
+    width:37.5px;
+    height:37.5px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism25{
+    width:38px;
+    height:38px;
+    margin-top:-51.5px;
+    margin-left:13px;
+  }
+  .configuratorBlockMechanism25 > img{
+    width:37.5px;
+    height:37.5px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism35{
+    width:38px;
+    height:38px;
+    margin-top:-51.5px;
+    margin-left:12.5px;
+  }
+  .configuratorBlockMechanism35 > img{
+    width:37.5px;
+    height:37.5px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism45{
+    width:38px;
+    height:38px;
+    margin-top:-51.5px;
+    margin-left:13px;
+  }
+  .configuratorBlockMechanism45 > img{
+    width:37.5px;
+    height:37.5px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism55{
+    width:38px;
+    height:38px;
+    margin-top:-51.5px;
+    margin-left:12.5px;
+  }
+  .configuratorBlockMechanism55 > img{
+    width:37.5px;
+    height:37.5px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism15Hover{
+    width:37.5px;
+    height:37.5px;
+    margin-top:-44px;
+    margin-left:-1px;
+    filter:none;
+    border-radius:1px;
+    border:1px solid #ff7a00;
+  }
+  .configuratorBlockMechanism25Hover{
+    width:37.5px;
+    height:37.5px;
+    margin-top:-44px;
+    margin-left:-1px;
+    filter:none;
+    border-radius:1px;
+    border:1px solid #ff7a00;
+  }
+  .configuratorBlockMechanism35Hover{
+    width:37.5px;
+    height:37.5px;
+    margin-top:-44px;
+    margin-left:-1px;
+    filter:none;
+    border-radius:1px;
+    border:1px solid #ff7a00;
+  }
+  .configuratorBlockMechanism45Hover{
+    width:37.5px;
+    height:37.5px;
+    margin-top:-44px;
+    margin-left:-1px;
+    filter:none;
+    border-radius:1px;
+    border:1px solid #ff7a00;
+  }
+  .configuratorBlockMechanism55Hover{
+    width:37.5px;
+    height:37.5px;
+    margin-top:-44px;
+    margin-left:-1px;
+    filter:none;
+    border-radius:1px;
+    border:1px solid #ff7a00;
+  }
+
+
+
+
+
+
+
+  .configuratorBlockMechanism155{
+    width:39px;
+    height:39px;
+    margin-top:-89px;
+    margin-left:11px;
+  }
+  .configuratorBlockMechanism155 > img{
+    width:39px;
+    height:39px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism255{
+    width:39px;
+    height:39px;
+    margin-top:-89px;
+    margin-left:11px;
+  }
+  .configuratorBlockMechanism255 > img{
+    width:39px;
+    height:39px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism355{
+    width:39px;
+    height:39px;
+    margin-top:-91px;
+    margin-left:11px;
+  }
+  .configuratorBlockMechanism355 > img{
+    width:39px;
+    height:39px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism455{
+    width:39px;
+    height:39px;
+    margin-top:-89px;
+    margin-left:11px;
+  }
+  .configuratorBlockMechanism455 > img{
+    width:39px;
+    height:39px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism555{
+    width:39px;
+    height:39px;
+    margin-top:-53px;
+    margin-left:11px;
+  }
+  .configuratorBlockMechanism555 > img{
+    width:39px;
+    height:39px;
+    border-radius: 0;
+  }
+  .configuratorBlockMechanism155Hover{
+    width:37px;
+    height:37px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 1px solid #FF7A00;
+  }
+  .configuratorBlockMechanism255Hover{
+    width:37px;
+    height:37px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 1px solid #FF7A00;
+  }
+  .configuratorBlockMechanism355Hover{
+    width:37px;
+    height:37px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 1px solid #FF7A00;
+  }
+  .configuratorBlockMechanism455Hover{
+    width:37px;
+    height:37px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 1px solid #FF7A00;
+  }
+  .configuratorBlockMechanism555Hover{
+    width:37px;
+    height:37px;
+    margin-top:0;
+    margin-left: 0;
+    filter: none;
+    border: 1px solid #FF7A00;
+  }
+
+}
+
+@media screen and (max-width:340px){
   .logoBinera{
     margin-top:85vw;
   }

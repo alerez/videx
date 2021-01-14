@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 
 Vue.use(Vuex)
-const url = 'https://11d217247cbe.ngrok.io';
+const url = 'https://275c805ba2b9.ngrok.io';
 // const queryString = require('query-string');
 // const request = require('request');
 const jsonToQuery = require('json-to-http-query-string');
@@ -337,6 +337,8 @@ const store = () => new Vuex.Store({
       ],
     ],
 
+
+    frameOrintationMaterialColor: '',
 
     numberPostsFrame: '1',
     material: 'plastic',
@@ -791,6 +793,16 @@ const store = () => new Vuex.Store({
     frame: state => {
       return state.frame
     },
+    frameOrintationMaterialColor: state => {
+      let horizontalElement = state.frame.horizontal[state.material] || {};
+      console.log(2);
+      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
+      console.log(3);
+      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      console.log(4);
+      let fileURL = horizontalElementElementElement.fileURL || '';
+      return state.frameOrintationMaterialColor = fileURL
+    },
 
     images: state => {
       return state.images
@@ -866,14 +878,18 @@ const store = () => new Vuex.Store({
           state.mechanismBlockFive.price
     },
     attributeNum: state => {
-      console.log(state, state.frame.horizontal[state.material]);
+      let horizontalElement = state.frame.horizontal[state.material] || {};
+      console.log(2);
+      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
+      console.log(3);
+      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || '';
       return state.attributeNum =
       state.mechanismBlockOne.num +
       state.mechanismBlockTwo.num +
       state.mechanismBlockThree.num +
       state.mechanismBlockFour.num +
       state.mechanismBlockFive.num +
-      state.frame.horizontal[state.material][state.colorsFrame][state.numberPostsFrame].num
+      horizontalElementElementElement.num
     },
     chooseMechanismItem: state => {
       return state.chooseMechanismItem

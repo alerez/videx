@@ -56,8 +56,61 @@ export default {
     ...mapActions(['EMIT_upBag', 'EMIT_upBagUP']),
     onFileChange(e) {
       const file = e.target.files[0];
+      const file1 = e.target.files[1];
+      const file2 = e.target.files[2];
+      const file3 = e.target.files[3];
+
+      if(this.activityBackgroundUP === 4){
+        this.imagesUP[0].url = URL.createObjectURL(file);
+        this.imagesUP[1].url = URL.createObjectURL(file1);
+        this.imagesUP[2].url = URL.createObjectURL(file2);
+        this.imagesUP[3].url = URL.createObjectURL(file3);
+      }
       this.imagesUP[this.activityBackgroundUP].url = URL.createObjectURL(file);
       this.EMIT_upBag(URL.createObjectURL(file))
+
+      if(URL.createObjectURL(file1)){
+        if(this.imagesUP[0].url === null){
+          this.imagesUP[0].url = URL.createObjectURL(file1);
+        }
+        else if(this.imagesUP[1].url === null){
+          this.imagesUP[1].url = URL.createObjectURL(file1);
+        }
+        else if(this.imagesUP[2].url === null){
+          this.imagesUP[2].url = URL.createObjectURL(file1);
+        }
+        else if(this.imagesUP[3].url === null){
+          this.imagesUP[3].url = URL.createObjectURL(file1);
+        }
+      }
+      if(URL.createObjectURL(file2)){
+        if(this.imagesUP[0].url === null){
+          this.imagesUP[0].url = URL.createObjectURL(file2);
+        }
+        else if(this.imagesUP[1].url === null){
+          this.imagesUP[1].url = URL.createObjectURL(file2);
+        }
+        else if(this.imagesUP[2].url === null){
+          this.imagesUP[2].url = URL.createObjectURL(file2);
+        }
+        else if(this.imagesUP[3].url === null){
+          this.imagesUP[3].url = URL.createObjectURL(file2);
+        }
+      }
+      if(URL.createObjectURL(file3)){
+        if(this.imagesUP[0].url === null){
+          this.imagesUP[0].url = URL.createObjectURL(file3);
+        }
+        else if(this.imagesUP[1].url === null){
+          this.imagesUP[1].url = URL.createObjectURL(file3);
+        }
+        else if(this.imagesUP[2].url === null){
+          this.imagesUP[2].url = URL.createObjectURL(file3);
+        }
+        else if(this.imagesUP[3].url === null){
+          this.imagesUP[3].url = URL.createObjectURL(file3);
+        }
+      }
     },
     emitImg: function emitImg(data, idx) {
       this.EMIT_upBag(data)

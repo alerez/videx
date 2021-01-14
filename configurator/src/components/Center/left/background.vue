@@ -3,7 +3,7 @@
     <p class="backgroundText">{{ BackgroundText }}:</p>
     <div class="backgroundBlock">
       <div class="block1">
-        <div v-for="index in this.background[0].images" :key="index.fileURL" class="backgroundBlockImagesHover">
+        <div v-for="(index, idx) in this.background[0].images" v-bind:key="idx" class="backgroundBlockImagesHover">
           <div v-if="activityBackground !== index.id" class="backgroundBlockImages" >
             <img v-on:click="emitImg(index.id)" :src="index.fileURL">
           </div>

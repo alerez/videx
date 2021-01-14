@@ -3,7 +3,7 @@
     <left-center class="left-center"></left-center>
     <center-center class="center"></center-center>
     <right-center class="right-center"></right-center>
-    <div v-if="mobileSelectFrame === true" class="mobileChooseMechanism">
+    <div v-show="mobileSelectFrame === true" class="mobileChooseMechanism">
       <div v-on:click="onSelectFrame(false)">
         <div class="mobileChooseMechanism_closed">
           <div>
@@ -18,7 +18,7 @@
         <selectFrame style="margin-top:-50px"></selectFrame>
       </div>
     </div>
-    <div v-if="mobileSelectMechanism === true" class="mobileChooseMechanism2">
+    <div v-show="mobileSelectMechanism === true" class="mobileChooseMechanism2">
       <div v-on:click="onSelectMechanism(false)">
         <div class="mobileChooseMechanism_closed2">
           <div>
@@ -33,7 +33,7 @@
         <choose-mechanism></choose-mechanism>
       </div>
     </div>
-    <div v-if="mobileBackground === true" class="mobileChooseMechanism3">
+    <div v-show="mobileBackground === true" class="mobileChooseMechanism3">
       <div v-on:click="onMobileBackground(false)">
         <div class="mobileChooseMechanism_closed3">
           <div>
@@ -49,7 +49,7 @@
         <upBag></upBag>
       </div>
     </div>
-    <div v-if="mobileColorBackground === true" class="mobileChooseMechanism4">
+    <div v-show="mobileColorBackground === true" class="mobileChooseMechanism4">
       <div v-on:click="onMobileColorBackground(false)">
         <div class="mobileChooseMechanism_closed4">
           <div>

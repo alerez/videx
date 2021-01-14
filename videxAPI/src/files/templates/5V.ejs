@@ -31,31 +31,46 @@
 				<div>
 					<img style="	position:absolute;
 									width:670px;
-									height:670px;" src="<%=background%>"/>
+									height:670px;" src="<%= background %>"/>
 				</div>
 				<div>
 					<img style="
-								width: 175px;
-    							height: 454px;
+					 			width: 108px;
+    							height: 452px;
 								position:absolute;
-								margin-top:60px;
-								margin-left:246px;" src="<%=frame.fileURL%>"/>
+								margin-top:50px;
+								margin-left:280px;" src="<%= frame.fileURL %>"/>
 					<div>
 						<img style="	position:absolute;
-										width: 105px;
-   		 								height: 105px;
-										margin-top:92px;
-										margin-left:278px;" src="<%=firstItem.fileURL%>"/>
+										width:65px;
+										height:65px;
+										border-radius:3px;
+										margin-top:70px;
+										margin-left:300px;" src="<%= firstItem.fileURL %>"/>
 						<img style="	position:absolute;
-										width: 105px;
-   		 								height: 105px;
-										margin-top:230px;
-										margin-left:278px;" src="<%=secondItem.fileURL%>"/>
+										width:65px;
+										height:65px;
+										border-radius:3px;
+										margin-top:155px;
+										margin-left:300px;" src="<%= secondItem.fileURL %>"/>
 						<img style="	position:absolute;
-									    width: 105px;
-   										height: 105px;
-										margin-top:368px;
-										margin-left:278px;" src="<%=thirdItem.fileURL%>"/>
+										width:65px;
+										height:65px;
+										border-radius:3px;
+										margin-top:240px;
+										margin-left:300px;" src="<%= thirdItem.fileURL %>"/>
+						<img style="	position:absolute;
+										width:65px;
+										height:65px;
+										border-radius:3px;
+										margin-top:327px;
+										margin-left:300px;" src="<%= fourthItem.fileURL %>"/>
+						<img style="	position:absolute;
+										width:65px;
+										height:65px;
+										border-radius:3px;
+										margin-top:412px;
+										margin-left:300px;" src="<%= fifthItem.fileURL %>"/>
 					</div>
 				</div>
 				<img style="	position:absolute;
@@ -82,7 +97,7 @@
 									font-size:13px;
 									color:#FF7A00;
 									margin:5px;
-									padding-top:5px;"><%=frame.article%></p>
+									padding-top:5px;"><%= frame.article %></p>
 					</div>
 					<div>
 						<p style="	font-family:Ubuntu-Regular, sans-serif;
@@ -93,7 +108,7 @@
 									font-size:13px;
 									color:#FF7A00;
 									margin:5px;
-									padding-top:5px;"><%=frame.productCode%></p>
+									padding-top:5px;"><%= frame.productCode %></p>
 					</div>
 					<div>
 						<p style="	font-family:Ubuntu-Regular, sans-serif;
@@ -104,7 +119,7 @@
 									font-size:13px;
 									color:#FF7A00;
 									margin:5px;
-									padding-top:5px;"><%=frame.price%><span>грн</span></p>
+									padding-top:5px;"><%= frame.price %><span> грн</span></p>
 					</div>
 				</div>
 				<div style="	width:1px;
@@ -123,17 +138,27 @@
 	font-size:13px;
 	color:#FF7A00;
 	margin:5px;
-	padding-top:5px;">1 - <span><%=firstItem.article%></span></p>
+	padding-top:5px;">1 - <span><%= firstItem.article %></span></p>
 					<p style="	font-family:Ubuntu-Regular, sans-serif;
 	font-size:13px;
 	color:#FF7A00;
 	margin:5px;
-	padding-top:5px;">2 - <span><%=secondItem.article%></span></p>
+	padding-top:5px;">2 - <span><%= secondItem.article %></span></p>
 					<p style="	font-family:Ubuntu-Regular, sans-serif;
 	font-size:13px;
 	color:#FF7A00;
 	margin:5px;
-	padding-top:5px;">3 - <span><%=thirdItem.article%></span></p>
+	padding-top:5px;">3 - <span><%= thirdItem.article %></span></p>
+					<p style="	font-family:Ubuntu-Regular, sans-serif;
+	font-size:13px;
+	color:#FF7A00;
+	margin:5px;
+	padding-top:5px;">4 - <span><%= fourthItem.article %></span></p>
+					<p style="	font-family:Ubuntu-Regular, sans-serif;
+	font-size:13px;
+	color:#FF7A00;
+	margin:5px;
+	padding-top:5px;">5 - <span><%= fifthItem.article %></span></p>
 				</div>
 				<div style="	flex-basis:25%;
 	padding:10px;
@@ -146,17 +171,27 @@
 	font-size:13px;
 	color:#FF7A00;
 	margin:5px;
-	padding-top:5px;"><%=firstItem.productCode%></p>
+	padding-top:5px;"><%= firstItem.productCode %></p>
 					<p style="	font-family:Ubuntu-Regular, sans-serif;
 	font-size:13px;
 	color:#FF7A00;
 	margin:5px;
-	padding-top:5px;"><%=secondItem.productCode%></p>
+	padding-top:5px;"><%= secondItem.productCode %></p>
 					<p style="	font-family:Ubuntu-Regular, sans-serif;
 	font-size:13px;
 	color:#FF7A00;
 	margin:5px;
-	padding-top:5px;"><%=thirdItem.productCode%></p>
+	padding-top:5px;"><%= thirdItem.productCode %></p>
+					<p style="	font-family:Ubuntu-Regular, sans-serif;
+	font-size:13px;
+	color:#FF7A00;
+	margin:5px;
+	padding-top:5px;"><%= fourthItem.productCode %></p>
+					<p style="	font-family:Ubuntu-Regular, sans-serif;
+	font-size:13px;
+	color:#FF7A00;
+	margin:5px;
+	padding-top:5px;"><%= fifthItem.productCode %></p>
 				</div>
 				<div style="	flex-basis:20%;
 	padding:10px;
@@ -169,17 +204,27 @@
 	font-size:13px;
 	color:#FF7A00;
 	margin:5px;
-	padding-top:5px;"><span><%=firstItem.productCode%></span>грн</p>
+	padding-top:5px;"><span><%= firstItem.price %></span>грн</p>
 					<p style="	font-family:Ubuntu-Regular, sans-serif;
 	font-size:13px;
 	color:#FF7A00;
 	margin:5px;
-	padding-top:5px;"><span><%=secondItem.price%></span>грн</p>
+	padding-top:5px;"><span><%= secondItem.price %></span>грн</p>
 					<p style="	font-family:Ubuntu-Regular, sans-serif;
 	font-size:13px;
 	color:#FF7A00;
 	margin:5px;
-	padding-top:5px;"><span><%=thirdItem.price%></span>грн</p>
+	padding-top:5px;"><span><%= thirdItem.price %></span>грн</p>
+					<p style="	font-family:Ubuntu-Regular, sans-serif;
+	font-size:13px;
+	color:#FF7A00;
+	margin:5px;
+	padding-top:5px;"><span><%= fourthItem.price %></span>грн</p>
+					<p style="	font-family:Ubuntu-Regular, sans-serif;
+	font-size:13px;
+	color:#FF7A00;
+	margin:5px;
+	padding-top:5px;"><span><%= fifthItem.price %></span>грн</p>
 				</div>
 			</div>
 			<div style="display:flex; margin-top:33px; justify-content:center">
