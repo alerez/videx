@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <div class="background-Block">
+    <div id="background-Block" class="background-Block">
       <div style="display:flex; flex-direction:column">
         <div style="display:flex">
           <background class="background"></background>
@@ -302,6 +302,9 @@ export default {
 @media screen and (max-width: 648px){
   .background{
     display:none;
+  }
+  #background-Block{
+    display: none;
   }
   .color-backgroundTwo{
     display:none;

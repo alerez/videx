@@ -42,7 +42,6 @@ export default {
       this.EMIT_backgroundColors(data)
     },
     emitImg: function emitImg(data) {
-      console.log(data)
       this.EMIT_upBag(data)
     },
   },

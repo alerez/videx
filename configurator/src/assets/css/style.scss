@@ -54,11 +54,12 @@ $white: rgb(255, 255, 255);
     margin-top:3px;
     margin-left:2px;
 
-    border-radius:8px;
+    border: 2px solid #FF7A00;
+    border-radius:6px;
   }
   .backgroundBlockImagesHoverImg > img{
-    width:40px;
-    height:40px;
+    width:100%;
+    height:100%;
   }
   .backgroundBlockImagesHover{
     @include size(44px, 44px);
@@ -418,7 +419,7 @@ $white: rgb(255, 255, 255);
     margin-left:2px;
   }
   .backgroundBlockImagesHoverImg > img{
-    @include size(37px, 37px);
+    @include size(100%, 100%);
   }
   .backgroundBlockImagesHover{
     @include size(40px, 40px);

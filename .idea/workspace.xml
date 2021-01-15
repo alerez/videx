@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08f21971-1991-4c1b-bb88-30dbe0d612c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/videxAPI/src/files/templates/4V.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videxAPI/src/files/templates/5V.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style-dist.css.map" afterDir="false" />
@@ -12,12 +10,10 @@
       <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/background.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/background.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/downloadProject.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/downloadProject.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/upBag.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/upBag.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/colorBackground.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/colorBackground.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/views/Center/centerBlock.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/views/Center/centerBlock.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videxAPI/src/files/templates/3V.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/videxAPI/src/files/templates/3V.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videxAPI/src/files/templates/5H.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/videxAPI/src/files/templates/5H.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/views/Center/leftCenter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/views/Center/leftCenter.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +80,7 @@
       <workItem from="1610353686962" duration="15379000" />
       <workItem from="1610445360046" duration="13688000" />
       <workItem from="1610534094676" duration="18046000" />
-      <workItem from="1610619384527" duration="12817000" />
+      <workItem from="1610619384527" duration="24810000" />
     </task>
     <servers />
   </component>

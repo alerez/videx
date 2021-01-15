@@ -3,12 +3,15 @@
     <p class="backgroundText">{{ BackgroundText }}:</p>
     <div class="backgroundBlock">
       <div class="block1">
-        <div v-for="(index, idx) in this.background[0].images" v-bind:key="idx" class="backgroundBlockImagesHover">
-          <div v-if="activityBackground !== index.id" class="backgroundBlockImages" >
-            <img v-on:click="emitImg(index.id)" :src="index.fileURL">
+        <div v-for="index in this.background[0].images" v-bind:key="index.id">
+          <div v-if="activityBackground !== index.id">
+            <img v-on:click="emitImg(index.id)" v-bind:src="index.fileURL"
+                 class="backgroundBlockImages upBagBackgroundBlockImages">
           </div>
-          <div v-else-if="activityBackground === index.id" class="backgroundBlockImagesHoverImg">
-            <img v-on:click="emitImg(index.id)" :src="index.fileURL">
+          <div v-else-if="activityBackground === index.id">
+            <img v-on:click="emitImg(index.id)" v-bind:src="index.fileURL"
+                 style="background-color: #FF7A00"
+                 class="backgroundBlockImages upBagBackgroundBlockImages backgroundBlockImagesHoverImg">
           </div>
         </div>
       </div>
@@ -143,15 +146,15 @@ export default {
   display: block;
   margin-top:3px;
   margin-left:2px;
-  border-radius:8px;
-  border:#ff7a00 solid 2.5px;
-  z-index: 1000;
+  border-radius:6px;
+  border:#ff7a00 solid 3px;
+  z-index: 100;
+  position: relative;
 }
 .backgroundBlockImagesHoverImg > img{
-  width:59px;
-  height:59px;
-  border-radius: 4px;
-  z-index: -999;
+  width:100%;
+  height:100%;
+  border-radius: 3px;
 }
 .backgroundBlockImagesHover{
   width: 63px;

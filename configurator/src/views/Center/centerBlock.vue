@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="mobileChooseMechanism_block">
-        <selectFrame style="margin-top:-50px"></selectFrame>
+        <selectFrame class="mobileChooseMechanismDisplay" style="margin-top:-50px"></selectFrame>
       </div>
     </div>
     <div v-show="mobileSelectMechanism === true" class="mobileChooseMechanism2">
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="mobileChooseMechanism_block">
-        <choose-mechanism></choose-mechanism>
+        <choose-mechanism  class="mobileChooseMechanismDisplay"  ></choose-mechanism>
       </div>
     </div>
     <div v-show="mobileBackground === true" class="mobileChooseMechanism3">
@@ -45,8 +45,8 @@
         </div>
       </div>
       <div class="mobileChooseMechanism_block">
-        <background></background>
-        <upBag></upBag>
+        <background class="mobileChooseMechanismDisplay"></background>
+        <upBag class="mobileChooseMechanismDisplay" ></upBag>
       </div>
     </div>
     <div v-show="mobileColorBackground === true" class="mobileChooseMechanism4">
@@ -61,7 +61,7 @@
         </div>
       </div>
       <div class="mobileChooseMechanism_block">
-        <color-background></color-background>
+        <color-background class="mobileChooseMechanismDisplay" ></color-background>
       </div>
     </div>
   </div>
@@ -172,7 +172,13 @@ export default {
 .mobileChooseMechanism4{
   display:none;
 }
+.mobileChooseMechanismDisplay{
+  display: none;
+}
 @media screen and (max-width: 1023px){
+  .mobileChooseMechanismDisplay{
+    display: block;
+  }
   .centerBlock{
     display:flex;
     flex-direction:column;
