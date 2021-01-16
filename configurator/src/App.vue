@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <topBlock style="width:100%; margin-bottom:20px"></topBlock>
-    <centerBlock></centerBlock>
+    <centerBlock>
+      <loader object="#ff9633" color1="#ffffff" color2="#17fd3d" size="7" speed="1" bg="#343a40" objectbg="#e9e7e2" opacity="100" disableScrolling="false" name="spinning"></loader>
+    </centerBlock>
     <buttonBlock></buttonBlock>
   </div>
 </template>

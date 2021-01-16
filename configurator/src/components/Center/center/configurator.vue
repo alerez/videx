@@ -460,7 +460,7 @@ import {mapActions, mapGetters} from 'vuex';
 export default {
   data() {
     return {
-      close: 'https://275c805ba2b9.ngrok.io/images/frameColors/close.jpg',
+      close: 'https://01d42a6a5db0.ngrok.io/images/frameColors/close.jpg',
       urlImgBag: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
       active1: false,
       active2: false,
@@ -490,9 +490,6 @@ export default {
             'background'
         ]
     ),
-  },
-  mounted(){
-    console.log('pochemu' , this.frame[this.frameOrientation][this.material]);
   },
   methods: {
     ...mapActions(

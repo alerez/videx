@@ -2,7 +2,8 @@
   <div>
     <configurator style="display:flex; justify-items:center; align-items:center;
     align-content:center; justify-content:center;
-    align-self:center; justify-self:center" class="configuratorCenter"></configurator>
+    align-self:center; justify-self:center" class="configuratorCenter">
+    </configurator>
     <div class="mobileCenter">
       <div class="mobileFrame" v-on:click="onSelectFrame(true)">
         <div>

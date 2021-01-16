@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 
 Vue.use(Vuex)
-const url = 'https://275c805ba2b9.ngrok.io';
+const url = 'https://01d42a6a5db0.ngrok.io';
 // const queryString = require('query-string');
 // const request = require('request');
 const jsonToQuery = require('json-to-http-query-string');

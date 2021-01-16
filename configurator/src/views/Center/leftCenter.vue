@@ -21,7 +21,7 @@
     <div id="background-Block" class="background-Block">
       <div style="display:flex; flex-direction:column">
         <div style="display:flex">
-          <background class="background"></background>
+          <background class="background" :key="componentKey"></background>
           <color-background class="color-backgroundTwo"></color-background>
         </div>
         <up-bag class="up-bag"></up-bag>
@@ -67,6 +67,11 @@ import {mapActions, mapGetters} from "vuex";
 
 export default {
   name: 'leftCenter',
+  data() {
+    return{
+      componentKey: 0
+    }
+  },
   components: {
     DownloadProject,
     NumberPosts,

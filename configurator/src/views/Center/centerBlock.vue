@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="mobileChooseMechanism_block">
-        <background class="mobileChooseMechanismDisplay"></background>
+        <background class="mobileChooseMechanismDisplay" :key="componentKey"></background>
         <upBag class="mobileChooseMechanismDisplay" ></upBag>
       </div>
     </div>
@@ -80,6 +80,11 @@ import upBag from "@/components/Center/left/upBag.vue";
 import {mapActions, mapGetters} from "vuex";
 
 export default {
+  data() {
+    return{
+      componentKey: 0
+    }
+  },
   components: {
     ColorBackground,
     ChooseMechanism,
@@ -107,6 +112,7 @@ export default {
           'EMIT_onSelectMechanism',
           'EMIT_onMobileBackground',
           'EMIT_onMobileColorBackground',
+          'SET_BACKGROUNDS'
         ]),
     onSelectFrame: function onSelectFrame(data){
       if(this.mobileSelectFrame === true){
@@ -152,7 +158,10 @@ export default {
       this.EMIT_onSelectFrame(false)
       this.EMIT_onMobileBackground(false)
     }
-  }
+  },
+  created() {
+    this.SET_BACKGROUNDS();
+  },
 };
 </script>
 

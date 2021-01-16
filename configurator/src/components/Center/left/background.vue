@@ -3,7 +3,7 @@
     <p class="backgroundText">{{ BackgroundText }}:</p>
     <div class="backgroundBlock">
       <div class="block1">
-        <div v-for="index in this.background[0].images" v-bind:key="index.id">
+        <div v-for="(index, idx) in this.background[0].images" :key="idx">
           <div v-if="activityBackground !== index.id">
             <img v-on:click="emitImg(index.id)" v-bind:src="index.fileURL"
                  class="backgroundBlockImages upBagBackgroundBlockImages">
@@ -55,9 +55,6 @@ export default {
     emitImg: function emitImg(data) {
       this.EMIT_background(data);
     },
-  },
-  created() {
-    this.SET_BACKGROUNDS();
   },
   computed: {
     ...mapGetters(['background', 'activityBackground'])

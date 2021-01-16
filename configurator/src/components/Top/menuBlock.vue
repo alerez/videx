@@ -16,7 +16,7 @@ font-size: 18px;"> / Конфигуратор</span></p>
     </div>
     <div style="margin-bottom:40px; margin-top:7px">
       <div style="width:91%; height:7px;
-    background: #FF7A00; margin: 0 auto;"></div>
+    background: #ff7a00; margin: 0 auto;"></div>
     </div>
   </div>
 </template>

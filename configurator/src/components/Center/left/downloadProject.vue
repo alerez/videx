@@ -113,7 +113,7 @@ import { mapGetters } from 'vuex';
 export default {
   data() {
     return {
-      urlDown: 'https://275c805ba2b9.ngrok.io/pdf?',
+      urlDown: 'https://01d42a6a5db0.ngrok.io/pdf?',
       downloadText: {
         ProjectText: '*Змінюйте розташування механізмів пересуваючи їх порядок.',
         BlockText: 'Завантижити проект (PDF)'
