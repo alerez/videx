@@ -470,9 +470,6 @@ export default {
     }
   },
   created() {
-    if(window.location.pathname !== '/'){
-      this.SET_FRAMES_LOCAL();
-    }
     this.SET_FRAMES();
   },
   computed: {

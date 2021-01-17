@@ -578,14 +578,16 @@ const store = () => new Vuex.Store({
   },
   mutations: {
     SET_FRAMES_LOCAL: (state, res) => {
-      state.frameNumMatOriColor = res.map(function () {
-        return {
-          numberPostsFrame: res.article,
-          material: res.material,
-          frameOrientation: res.position,
-          colorsFrame: res.color
+      state.frameNumMatOriColor = res.reduce((stateFrame, picParam) => {
+        stateFrame = {
+          numberPostsFrame: '' + picParam.posts,
+          material: picParam.material,
+          frameOrientation: picParam.position,
+          colorsFrame: picParam.color,
         }
-      })
+        return stateFrame
+      }, {},{})
+      console.log('dfdfd')
     },
     SET_FRAMES: (state, res) => {
       // state.frame.hor = res.map((sommething, i) => {return sommething })

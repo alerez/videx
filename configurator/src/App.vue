@@ -19,6 +19,7 @@ body{
 import TopBlock from '@/views/top/topBlock.vue';
 import CenterBlock from '@/views/Center/centerBlock.vue';
 import ButtonBlock from '@/views/Buttom/buttonBlock.vue';
+import {mapActions} from 'vuex';
 
 export default {
   components:
@@ -27,6 +28,15 @@ export default {
       CenterBlock,
       TopBlock,
     },
+  methods: {
+    ...mapActions(['SET_FRAMES_LOCAL'])
+  },
+  created() {
+    if(window.location.pathname !== '/'){
+      this.SET_FRAMES_LOCAL();
+    }
+  }
+
 };
 </script>
 
