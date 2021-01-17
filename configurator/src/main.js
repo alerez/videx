@@ -10,7 +10,6 @@ export const eventBus = new Vue()
 Vue.config.productionTip = false;
 
 new Vue({
-
   router,
   store,
   render: h=> h(App),

@@ -12,6 +12,13 @@ const getFrames = {
     'Content-Type': 'application/json'
   },
 };
+const getFramesLocal = {
+  method: 'get',
+  url: url + '/getFrames',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+};
 const getFramesColors = {
   method: 'get',
   url: url + '/getFramesColors',
@@ -408,6 +415,16 @@ const store = () => new Vuex.Store({
             console.log(error);
           });
     },
+    SET_FRAMES_LOCAL : async ({commit}) => {
+      await axios(getFrames)
+          .then(response => response.data)
+          .then(res => {
+            commit('SET_FRAMES_LOCAL', res)
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+    },
     SET_FRAMES_COLOR : async ({commit}) => {
       await axios(getFramesColors)
           .then(response => response.data)
@@ -530,6 +547,16 @@ const store = () => new Vuex.Store({
     },
   },
   mutations: {
+    SET_FRAMES_LOCAL: (state, res) => {
+      state.users = res.map(function () {
+        return {
+          login: res.login,
+          avatar_url: res.avatar_url,
+          id: res.id,
+          site_admin: res.site_admin
+        }
+      })
+    },
     SET_FRAMES: (state, res) => {
       // state.frame.hor = res.map((sommething, i) => {return sommething })
       // state.frame = {hor: [], ver: []}

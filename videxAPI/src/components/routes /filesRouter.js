@@ -26,7 +26,7 @@ filesRouter.get('/pdf', fileComponents.getPdf);
  * @param {string} path -Express path
  * @param {callback} middleware - Express middleware
  */
-filesRouter.get('/getFrames', fileComponents.getFrames);
+filesRouter.post('/getFrames', fileComponents.getFrames);
 
 /**
  * Route to get frames colors

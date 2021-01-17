@@ -3,18 +3,133 @@
   <component name="ChangeListManager">
     <list default="true" id="08f21971-1991-4c1b-bb88-30dbe0d612c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/background.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/background.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/downloadProject.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/downloadProject.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/components/Top/menuBlock.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Top/menuBlock.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/views/Center/centerBlock.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/views/Center/centerBlock.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/views/Center/centerCenter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/views/Center/centerCenter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/views/Center/leftCenter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/views/Center/leftCenter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/public/Vector (1).svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/css/prepros.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/css/style-dist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/css/style-dist.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/css/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/downloadGreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/downloadGreen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/frameOneColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/frameOneColor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/frameTwoColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/frameTwoColor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/horizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/horizontalColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/horizontalColor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/upB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/upB.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/upBwhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/upBwhite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/vertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/vertical.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/verticalColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/Избранное.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/Избранное.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/логобинера.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/assets/img/логобинера.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/components/Center/center/attributes.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/components/Center/center/configurator.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/components/Center/left/background.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/components/Center/left/colorBackground.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/components/Center/left/downloadProject.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/components/Center/left/frameOrientation.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/components/Center/left/numberPosts.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/components/Center/left/upBag.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/components/Center/right/buy.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/components/Center/right/chooseMechanism.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/components/Center/right/selectFrame.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/components/Top/menuBlock.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/views/Buttom/buttonBlock.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/views/Center/centerBlock.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/views/Center/centerCenter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/views/Center/leftCenter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/views/Center/rightCenter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorENG/src/views/top/topBlock.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/public/Vector (1).svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/css/prepros.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/css/style-dist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/css/style-dist.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/css/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/downloadGreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/downloadGreen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/frameOneColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/frameOneColor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/frameTwoColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/frameTwoColor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/horizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/horizontalColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/horizontalColor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/upB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/upB.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/upBwhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/upBwhite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/vertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/vertical.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/verticalColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/Избранное.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/Избранное.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/логобинера.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/assets/img/логобинера.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/components/Center/center/attributes.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/components/Center/center/configurator.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/components/Center/left/background.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/components/Center/left/colorBackground.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/components/Center/left/downloadProject.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/components/Center/left/frameOrientation.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/components/Center/left/numberPosts.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/components/Center/left/upBag.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/components/Center/right/buy.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/components/Center/right/chooseMechanism.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/components/Center/right/selectFrame.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/components/Top/menuBlock.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/views/Buttom/buttonBlock.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/views/Center/centerBlock.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/views/Center/centerCenter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/views/Center/leftCenter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/views/Center/rightCenter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuratorRU/src/views/top/topBlock.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videxAPI/src/components/routes /filesRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/videxAPI/src/components/routes /filesRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +196,7 @@
       <workItem from="1610353686962" duration="15379000" />
       <workItem from="1610445360046" duration="13688000" />
       <workItem from="1610534094676" duration="18046000" />
-      <workItem from="1610619384527" duration="31558000" />
+      <workItem from="1610619384527" duration="40393000" />
     </task>
     <servers />
   </component>

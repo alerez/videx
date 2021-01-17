@@ -470,6 +470,9 @@ export default {
     }
   },
   created() {
+    if(window.location.pathname !== '/'){
+      this.SET_FRAMES_LOCAL();
+    }
     this.SET_FRAMES();
   },
   computed: {
@@ -496,7 +499,8 @@ export default {
         [
             'SET_FRAMES',
             'EMIT_selectedMechanismBlock',
-            'EMIT_closedMechanismBlock'
+            'EMIT_closedMechanismBlock',
+            'SET_FRAMES_LOCAL'
         ]),
     mechanismBlock: function mechanismBlock(data){
       if(data === 'mechanismBlockOne'){

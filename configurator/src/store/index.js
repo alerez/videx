@@ -10,11 +10,19 @@ const jsonToQuery = require('json-to-http-query-string');
 
 
 const getFrames = {
-  method: 'get',
+  method: 'post',
   url: url + '/getFrames',
   headers: {
     'Content-Type': 'application/json'
   },
+};
+const getFramesLocal = {
+  method: 'post',
+  url: url + '/getFrames',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  data: JSON.stringify({"article": '' + window.location.pathname.replace('/','')})
 };
 const getFramesColors = {
   method: 'get',
@@ -340,10 +348,12 @@ const store = () => new Vuex.Store({
 
     frameOrintationMaterialColor: '',
 
-    numberPostsFrame: '1',
-    material: 'plastic',
-    frameOrientation: 'horizontal',
-    colorsFrame: 'white',
+    frameNumMatOriColor: {
+      numberPostsFrame: '1',
+      material: 'plastic',
+      frameOrientation: 'horizontal',
+      colorsFrame: 'white',
+    },
 
     mobileSelectFrame: false,
     mobileSelectMechanism: false,
@@ -413,6 +423,16 @@ const store = () => new Vuex.Store({
 
   },
   actions: {
+    SET_FRAMES_LOCAL : async ({commit}) => {
+      await axios(getFramesLocal)
+          .then(response => response.data)
+          .then(res => {
+            commit('SET_FRAMES_LOCAL', res)
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+    },
     SET_FRAMES : async ({commit}) => {
       await axios(getFrames)
           .then(response => response.data)
@@ -557,6 +577,16 @@ const store = () => new Vuex.Store({
     },
   },
   mutations: {
+    SET_FRAMES_LOCAL: (state, res) => {
+      state.frameNumMatOriColor = res.map(function () {
+        return {
+          numberPostsFrame: res.article,
+          material: res.material,
+          frameOrientation: res.position,
+          colorsFrame: res.color
+        }
+      })
+    },
     SET_FRAMES: (state, res) => {
       // state.frame.hor = res.map((sommething, i) => {return sommething })
       // state.frame = {hor: [], ver: []}
@@ -669,10 +699,10 @@ const store = () => new Vuex.Store({
 
 
     frameOrientation: (state, data) => {
-      return state.frameOrientation = data
+      return state.frameNumMatOriColor.frameOrientation = data
     },
     numberPostsFrame: (state, data) => {
-      return state.numberPostsFrame = data
+      return state.frameNumMatOriColor.numberPostsFrame = data
     },
 
 
@@ -689,12 +719,12 @@ const store = () => new Vuex.Store({
       if(state.selectedMechanismBlock !== 'mechanismBlockNone'){
         return state[state.selectedMechanismBlock] = data
       }
-      if(state.numberPostsFrame === '1'){
+      if(state.frameNumMatOriColor.numberPostsFrame === '1'){
         if(state.mechanismBlockOne.price === 0){
           return state.mechanismBlockOne = data
         }
       }
-      if(state.numberPostsFrame === '2'){
+      if(state.frameNumMatOriColor.numberPostsFrame === '2'){
         if(state.mechanismBlockOne.price === 0){
           return state.mechanismBlockOne = data
         }
@@ -702,7 +732,7 @@ const store = () => new Vuex.Store({
           return state.mechanismBlockTwo = data
         }
       }
-      if(state.numberPostsFrame === '3'){
+      if(state.frameNumMatOriColor.numberPostsFrame === '3'){
         if(state.mechanismBlockOne.price === 0){
           return state.mechanismBlockOne = data
         }
@@ -713,7 +743,7 @@ const store = () => new Vuex.Store({
           return state.mechanismBlockThree = data
         }
       }
-      if(state.numberPostsFrame === '4'){
+      if(state.frameNumMatOriColor.numberPostsFrame === '4'){
         if(state.mechanismBlockOne.price === 0){
           return state.mechanismBlockOne = data
         }
@@ -727,7 +757,7 @@ const store = () => new Vuex.Store({
           return state.mechanismBlockFour = data
         }
       }
-      if(state.numberPostsFrame === '5'){
+      if(state.frameNumMatOriColor.numberPostsFrame === '5'){
         if(state.mechanismBlockOne.price === 0){
           return state.mechanismBlockOne = data
         }
@@ -756,10 +786,10 @@ const store = () => new Vuex.Store({
       }
     },
     frameMaterial: (state, data) => {
-      return state.material = data
+      return state.frameNumMatOriColor.material = data
     },
     frameMaterialColor: (state, data) => {
-      return state.colorsFrame = data
+      return state.frameNumMatOriColor.colorsFrame = data
     },
 
     onSelectFrame: (state, data) => {
@@ -794,9 +824,9 @@ const store = () => new Vuex.Store({
       return state.frame
     },
     frameOrintationMaterialColor: state => {
-      let horizontalElement = state.frame.horizontal[state.material] || {};
-      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
-      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      let horizontalElement = state.frame.horizontal[state.frameNumMatOriColor.material] || {};
+      let horizontalElementElement = horizontalElement[state.frameNumMatOriColor.colorsFrame] || {};
+      let horizontalElementElementElement = horizontalElementElement[state.frameNumMatOriColor.numberPostsFrame] || {};
       let fileURL = horizontalElementElementElement.fileURL || '';
       return state.frameOrintationMaterialColor = fileURL
     },
@@ -808,17 +838,22 @@ const store = () => new Vuex.Store({
       return state.colors
     },
 
+
+    frameNumMatOriColor: state => {
+      return  state.frameNumMatOriColor
+    },
+
     numberPostsFrame: state => {
-      return state.numberPostsFrame
+      return state.frameNumMatOriColor.numberPostsFrame
     },
     material: state => {
-      return state.material
+      return state.frameNumMatOriColor.material
     },
     frameOrientation: state => {
-      return state.frameOrientation
+      return state.frameNumMatOriColor.frameOrientation
     },
     colorsFrame: state => {
-      return state.colorsFrame
+      return state.frameNumMatOriColor.colorsFrame
     },
 
 
@@ -875,9 +910,9 @@ const store = () => new Vuex.Store({
           state.mechanismBlockFive.price
     },
     attributeNum: state => {
-      let horizontalElement = state.frame.horizontal[state.material] || {};
-      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
-      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || '';
+      let horizontalElement = state.frame.horizontal[state.frameNumMatOriColor.material] || {};
+      let horizontalElementElement = horizontalElement[state.frameNumMatOriColor.colorsFrame] || {};
+      let horizontalElementElementElement = horizontalElementElement[state.frameNumMatOriColor.numberPostsFrame] || '';
       return state.attributeNum =
       state.mechanismBlockOne.num +
       state.mechanismBlockTwo.num +
@@ -931,9 +966,9 @@ const store = () => new Vuex.Store({
     },
 
     pdf1: (state) => {
-        let horizontalElement = state.frame.horizontal[state.material] || {};
-        let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
-        let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+        let horizontalElement = state.frame.horizontal[state.frameNumMatOriColor.material] || {};
+        let horizontalElementElement = horizontalElement[state.frameNumMatOriColor.colorsFrame] || {};
+        let horizontalElementElementElement = horizontalElementElement[state.frameNumMatOriColor.numberPostsFrame] || {};
         let fileURL = horizontalElementElementElement.fileURL || '';
         let obj = {
             "templateName": "1.ejs",
@@ -962,9 +997,9 @@ const store = () => new Vuex.Store({
         return jsonToQuery(obj)
     },
     pdf2H: (state) => {
-      let horizontalElement = state.frame.horizontal[state.material] || {};
-      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
-      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      let horizontalElement = state.frame.horizontal[state.frameNumMatOriColor.material] || {};
+      let horizontalElementElement = horizontalElement[state.frameNumMatOriColor.colorsFrame] || {};
+      let horizontalElementElementElement = horizontalElementElement[state.frameNumMatOriColor.numberPostsFrame] || {};
       let fileURL = horizontalElementElementElement.fileURL || '';
       let obj = {
         "templateName": "2H.ejs",
@@ -999,9 +1034,9 @@ const store = () => new Vuex.Store({
       return jsonToQuery(obj)
     },
     pdf2V: (state) => {
-      let horizontalElement = state.frame.vertical[state.material] || {};
-      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
-      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      let horizontalElement = state.frame.vertical[state.frameNumMatOriColor.material] || {};
+      let horizontalElementElement = horizontalElement[state.frameNumMatOriColor.colorsFrame] || {};
+      let horizontalElementElementElement = horizontalElementElement[state.frameNumMatOriColor.numberPostsFrame] || {};
       let fileURL = horizontalElementElementElement.fileURL || '';
       let obj = {
         "templateName": "2V.ejs",
@@ -1036,9 +1071,9 @@ const store = () => new Vuex.Store({
       return jsonToQuery(obj)
     },
     pdf3H: (state) => {
-      let horizontalElement = state.frame.horizontal[state.material] || {};
-      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
-      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      let horizontalElement = state.frame.horizontal[state.frameNumMatOriColor.material] || {};
+      let horizontalElementElement = horizontalElement[state.frameNumMatOriColor.colorsFrame] || {};
+      let horizontalElementElementElement = horizontalElementElement[state.frameNumMatOriColor.numberPostsFrame] || {};
       let fileURL = horizontalElementElementElement.fileURL || '';
       let obj = {
         "templateName": "3H.ejs",
@@ -1079,9 +1114,9 @@ const store = () => new Vuex.Store({
       return jsonToQuery(obj)
     },
     pdf3V: (state) => {
-      let horizontalElement = state.frame.vertical[state.material] || {};
-      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
-      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      let horizontalElement = state.frame.vertical[state.frameNumMatOriColor.material] || {};
+      let horizontalElementElement = horizontalElement[state.frameNumMatOriColor.colorsFrame] || {};
+      let horizontalElementElementElement = horizontalElementElement[state.frameNumMatOriColor.numberPostsFrame] || {};
       let fileURL = horizontalElementElementElement.fileURL || '';
       let obj = {
         "templateName": "3V.ejs",
@@ -1122,9 +1157,9 @@ const store = () => new Vuex.Store({
       return jsonToQuery(obj)
     },
     pdf4H: (state) => {
-      let horizontalElement = state.frame.horizontal[state.material] || {};
-      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
-      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      let horizontalElement = state.frame.horizontal[state.frameNumMatOriColor.material] || {};
+      let horizontalElementElement = horizontalElement[state.frameNumMatOriColor.colorsFrame] || {};
+      let horizontalElementElementElement = horizontalElementElement[state.frameNumMatOriColor.numberPostsFrame] || {};
       let fileURL = horizontalElementElementElement.fileURL || '';
       let obj = {
         "templateName": "4H.ejs",
@@ -1171,9 +1206,9 @@ const store = () => new Vuex.Store({
       return jsonToQuery(obj)
     },
     pdf4V: (state) => {
-      let horizontalElement = state.frame.vertical[state.material] || {};
-      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
-      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      let horizontalElement = state.frame.vertical[state.frameNumMatOriColor.material] || {};
+      let horizontalElementElement = horizontalElement[state.frameNumMatOriColor.colorsFrame] || {};
+      let horizontalElementElementElement = horizontalElementElement[state.frameNumMatOriColor.numberPostsFrame] || {};
       let fileURL = horizontalElementElementElement.fileURL || '';
       let obj = {
         "templateName": "4V.ejs",
@@ -1220,9 +1255,9 @@ const store = () => new Vuex.Store({
       return jsonToQuery(obj)
     },
     pdf5H: (state) => {
-      let horizontalElement = state.frame.horizontal[state.material] || {};
-      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
-      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      let horizontalElement = state.frame.horizontal[state.frameNumMatOriColor.material] || {};
+      let horizontalElementElement = horizontalElement[state.frameNumMatOriColor.colorsFrame] || {};
+      let horizontalElementElementElement = horizontalElementElement[state.frameNumMatOriColor.numberPostsFrame] || {};
       let fileURL = horizontalElementElementElement.fileURL || '';
       let obj = {
         "templateName": "5H.ejs",
@@ -1275,9 +1310,9 @@ const store = () => new Vuex.Store({
       return jsonToQuery(obj)
     },
     pdf5V: (state) => {
-      let horizontalElement = state.frame.vertical[state.material] || {};
-      let horizontalElementElement = horizontalElement[state.colorsFrame] || {};
-      let horizontalElementElementElement = horizontalElementElement[state.numberPostsFrame] || {};
+      let horizontalElement = state.frame.vertical[state.frameNumMatOriColor.material] || {};
+      let horizontalElementElement = horizontalElement[state.frameNumMatOriColor.colorsFrame] || {};
+      let horizontalElementElementElement = horizontalElementElement[state.frameNumMatOriColor.numberPostsFrame] || {};
       let fileURL = horizontalElementElementElement.fileURL || '';
       let obj = {
         "templateName": "5V.ejs",
