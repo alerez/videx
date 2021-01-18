@@ -46,7 +46,7 @@ filesRouter.get('/getFramesColors', fileComponents.getFrameColors);
  * @param {string} path -Express path
  * @param {callback} middleware - Express middleware
  */
-filesRouter.get('/getMechanisms', fileComponents.getMechanisms);
+filesRouter.post('/getMechanisms', fileComponents.getMechanisms);
 
 /**
  * Route to get mechanisms colors

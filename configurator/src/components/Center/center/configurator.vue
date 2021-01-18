@@ -6,7 +6,7 @@
     </div>
     <div class="frameBlock">
       <div v-on:click="mechanismBlock('mechanismBlockNone')" v-if="numberPostsFrame === '1'">
-        <img class="frameBlockFrameHorizontal1" v-bind:src="frame['horizontal'][material][colorsFrame][numberPostsFrame].fileURL">
+        <img class="frameBlockFrameHorizontal1" v-bind:src="frame.horizontal[material][colorsFrame][numberPostsFrame].fileURL">
       </div>
       <div v-on:click="mechanismBlock('mechanismBlockNone')" v-else-if="numberPostsFrame === '2'">
         <img class="frameBlockFrameHorizontal2" v-if="frameOrientation !== 'vertical'" v-bind:src="frame[frameOrientation][material][colorsFrame][numberPostsFrame].fileURL">
@@ -4980,6 +4980,7 @@ export default {
     margin-left: 0;
     margin-top: 0;
     border: 2px solid #FF7A00;
+    border-radius: 1px;
   }
   .configuratorBlockMechanism233Hover{
     width:68px;
@@ -4988,6 +4989,7 @@ export default {
     margin-left: 0;
     margin-top: 0;
     border: 2px solid #FF7A00;
+    border-radius: 1px;
   }
   .configuratorBlockMechanism333Hover{
     width:68px;
@@ -4996,6 +4998,7 @@ export default {
     margin-left: 0;
     margin-top: 0;
     border: 2px solid #FF7A00;
+    border-radius: 1px;
   }
 
 

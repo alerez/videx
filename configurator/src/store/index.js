@@ -16,13 +16,13 @@ const getFrames = {
     'Content-Type': 'application/json'
   },
 };
-const getFramesLocal = {
+const getMechanismsLocal = {
   method: 'post',
-  url: url + '/getFrames',
+  url: url + '/getMechanisms',
   headers: {
     'Content-Type': 'application/json'
   },
-  data: JSON.stringify({"article": '' + window.location.pathname.replace('/','')})
+  data: JSON.stringify({"article": '' + window.location.pathname.replace('/dist/index.html','').replace('/','')})
 };
 const getFramesColors = {
   method: 'get',
@@ -33,7 +33,7 @@ const getFramesColors = {
 
 };
 const getMechanisms = {
-  method: 'get',
+  method: 'post',
   url: url + '/getMechanisms',
   headers: {
     'Content-Type': 'application/json'
@@ -423,11 +423,11 @@ const store = () => new Vuex.Store({
 
   },
   actions: {
-    SET_FRAMES_LOCAL : async ({commit}) => {
-      await axios(getFramesLocal)
+    SET_Mechanisms_LOCAL : async ({commit}) => {
+      await axios(getMechanismsLocal)
           .then(response => response.data)
           .then(res => {
-            commit('SET_FRAMES_LOCAL', res)
+            commit('SET_Mechanisms_LOCAL', res)
           })
           .catch(function (error) {
             console.log(error);
@@ -577,17 +577,31 @@ const store = () => new Vuex.Store({
     },
   },
   mutations: {
-    SET_FRAMES_LOCAL: (state, res) => {
-      state.frameNumMatOriColor = res.reduce((stateFrame, picParam) => {
-        stateFrame = {
-          numberPostsFrame: '' + picParam.posts,
-          material: picParam.material,
-          frameOrientation: picParam.position,
-          colorsFrame: picParam.color,
-        }
-        return stateFrame
-      }, {},{})
-      console.log('dfdfd')
+    SET_Mechanisms_LOCAL: (state, res) => {
+      if(res === []){
+        state.mechanismBlockOne = res.reduce((stateMechanism) => {
+          stateMechanism = {
+            price: 0,
+            fileURL: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png',
+            article: '',
+            num: 0,
+          }
+          return stateMechanism
+        }, {},)
+      }
+      else {
+        state.mechanismBlockOne = res.reduce((stateMechanism, picParam) => {
+          stateMechanism = {
+            fileURL: url + picParam.fileURL,
+            description: picParam.description,
+            productCode: picParam.productCode,
+            price: picParam.price,
+            article: picParam.article,
+            num: 1,
+          }
+          return stateMechanism
+        }, {},)
+      }
     },
     SET_FRAMES: (state, res) => {
       // state.frame.hor = res.map((sommething, i) => {return sommething })
@@ -782,6 +796,7 @@ const store = () => new Vuex.Store({
     },
     closedMechanismBlock: (state, data) => {
       return state[data] = {
+        article: '',
         price: 0,
         num: 0,
         fileURL: 'https://online-fotoshop.ru/wp-content/uploads/bfi_thumb/dummy-transparent-o62bcwfxu7zofs36kb0sbh4wom52bbxxszhrx8zw4y.png'

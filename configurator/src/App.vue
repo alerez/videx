@@ -29,11 +29,11 @@ export default {
       TopBlock,
     },
   methods: {
-    ...mapActions(['SET_FRAMES_LOCAL'])
+    ...mapActions(['SET_Mechanisms_LOCAL'])
   },
   created() {
-    if(window.location.pathname !== '/'){
-      this.SET_FRAMES_LOCAL();
+    if(window.location.pathname !== '/dist/index.html'){
+        this.SET_Mechanisms_LOCAL();
     }
   }
 

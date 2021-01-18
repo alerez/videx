@@ -11,7 +11,7 @@
             />
           </div>
           <div  v-if="activityBackgroundUP === idx">
-            <img style="border: #FF7A00 solid 2px; border-radius: 10px"
+            <img style="border: #FF7A00 solid 2px; border-radius: 6px"
                 v-bind:src="imagesUP.url"
                 v-on:click="emitImg(imagesUP.url, idx)"
                 class="backgroundBlockImages upBagBackgroundBlockImages backgroundBlockImagesHoverImg"
