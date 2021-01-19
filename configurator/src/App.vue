@@ -32,7 +32,7 @@ export default {
     ...mapActions(['SET_Mechanisms_LOCAL'])
   },
   created() {
-    if(window.location.pathname !== '/dist/index.html'){
+    if(window.location.pathname === '/'){
         this.SET_Mechanisms_LOCAL();
     }
   }
