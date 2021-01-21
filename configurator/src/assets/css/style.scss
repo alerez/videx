@@ -1376,10 +1376,10 @@ $white: rgb(255, 255, 255);
 
   ////////////////////chooseMechanism////////////////////////
   .chooseMechanismBlockTwo{
-    @include size(100vw,200px)
+    @include size(100vw,220px)
   }
   .chooseMechanismBlockTwoRam{
-    @include size(100vw, 200px);
+    @include size(100vw, 220px);
     border:none;
   }
   .chooseMechanismBlockMobile{

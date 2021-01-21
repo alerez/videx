@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="08f21971-1991-4c1b-bb88-30dbe0d612c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/prepros.config" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/prepros.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/assets/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/center/configurator.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/components/Center/left/downloadProject.vue" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/components/Center/left/downloadProject.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurator/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/configurator/src/store/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,7 @@
       <workItem from="1610445360046" duration="13688000" />
       <workItem from="1610534094676" duration="18046000" />
       <workItem from="1610619384527" duration="58013000" />
-      <workItem from="1611058766781" duration="2661000" />
+      <workItem from="1611058766781" duration="12276000" />
     </task>
     <servers />
   </component>
